@@ -1,0 +1,19 @@
+{
+    "tokenizers": {
+        "google/gemma-3-12b-it": "token_1",
+        "Tower-Babel/Babel-9B-Chat": null
+    },
+    "datasets": {
+        "English": "",
+        "Korean": "data/korean_dict-hyunwoongko_korean-word-dict.csv",
+        "Korean-wiki": "data/ko_wiki_noun_frequencies_kiwi.csv",
+        "German-wiki": "data/de_wiki_noun_frequencies.csv"
+    },
+    "num_real_words": 1000,
+    "num_non_words": 1000,
+    "seed": 2025,
+    "save_plots": false,
+    "test_split": 0.2,
+    "num_quantiles": 5,
+    "min_freq": 5
+}

@@ -1,2 +1,6 @@
 user_config.json
 **/__pycache__/
+data/
+output/*
+!output/image/
+!output/image/*
