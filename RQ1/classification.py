@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 from sklearn.preprocessing import LabelEncoder
 from tqdm import tqdm
 from data import WordNonwordData  # Import dataset generator
-
+import os
 
 class WordNonwordClassifier(WordNonwordData):
     def __init__(self, language, tokenizer_name):
@@ -23,7 +23,7 @@ class WordNonwordClassifier(WordNonwordData):
         # self.model = AutoModelForImageTextToText.from_pretrained(tokenizer_name, device_map="auto")
         self.model = AutoModelForCausalLM.from_pretrained(tokenizer_name,
                                                      device_map="auto",
-                                                     torch_dtype=torch.bfloat16
+                                                    #  torch_dtype=torch.bfloat16
         )
             
         # self.model.to(self.device) # Not needed for device_map="auto"
@@ -107,15 +107,18 @@ class WordNonwordClassifier(WordNonwordData):
 
 
     def run(self):
-        dataset = self.main()  # Load and preprocess dataset
+        # dataset = self.main()  # Load and preprocess dataset
+        dataset_path = os.path.join(self.base_dir, f"data/r1_dataset_{self.tokenizer_name.split('/')[1]}_{self.language}-wiki.csv")
+        dataset = pd.read_csv(dataset_path)
+        print("Data loaded successfull")
         X, y = self.prepare_data(dataset)
         results_df = self.train_and_evaluate(X, y)
         return results_df
     
 if __name__ == "__main__":
     # classifier = WordNonwordClassifier("English", "google/gemma-3-12b-it")
-    # classifier = WordNonwordClassifier("Enlgish", "Tower-Babel/Babel-9B-Chat")
-    classifier = WordNonwordClassifier("Korean", "Tower-Babel/Babel-9B-Chat")
+    classifier = WordNonwordClassifier("English", "Tower-Babel/Babel-9B-Chat")
+    # classifier = WordNonwordClassifier("Korean", "Tower-Babel/Babel-9B-Chat")
     # classifier = WordNonwordClassifier("German", "Tower-Babel/Babel-9B-Chat")
     results = classifier.run()
     # print(dataset)

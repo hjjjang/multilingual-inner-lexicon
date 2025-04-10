@@ -1,13 +1,15 @@
 {
     "tokenizers": {
         "google/gemma-3-12b-it": "token_1",
-        "Tower-Babel/Babel-9B-Chat": null
+        "Tower-Babel/Babel-9B-Chat": null,
+        "mistralai/Ministral-8B-Instruct-2410": "token_1",
+        "meta-llama/Llama-2-7b-chat-hf": "token_1"
     },
     "datasets": {
-        "English": "",
+        "English-wiki": "data/en_wiki_noun_frequencies_lemmatized.csv",
         "Korean": "data/korean_dict-hyunwoongko_korean-word-dict.csv",
         "Korean-wiki": "data/ko_wiki_noun_frequencies_kiwi.csv",
-        "German-wiki": "data/de_wiki_noun_frequencies.csv"
+        "German-wiki": "data/de_wiki_noun_frequencies_lemmatized.csv"
     },
     "num_real_words": 1000,
     "num_non_words": 1000,
@@ -15,5 +17,5 @@
     "save_plots": false,
     "test_split": 0.2,
     "num_quantiles": 5,
-    "min_freq": 5
+    "min_freq": 4
 }
