@@ -1,4 +1,5 @@
 import json
+import numpy as np
 import pandas as pd
 from transformers import AutoTokenizer
 from nltk.corpus import wordnet
@@ -7,6 +8,13 @@ import random
 import matplotlib.pyplot as plt
 import argparse
 import os
+import ast
+
+tokenizers = [
+        ("Tower-Babel/Babel-9B-Chat", "babel_9b"),
+        ("google/gemma-3-12b-it", "gemma_12b"),
+        ("meta-llama/Llama-2-7b-chat-hf", "llama_2_7b"),
+    ]
 
 class WordNonwordData:
     def __init__(self, language, tokenizer_name, base_dir="/home/hyujang/multilingual-inner-lexicon"):
@@ -36,14 +44,35 @@ class WordNonwordData:
             # en_nouns = set(lemma.name() for synset in noun_synsets for lemma in synset.lemmas() if "_" not in lemma.name())
             # return list(en_nouns)
             en_nouns_df = pd.read_csv(os.path.join(self.base_dir, self.config['datasets']['English-wiki']))
+            # en_nouns_df = pd.read_csv("/home/hyujang/multilingual-inner-lexicon/data/English_tokenizers_comparison.csv")
+            # en_nouns_df['same_token_num2'] = en_nouns_df['token_num_babel_9b'] == en_nouns_df['token_num_gemma_12b']
+            # en_nouns_df['avg_token_num2'] = en_nouns_df[['token_num_babel_9b', 'token_num_gemma_12b']].mean(axis=1)
+            # en_nouns_df = en_nouns_df[en_nouns_df['same_token_num2'] == True]
+            # en_nouns_df['token_num'] = en_nouns_df['avg_token_num2']
+            # en_nouns_df['tokens'] = en_nouns_df['tokens_babel_9b']
+            
+            # en_nouns_df = en_nouns_df[~en_nouns_df['any_token_num_is_1']]
+            # en_nouns_df.rename(columns={f'tokens_{dict(tokenizers)[self.tokenizer_name]}': 'tokens', 'avg_token_num2_rounded': 'token_num'}, inplace=True)
+            
             return en_nouns_df
         elif self.language == "Korean":
             # ko_nouns_df = pd.read_csv(os.path.join(self.base_dir, self.config['datasets']['Korean']))
             ko_nouns_df = pd.read_csv(os.path.join(self.base_dir, self.config['datasets']['Korean-wiki']))
+            
+            # ko_nouns_df = pd.read_csv("/home/hyujang/multilingual-inner-lexicon/data/Korean_tokenizers_comparison.csv")
             ko_nouns_df = ko_nouns_df[~ko_nouns_df['word'].str.contains(r'[^\uac00-\ud7a3]', na=False)]
+            
+            # ko_nouns_df = ko_nouns_df[~ko_nouns_df['any_token_num_is_1']]
+            # ko_nouns_df.rename(columns={f'tokens_{dict(tokenizers)[self.tokenizer_name]}': 'tokens', 'avg_token_num2_rounded': 'token_num'}, inplace=True)
+            
             return ko_nouns_df
         elif self.language == "German":
             de_nouns_df = pd.read_csv(os.path.join(self.base_dir, self.config['datasets']['German-wiki']))
+            
+            # de_nouns_df = pd.read_csv("/home/hyujang/multilingual-inner-lexicon/data/German_tokenizers_comparison.csv")
+            # de_nouns_df = de_nouns_df[~de_nouns_df['any_token_num_is_1']]
+            # de_nouns_df.rename(columns={f'tokens_{dict(tokenizers)[self.tokenizer_name]}': 'tokens', 'avg_token_num2_rounded': 'token_num'}, inplace=True)
+            
             return de_nouns_df
 
     def tokenize_and_analyze(self, input_data):
@@ -123,18 +152,23 @@ class WordNonwordData:
                 sampled.append(quantile_df.sample(min(len(quantile_df), num_samples // self.config['num_quantiles']), 
                                                 replace=False, random_state=self.seed))
         
-        sampled_df = pd.concat(sampled, ignore_index=True).drop_duplicates(subset=['word']).reset_index(drop=True)
+        sampled_df = pd.concat(sampled, ignore_index=False).drop_duplicates(subset=['word'])
+        sampled_indices = sampled_df.index.to_list()
 
         # Handle cases where the sampled DataFrame has fewer rows than required
         if len(sampled_df) < num_samples:
+            print(f"remaining before additional sampling for {token_num}-token words:", num_samples - len(sampled_df))
             remaining = num_samples - len(sampled_df)
             other_df = tokens_df[tokens_df['token_num'] == token_num].drop(sampled_df.index, errors='ignore')
             additional_samples = other_df.sample(min(len(other_df), remaining), replace=False, random_state=self.seed)
+            sampled_indices += additional_samples.index.to_list()
             sampled_df = pd.concat([sampled_df, additional_samples]).drop_duplicates(subset=['word']).reset_index(drop=True)
-
-        return sampled_df
+        
+        remaining = num_samples - len(sampled_df)
+        
+        return sampled_df, remaining, sampled_indices
     
-    def generate_non_sensible_words(self, tokens_df, token_num, num_generated_words):
+    def sample_non_words(self, tokens_df, token_num, num_generated_words):
         if self.seed is not None:
             random.seed(self.seed)
         df_tokens = tokens_df[tokens_df['token_num'] == token_num]
@@ -153,9 +187,7 @@ class WordNonwordData:
         generated_df = generated_df.sample(frac=1, random_state=self.seed).drop_duplicates(subset=['word']).reset_index(drop=True)
         return generated_df
 
-    def generate_real_and_non_words(self, input_data):
-        tokens_df = self.tokenize_and_analyze(input_data)
-        
+    def generate_real_and_non_words(self, tokens_df):
         if 'freq' in tokens_df.columns:
             print(f"Number of words before filtering: {len(tokens_df)}")
             tokens_df = tokens_df[tokens_df['freq'] >= self.config['min_freq']]
@@ -165,38 +197,50 @@ class WordNonwordData:
         else:
             tokens_df['freq_quantile'] = 0  # Default to a single level if no frequency column is provided
         
+        tokens_df['tokens'] = tokens_df['tokens'].apply(lambda x: ast.literal_eval(x) if isinstance(x, str) else x)
+        if (self.language == "Korean") & (self.tokenizer_name == "meta-llama/Llama-2-7b-chat-hf"):
+            tokens_df['tokens'] = tokens_df['tokens'].apply(lambda x: x[1:] if x else x)
+            tokens_df['token_num'] = tokens_df['tokens'].apply(lambda x: len(x) if x else 0)
+        
         print("Token count distribution (number of tokens per word):")
         print(tokens_df['token_num'].value_counts())
         
+        # GENERATE REAL WORDS
         real_words_2_tokens = int(self.num_real_words * 0.53)
         real_words_3_tokens = int(self.num_real_words * 0.373)
         real_words_4_tokens = self.num_real_words - real_words_2_tokens - real_words_3_tokens
         
-        real_words_df = pd.concat([
-            self.sample_real_words(tokens_df, 2, real_words_2_tokens),
-            self.sample_real_words(tokens_df, 3, real_words_3_tokens),
-            self.sample_real_words(tokens_df, 4, real_words_4_tokens)
-        ]).reset_index(drop=True)
+        real_words_2_tokens_df, remaining_2, sampled_indices_2 = self.sample_real_words(tokens_df, 2, real_words_2_tokens)
+        real_words_3_tokens_df, remaining_3, sampled_indices_3 = self.sample_real_words(tokens_df, 3, real_words_3_tokens)
+        real_words_4_tokens_df, remaining_4, sampled_indices_4 = self.sample_real_words(tokens_df, 4, real_words_4_tokens)
         
-        if len(real_words_df) < self.num_real_words:
-            more_needed = self.num_real_words - len(real_words_df)
-            most_common_token_num = tokens_df['token_num'].value_counts().idxmax()
-            print(f"Note: Only {len(real_words_df)} real words sampled. Need {more_needed} more from {most_common_token_num}-token words.")
-            real_words_df = pd.concat([
-                real_words_df,
-                self.sample_real_words(tokens_df, most_common_token_num, more_needed)
+        real_words_df = pd.concat([
+                real_words_2_tokens_df, real_words_3_tokens_df, real_words_4_tokens_df
             ]).reset_index(drop=True)
+        
+        print(f"Remaining real words needed: 2-tokens: {remaining_2}, 3-tokens: {remaining_3}, 4-tokens: {remaining_4}")
+        remaining = remaining_2 + remaining_3 + remaining_4
+        if remaining > 0:
+            filtered_tokens_df = tokens_df[tokens_df['token_num'].isin([2, 3, 4])]
+            filtered_tokens_df = filtered_tokens_df[~filtered_tokens_df.index.isin(set(sampled_indices_2 + sampled_indices_3 + sampled_indices_4))]
+            remaining_samples = filtered_tokens_df.sample(n=remaining, random_state=self.seed)
 
+            real_words_df = pd.concat([
+                real_words_df, remaining_samples
+            ]).reset_index(drop=True)
+        
+        print("Final number of real words sampled:", len(real_words_df))
+        
+        # GENERATE NON-WORDS
         non_words_2_tokens = int(self.num_non_words * 0.53)
         non_words_3_tokens = int(self.num_non_words * 0.373)
         non_words_4_tokens = self.num_non_words - non_words_2_tokens - non_words_3_tokens
 
         non_words_df = pd.concat([
-            self.generate_non_sensible_words(tokens_df, 2, non_words_2_tokens), 
-            self.generate_non_sensible_words(tokens_df, 3, non_words_3_tokens), 
-            self.generate_non_sensible_words(tokens_df, 4, non_words_4_tokens)
+            self.sample_non_words(tokens_df, 2, non_words_2_tokens), 
+            self.sample_non_words(tokens_df, 3, non_words_3_tokens), 
+            self.sample_non_words(tokens_df, 4, non_words_4_tokens)
         ]).reset_index(drop=True)
-        
         
         
         real_words_df['label'] = "realword"
@@ -206,10 +250,16 @@ class WordNonwordData:
     
     def main(self):
         input_data = self.load_dataset()
-        final_df = self.generate_real_and_non_words(input_data)
-        final_df.to_csv(os.path.join(self.base_dir, f"data/r1_dataset_{self.tokenizer_name.split('/')[1]}_{self.language}-wiki.csv"), index=False)
+        tokens_df = self.tokenize_and_analyze(input_data)
+        final_df = self.generate_real_and_non_words(tokens_df)
+        final_df.to_csv(os.path.join(self.base_dir, f"data/r1_dataset_{self.tokenizer_name.split('/')[1]}_{self.language}-wiki-2.csv"), index=False)
         return final_df
     
+    def main2(self):
+        tokens_df = self.load_dataset()
+        final_df = self.generate_real_and_non_words(tokens_df)
+        final_df.to_csv(os.path.join(self.base_dir, f"data/r1_dataset_{self.tokenizer_name.split('/')[1]}_{self.language}-wiki-2.csv"), index=False)
+        
     def tokenize_and_save(self):
         input_data = self.load_dataset()
         tokens_df = self.tokenize_and_analyze(input_data)
@@ -218,12 +268,8 @@ class WordNonwordData:
         return tokens_df
 
 
-def compare_tokenizers(lang):
-    tokenizers = [
-        ("Tower-Babel/Babel-9B-Chat", "babel_9b"),
-        ("google/gemma-3-12b-it", "gemma_12b"),
-        ("meta-llama/Llama-2-7b-chat-hf", "llama_2_7b"),
-    ]
+
+def compare_tokenizers(lang, tokenizers):
     
     # Initialize an empty list to store tokenized DataFrames
     tokenized_dfs = []
@@ -255,7 +301,17 @@ def compare_tokenizers(lang):
     token_num_columns = [f"token_num_{model_alias}" for _, model_alias in tokenizers]
     final_df["avg_token_num"] = final_df[token_num_columns].mean(axis=1)
     final_df["same_token_num"] = final_df[token_num_columns].nunique(axis=1) == 1
-
+    # final_df["avg_token_num_rounded"] = final_df["avg_token_num"].round().astype(int) # banker's rounding
+    final_df["avg_token_num_rounded"] = np.floor(final_df["avg_token_num"] + 0.5).astype(int) # round half up
+    
+    token_num_main_columns = ["token_num_babel_9b", "token_num_gemma_12b"]
+    final_df["avg_token_num2"] = final_df[token_num_main_columns].mean(axis=1)
+    final_df['same_token_num2'] = final_df[token_num_main_columns].nunique(axis=1) == 1
+    # final_df["avg_token_num2_rounded"] = final_df["avg_token_num2"].round().astype(int) # banker's rounding
+    final_df["avg_token_num2_rounded"] = np.floor(final_df["avg_token_num2"] + 0.5).astype(int) # round half up
+    
+    final_df["any_token_num_is_1"] = (final_df[token_num_columns] == 1).any(axis=1)
+    
     # Move the 'freq' column to the last position
     if "freq" in final_df.columns:
         freq_column = final_df.pop("freq")
@@ -276,8 +332,16 @@ if __name__ == "__main__":
     # word_nonword_cls = WordNonwordData("Korean", "Tower-Babel/Babel-9B-Chat")
     # word_nonword_cls = WordNonwordData("English", "Tower-Babel/Babel-9B-Chat")
     # word_nonword_cls = WordNonwordData("German", "Tower-Babel/Babel-9B-Chat")
-    # results = word_nonword_cls.main()
+    # word_nonword_cls = WordNonwordData("Korean", "google/gemma-3-12b-it")
+    # word_nonword_cls = WordNonwordData("English", "google/gemma-3-12b-it")
+    # word_nonword_cls = WordNonwordData("German", "google/gemma-3-12b-it")
+    word_nonword_cls = WordNonwordData("Korean", "meta-llama/Llama-2-7b-chat-hf")
+    # word_nonword_cls = WordNonwordData("English", "meta-llama/Llama-2-7b-chat-hf")
+    # word_nonword_cls = WordNonwordData("German", "meta-llama/Llama-2-7b-chat-hf")
+    
+    word_nonword_cls.main()
+    # word_nonword_cls.main2()
         
-    compare_tokenizers("Korean")
-    compare_tokenizers("English")
-    compare_tokenizers("German")
+    # compare_tokenizers("Korean")
+    # compare_tokenizers("English")
+    # compare_tokenizers("German")
