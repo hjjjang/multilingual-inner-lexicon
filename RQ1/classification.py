@@ -9,6 +9,7 @@ from sklearn.preprocessing import LabelEncoder
 from tqdm import tqdm
 from data import WordNonwordData  # Import dataset generator
 import os
+import ast
 
 class WordNonwordClassifier(WordNonwordData):
     def __init__(self, language, tokenizer_name):
@@ -60,8 +61,6 @@ class WordNonwordClassifier(WordNonwordData):
         """Convert tokenized words into feature vectors"""
         print("Preparing data for KNN classification...")
         print(dataset)
-        # print(dataset['tokens'])
-        # print("*********************************")
         hidden_states_dict = self.extract_token_i_hidden_states(dataset['tokens'])
         
         label_encoder = LabelEncoder()
@@ -108,17 +107,24 @@ class WordNonwordClassifier(WordNonwordData):
 
     def run(self):
         # dataset = self.main()  # Load and preprocess dataset
-        dataset_path = os.path.join(self.base_dir, f"data/r1_dataset_{self.tokenizer_name.split('/')[1]}_{self.language}-wiki.csv")
+        dataset_path = os.path.join(self.base_dir, f"data/r1_dataset_{self.tokenizer_name.split('/')[1]}_{self.language}-wiki-2.csv")
         dataset = pd.read_csv(dataset_path)
+        dataset['tokens'] = dataset['tokens'].apply(lambda x: ast.literal_eval(x) if isinstance(x, str) else x)  # Convert string representation of list to actual list
         print("Data loaded successfull")
         X, y = self.prepare_data(dataset)
         results_df = self.train_and_evaluate(X, y)
         return results_df
     
 if __name__ == "__main__":
-    # classifier = WordNonwordClassifier("English", "google/gemma-3-12b-it")
-    classifier = WordNonwordClassifier("English", "Tower-Babel/Babel-9B-Chat")
-    # classifier = WordNonwordClassifier("Korean", "Tower-Babel/Babel-9B-Chat")
-    # classifier = WordNonwordClassifier("German", "Tower-Babel/Babel-9B-Chat")
-    results = classifier.run()
+    # word_nonword_cls = WordNonwordClassifier("Korean", "Tower-Babel/Babel-9B-Chat")
+    # word_nonword_cls = WordNonwordClassifier("English", "Tower-Babel/Babel-9B-Chat")
+    word_nonword_cls = WordNonwordClassifier("German", "Tower-Babel/Babel-9B-Chat")
+    # word_nonword_cls = WordNonwordClassifier("Korean", "google/gemma-3-12b-it")
+    # word_nonword_cls = WordNonwordClassifier("English", "google/gemma-3-12b-it")
+    # word_nonword_cls = WordNonwordClassifier("German", "google/gemma-3-12b-it")
+    # word_nonword_cls = WordNonwordClassifier("Korean", "meta-llama/Llama-2-7b-chat-hf")
+    # word_nonword_cls = WordNonwordClassifier("English", "meta-llama/Llama-2-7b-chat-hf")
+    # word_nonword_cls = WordNonwordClassifier("German", "meta-llama/Llama-2-7b-chat-hf")
+    
+    results = word_nonword_cls.run()
     # print(dataset)

@@ -11,10 +11,10 @@
         "Korean-wiki": "data/ko_wiki_noun_frequencies_kiwi.csv",
         "German-wiki": "data/de_wiki_noun_frequencies_lemmatized.csv"
     },
-    "num_real_words": 1000,
-    "num_non_words": 1000,
+    "num_real_words": 10000,
+    "num_non_words": 10000,
     "seed": 2025,
-    "save_plots": false,
+    "save_plots": true,
     "test_split": 0.2,
     "num_quantiles": 5,
     "min_freq": 4
