@@ -1,7 +1,7 @@
 import torch
 import pandas as pd
 import numpy as np
-from transformers import AutoModel, AutoTokenizer, PreTrainedModel, PreTrainedTokenizer, AutoModelForImageTextToText, AutoModelForCausalLM
+from transformers import AutoModel, AutoTokenizer, PreTrainedModel, PreTrainedTokenizer, AutoModelForImageTextToText, AutoModelForCausalLM, Gemma3ForConditionalGeneration, Gemma3ForCausalLM
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
@@ -21,11 +21,21 @@ class WordNonwordClassifier(WordNonwordData):
         print("Using device:", self.device)
         self.tokenizer = AutoTokenizer.from_pretrained(tokenizer_name, use_fast=True, token=self.token_value)
         # self.model = AutoModel.from_pretrained(tokenizer_name, device_map="auto")
-        # self.model = AutoModelForImageTextToText.from_pretrained(tokenizer_name, device_map="auto")
-        self.model = AutoModelForCausalLM.from_pretrained(tokenizer_name,
-                                                     device_map="auto",
-                                                    #  torch_dtype=torch.bfloat16
-        )
+        # self.model = AutoModelForImageTextToText.from_pretrained(tokenizer_name, 
+        if self.tokenizer_name == "google/gemma-3-12b-it":
+            self.model = Gemma3ForCausalLM.from_pretrained(tokenizer_name, token=self.token_value)
+            self.model.to(self.device)
+        elif self.tokenizer_name == "meta-llama/Llama-2-7b-chat-hf":
+            self.model = AutoModelForCausalLM.from_pretrained(tokenizer_name, token=self.token_value)
+            self.model.to(self.device)
+        else:
+            self.model = AutoModelForCausalLM.from_pretrained(tokenizer_name, device_map="auto", token=self.token_value)
+        # self.model = Gemma3ForCausalLM.from_pretrained(tokenizer_name,
+        # self.model = AutoModelForCausalLM.from_pretrained(tokenizer_name,
+                                                    #  device_map="auto",
+                                                    #  torch_dtype=torch.bfloat16,
+                                                    # token=self.token_value
+        # )
             
         # self.model.to(self.device) # Not needed for device_map="auto"
         
@@ -118,13 +128,19 @@ class WordNonwordClassifier(WordNonwordData):
 if __name__ == "__main__":
     # word_nonword_cls = WordNonwordClassifier("Korean", "Tower-Babel/Babel-9B-Chat")
     # word_nonword_cls = WordNonwordClassifier("English", "Tower-Babel/Babel-9B-Chat")
-    word_nonword_cls = WordNonwordClassifier("German", "Tower-Babel/Babel-9B-Chat")
+    # word_nonword_cls = WordNonwordClassifier("German", "Tower-Babel/Babel-9B-Chat")
+    # results = word_nonword_cls.run()
     # word_nonword_cls = WordNonwordClassifier("Korean", "google/gemma-3-12b-it")
+    # results = word_nonword_cls.run()
     # word_nonword_cls = WordNonwordClassifier("English", "google/gemma-3-12b-it")
+    # results = word_nonword_cls.run()
     # word_nonword_cls = WordNonwordClassifier("German", "google/gemma-3-12b-it")
+    # results = word_nonword_cls.run()
     # word_nonword_cls = WordNonwordClassifier("Korean", "meta-llama/Llama-2-7b-chat-hf")
+    # results = word_nonword_cls.run()
     # word_nonword_cls = WordNonwordClassifier("English", "meta-llama/Llama-2-7b-chat-hf")
-    # word_nonword_cls = WordNonwordClassifier("German", "meta-llama/Llama-2-7b-chat-hf")
-    
+    # results = word_nonword_cls.run()
+    word_nonword_cls = WordNonwordClassifier("German", "meta-llama/Llama-2-7b-chat-hf")
     results = word_nonword_cls.run()
+    
     # print(dataset)
