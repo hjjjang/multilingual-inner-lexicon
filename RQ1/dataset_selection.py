@@ -28,7 +28,6 @@ def extract_nouns_with_frequency(text, lang, lemmatizer=None, nlp=None, kiwi=Non
         # nouns = [token.text for token in doc if token.pos_ == "NOUN"]
         tokens = word_tokenize(text)
         tagged = pos_tag(tokens)
-        nouns = [lemmatizer.lemmatize(word.lower()) for word, tag in tagged if tag in ['NN', 'NNS']]
         nouns = [
             lemmatizer.lemmatize(word.lower()) 
             for word, tag in tagged 
@@ -50,6 +49,7 @@ def extract_nouns_with_frequency(text, lang, lemmatizer=None, nlp=None, kiwi=Non
             token.form 
             for token in doc 
             if token.tag == "NNG"
+            # if token.tag in list({'NNG', 'NNP', 'NNB', 'NP', 'NR', 'VV', 'VA', 'VCP', 'VCN', 'XR', 'MAG', 'MAJ', 'MM'})
             # if token.tag == "NNG" and not re.search(r'[\W\d]', token.form)
         ]
     else:
@@ -86,7 +86,7 @@ def process_wikipedia_nouns(lang):
         df["noun_frequencies"] = df["text"].progress_apply(lambda text: extract_nouns_with_frequency(text, lang, nlp=nlp))
 
     elif lang == "ko":
-        print(f"Extracting nouns using Okt tokenizer for {lang}...")
+        print(f"Extracting nouns using Kiwi tokenizer for {lang}...")
         # okt = Okt()
         kiwi = Kiwi()
         tqdm.pandas(desc="Processing text")

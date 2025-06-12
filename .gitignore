@@ -5,3 +5,15 @@ output/*
 !output/image/
 !output/image/*
 RQ1/dataset_selection_test.ipynb
+slurm*
+cache/
+RQ1/_WordIdentity/*
+run_knn_2.sh
+RQ1/check_hidden_size.py
+RQ1/classification2.py
+RQ1/classification3.py
+RQ1/ko_dict.csv
+RQ1/opensubtitles_cistem_freq.csv
+RQ1/test_load_model.py
+RQ1/WordIdentity/opensubtitles_cistem_freq.csv
+model/vis_model_archi.ipynb
