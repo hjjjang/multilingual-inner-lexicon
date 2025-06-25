@@ -36,7 +36,7 @@ class WordNonwordClassifier(WordNonwordData):
         self.tokenizer = AutoTokenizer.from_pretrained(tokenizer_name, use_fast=True, token=self.token_value)
         # self.model = AutoModel.from_pretrained(tokenizer_name, device_map="auto")
         # self.model = AutoModelForImageTextToText.from_pretrained(tokenizer_name, 
-        if self.tokenizer_name == "google/gemma-3-12b-it" or self.tokenizer_name == "google/gemma-3-12b-pt":
+        if self.tokenizer_name == "google/gemma-3-12b-it":
             # self.model = Gemma3ForCausalLM.from_pretrained(tokenizer_name, token=self.token_value)
             self.model = Gemma3ForConditionalGeneration.from_pretrained(tokenizer_name, token=self.token_value)
             self.model.to(self.device)
@@ -66,8 +66,8 @@ class WordNonwordClassifier(WordNonwordData):
             tokenized_inputs = [tokenized_inputs]
 
         if layers_to_extract is None:
-            if self.tokenizer_name == "google/gemma-3-12b-it" or self.tokenizer_name == "google/gemma-3-12b-pt":
-                layers_to_extract = list(range(1, self.model.config.text_config.num_hidden_layers + 1))  # Exclude embedding layer
+            if self.tokenizer_name == "google/gemma-3-12b-it":
+                layers_to_extract = list(range(1, self.model.config.text_config.num_hidden_layers + 1))
             else:
                 layers_to_extract = list(range(1, self.model.config.num_hidden_layers + 1))  # Exclude embedding layer
 
@@ -76,14 +76,9 @@ class WordNonwordClassifier(WordNonwordData):
         with torch.no_grad():
             for tokens in tqdm(tokenized_inputs, desc="Extracting hidden states"):
                 input_ids = self.tokenizer.convert_tokens_to_ids(tokens)
-                input_ids = torch.tensor(input_ids, dtype=torch.long).unsqueeze(0).to(device)
-                # input_ids = torch.tensor(input_ids).unsqueeze(0).to(device)
-                try:
-                    outputs = self.model(input_ids, output_hidden_states=True)
-                except Exception as e:
-                    print("input_ids shape:", input_ids.shape)
-                    print("Error during model forward pass:", e)
-                    break
+                input_ids = torch.tensor(input_ids).unsqueeze(0).to(device)
+
+                outputs = self.model(input_ids, output_hidden_states=True)
                 for layer in layers_to_extract:
                     hidden_states = outputs.hidden_states[layer]  # Shape: (1, seq_len, hidden_dim)
                     all_hidden_states[layer].append(hidden_states[:, token_idx_to_extract, :].detach().cpu())
@@ -104,7 +99,6 @@ class WordNonwordClassifier(WordNonwordData):
     #     dataset['label_encoded'] = label_encoder.fit_transform(dataset['label'])
 
     #     return hidden_states_dict, dataset['label_encoded']
-    
     def prepare_data(self, dataset):
         """Convert tokenized words into feature vectors"""
         print("Preparing data for classification...")
@@ -266,7 +260,7 @@ class WordNonwordClassifier(WordNonwordData):
                     nn.Linear(64, 1),
                     # nn.Sigmoid() # mlp + e20
                 )
-                # self.model = nn.Sequential( # mpl2
+                # self.model = nn.Sequential( # mlp2
                 #     nn.Linear(input_dim, 512),
                 #     nn.ReLU(),
                 #     nn.Dropout(0.3),
