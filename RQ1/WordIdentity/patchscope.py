@@ -31,10 +31,20 @@ class PatchScope(WordNonwordClassifier):
         self.embedding_matrix = self.model.get_input_embeddings().weight
         self.model_name = tokenizer_name.split("/")[-1]
         
+        if self.langage=="English":
+            patchscopes_prompt = "Next is the same word twice: 1) {word} 2)"
+        elif self.language=="Korean":
+            patchscopes_prompt = "같은 단어가 두 번 나옵니다: 1) {word} 2)"
+        elif self.language=="German":
+            patchscopes_prompt = "Dasselbe Wort erscheint zweimal: 1) {word} 2)"
+        
         self.prompt_input_ids, self.prompt_target_idx = self._build_prompt_input_ids_template(patchscopes_prompt, prompt_target_placeholder)
         self._prepare_representation_prompt = self._build_representation_prompt_func(representation_prompt, prompt_target_placeholder)
         self.representation_token_idx = representation_token_idx_to_extract
         self.num_tokens_to_generate = num_tokens_to_generate
+        
+        
+            
         
     def setup_tokenizer(self):
         if self.tokenizer_name == "Tower-Babel/Babel-9B-Chat":

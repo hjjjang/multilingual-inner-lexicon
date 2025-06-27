@@ -1,23 +1,23 @@
 import torch
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
-
 from transformers import Gemma3ForConditionalGeneration, AutoTokenizer, AutoModelForCausalLM
 import pandas as pd
 from ast import literal_eval
 from tqdm import tqdm
 import re
-# from ..WordNonword.classification import WordNonwordClassifier
-import sys
 import os
+import sys
+
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
 from RQ1.WordNonword.classification import WordNonwordClassifier
+
 
 class LogitLens(WordNonwordClassifier):
     def __init__(self, language, tokenizer_name):
         super().__init__(language, tokenizer_name)  # Inherit token config
         self.setup_tokenizer()
-        self.model.eval().to(self.device)
+        self.model.eval()
         self.embedding_matrix = self.model.get_input_embeddings().weight
         self.model_name = tokenizer_name.split("/")[-1]
         
@@ -28,7 +28,7 @@ class LogitLens(WordNonwordClassifier):
 
     def run_logit_lens(self, df, type, distance_metric="logits", k=3, save=False):
         results = []
-        for idx, row in tqdm(df.iterrows(), total=len(df)):
+        for __name__, row in tqdm(df.iterrows(), total=len(df)):
             word = row["word"]
             
             if type == "simple_split":
@@ -36,25 +36,16 @@ class LogitLens(WordNonwordClassifier):
             elif type == "typo_split":
                 split_tokens = literal_eval(row['splitted_typo_tokens'])
             
-            # input_ids = self.tokenizer.convert_tokens_to_ids(split_tokens)
+            input_ids = self.tokenizer.convert_tokens_to_ids(split_tokens)
             if self.tokenizer.bos_token:
-                input_ids = [self.tokenizer.bos_token_ids] + self.tokenizer.convert_tokens_to_ids(split_tokens)
-            else:
-                input_ids = self.tokenizer.convert_tokens_to_ids(split_tokens)
+                input_ids = [self.tokenizer.bos_token_id] + input_ids
 
             if self.tokenizer_name == "Tower-Babel/Babel-9B-Chat":
                 input_ids = [31883 if id is None else id for id in input_ids]
             
-            # inputs = {
-                # "input_ids": torch.tensor([input_ids], dtype=torch.long, device=self.device)  # Shape: (1, 2)
-            # }
-            
-            # input_ids = self.tokenizer(split_tokens, return_tensors="pt", return_attention_mask=False)['input_ids'].to(self.device)
-
-            inputs_ids = torch.tensor([input_ids], dtype=torch.long, device=self.device)  # Shape: (1, seq_len)
+            inputs_ids = torch.tensor([input_ids], dtype=torch.long, device=self.device)
             
             with torch.no_grad():
-                # outputs = self.model(**inputs, output_hidden_states=True)
                 outputs = self.model(inputs_ids, output_hidden_states=True)
                 hidden_states = outputs.hidden_states
 
@@ -95,7 +86,7 @@ class LogitLens(WordNonwordClassifier):
         results_df = pd.DataFrame(results)
         
         if save:
-            results_df.to_csv(f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/WordIdentity/single_token_{type}_{self.model_name}_{self.language}.csv", index=False)
+            results_df.to_csv(f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/WordIdentity/single_token_{type}_{self.model_name}_{self.language}_v2.csv", index=False)
         return results_df
 
     def normalize(self, word):
@@ -151,11 +142,12 @@ class LogitLens(WordNonwordClassifier):
 
 if __name__ == "__main__":    
     MODEL_NAME = "Tower-Babel/Babel-9B-Chat"
-    LANGUAGE = "English"
+    LANGUAGE = "German"
     logit_lens = LogitLens(LANGUAGE, MODEL_NAME)
     MODEL_NAME = MODEL_NAME.split("/")[-1]
     results_df_original, results_df_typo = logit_lens.run(
         path1 = f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/single_token_splitted_{MODEL_NAME}_{LANGUAGE}.csv",
         path2 = f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/single_token_typos_{MODEL_NAME}_{LANGUAGE}.csv",
-        vis = False
+        vis = False,
+        save = True
     )

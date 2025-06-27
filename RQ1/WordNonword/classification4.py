@@ -67,11 +67,13 @@ class WordNonwordClassifier(WordNonwordData):
         with torch.no_grad():
             for tokens in tqdm(inputs, desc="Extracting hidden states"):
                 if isinstance(tokens, str): # if the input is a word string -> tokenize it
+                    tokens = self.tokenizer.convert_tokens_to_string([tokens]) # otherwise there could be an encoding error (e.g. "ìķłì·¨" instead of "애취" in Babel-9B-Chat tokenizer in Korean)
                     input_ids = self.tokenizer(tokens, return_tensors="pt", return_attention_mask=False)['input_ids'].to(self.device)
-                else: # if the input is already tokenized
-                    tokens = [self.tokenizer.bos_token] + tokens
-                    input_ids = self.tokenizer.convert_tokens_to_ids(tokens)
-                    input_ids = torch.tensor(input_ids).unsqueeze(0).to(self.device)
+                else: # if the input is already tokenized -> have to tokenize back anyway in case of an encoding error
+                    raise ValueError("Input should be a word not a list of tokenized tokens.")
+                    # tokens = [self.tokenizer.bos_token] + self.tokenizer.convert_tokens_to_string(tokens)
+                    # input_ids = self.tokenizer.convert_tokens_to_ids(tokens)
+                    # input_ids = torch.tensor(input_ids).unsqueeze(0).to(self.device)
 
                 outputs = self.model(input_ids, output_hidden_states=True)
                 for layer in layers_to_extract:
@@ -166,10 +168,10 @@ if __name__ == "__main__":
     # results = word_nonword_cls.run()
     # word_nonword_cls = WordNonwordClassifier("German", "google/gemma-3-12b-it")
     # results = word_nonword_cls.run()
-    # word_nonword_cls = WordNonwordClassifier("Korean", "meta-llama/Llama-2-7b-chat-hf")
-    # results = word_nonword_cls.run()
+    word_nonword_cls = WordNonwordClassifier("Korean", "meta-llama/Llama-2-7b-chat-hf")
+    results = word_nonword_cls.run()
     # word_nonword_cls = WordNonwordClassifier("English", "meta-llama/Llama-2-7b-chat-hf")
     # results = word_nonword_cls.run()
-    word_nonword_cls = WordNonwordClassifier("German", "meta-llama/Llama-2-7b-chat-hf")
-    results = word_nonword_cls.run()
+    # word_nonword_cls = WordNonwordClassifier("German", "meta-llama/Llama-2-7b-chat-hf")
+    # results = word_nonword_cls.run()
 
