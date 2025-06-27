@@ -48,6 +48,7 @@ class WordNonwordClassifier(WordNonwordData):
         else:
             self.model = AutoModelForCausalLM.from_pretrained(tokenizer_name, device_map="auto", token=self.token_value)
         
+        print(f"Model {self.tokenizer_name} for {self.language} loaded successfully.")
     def extract_token_i_hidden_states(self, inputs, token_idx_to_extract=-1, layers_to_extract=None):
         """Extract hidden states for tokenized words"""
         self.model.eval()
@@ -110,8 +111,6 @@ class WordNonwordClassifier(WordNonwordData):
         results = []
 
         for layer in tqdm(hidden_states, desc="Training on each layer"):
-            print(type(hidden_states[layer]))
-            break
             X_train, X_test, y_train, y_test = train_test_split(
                 # hidden_states[layer].numpy()
                 hidden_states[layer].to(torch.float32).numpy(),  # Convert to float32
@@ -157,8 +156,8 @@ class WordNonwordClassifier(WordNonwordData):
 if __name__ == "__main__":
     # word_nonword_cls = WordNonwordClassifier("Korean", "Tower-Babel/Babel-9B-Chat")
     # results = word_nonword_cls.run()
-    word_nonword_cls = WordNonwordClassifier("English", "Tower-Babel/Babel-9B-Chat")
-    results = word_nonword_cls.run()
+    # word_nonword_cls = WordNonwordClassifier("English", "Tower-Babel/Babel-9B-Chat")
+    # results = word_nonword_cls.run()
     # word_nonword_cls = WordNonwordClassifier("German", "Tower-Babel/Babel-9B-Chat")
     # results = word_nonword_cls.run()
     # word_nonword_cls = WordNonwordClassifier("Korean", "google/gemma-3-12b-it")
@@ -171,6 +170,6 @@ if __name__ == "__main__":
     # results = word_nonword_cls.run()
     # word_nonword_cls = WordNonwordClassifier("English", "meta-llama/Llama-2-7b-chat-hf")
     # results = word_nonword_cls.run()
-    # word_nonword_cls = WordNonwordClassifier("German", "meta-llama/Llama-2-7b-chat-hf")
-    # results = word_nonword_cls.run()
+    word_nonword_cls = WordNonwordClassifier("German", "meta-llama/Llama-2-7b-chat-hf")
+    results = word_nonword_cls.run()
 
