@@ -36,17 +36,26 @@ class LogitLens(WordNonwordClassifier):
             elif type == "typo_split":
                 split_tokens = literal_eval(row['splitted_typo_tokens'])
             
-            input_ids = self.tokenizer.convert_tokens_to_ids(split_tokens)
+            # input_ids = self.tokenizer.convert_tokens_to_ids(split_tokens)
+            if self.tokenizer.bos_token:
+                input_ids = [self.tokenizer.bos_token_ids] + self.tokenizer.convert_tokens_to_ids(split_tokens)
+            else:
+                input_ids = self.tokenizer.convert_tokens_to_ids(split_tokens)
 
             if self.tokenizer_name == "Tower-Babel/Babel-9B-Chat":
                 input_ids = [31883 if id is None else id for id in input_ids]
             
-            inputs = {
-                "input_ids": torch.tensor([input_ids], dtype=torch.long, device=self.device)  # Shape: (1, 2)
-            }
-        
+            # inputs = {
+                # "input_ids": torch.tensor([input_ids], dtype=torch.long, device=self.device)  # Shape: (1, 2)
+            # }
+            
+            # input_ids = self.tokenizer(split_tokens, return_tensors="pt", return_attention_mask=False)['input_ids'].to(self.device)
+
+            inputs_ids = torch.tensor([input_ids], dtype=torch.long, device=self.device)  # Shape: (1, seq_len)
+            
             with torch.no_grad():
-                outputs = self.model(**inputs, output_hidden_states=True)
+                # outputs = self.model(**inputs, output_hidden_states=True)
+                outputs = self.model(inputs_ids, output_hidden_states=True)
                 hidden_states = outputs.hidden_states
 
             per_layer_top_token_ids = []
