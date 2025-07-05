@@ -22,6 +22,12 @@ model_name_map = {
     "gemma_12b": "gemma-3-12b-it"
 }
 
+model_full_name_map = {
+    "Llama-2-7b-chat-hf": "meta-llama/Llama-2-7b-chat-hf",
+    "Babel-9B-Chat": "Tower-Babel/Babel-9B-Chat",
+    "gemma-3-12b-it": "google/gemma-3-12b-it"
+}
+
 MIN_WORD_LEN = 3
 MIN_JAMO_LEN = 2
 MIN_WORD_FREQ = CONFIG["min_freq"]
@@ -34,6 +40,44 @@ random.seed(RANDOM_SEED)
 
 # --- ENGLISH & GERMAN FUNCTIONS ---
 
+def random_split_valid(word, language, tokenizer, min_word_len=MIN_WORD_LEN, min_jamo_len=MIN_JAMO_LEN):
+    def is_valid_split(tokens):
+        return all(tokenizer.convert_tokens_to_ids(token) != tokenizer.unk_token_id for token in tokens)
+
+    max_attempts = 100
+    attempts = 0
+
+    if language == "Korean":
+        jamos = list(split_jamos(word))
+        if len(jamos) <= 1:
+            return [word]
+        while attempts < max_attempts:
+            attempts += 1
+            num_splits = random.randint(1, min(4, len(jamos) - min_jamo_len))
+            split_points = sorted(random.sample(range(1, len(jamos)), num_splits))
+            jamo_tokens = [jamos[i:j] for i, j in zip([0] + split_points, split_points + [None])]
+            split_result = [''.join(token) for token in jamo_tokens]
+            if is_valid_split(split_result):
+                return split_result
+        print(f"Discarding word '{word}' after {max_attempts} attempts.")
+        return None
+    else:
+        if len(word) <= 1:
+            return [word]
+        while attempts < max_attempts:
+            attempts += 1
+            try:
+                num_splits = random.randint(1, min(4, len(word) - min_word_len - 1))
+            except:
+                num_splits = 1
+            split_points = sorted(random.sample(range(1, len(word)), num_splits))
+            tokens = [word[i:j] for i, j in zip([0] + split_points, split_points + [None])]
+            if is_valid_split(tokens):
+                return tokens
+            # print(f"word: {word}, tokens: {tokens}")
+        print(f"Discarding word '{word}' after {max_attempts} attempts.")
+        return None
+    
 def random_split(word, language, min_word_len=MIN_WORD_LEN, min_jamo_len=MIN_JAMO_LEN):
     if language == "Korean":
         jamos = list(split_jamos(word))
@@ -142,6 +186,7 @@ def introduce_korean_syllable_typo(word, typo_type=None):
 
 # --- MAIN FUNCTIONS ---
 def sample_by_freq(df):
+    # df = df[df["splitted_tokens"].notnull()]  # Exclude rows with None in 'splitted_tokens'
     df['freq_quantile'], bins = pd.qcut(df['freq'], NUM_QUANTILES, labels=False, duplicates='drop', retbins=True)
     num_quantiles = df['freq_quantile'].nunique()
     samples_per_quantile = NUM_SAMPLES // num_quantiles
@@ -174,14 +219,17 @@ def run_simple_split(LANGUAGE, TOKENIZER, MODEL_NAME):
     
     print(f"Number of candidates words: {len(df)}")
     
-    df["splitted_tokens"] = df["word"].apply(lambda x: random_split(x, min_word_len=MIN_WORD_LEN, language=LANGUAGE))
+    # df["splitted_tokens"] = df["word"].apply(lambda x: random_split(x, min_word_len=MIN_WORD_LEN, language=LANGUAGE))
+    df["splitted_tokens"] = df["word"].apply(lambda x: random_split_valid(x, LANGUAGE, tokenizer, min_word_len=MIN_WORD_LEN)) # use tokenizer for validation
+    df.dropna(subset=["splitted_tokens"], inplace=True)  # Remove rows where 'splitted_tokens' is None
     print(f"Splitted tokens length distribution before freq-based sampling: {df["splitted_tokens"].apply(len).value_counts()}")
 
     sampled_df = sample_by_freq(df)
     print(sampled_df["splitted_tokens"].apply(len).value_counts())
     
     sampled_df = sampled_df[['word', "splitted_tokens", "same_token_num", "same_token_num2", "freq", "freq_quantile", "word_len"]]
-    sampled_df.to_csv(f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/single_token_splitted_{MODEL_NAME}_{LANGUAGE}.csv", index=False)
+    # sampled_df.to_csv(f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/single_token_splitted_{MODEL_NAME}_{LANGUAGE}.csv", index=False)
+    sampled_df.to_csv(f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/single_token_splitted_{MODEL_NAME}_{LANGUAGE}_v2.csv", index=False) # all tokens are valid, no UNK token
 
 
 def run_typo_split(LANGUAGE, TOKENIZER, MODEL_NAME):
@@ -194,16 +242,18 @@ def run_typo_split(LANGUAGE, TOKENIZER, MODEL_NAME):
 
     df[["typo_tokens", "typo_type"]] = df["word"].apply(lambda x: pd.Series(introduce_typo(x, typo_type=None, language=LANGUAGE)))
     df["typo_word_len"] = df["typo_tokens"].apply(lambda x: len(x))
-    # df = df[(df["typo_word_len"]>MIN_WORD_LEN)].reset_index(drop=True)
-    df["splitted_typo_tokens"] = df["typo_tokens"].apply(lambda x: random_split(x, min_word_len=MIN_WORD_LEN, language=LANGUAGE))
+    # df["splitted_typo_tokens"] = df["typo_tokens"].apply(lambda x: random_split(x, min_word_len=MIN_WORD_LEN, language=LANGUAGE))
+    df["splitted_typo_tokens"] = df["typo_tokens"].apply(lambda x: random_split_valid(x, LANGUAGE, tokenizer, min_word_len=MIN_WORD_LEN)) # use tokenizer for validation
+    df.dropna(subset=["splitted_typo_tokens"], inplace=True)
+    
     print(df["typo_type"].value_counts())
-    print(df["splitted_typo_tokens"].apply(len).value_counts())
+    print(f"Splitted tokens length distribution before freq-based sampling: {df["splitted_typo_tokens"].apply(len).value_counts()}")
     
     sampled_df = sample_by_freq(df)
     print(sampled_df["splitted_typo_tokens"].apply(len).value_counts())
 
     sampled_df = sampled_df[['word', "typo_tokens", "splitted_typo_tokens", "typo_type", "same_token_num", "same_token_num2", "freq", "freq_quantile", "word_len", "typo_word_len"]]
-    sampled_df.to_csv(f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/single_token_typos_{MODEL_NAME}_{LANGUAGE}.csv", index=False)
+    sampled_df.to_csv(f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/single_token_typos_{MODEL_NAME}_{LANGUAGE}_v2.csv", index=False)
 
 
 def run_simple_split_korean(LANGUAGE, TOKENIZER, MODEL_NAME):
@@ -215,18 +265,29 @@ def run_simple_split_korean(LANGUAGE, TOKENIZER, MODEL_NAME):
     print(df[f"splitted_tokens_{TOKENIZER}"].apply(len).value_counts())
     # Typo processing for Korean can be added similarly if needed
     
+with open("/home/hyujang/multilingual-inner-lexicon/user_config.json", "r") as f:
+    user_config = json.load(f)
+    token_value = user_config["huggingface_token"].get("token_1", None)
+
+def setup_tokenizer(self):
+    # pass
+    if self.tokenizer_name == "Tower-Babel/Babel-9B-Chat":
+        self.tokenizer.add_special_tokens({'unk_token': 'UNK'})
+        self.tokenizer.unk_token_id = self.tokenizer.convert_tokens_to_ids('UNK')
 
 if __name__ == "__main__":
-    LANGUAGE = "English"  # Options: "English", "German", "Korean"
-    TOKENIZER = "llama_2_7b"  # Options: "babel_9b", "gemma_12b", "llama_2_7b"
-    MODEL_NAME = model_name_map[TOKENIZER]
-
-    run_simple_split(LANGUAGE, TOKENIZER, MODEL_NAME)
-    run_typo_split(LANGUAGE, TOKENIZER, MODEL_NAME)
-
     LANGUAGE = "German"  # Options: "English", "German", "Korean"
-    TOKENIZER = "llama_2_7b"  # Options: "babel_9b", "gemma_12b", "llama_2_7b"
+    TOKENIZER = "babel_9b"  # Options: "babel_9b", "gemma_12b", "llama_2_7b"
     MODEL_NAME = model_name_map[TOKENIZER]
+    MODEL_FULL_NAME = model_full_name_map[MODEL_NAME]
 
+    from transformers import AutoTokenizer
+
+    # tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, use_fast=True, token=token_value)
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_FULL_NAME, use_fast=True)
+    if MODEL_FULL_NAME == "Tower-Babel/Babel-9B-Chat":
+        tokenizer.add_special_tokens({'unk_token': '<unk>'})
+        tokenizer.unk_token_id = tokenizer.convert_tokens_to_ids('<unk>')
+    
     run_simple_split(LANGUAGE, TOKENIZER, MODEL_NAME)
-    run_typo_split(LANGUAGE, TOKENIZER, MODEL_NAME)
+    # run_typo_split(LANGUAGE, TOKENIZER, MODEL_NAME)

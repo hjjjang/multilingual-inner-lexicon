@@ -23,10 +23,10 @@ class LogitLens(WordNonwordClassifier):
         self.output_type = output_type
         
     def setup_tokenizer(self):
-        pass
-        # if self.tokenizer_name == "Tower-Babel/Babel-9B-Chat":
-        #     self.tokenizer.add_special_tokens({'unk_token': 'UNK'})
-        #     self.tokenizer.unk_token_id = self.tokenizer.convert_tokens_to_ids('UNK')
+        # pass
+        if self.tokenizer_name == "Tower-Babel/Babel-9B-Chat":
+            self.tokenizer.add_special_tokens({'unk_token': 'UNK'})
+            self.tokenizer.unk_token_id = self.tokenizer.convert_tokens_to_ids('UNK')
 
     def batched_cosine_similarity(self, matrix, vector, chunk_size=10240):
         """
@@ -238,8 +238,8 @@ if __name__ == "__main__":
     # logit_lens = LogitLens(LANGUAGE, MODEL_NAME, output_type="ffn_hidden_states")
     MODEL_NAME = MODEL_NAME.split("/")[-1]
     results_df_original, results_df_typo = logit_lens.run(
-        path1 = f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/single_token_splitted_{MODEL_NAME}_{LANGUAGE}.csv",
-        path2 = f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/single_token_typos_{MODEL_NAME}_{LANGUAGE}.csv",
+        path1 = f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/single_token_splitted_{MODEL_NAME}_{LANGUAGE}_v2.csv",
+        path2 = f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/single_token_typos_{MODEL_NAME}_{LANGUAGE}_v2.csv",
         vis = False,
         save = True
     )
