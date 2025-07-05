@@ -17,3 +17,4 @@ RQ1/opensubtitles_cistem_freq.csv
 RQ1/test_load_model.py
 RQ1/WordIdentity/opensubtitles_cistem_freq.csv
 model/vis_model_archi.ipynb
+.vscode/launch.json

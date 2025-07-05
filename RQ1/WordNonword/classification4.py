@@ -174,4 +174,3 @@ if __name__ == "__main__":
     # results = word_nonword_cls.run()
     # word_nonword_cls = WordNonwordClassifier("German", "meta-llama/Llama-2-7b-chat-hf")
     # results = word_nonword_cls.run()
-

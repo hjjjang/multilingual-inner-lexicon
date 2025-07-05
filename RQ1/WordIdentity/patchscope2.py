@@ -10,6 +10,9 @@ import pandas as pd
 import os
 os.environ["TORCHDYNAMO_DISABLE"] = "1"
 
+from transformers.utils import logging
+logging.set_verbosity_error()
+
 class PatchScope(WordNonwordClassifier):
     def __init__(self, 
                  language, 
@@ -28,10 +31,22 @@ class PatchScope(WordNonwordClassifier):
         self.embedding_matrix = self.model.get_input_embeddings().weight
         self.model_name = tokenizer_name.split("/")[-1]
         
+        if self.language=="English":
+            patchscopes_prompt = "Next is the same word twice: 1) {word} 2)"
+        elif self.language=="Korean":
+            # patchscopes_prompt = "같은 단어가 두 번 나옵니다: 1) {word} 2)" # v2
+            patchscopes_prompt = "다음 단어를 반복하세요: 1) {word} 2)" # v3   
+        elif self.language=="German":
+            # patchscopes_prompt = "Dasselbe Wort erscheint zweimal: 1) {word} 2)"
+            patchscopes_prompt = "Wiederholen Sie dasselbe Wort: 1) {word} 2)" # v3
+        
         self.prompt_input_ids, self.prompt_target_idx = self._build_prompt_input_ids_template(patchscopes_prompt, prompt_target_placeholder)
         self._prepare_representation_prompt = self._build_representation_prompt_func(representation_prompt, prompt_target_placeholder)
         self.representation_token_idx = representation_token_idx_to_extract
         self.num_tokens_to_generate = num_tokens_to_generate
+        
+        
+            
         
     def setup_tokenizer(self):
         if self.tokenizer_name == "Tower-Babel/Babel-9B-Chat":
@@ -65,8 +80,6 @@ class PatchScope(WordNonwordClassifier):
 
 
     def extract_token_i_hidden_states_original(self,
-            model,
-            tokenizer,
             inputs,
             token_idx_to_extract: int = -1,
             batch_size: int = 1,
@@ -74,25 +87,26 @@ class PatchScope(WordNonwordClassifier):
             return_dict: bool = True,
             verbose: bool = True,
     ) -> torch.Tensor:
-        device = model.device
-        model.eval()
+        device = self.model.device
+        self.model.eval()
 
         if isinstance(inputs, str):
             inputs = [inputs]
 
         if layers_to_extract is None:
-            if self.tokenizer_name == "google/gemma-3-12b-it" or self.tokenizer_name == "google/gemma-3-12b-pt":
+            if "gemma-3" in self.tokenizer_name:
                 layers_to_extract = list(range(1, self.model.config.text_config.num_hidden_layers + 1))  # Exclude embedding layer
             else:
-                layers_to_extract = list(range(1, model.config.num_hidden_layers + 1))  # extract all but initial embeddings
-            if return_dict:
-                layers_to_extract = [0] + layers_to_extract
+                layers_to_extract = list(range(1, self.model.config.num_hidden_layers + 1))  # extract all but initial embeddings
+        if return_dict:
+            layers_to_extract = [0] + layers_to_extract
+            
         all_hidden_states = {layer: [] for layer in layers_to_extract}
 
         with torch.no_grad():
             for i in tqdm(range(0, len(inputs), batch_size), desc="Extracting hidden states", unit="batch", disable=not verbose):
-                input_ids = tokenizer(inputs[i:i+batch_size], return_tensors="pt", return_attention_mask=False)['input_ids']
-                outputs = model(input_ids.to(device), output_hidden_states=True)
+                input_ids = self.tokenizer(inputs[i:i+batch_size], return_tensors="pt", return_attention_mask=False, add_special_tokens=True)['input_ids']
+                outputs = self.model(input_ids.to(device), output_hidden_states=True)
                 for input_i in range(len(input_ids)):
                     for layer in layers_to_extract:
                         hidden_states = outputs.hidden_states[layer]
@@ -107,9 +121,11 @@ class PatchScope(WordNonwordClassifier):
 
     def extract_hidden_states(self, word):
         representation_input = self._prepare_representation_prompt(word)
-
         last_token_hidden_states = self.extract_token_i_hidden_states_original(
-            self.model, self.tokenizer, representation_input, token_idx_to_extract=self.representation_token_idx, return_dict=False, verbose=False)
+            inputs=representation_input, 
+            token_idx_to_extract=self.representation_token_idx, 
+            return_dict=False, 
+            verbose=False)
         return last_token_hidden_states
 
     def retrieve_word(self, hidden_states, layer_idx=None, num_tokens_to_generate=None):
@@ -166,14 +182,14 @@ class PatchScope(WordNonwordClassifier):
 
 
 if __name__ == "__main__":
-    # MODEL_NAME = "meta-llama/Llama-2-7b-chat-hf"
-    # LANGUAGE = "German"
-    # patchscope = PatchScope(LANGUAGE, MODEL_NAME)
-    # MODEL_NAME = MODEL_NAME.split("/")[-1]  # Extract model name from the full path
-    # words_list = pd.read_csv(f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}.csv")['word'].tolist()
-    # # words_list = words_list[:20]
-    # patchscope.run_patchscopes_on_list(words_list=words_list,
-    #                                    output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}.csv")
+    MODEL_NAME = "google/gemma-3-12b-it"
+    LANGUAGE = "German"
+    patchscope = PatchScope(LANGUAGE, MODEL_NAME)
+    MODEL_NAME = MODEL_NAME.split("/")[-1]  # Extract model name from the full path
+    words_list = pd.read_csv(f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}.csv")['word'].tolist()
+    # words_list = words_list[:20]
+    patchscope.run_patchscopes_on_list(words_list=words_list,
+                                       output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}_v3.csv")
 
     # MODEL_NAME = "google/gemma-3-12b-it"
     # LANGUAGE = "Korean"
@@ -184,11 +200,11 @@ if __name__ == "__main__":
     # patchscope.run_patchscopes_on_list(words_list=words_list,
     #                                    output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}.csv")
 
-    MODEL_NAME = "google/gemma-3-12b-it"
-    LANGUAGE = "German"
-    patchscope = PatchScope(LANGUAGE, MODEL_NAME)
-    MODEL_NAME = MODEL_NAME.split("/")[-1]  # Extract model name from the full path
-    words_list = pd.read_csv(f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}.csv")['word'].tolist()
-    # words_list = words_list[:20]
-    patchscope.run_patchscopes_on_list(words_list=words_list,
-                                       output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}.csv")
+    # MODEL_NAME = "google/gemma-3-12b-it"
+    # LANGUAGE = "German"
+    # patchscope = PatchScope(LANGUAGE, MODEL_NAME)
+    # MODEL_NAME = MODEL_NAME.split("/")[-1]  # Extract model name from the full path
+    # words_list = pd.read_csv(f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}.csv")['word'].tolist()
+    # # words_list = words_list[:20]
+    # patchscope.run_patchscopes_on_list(words_list=words_list,
+    #                                    output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}.csv")

@@ -42,16 +42,16 @@ class WordNonwordClassifier(WordNonwordData):
         print("Using device:", self.device)
         self.tokenizer = AutoTokenizer.from_pretrained(tokenizer_name, use_fast=True, token=self.token_value)
         if self.tokenizer_name == "google/gemma-3-12b-it":
-            self.model = Gemma3ForConditionalGeneration.from_pretrained(tokenizer_name, token=self.token_value)
+            self.model = Gemma3ForConditionalGeneration.from_pretrained(tokenizer_name, token=self.token_value, torch_dtype=torch.bfloat16)
             self.model.to(self.device)
         elif self.tokenizer_name == "meta-llama/Llama-2-7b-chat-hf":
-            self.model = AutoModelForCausalLM.from_pretrained(tokenizer_name, token=self.token_value)
+            self.model = AutoModelForCausalLM.from_pretrained(tokenizer_name, token=self.token_value, torch_dtype=torch.float16)
             self.model.to(self.device)
         elif self.tokenizer_name == "Qwen/Qwen2.5-VL-7B-Instruct":
-            self.model = Qwen2ForCausalLM.from_pretrained(tokenizer_name, token=self.token_value)
+            self.model = Qwen2ForCausalLM.from_pretrained(tokenizer_name, token=self.token_value, torch_dtype=torch.bfloat16)
             self.model.to(self.device)
         else:
-            self.model = AutoModelForCausalLM.from_pretrained(tokenizer_name, device_map="auto", token=self.token_value)
+            self.model = AutoModelForCausalLM.from_pretrained(tokenizer_name, device_map="auto", token=self.token_value, torch_dtype=torch.bfloat16)
         
         print(f"Model {self.tokenizer_name} for {self.language} loaded successfully.")
     def extract_token_i_hidden_states(self, inputs, token_idx_to_extract=-1, layers_to_extract=None):
