@@ -275,8 +275,31 @@ class FFNProbeGemma3:
         return self.model(*args, **kwargs)
 
 
+
 if __name__ == "__main__":
-    # MODEL_NAME = "google/gemma-3-12b-it"
+    MODEL_NAME = "google/gemma-3-12b-it"
+    LANGUAGE = "German"
+    # patchscope = PatchScope(LANGUAGE, MODEL_NAME)
+    patchscope = PatchScope(LANGUAGE, MODEL_NAME, output_type="ffn_hidden_states")
+    MODEL_NAME = MODEL_NAME.split("/")[-1]  # Extract model name from the full path
+    words_list = pd.read_csv(f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}.csv")['word'].tolist()
+    patchscope.run_patchscopes_on_list(words_list=words_list,
+                                    #    output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}_v3.csv"
+                                    output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/ComponentAnalysis/ffn_hidden_states/multi_token_{MODEL_NAME}_{LANGUAGE}.csv"
+                                       )
+
+    # MODEL_NAME = "meta-llama/Llama-2-7b-chat-hf"
+    # LANGUAGE = "Korean"
+    # # patchscope = PatchScope(LANGUAGE, MODEL_NAME)
+    # patchscope = PatchScope(LANGUAGE, MODEL_NAME, output_type="ffn_hidden_states")
+    # MODEL_NAME = MODEL_NAME.split("/")[-1]  # Extract model name from the full path
+    # words_list = pd.read_csv(f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}.csv")['word'].tolist()
+    # patchscope.run_patchscopes_on_list(words_list=words_list,
+    #                                 #    output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}_v3.csv"
+    #                                 output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/ComponentAnalysis/ffn_hidden_states/multi_token_{MODEL_NAME}_{LANGUAGE}.csv"
+    #                                    )
+    
+    # MODEL_NAME = "meta-llama/Llama-2-7b-chat-hf"
     # LANGUAGE = "English"
     # # patchscope = PatchScope(LANGUAGE, MODEL_NAME)
     # patchscope = PatchScope(LANGUAGE, MODEL_NAME, output_type="ffn_hidden_states")
@@ -287,44 +310,13 @@ if __name__ == "__main__":
     #                                 output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/ComponentAnalysis/ffn_hidden_states/multi_token_{MODEL_NAME}_{LANGUAGE}.csv"
     #                                    )
 
-    MODEL_NAME = "google/gemma-3-12b-it"
-    LANGUAGE = "Korean"
-    patchscope = PatchScope(LANGUAGE, MODEL_NAME, output_type="ffn_hidden_states")
-    MODEL_NAME = MODEL_NAME.split("/")[-1]  # Extract model name from the full path
-    words_list = pd.read_csv(f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}.csv")['word'].tolist()
-    patchscope.run_patchscopes_on_list(words_list=words_list,
-                                    output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/ComponentAnalysis/ffn_hidden_states/multi_token_{MODEL_NAME}_{LANGUAGE}.csv"
-    )
-
-    MODEL_NAME = "meta-llama/Llama-2-7b-chat-hf"
-    LANGUAGE = "Korean"
-    # patchscope = PatchScope(LANGUAGE, MODEL_NAME)
-    patchscope = PatchScope(LANGUAGE, MODEL_NAME, output_type="ffn_hidden_states")
-    MODEL_NAME = MODEL_NAME.split("/")[-1]  # Extract model name from the full path
-    words_list = pd.read_csv(f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}.csv")['word'].tolist()
-    patchscope.run_patchscopes_on_list(words_list=words_list,
-                                    #    output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}_v3.csv"
-                                    output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/ComponentAnalysis/ffn_hidden_states/multi_token_{MODEL_NAME}_{LANGUAGE}.csv"
-                                       )
-    
-    MODEL_NAME = "meta-llama/Llama-2-7b-chat-hf"
-    LANGUAGE = "English"
-    # patchscope = PatchScope(LANGUAGE, MODEL_NAME)
-    patchscope = PatchScope(LANGUAGE, MODEL_NAME, output_type="ffn_hidden_states")
-    MODEL_NAME = MODEL_NAME.split("/")[-1]  # Extract model name from the full path
-    words_list = pd.read_csv(f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}.csv")['word'].tolist()
-    patchscope.run_patchscopes_on_list(words_list=words_list,
-                                    #    output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}_v3.csv"
-                                    output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/ComponentAnalysis/ffn_hidden_states/multi_token_{MODEL_NAME}_{LANGUAGE}.csv"
-                                       )
-
-    MODEL_NAME = "meta-llama/Llama-2-7b-chat-hf"
-    LANGUAGE = "German"
-    # patchscope = PatchScope(LANGUAGE, MODEL_NAME)
-    patchscope = PatchScope(LANGUAGE, MODEL_NAME, output_type="ffn_hidden_states")
-    MODEL_NAME = MODEL_NAME.split("/")[-1]  # Extract model name from the full path
-    words_list = pd.read_csv(f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}.csv")['word'].tolist()
-    patchscope.run_patchscopes_on_list(words_list=words_list,
-                                    #    output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}_v3.csv"
-                                    output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/ComponentAnalysis/ffn_hidden_states/multi_token_{MODEL_NAME}_{LANGUAGE}.csv"
-                                       )
+    # MODEL_NAME = "meta-llama/Llama-2-7b-chat-hf"
+    # LANGUAGE = "German"
+    # # patchscope = PatchScope(LANGUAGE, MODEL_NAME)
+    # patchscope = PatchScope(LANGUAGE, MODEL_NAME, output_type="ffn_hidden_states")
+    # MODEL_NAME = MODEL_NAME.split("/")[-1]  # Extract model name from the full path
+    # words_list = pd.read_csv(f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}.csv")['word'].tolist()
+    # patchscope.run_patchscopes_on_list(words_list=words_list,
+    #                                 #    output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}_v3.csv"
+    #                                 output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/ComponentAnalysis/ffn_hidden_states/multi_token_{MODEL_NAME}_{LANGUAGE}.csv"
+    #                                    )
