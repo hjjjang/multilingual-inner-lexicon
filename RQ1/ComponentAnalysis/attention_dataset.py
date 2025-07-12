@@ -101,56 +101,63 @@ def extract_nouns_with_sentences_and_frequency(text, lang, lemmatizer=None, nlp=
 
 
 def process_wikipedia_nouns(lang, save_path=None):
-    df = load_wikipedia_data(lang)
     
+    cache_path = f"cache/{lang}_wiki_noun_frequencies_context.csv"
+    if os.path.exists(cache_path):
+        print(f"Output file '{cache_path}' already exists. Skipping processing.")
+        noun_frequencies_df = pd.read_csv(cache_path)    
+    
+    else:
+        df = load_wikipedia_data(lang)
+        
+        if lang == "en":
+            print("Extracting nouns using nltk for English...")
+            lemmatizer = WordNetLemmatizer()
+            tqdm.pandas(desc="Processing text")
+            df["noun_frequencies"] = df["text"].progress_apply(lambda text: extract_nouns_with_sentences_and_frequency(text, lang, lemmatizer=lemmatizer))
+
+        elif lang == "de":
+            print(f"Extracting nouns using Stanza model for {lang}...")
+            nlp = stanza.Pipeline(lang="de", processors="tokenize,pos,lemma", use_gpu=True)  # Initialize Stanza pipeline
+            tqdm.pandas(desc="Processing text")
+            df["noun_frequencies"] = df["text"].progress_apply(lambda text: extract_nouns_with_sentences_and_frequency(text, lang, nlp=nlp))
+
+        elif lang == "ko":
+            print(f"Extracting nouns using Kiwi tokenizer for {lang}...")
+            kiwi = Kiwi()
+            tqdm.pandas(desc="Processing text")
+            df["noun_frequencies"] = df["text"].progress_apply(lambda text: extract_nouns_with_sentences_and_frequency(text, lang, kiwi=kiwi))
+
+        final_data = defaultdict(lambda: {"frequency": 0, "sentences": []})
+
+        # Iterate over the rows of df["noun_frequencies"]
+        for noun_data in df["noun_frequencies"]:
+            for noun, data in noun_data.items():
+                # Add the frequency of the noun
+                final_data[noun]["frequency"] += data["frequency"]
+                # Extend the list of sentences containing the noun
+                final_data[noun]["sentences"].extend(data["sentences"])
+
+        # Convert the defaultdict to a regular dictionary
+        final_data = {noun: {"frequency": data["frequency"], "sentences": list(set(data["sentences"]))} 
+                    for noun, data in final_data.items()}
+
+        # Convert the final data into a DataFrame (optional)
+        noun_frequencies_df = pd.DataFrame([
+            {"noun": noun, "frequency": data["frequency"], "sentences": data["sentences"]}
+            for noun, data in final_data.items()
+        ])
+
+        # Display the DataFrame
+        noun_frequencies_df.sort_values(by="frequency", ascending=False, inplace=True)
+        noun_frequencies_df.to_csv(cache_path, index=False)
+        
     if lang == "en":
-        print("Extracting nouns using nltk for English...")
-        lemmatizer = WordNetLemmatizer()
-        tqdm.pandas(desc="Processing text")
-        df["noun_frequencies"] = df["text"].progress_apply(lambda text: extract_nouns_with_sentences_and_frequency(text, lang, lemmatizer=lemmatizer))
-
-    elif lang == "de":
-        print(f"Extracting nouns using Stanza model for {lang}...")
-        nlp = stanza.Pipeline(lang="de", processors="tokenize,pos,lemma", use_gpu=True)  # Initialize Stanza pipeline
-        tqdm.pandas(desc="Processing text")
-        df["noun_frequencies"] = df["text"].progress_apply(lambda text: extract_nouns_with_sentences_and_frequency(text, lang, nlp=nlp))
-
-    elif lang == "ko":
-        print(f"Extracting nouns using Kiwi tokenizer for {lang}...")
-        kiwi = Kiwi()
-        tqdm.pandas(desc="Processing text")
-        df["noun_frequencies"] = df["text"].progress_apply(lambda text: extract_nouns_with_sentences_and_frequency(text, lang, kiwi=kiwi))
-
-    final_data = defaultdict(lambda: {"frequency": 0, "sentences": []})
-
-    # Iterate over the rows of df["noun_frequencies"]
-    for noun_data in df["noun_frequencies"]:
-        for noun, data in noun_data.items():
-            # Add the frequency of the noun
-            final_data[noun]["frequency"] += data["frequency"]
-            # Extend the list of sentences containing the noun
-            final_data[noun]["sentences"].extend(data["sentences"])
-
-    # Convert the defaultdict to a regular dictionary
-    final_data = {noun: {"frequency": data["frequency"], "sentences": list(set(data["sentences"]))} 
-                for noun, data in final_data.items()}
-
-    # Convert the final data into a DataFrame (optional)
-    noun_frequencies_df = pd.DataFrame([
-        {"noun": noun, "frequency": data["frequency"], "sentences": data["sentences"]}
-        for noun, data in final_data.items()
-    ])
-
-    # Display the DataFrame
-    noun_frequencies_df.sort_values(by="frequency", ascending=False, inplace=True)
-
-
-    if lang == "en":
-        noun_frequencies_df = noun_frequencies_df[~noun_frequencies_df['word'].str.contains(r'[^a-zA-Z]', na=False)]
+        noun_frequencies_df = noun_frequencies_df[~noun_frequencies_df['noun'].str.contains(r'[^a-zA-Z]', na=False)]
     if lang == "de":
-        noun_frequencies_df = noun_frequencies_df[~noun_frequencies_df['word'].str.contains(r'[^a-zA-ZäöüÄÖÜß]', na=False)]
+        noun_frequencies_df = noun_frequencies_df[~noun_frequencies_df['noun'].str.contains(r'[^a-zA-ZäöüÄÖÜß]', na=False)]
     if lang == "ko":
-        noun_frequencies_df = noun_frequencies_df[~noun_frequencies_df['word'].str.contains(r'[^\uac00-\ud7a3]', na=False)]
+        noun_frequencies_df = noun_frequencies_df[~noun_frequencies_df['noun'].str.contains(r'[^\uac00-\ud7a3]', na=False)]
 
     noun_frequencies_df = noun_frequencies_df[noun_frequencies_df["frequency"] >= 4]
     noun_frequencies_df = noun_frequencies_df.drop_duplicates(subset="noun").reset_index(drop=True)
@@ -193,9 +200,93 @@ def process_wikipedia_nouns(lang, save_path=None):
     return selected_sentences_df
 
 
+from transformers import AutoTokenizer
+import json
+
+def tokenize_text(path, tokenizer_name, language, save_path):
+    with open("/home/hyujang/multilingual-inner-lexicon/RQ1/config.json", "r") as f:
+            config = json.load(f)
+    token_key = config["tokenizers"][tokenizer_name]
+    if token_key:
+        with open("/home/hyujang/multilingual-inner-lexicon/user_config.json", "r") as f:
+            user_config = json.load(f)
+            token_value = user_config["huggingface_token"].get(token_key)
+    else:
+        token_value = None
+
+    tokenizer = AutoTokenizer.from_pretrained(tokenizer_name, use_fast=True, tokens=token_value)
+    
+    df = pd.read_csv(path)
+    df.dropna(subset=["word"], inplace=True)
+    tokens_list = []
+    for index, row in df.iterrows():
+        word = row["word"]
+        try:
+            tokens_list.append(tokenizer.tokenize(word))
+        except Exception as e:
+            print(f"Error tokenizing word '{word}': {e}")
+            tokens_list.append([])
+    df["tokens"] = tokens_list
+    df["token_num"] = df["tokens"].apply(len)
+    print(f"Number of 2-token words ({tokenizer_name} - {language}):", len(df[df["token_num"] == 2]))
+    if save_path:
+        df.to_csv(save_path, index=False)
+    return df
+
+def sample_real_words(tokens_df, token_num, num_samples, num_quantiles=5, seed=2025):
+    """
+    Samples real words based on token number and frequency quantiles, ensuring no duplicates.
+
+    Args:
+    - tokens_df (pd.DataFrame): DataFrame containing tokenized words.
+    - token_num (int): Number of tokens per word.
+    - num_samples (int): Number of samples to generate.
+
+    Returns:
+    - pd.DataFrame: Sampled real words.
+    """
+    tokens_df['freq_quantile'], bins = pd.qcut(tokens_df['original_frequency'], num_quantiles, labels=False,  duplicates='drop', retbins=True)
+    sampled = []
+    for quantile in range(num_quantiles):
+        quantile_df = tokens_df[(tokens_df['token_num'] == token_num) & (tokens_df['freq_quantile'] == quantile)]
+        if len(quantile_df) > 0:
+            sampled.append(quantile_df.sample(min(len(quantile_df), num_samples // num_quantiles), 
+                                            replace=False, random_state=seed))
+    
+    sampled_df = pd.concat(sampled, ignore_index=False).drop_duplicates(subset=['word'])
+    sampled_indices = sampled_df.index.to_list()
+
+    # Handle cases where the sampled DataFrame has fewer rows than required
+    if len(sampled_df) < num_samples:
+        print(f"remaining before additional sampling for {token_num}-token words:", num_samples - len(sampled_df))
+        remaining = num_samples - len(sampled_df)
+        other_df = tokens_df[tokens_df['token_num'] == token_num].drop(sampled_df.index, errors='ignore')
+        additional_samples = other_df.sample(min(len(other_df), remaining), replace=False, random_state=seed)
+        sampled_indices += additional_samples.index.to_list()
+        sampled_df = pd.concat([sampled_df, additional_samples]).drop_duplicates(subset=['word']).reset_index(drop=True)
+    
+    remaining = num_samples - len(sampled_df)
+    print(f"{remaining} remaining after sampling {len(sampled_df)} {token_num}-token words.")
+    return sampled_df, remaining, sampled_indices
+
 if __name__ == "__main__":
-    LANGUAGE = "English"  # Change to "German" or "Korean
-    language_code = LANGUAGE_MAP.get(LANGUAGE)  
-    # MODEL_NAME = "Babel-9B-Chat"  # Example model name, change as needed
-    selected_sentences_df = process_wikipedia_nouns(language_code,
-                                                    save_path=f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/ComponentAnalysis/{LANGUAGE}_wiki_noun_frequencies_context.csv")
+    # LANGUAGE = "English"
+    # LANGUAGE = "Korean"
+    LANGUAGE = "German"
+    # language_code = LANGUAGE_MAP.get(LANGUAGE)  
+    # selected_sentences_df = process_wikipedia_nouns(language_code,
+    #                                                 save_path=f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/ComponentAnalysis/{LANGUAGE}_wiki_noun_frequencies_context.csv")
+    
+    # MODEL_NAME = "Tower-Babel/Babel-9B-Chat"
+    MODEL_NAME = "google/gemma-3-12b-it"
+    # MODEL_NAME = "meta-llama/Llama-2-7b-chat-hf"
+    df = tokenize_text(f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/ComponentAnalysis/{LANGUAGE}_wiki_noun_frequencies_context.csv",
+                  tokenizer_name=MODEL_NAME,
+                  language=LANGUAGE,
+                  save_path=f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/ComponentAnalysis/{MODEL_NAME.split("/")[-1]}_{LANGUAGE}_wiki_noun_frequencies_context.csv",
+                #   save_path=None
+                  )
+    
+    sampled_df, remaining, sampled_indices = sample_real_words(df, token_num=2, num_samples=2440, num_quantiles=5, seed=2025)
+    sampled_df.to_csv(f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/ComponentAnalysis/{MODEL_NAME.split('/')[-1]}_{LANGUAGE}_wiki_noun_frequencies_context_2token.csv", index=False)
+    
