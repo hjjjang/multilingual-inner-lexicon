@@ -54,6 +54,7 @@ class WordNonwordClassifier(WordNonwordData):
             self.model = AutoModelForCausalLM.from_pretrained(tokenizer_name, device_map="auto", token=self.token_value, torch_dtype=torch.bfloat16)
         
         print(f"Model {self.tokenizer_name} for {self.language} loaded successfully.")
+        
     def extract_token_i_hidden_states(self, inputs, token_idx_to_extract=-1, layers_to_extract=None):
         """Extract hidden states for tokenized words"""
         self.model.eval()

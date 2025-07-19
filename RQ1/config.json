@@ -5,7 +5,8 @@
         "mistralai/Ministral-8B-Instruct-2410": "token_1",
         "meta-llama/Llama-2-7b-chat-hf": "token_1",
         "Qwen/Qwen2.5-VL-7B-Instruct": null,
-        "google/gemma-3-12b-pt": "token_1"
+        "google/gemma-3-12b-pt": "token_1",
+        "google/gemma-3-27b-it": "token_1"
     },
     "datasets": {
         "English-wiki": "data/en_wiki_noun_frequencies_lemmatized.csv",

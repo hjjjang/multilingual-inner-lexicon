@@ -191,21 +191,3 @@ if __name__ == "__main__":
     patchscope.run_patchscopes_on_list(words_list=words_list,
                                     #    output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}_v3.csv"
                                     )
-
-    # MODEL_NAME = "google/gemma-3-12b-it"
-    # LANGUAGE = "Korean"
-    # patchscope = PatchScope(LANGUAGE, MODEL_NAME)
-    # MODEL_NAME = MODEL_NAME.split("/")[-1]  # Extract model name from the full path
-    # words_list = pd.read_csv(f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}.csv")['word'].tolist()
-    # # words_list = words_list[:20]
-    # patchscope.run_patchscopes_on_list(words_list=words_list,
-    #                                    output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}.csv")
-
-    # MODEL_NAME = "google/gemma-3-12b-it"
-    # LANGUAGE = "German"
-    # patchscope = PatchScope(LANGUAGE, MODEL_NAME)
-    # MODEL_NAME = MODEL_NAME.split("/")[-1]  # Extract model name from the full path
-    # words_list = pd.read_csv(f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}.csv")['word'].tolist()
-    # # words_list = words_list[:20]
-    # patchscope.run_patchscopes_on_list(words_list=words_list,
-    #                                    output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}.csv")
