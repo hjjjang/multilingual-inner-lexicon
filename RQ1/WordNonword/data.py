@@ -128,16 +128,23 @@ class WordNonwordData:
         for tokens in df_tokens['tokens']:
             for i in range(token_num):
                 token_bags[i].append(tokens[i])
+                
         original_words_set = set(tokens_df['word'])
-        generated_words = set() 
+        generated_words = []
+        generated_word_strings = set()
+        
         while len(generated_words) < num_generated_words:
             new_word_tokens = [random.choice(token_bags[i]) for i in range(token_num)]
             new_word = "".join(new_word_tokens)
-            if new_word not in original_words_set and new_word not in generated_words:
-                generated_words.add((new_word, tuple(new_word_tokens), token_num))
-        generated_df = pd.DataFrame(list(generated_words), columns=["word", "tokens", "token_num"])
+            
+            if new_word not in original_words_set and new_word not in generated_word_strings:
+                generated_words.append((new_word, tuple(new_word_tokens), token_num))
+                generated_word_strings.add(new_word)
+        
+        generated_df = pd.DataFrame(generated_words, columns=["word", "tokens", "token_num"])
         generated_df = generated_df.sample(frac=1, random_state=self.seed).drop_duplicates(subset=['word']).reset_index(drop=True)
         return generated_df
+
 
     def generate_real_and_non_words(self, tokens_df):
         """Generate balanced dataset of real and non-words."""
@@ -199,10 +206,14 @@ class WordNonwordData:
         non_words_3_tokens = int(self.num_non_words * 0.373)
         non_words_4_tokens = self.num_non_words - non_words_2_tokens - non_words_3_tokens
 
+        non_words_2_df = self.sample_non_words(tokens_df, 2, non_words_2_tokens)
+        non_words_3_df = self.sample_non_words(tokens_df, 3, non_words_3_tokens)
+        non_words_4_df = self.sample_non_words(tokens_df, 4, non_words_4_tokens)
+
         non_words_df = pd.concat([
-            self.sample_non_words(tokens_df, 2, non_words_2_tokens), 
-            self.sample_non_words(tokens_df, 3, non_words_3_tokens), 
-            self.sample_non_words(tokens_df, 4, non_words_4_tokens)
+            non_words_2_df,
+            non_words_3_df,
+            non_words_4_df
         ]).reset_index(drop=True)
         
         # Add labels and combine
@@ -218,20 +229,20 @@ class WordNonwordData:
         input_data = self.load_dataset()
         tokens_df = self.tokenize_and_analyze(input_data)
         final_df = self.generate_real_and_non_words(tokens_df)
-        final_df.to_csv(os.path.join(self.base_dir, f"data/RQ1/WordNonword/r1_dataset_{self.tokenizer_name.split('/')[1]}_{self.language}-wiki-2.csv"), index=False)        
+        final_df.to_csv(os.path.join(self.base_dir, f"data/RQ1/WordNonword/wordnonword_{self.tokenizer_name.split('/')[1]}_{self.language}.csv"), index=False)        
         return final_df
 
     def main2(self):
         """Alternative main method using existing tokenized data."""
         tokens_df = self.load_dataset()
         final_df = self.generate_real_and_non_words(tokens_df)
-        final_df.to_csv(os.path.join(self.base_dir, f"data/r1_dataset_{self.tokenizer_name.split('/')[1]}_{self.language}-wiki-2.csv"), index=False)
+        final_df.to_csv(os.path.join(self.base_dir, f"data/r1_dataset_{self.tokenizer_name.split('/')[1]}_{self.language}-wiki.csv"), index=False)
         return final_df
             
     def tokenize_and_save(self):
         input_data = self.load_dataset()
         tokens_df = self.tokenize_and_analyze(input_data)
-        output_path = os.path.join(self.base_dir, f"data/ko_wiki_nooun_frequencies_kiwi_{self.tokenizer_name.split('/')[1]}_{self.language}-tokenized.csv")
+        output_path = os.path.join(self.base_dir, f"data/{self.tokenizer_name.split('/')[1]}_{self.language}-tokenized.csv")
         tokens_df.to_csv(output_path, index=False)
         return tokens_df
 

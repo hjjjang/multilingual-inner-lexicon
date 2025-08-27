@@ -3,7 +3,7 @@ from collections import defaultdict
 from tqdm import tqdm
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from RQ1.WordNonword.classification import WordNonwordClassifier
 import torch
 import pandas as pd
@@ -17,11 +17,12 @@ class PatchScope(WordNonwordClassifier):
     def __init__(self, 
                  language, 
                  tokenizer_name,
+                 source_language=None,
+                 target_language=None,
                 representation_prompt: str = "{word}",
                 patchscopes_prompt: str = "Next is the same word twice: 1) {word} 2)",
                 prompt_target_placeholder: str = "{word}",
-                num_tokens_to_generate: int = 10,
-                # batch_size: int = 8,
+                num_tokens_to_generate: int = 20,
                 output_type="layer_hidden_states"
                  ):
         super().__init__(language, tokenizer_name)  # Inherit token config
@@ -30,16 +31,46 @@ class PatchScope(WordNonwordClassifier):
         self.embedding_matrix = self.model.get_input_embeddings().weight
         self.model_name = tokenizer_name.split("/")[-1]
         
-        if self.language=="English":
-            patchscopes_prompt = "Next is the same word twice: 1) {word} 2)"
-        elif self.language=="Korean":
-            # patchscopes_prompt = "같은 단어가 두 번 나옵니다: 1) {word} 2)" # v2
-            patchscopes_prompt = "다음 단어를 반복하세요: 1) {word} 2)" # v3   
-            # patchscopes_prompt = "동일한 단어를 이어서 작성하세요: 1) {word} 2)" # v4         
-        elif self.language=="German":
-            # patchscopes_prompt = "Dasselbe Wort erscheint zweimal: 1) {word} 2)" # v2
-            patchscopes_prompt = "Wiederholen Sie dasselbe Wort: 1) {word} 2)" # v3
+        print(f"Setting up PatchScope for {source_language} to {target_language} translation for {self.model_name}.")
         
+        if self.language=="English":
+            if source_language == "English":
+                patchscopes_prompt = f"This English word '{{word}}' in {target_language} is:"
+            elif target_language == "English":
+                patchscopes_prompt = f"This {source_language} word '{{word}}' in English is:" 
+            else:
+                print("Warning: wrong language configuration for PatchScope. ")
+        
+        elif self.language=="Korean":
+            korean_map = {
+                "English": "영어",
+                "German": "독일어",
+                "Korean": "한국어"
+            }
+            if source_language == "Korean":
+                patchscopes_prompt = f"이 한국어 단어 '{{word}}'는 {korean_map[target_language]}로:"
+            elif target_language == "Korean":
+                patchscopes_prompt = f"이 {korean_map[source_language]} 단어 '{{word}}'는 한국어로:"
+                
+        elif self.language=="German":
+            german_map = {
+                "English": "Englisch",
+                "Korean": "Koreanisch",
+                "German": "Deutsch"
+            }
+
+            german_adj_map = {
+                "English": "englische",
+                "Korean": "koreanische",
+                "German": "deutsche"
+            }
+
+            if source_language == "German":
+                patchscopes_prompt = f"Dieses deutsche Wort '{{word}}' auf {german_map[target_language]} ist:"
+            elif target_language == "German":
+                patchscopes_prompt = f"Dieses {german_adj_map[source_language]} Wort '{{word}}' auf Deutsch ist:"
+        
+        print(f"Patchscopes prompt: {patchscopes_prompt}")
         self.prompt_input_ids, self.prompt_target_idx = self._build_prompt_input_ids_template(patchscopes_prompt, prompt_target_placeholder)
         self._prepare_representation_prompt = self._build_representation_prompt_func(representation_prompt, prompt_target_placeholder)
         self.num_tokens_to_generate = num_tokens_to_generate
@@ -161,7 +192,7 @@ class PatchScope(WordNonwordClassifier):
         return last_token_hidden_states
             
     
-    def retrieve_word(self, hidden_states, layer_idx=None, num_tokens_to_generate=None):
+    def retrieve_word(self, hidden_states):
         self.model.eval()
 
         # insert hidden states into patchscopes prompt
@@ -175,8 +206,6 @@ class PatchScope(WordNonwordClassifier):
         attention_mask = (self.prompt_input_ids != self.tokenizer.eos_token_id).long().unsqueeze(0).repeat(
             len(hidden_states), 1).to(self.model.device)
 
-        num_tokens_to_generate = num_tokens_to_generate if num_tokens_to_generate else self.num_tokens_to_generate
-
         with torch.no_grad():
             patchscope_outputs = self.model.generate(
                 do_sample=False, # greedy, deterministic decoding
@@ -185,29 +214,29 @@ class PatchScope(WordNonwordClassifier):
                 temperature=None, # None -> default 1.0 (ignored when do_sample=False) 
                 inputs_embeds=batched_patchscope_inputs, # Instead of using token IDs as input, this provides pre-computed token embeddings. Required when manipulating internal representations (e.g., inserting hidden states into prompts). 
                 attention_mask=attention_mask,
-                max_new_tokens=num_tokens_to_generate, 
+                max_new_tokens=self.num_tokens_to_generate, 
                 pad_token_id=self.tokenizer.eos_token_id,
+                eos_token_id=None,
                 )
 
         decoded_patchscope_outputs = self.tokenizer.batch_decode(patchscope_outputs)
         return decoded_patchscope_outputs
     
-    def get_hidden_states_and_retrieve_word(self, word, num_tokens_to_generate=None):
+    def get_hidden_states_and_retrieve_word(self, word):
         last_token_hidden_states = self.extract_hidden_states(word)
         patchscopes_description_by_layers = self.retrieve_word(
-            last_token_hidden_states, num_tokens_to_generate=num_tokens_to_generate)
+            last_token_hidden_states)
 
         return patchscopes_description_by_layers, last_token_hidden_states
     
     def run_patchscopes_on_list(self,
             words_list,
-            patchscopes_n_new_tokens=5,
             output_csv_path=None,
     ):
         outputs = defaultdict(dict)
         rows = []
         for word in tqdm(words_list, total=len(words_list), desc="Running patchscopes..."):
-            patchscopes_description_by_layers, _ = self.get_hidden_states_and_retrieve_word(word, num_tokens_to_generate=patchscopes_n_new_tokens)
+            patchscopes_description_by_layers, _ = self.get_hidden_states_and_retrieve_word(word)
             for layer_i, patchscopes_result in enumerate(patchscopes_description_by_layers):
                 outputs[word][layer_i] = patchscopes_result
                 rows.append({"word": word, "layer": layer_i, "patchscope_result": patchscopes_result})
@@ -275,56 +304,34 @@ class FFNProbeGemma3:
         return self.model(*args, **kwargs)
 
 
-if __name__ == "__main__":
-    # MODEL_NAME = "google/gemma-3-12b-it"
-    # LANGUAGE = "English"
-    # # patchscope = PatchScope(LANGUAGE, MODEL_NAME)
-    # patchscope = PatchScope(LANGUAGE, MODEL_NAME, output_type="ffn_hidden_states")
-    # MODEL_NAME = MODEL_NAME.split("/")[-1]  # Extract model name from the full path
-    # words_list = pd.read_csv(f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}.csv")['word'].tolist()
-    # patchscope.run_patchscopes_on_list(words_list=words_list,
-    #                                 #    output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}_v3.csv"
-    #                                 output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/ComponentAnalysis/ffn_hidden_states/multi_token_{MODEL_NAME}_{LANGUAGE}.csv"
-    #                                    )
-
-    MODEL_NAME = "google/gemma-3-12b-it"
-    LANGUAGE = "Korean"
-    patchscope = PatchScope(LANGUAGE, MODEL_NAME, output_type="ffn_hidden_states")
-    MODEL_NAME = MODEL_NAME.split("/")[-1]  # Extract model name from the full path
-    words_list = pd.read_csv(f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}.csv")['word'].tolist()
-    patchscope.run_patchscopes_on_list(words_list=words_list,
-                                    output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/ComponentAnalysis/ffn_hidden_states/multi_token_{MODEL_NAME}_{LANGUAGE}.csv"
-    )
-
-    MODEL_NAME = "meta-llama/Llama-2-7b-chat-hf"
-    LANGUAGE = "Korean"
-    # patchscope = PatchScope(LANGUAGE, MODEL_NAME)
-    patchscope = PatchScope(LANGUAGE, MODEL_NAME, output_type="ffn_hidden_states")
-    MODEL_NAME = MODEL_NAME.split("/")[-1]  # Extract model name from the full path
-    words_list = pd.read_csv(f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}.csv")['word'].tolist()
-    patchscope.run_patchscopes_on_list(words_list=words_list,
-                                    #    output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}_v3.csv"
-                                    output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/ComponentAnalysis/ffn_hidden_states/multi_token_{MODEL_NAME}_{LANGUAGE}.csv"
-                                       )
+def run_patchscope_job(model_name, source_lang, target_lang, prompt_lang):
+    model_basename = model_name.split("/")[-1]
     
-    MODEL_NAME = "meta-llama/Llama-2-7b-chat-hf"
-    LANGUAGE = "English"
-    # patchscope = PatchScope(LANGUAGE, MODEL_NAME)
-    patchscope = PatchScope(LANGUAGE, MODEL_NAME, output_type="ffn_hidden_states")
-    MODEL_NAME = MODEL_NAME.split("/")[-1]  # Extract model name from the full path
-    words_list = pd.read_csv(f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}.csv")['word'].tolist()
-    patchscope.run_patchscopes_on_list(words_list=words_list,
-                                    #    output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}_v3.csv"
-                                    output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/ComponentAnalysis/ffn_hidden_states/multi_token_{MODEL_NAME}_{LANGUAGE}.csv"
-                                       )
+    csv_path = f"/home/hyujang/multilingual-inner-lexicon/data/RQ2/MUSE/{source_lang}_{target_lang}_1000.csv"
+    words_list = pd.read_csv(csv_path)[source_lang].tolist()
+    
+    patchscope = PatchScope(prompt_lang, model_name, source_lang, target_lang)
+    
+    output_path = f"/home/hyujang/multilingual-inner-lexicon/output/RQ2/PatchScope/num_token_20/{model_basename}_{source_lang}_to_{target_lang}_{prompt_lang}Prompt_withOriginalCode.csv"
+    patchscope.run_patchscopes_on_list(words_list=words_list, output_csv_path=output_path)
 
-    MODEL_NAME = "meta-llama/Llama-2-7b-chat-hf"
-    LANGUAGE = "German"
-    # patchscope = PatchScope(LANGUAGE, MODEL_NAME)
-    patchscope = PatchScope(LANGUAGE, MODEL_NAME, output_type="ffn_hidden_states")
-    MODEL_NAME = MODEL_NAME.split("/")[-1]  # Extract model name from the full path
-    words_list = pd.read_csv(f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}.csv")['word'].tolist()
-    patchscope.run_patchscopes_on_list(words_list=words_list,
-                                    #    output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/WordIdentity/multi_token_{MODEL_NAME}_{LANGUAGE}_v3.csv"
-                                    output_csv_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/ComponentAnalysis/ffn_hidden_states/multi_token_{MODEL_NAME}_{LANGUAGE}.csv"
-                                       )
+
+if __name__ == "__main__":
+    configs = [
+        # Format: (MODEL_NAME, SOURCE_LANGUAGE, TARGET_LANGUAGE, PROMPT_LANGUAGE)
+        ("Tower-Babel/Babel-9B-Chat", "English", "German", "German"),
+        ("google/gemma-3-12b-it", "English", "German", "German"),
+        ("meta-llama/Llama-2-7b-chat-hf", "English", "German", "German"),
+
+        ("Tower-Babel/Babel-9B-Chat", "German", "English", "German"),
+        ("google/gemma-3-12b-it", "German", "English", "German"),
+        ("meta-llama/Llama-2-7b-chat-hf", "German", "English", "German"),
+
+        ("Tower-Babel/Babel-9B-Chat", "German", "English", "English"),
+        ("google/gemma-3-12b-it", "German", "English", "English"),
+        ("meta-llama/Llama-2-7b-chat-hf", "German", "English", "English"),
+    ]
+
+    for model_name, src, tgt, prompt in configs:
+        print(f"\n▶ Running: {model_name} | {src} → {tgt} | Prompt: {prompt}")
+        run_patchscope_job(model_name, src, tgt, prompt)

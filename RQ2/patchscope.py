@@ -5,7 +5,7 @@ from tqdm import tqdm
 import os
 import gc
 from transformers.utils import logging
-from transformers import AutoTokenizer, AutoModelForCausalLM, Gemma3ForConditionalGeneration
+from transformers import AutoTokenizer, AutoModelForCausalLM, Gemma3ForConditionalGeneration, Gemma2ForCausalLM
 import json
 
 logging.set_verbosity_error()
@@ -55,6 +55,9 @@ class PatchScope:
             self.model.to(self.device)
         elif self.tokenizer_name == "meta-llama/Llama-2-7b-chat-hf":
             self.model = AutoModelForCausalLM.from_pretrained(tokenizer_name, token=token_value, torch_dtype=torch.float16)
+            self.model.to(self.device)
+        elif self.tokenizer_name == "google/gemma-2-9b-it":
+            self.model = Gemma2ForCausalLM.from_pretrained(tokenizer_name, token=token_value, torch_dtype=torch.bfloat16)
             self.model.to(self.device)
         else:
             self.model = AutoModelForCausalLM.from_pretrained(tokenizer_name, token=token_value, torch_dtype=torch.bfloat16)
@@ -215,8 +218,8 @@ if __name__ == "__main__":
     TARGET_LANGUAGE = "Korean"
     # MODEL_NAME = "Tower-Babel/Babel-9B-Chat"
     # MODEL_NAME = "google/gemma-3-12b-it"
-    MODEL_NAME = "meta-llama/Llama-2-7b-chat-hf"  
-
+    # MODEL_NAME = "meta-llama/Llama-2-7b-chat-hf"  
+    MODEL_NAME = "google/gemma-2-9b-it"  # Use Gemma 2 for the experiment
 
     # Initialize PatchScope
     patchscope = PatchScope(
@@ -238,5 +241,6 @@ if __name__ == "__main__":
     words_list = df[f"{SOURCE_LANGUAGE}"].tolist()
     
     # Run translation experiment
-    output_path = f"/home/hyujang/multilingual-inner-lexicon/output/RQ2/PatchScope/{MODEL_NAME.split("/")[-1]}_{SOURCE_LANGUAGE}_to_{TARGET_LANGUAGE}_GermanPrompt.csv"
+    # output_path = f"/home/hyujang/multilingual-inner-lexicon/output/RQ2/PatchScope/{MODEL_NAME.split("/")[-1]}_{SOURCE_LANGUAGE}_to_{TARGET_LANGUAGE}_GermanPrompt.csv"
+    output_path = "dummy.csv"
     patchscope.run_translation(words_list, output_csv_path=output_path)

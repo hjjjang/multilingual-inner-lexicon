@@ -69,21 +69,18 @@ def setup_model(tokenizer_name: str, device: Optional[torch.device] = None):
             token=token_value, 
             torch_dtype=dtype
         )
-        model.to(device)
     elif tokenizer_name == "meta-llama/Llama-2-7b-chat-hf":
         model = AutoModelForCausalLM.from_pretrained(
             tokenizer_name, 
             token=token_value, 
             torch_dtype=dtype
         )
-        model.to(device)
     elif tokenizer_name == "Qwen/Qwen2.5-VL-7B-Instruct":
         model = Qwen2ForCausalLM.from_pretrained(
             tokenizer_name, 
             token=token_value, 
             torch_dtype=dtype
         )
-        model.to(device)
     else:
         model = AutoModelForCausalLM.from_pretrained(
             tokenizer_name, 
@@ -91,10 +88,12 @@ def setup_model(tokenizer_name: str, device: Optional[torch.device] = None):
             torch_dtype=dtype
         )
     
+    model.to(device)
+
     print(f"Model {tokenizer_name} with dtype {dtype} loaded successfully on {device}")
     return model
 
-def extract_token_i_hidden_states(
+def extract_token_hidden_states(
     model, 
     tokenizer, 
     inputs: Union[str, List[str]], 
@@ -120,9 +119,6 @@ def extract_token_i_hidden_states(
     """
     model.eval()
 
-    if isinstance(inputs, str):
-        inputs = [inputs]
-
     if layers_to_extract is None:
         if tokenizer_name == "google/gemma-3-12b-it":
             layers_to_extract = list(range(1, model.config.text_config.num_hidden_layers + 1))
@@ -134,16 +130,20 @@ def extract_token_i_hidden_states(
     with torch.no_grad():
         for tokens in tqdm(inputs, desc="Extracting hidden states"):
             if isinstance(tokens, str):
-                # Handle encoding errors by converting tokens back to string
                 tokens = tokenizer.convert_tokens_to_string([tokens])
-                input_ids = tokenizer(tokens, return_tensors="pt", return_attention_mask=False)['input_ids'].to(device)
+                input_ids = tokenizer(tokens, return_tensors="pt", return_attention_mask=False, add_special_tokens=True)['input_ids'].to(device)
             else:
-                raise ValueError("Input should be a word not a list of tokenized tokens.")
+                input_ids = tokenizer.convert_tokens_to_ids(tokens)
+                if tokenizer.bos_token_id:
+                    input_ids = [tokenizer.bos_token_id] + input_ids
+                input_ids = torch.tensor(input_ids, device=device).unsqueeze(0)  # Add batch dimension
 
             outputs = model(input_ids, output_hidden_states=True)
+            hidden_states_seq = outputs.hidden_states
+            
             for layer in layers_to_extract:
-                hidden_states = outputs.hidden_states[layer]  # Shape: (1, seq_len, hidden_dim)
-                all_hidden_states[layer].append(hidden_states[:, token_idx_to_extract, :].detach().cpu())
+                token_hidden = hidden_states_seq[layer][:, token_idx_to_extract, :].detach().cpu()  # Extract token hidden state
+                all_hidden_states[layer].append(token_hidden)
 
     for layer in all_hidden_states:
         all_hidden_states[layer] = torch.cat(all_hidden_states[layer], dim=0)
@@ -249,4 +249,200 @@ def clean_memory():
 def get_device():
     """Get appropriate device (CUDA or CPU)."""
     import torch
-    return torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print(f"Using device: {device}")
+    return device
+
+def extract_token_hidden_states_2(
+    model, 
+    tokenizer, 
+    inputs: List[str], 
+    tokenizer_name: str,
+    device: torch.device,
+    token_idx_to_extract: int = -1, 
+    layers_to_extract: Optional[List[int]] = None,
+    output_type: str = "layer_hidden_states",
+    return_dict: bool = False,
+    verbose: bool = True
+) -> Union[torch.Tensor, Dict[int, torch.Tensor]]:
+    """
+    Extract hidden states for tokenized words.
+
+    Args:
+        model: The loaded model
+        tokenizer: The tokenizer
+        inputs: String or list of strings to extract hidden states from
+        tokenizer_name: Name of the tokenizer (for model-specific config)
+        device: Device to run inference on
+        token_idx_to_extract: Token position to extract (-1 for last token)
+        layers_to_extract: List of layer indices to extract from
+        output_type: Type of output to extract (e.g., "layer_hidden_states" or "ffn_hidden_states")
+        return_dict: Whether to return a dictionary of hidden states
+        verbose: Whether to display progress
+
+    Returns:
+        Hidden states as a tensor or dictionary mapping layer indices to tensors
+    """
+    model.eval()
+
+    if layers_to_extract is None:
+        if tokenizer_name == "google/gemma-3-12b-it":
+            layers_to_extract = list(range(1, model.config.text_config.num_hidden_layers + 1))
+        else:
+            layers_to_extract = list(range(1, model.config.num_hidden_layers + 1))
+
+    if return_dict:
+        layers_to_extract = [0] + layers_to_extract
+
+    all_hidden_states = {layer: [] for layer in layers_to_extract}
+
+    with torch.no_grad():
+        for input_text in tqdm(inputs, desc="Extracting hidden states", disable=not verbose):
+            # Clear cache between iterations
+            clean_memory()
+
+            input_ids = tokenizer(
+                input_text,
+                return_tensors="pt",
+                return_attention_mask=False,
+                add_special_tokens=True
+            )["input_ids"].to(device)
+
+            if output_type == "layer_hidden_states":
+                outputs = model(input_ids, output_hidden_states=True)
+                hidden_states_seq = outputs.hidden_states  # Tuple of [1, seq_len, hidden_dim]
+
+                for layer in layers_to_extract:
+                    # token_hidden = hidden_states_seq[layer][0, token_idx_to_extract, :].detach().cpu()
+                    token_hidden = hidden_states_seq[layer][:, token_idx_to_extract, :].detach().cpu()
+                    all_hidden_states[layer].append(token_hidden)  # Remove input_len dimension
+
+            elif output_type == "ffn_hidden_states":
+                if tokenizer_name == "google/gemma-3-12b-it":
+                    ffn_probe = FFNProbeGemma3(model)
+                else:
+                    ffn_probe = FFNProbe(model)
+
+                _ = ffn_probe(input_ids, output_hidden_states=False)
+                ffn_outputs = ffn_probe.ffn_outputs  # List of [1, seq_len, hidden_dim]
+                ffn_probe.remove_hooks()
+
+                for layer in layers_to_extract:
+                    # ffn_hidden = ffn_outputs[layer-1][0, token_idx_to_extract, :].detach().cpu()
+                    ffn_hidden = ffn_outputs[layer-1][:, token_idx_to_extract, :].detach().cpu()
+                    all_hidden_states[layer].append(ffn_hidden)
+
+    for layer in all_hidden_states:            
+        all_hidden_states[layer] = torch.concat(all_hidden_states[layer], dim=0)
+
+    if not return_dict:
+        all_hidden_states = torch.stack(list(all_hidden_states.values()), dim=0)
+
+    return all_hidden_states
+
+def extract_ffn_hidden_states(model, input_ids, tokenizer_name):
+    """
+    Extract FFN hidden states for a given input.
+    """
+    if "gemma-3" in tokenizer_name.lower():
+        ffn_probe = FFNProbeGemma3(model)
+    else:
+        ffn_probe = FFNProbe(model)
+
+    _ = ffn_probe(input_ids, output_hidden_states=False)
+    ffn_outputs = ffn_probe.ffn_outputs
+    ffn_probe.remove_hooks()
+
+    return ffn_outputs
+
+class FFNProbe:
+    def __init__(self, model):
+        self.model = model
+        self.ffn_outputs = []
+        self.hook_handles = []
+
+        def hook_fn(module, input, output):
+            self.ffn_outputs.append(output)
+
+        # Register hooks to the FFN layers of each transformer block
+        for block in self.model.model.layers:  # adjust depending on model architecture
+            handle = block.mlp.register_forward_hook(hook_fn)
+            self.hook_handles.append(handle)
+            # block.mlp.register_forward_hook(hook_fn)  # For LLaMA, GPT-J, Falcon, etc.
+            
+    def remove_hooks(self):
+        for handle in self.hook_handles:
+            handle.remove()
+        self.hook_handles = []
+
+
+    def clear(self):
+        self.ffn_outputs = []
+
+    def __call__(self, *args, **kwargs):
+        self.clear()
+        return self.model(*args, **kwargs)
+
+# class FFNProbe:
+#     def __init__(self, model):
+#         self.model = model
+#         self.ffn_outputs = []
+
+#         def hook_fn(module, input, output):
+#             self.ffn_outputs.append(output)
+
+#         # Register hooks to the FFN layers of each transformer block
+#         for block in self.model.model.layers:  # adjust depending on model architecture
+#             block.mlp.register_forward_hook(hook_fn)  # For LLaMA, GPT-J, Falcon, etc.
+
+#     def clear(self):
+#         self.ffn_outputs = []
+
+#     def __call__(self, *args, **kwargs):
+#         self.clear()
+#         return self.model(*args, **kwargs)
+
+
+class FFNProbeGemma3:
+    def __init__(self, model):
+        self.model = model
+        self.ffn_outputs = []
+        self.hook_handles = []
+
+        def hook_fn(module, input, output):
+            self.ffn_outputs.append(output)
+
+        for block in self.model.model.language_model.layers:
+            # block.mlp.register_forward_hook(hook_fn)
+            handle = block.mlp.register_forward_hook(hook_fn)
+            self.hook_handles.append(handle)
+    
+    def remove_hooks(self):
+        for handle in self.hook_handles:
+            handle.remove()
+        self.hook_handles = []
+            
+    def clear(self):
+        self.ffn_outputs = []
+
+    def __call__(self, *args, **kwargs):
+        self.clear()
+        return self.model(*args, **kwargs)
+
+# class FFNProbeGemma3:
+#     def __init__(self, model):
+#         self.model = model
+#         self.ffn_outputs = []
+
+#         def hook_fn(module, input, output):
+#             self.ffn_outputs.append(output)
+
+#         for block in self.model.model.language_model.layers:
+#             block.mlp.register_forward_hook(hook_fn)
+#     def clear(self):
+#         self.ffn_outputs = []
+
+#     def __call__(self, *args, **kwargs):
+#         self.clear()
+#         return self.model(*args, **kwargs)
+

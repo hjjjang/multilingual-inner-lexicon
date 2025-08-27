@@ -56,7 +56,7 @@ def compare_tokenizers(lang, tokenizers):
         final_df = final_df.sort_values(by="freq", ascending=False)
     
     # Save the final DataFrame to a CSV file
-    final_df.to_csv(f"data/{lang}_tokenizers_comparison.csv", index=False)
+    final_df.to_csv(f"data/_{lang}_tokenizers_comparison.csv", index=False)
     
     print(f"Processing complete for {lang}.")
     return final_df

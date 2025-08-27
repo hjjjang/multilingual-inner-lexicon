@@ -4,12 +4,6 @@ import json
 import pandas as pd
 import random
 
-# For Korean
-try:
-    from jamo import h2j, j2h, hangul_to_jamo, jamo_to_hangul
-except ImportError:
-    pass
-
 
 BASE_DIR = "/home/hyujang/multilingual-inner-lexicon"
 with open(os.path.join(BASE_DIR, "RQ1/config.json"), "r") as f:
@@ -29,7 +23,6 @@ model_full_name_map = {
 }
 
 MIN_WORD_LEN = 3
-MIN_JAMO_LEN = 2
 MIN_WORD_FREQ = CONFIG["min_freq"]
 
 NUM_SAMPLES = 700
@@ -40,63 +33,39 @@ random.seed(RANDOM_SEED)
 
 # --- ENGLISH & GERMAN FUNCTIONS ---
 
-def random_split_valid(word, language, tokenizer, min_word_len=MIN_WORD_LEN, min_jamo_len=MIN_JAMO_LEN):
+def random_split_valid(word, language, tokenizer, min_word_len=MIN_WORD_LEN):
     def is_valid_split(tokens):
         return all(tokenizer.convert_tokens_to_ids(token) != tokenizer.unk_token_id for token in tokens)
 
     max_attempts = 100
     attempts = 0
 
-    if language == "Korean":
-        jamos = list(split_jamos(word))
-        if len(jamos) <= 1:
-            return [word]
-        while attempts < max_attempts:
-            attempts += 1
-            num_splits = random.randint(1, min(4, len(jamos) - min_jamo_len))
-            split_points = sorted(random.sample(range(1, len(jamos)), num_splits))
-            jamo_tokens = [jamos[i:j] for i, j in zip([0] + split_points, split_points + [None])]
-            split_result = [''.join(token) for token in jamo_tokens]
-            if is_valid_split(split_result):
-                return split_result
-        print(f"Discarding word '{word}' after {max_attempts} attempts.")
-        return None
-    else:
-        if len(word) <= 1:
-            return [word]
-        while attempts < max_attempts:
-            attempts += 1
-            try:
-                num_splits = random.randint(1, min(4, len(word) - min_word_len - 1))
-            except:
-                num_splits = 1
-            split_points = sorted(random.sample(range(1, len(word)), num_splits))
-            tokens = [word[i:j] for i, j in zip([0] + split_points, split_points + [None])]
-            if is_valid_split(tokens):
-                return tokens
-            # print(f"word: {word}, tokens: {tokens}")
-        print(f"Discarding word '{word}' after {max_attempts} attempts.")
-        return None
-    
-def random_split(word, language, min_word_len=MIN_WORD_LEN, min_jamo_len=MIN_JAMO_LEN):
-    if language == "Korean":
-        jamos = list(split_jamos(word))
-        if len(jamos) <= 1:
-            return [word]
-        num_splits = random.randint(1, min(4, len(jamos) - min_jamo_len))
-        split_points = sorted(random.sample(range(1, len(jamos)), num_splits))
-        jamo_tokens = [jamos[i:j] for i, j in zip([0] + split_points, split_points + [None])]
-        return [''.join(token) for token in jamo_tokens]
-    else:
-        if len(word) <= 1:
-            return [word]
+    if len(word) <= 1:
+        return [word]
+    while attempts < max_attempts:
+        attempts += 1
         try:
             num_splits = random.randint(1, min(4, len(word) - min_word_len - 1))
         except:
             num_splits = 1
         split_points = sorted(random.sample(range(1, len(word)), num_splits))
         tokens = [word[i:j] for i, j in zip([0] + split_points, split_points + [None])]
-        return tokens
+        if is_valid_split(tokens):
+            return tokens
+        # print(f"word: {word}, tokens: {tokens}")
+    print(f"Discarding word '{word}' after {max_attempts} attempts.")
+    return None
+    
+def random_split(word, language, min_word_len=MIN_WORD_LEN):
+    if len(word) <= 1:
+        return [word]
+    try:
+        num_splits = random.randint(1, min(4, len(word) - min_word_len - 1))
+    except:
+        num_splits = 1
+    split_points = sorted(random.sample(range(1, len(word)), num_splits))
+    tokens = [word[i:j] for i, j in zip([0] + split_points, split_points + [None])]
+    return tokens
 
 def introduce_typo(word, language, typo_type=None):
     if language == "English":
@@ -118,71 +87,8 @@ def introduce_typo(word, language, typo_type=None):
         position = random.randint(1, len(word) - 1)
         typo_char = random.choice(letters)
         return word[:position] + typo_char + word[position:], typo_type
-    elif typo_type == "transposition":
-    # elif typo_type == "transposition" and len(word) >= 3:
-        position = random.randint(1, len(word) - 2)
-        return word[:position] + word[position + 1] + word[position] + word[position + 2:], typo_type
     else:
         return word, typo_type
-
-# --- KOREAN FUNCTIONS ---
-
-def count_jamos(word):
-    return len(h2j(word))
-
-def split_jamos(word):
-    return list(h2j(word))
-
-def join_jamos(jamos):
-    return j2h(''.join(jamos))
-
-
-CHO = ['ㄱ','ㄲ','ㄴ','ㄷ','ㄸ','ㄹ','ㅁ','ㅂ','ㅃ','ㅅ','ㅆ','ㅇ','ㅈ','ㅉ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ']
-JUN = ['ㅏ','ㅐ','ㅑ','ㅒ','ㅓ','ㅔ','ㅕ','ㅖ','ㅗ','ㅘ','ㅙ','ㅚ','ㅛ','ㅜ','ㅝ','ㅞ','ㅟ','ㅠ','ㅡ','ㅢ','ㅣ']
-JON = ['','ㄱ','ㄲ','ㄳ','ㄴ','ㄵ','ㄶ','ㄷ','ㄹ','ㄺ','ㄻ','ㄼ','ㄽ','ㄾ','ㄿ','ㅀ','ㅁ','ㅂ','ㅄ','ㅅ','ㅆ','ㅇ','ㅈ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ']
-
-def decompose_syllable(s):
-    code = ord(s) - 0xAC00
-    cho = code // (21 * 28)
-    jun = (code % (21 * 28)) // 28
-    jon = code % 28
-    return cho, jun, jon
-
-def compose_syllable(cho, jun, jon):
-    return chr(0xAC00 + cho * 21 * 28 + jun * 28 + jon)
-
-def introduce_korean_syllable_typo(word, typo_type=None):
-    if typo_type is None:
-        typo_type = random.choice(["substitution", "deletion", "insertion", "transposition"])
-    chars = list(word)
-    if not chars:
-        return word, typo_type
-    idx = random.randint(0, len(chars) - 1)
-    c = chars[idx]
-    try:
-        cho, jun, jon = decompose_syllable(c)
-    except:
-        return word, typo_type
-    if typo_type == "substitution":
-        part = random.choice(['cho', 'jun', 'jon'])
-        if part == 'cho':
-            cho = random.choice([i for i in range(len(CHO)) if i != cho])
-        elif part == 'jun':
-            jun = random.choice([i for i in range(len(JUN)) if i != jun])
-        elif part == 'jon':
-            jon = random.choice([i for i in range(len(JON)) if i != jon])
-    elif typo_type == "deletion":
-        part = random.choice(['cho', 'jun', 'jon'])
-        if part == 'jon':
-            jon = 0
-    elif typo_type == "insertion":
-        if jon == 0:
-            jon = random.randint(1, len(JON) - 1)
-    elif typo_type == "transposition":
-        if jon != 0:
-            cho, jon = jon % len(CHO), cho % len(JON)
-    chars[idx] = compose_syllable(cho, jun, jon)
-    return ''.join(chars), typo_type
 
 # --- MAIN FUNCTIONS ---
 def sample_by_freq(df):
@@ -254,16 +160,6 @@ def run_typo_split(LANGUAGE, TOKENIZER, MODEL_NAME):
 
     sampled_df = sampled_df[['word', "typo_tokens", "splitted_typo_tokens", "typo_type", "same_token_num", "same_token_num2", "freq", "freq_quantile", "word_len", "typo_word_len"]]
     sampled_df.to_csv(f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/WordIdentity/single_token_typos_{MODEL_NAME}_{LANGUAGE}_v2.csv", index=False)
-
-
-def run_simple_split_korean(LANGUAGE, TOKENIZER, MODEL_NAME):
-    df = pd.read_csv(f"/home/hyujang/multilingual-inner-lexicon/data/{LANGUAGE}_tokenizers_comparison.csv")
-    df["word_len"] = df["word"].apply(len)
-    df['jamo_len'] = df['word'].apply(count_jamos)
-    df = df[(df[f"token_num_{TOKENIZER}"]==1) & (df["jamo_len"]>MIN_JAMO_LEN)].reset_index(drop=True)
-    df[f"splitted_tokens_{TOKENIZER}"] = df["word"].apply(lambda x: random_split(x, MIN_JAMO_LEN))
-    print(df[f"splitted_tokens_{TOKENIZER}"].apply(len).value_counts())
-    # Typo processing for Korean can be added similarly if needed
     
 with open("/home/hyujang/multilingual-inner-lexicon/user_config.json", "r") as f:
     user_config = json.load(f)
@@ -276,7 +172,7 @@ def setup_tokenizer(self):
         self.tokenizer.unk_token_id = self.tokenizer.convert_tokens_to_ids('UNK')
 
 if __name__ == "__main__":
-    LANGUAGE = "German"  # Options: "English", "German", "Korean"
+    LANGUAGE = "German"  # Options: "English", "German"
     TOKENIZER = "babel_9b"  # Options: "babel_9b", "gemma_12b", "llama_2_7b"
     MODEL_NAME = model_name_map[TOKENIZER]
     MODEL_FULL_NAME = model_full_name_map[MODEL_NAME]
@@ -285,9 +181,6 @@ if __name__ == "__main__":
 
     # tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, use_fast=True, token=token_value)
     tokenizer = AutoTokenizer.from_pretrained(MODEL_FULL_NAME, use_fast=True)
-    if MODEL_FULL_NAME == "Tower-Babel/Babel-9B-Chat":
-        tokenizer.add_special_tokens({'unk_token': '<unk>'})
-        tokenizer.unk_token_id = tokenizer.convert_tokens_to_ids('<unk>')
     
     run_simple_split(LANGUAGE, TOKENIZER, MODEL_NAME)
     # run_typo_split(LANGUAGE, TOKENIZER, MODEL_NAME)
