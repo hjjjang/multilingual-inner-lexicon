@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=script1  # Job name
+#SBATCH --job-name=lm-eval-all
 #SBATCH --ntasks-per-node=1  # Number of tasks per node
 #SBATCH --cpus-per-task=10  # Number of CPU cores per task
 #SBATCH --mem=120G  # Total memory per node
@@ -11,7 +11,6 @@
 
 # Load conda environment (assuming conda is installed and available in your system)
 source /work/hyujang/miniconda3/etc/profile.d/conda.sh  # Change this path to where your conda is installed
-conda activate thesis  # Replace 'your_conda_env' with your environment name
+conda activate lm-eval  
 
-# Run your Python script
-python /home/hyujang/multilingual-inner-lexicon/RQ1/WordIdentity/patchscope_test.py
+bash run_gsm8k_en_evals.sh

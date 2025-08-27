@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=script1  # Job name
+#SBATCH --job-name=script2  # Job name
 #SBATCH --ntasks-per-node=1  # Number of tasks per node
 #SBATCH --cpus-per-task=10  # Number of CPU cores per task
 #SBATCH --mem=120G  # Total memory per node
@@ -14,4 +14,4 @@ source /work/hyujang/miniconda3/etc/profile.d/conda.sh  # Change this path to wh
 conda activate thesis  # Replace 'your_conda_env' with your environment name
 
 # Run your Python script
-python /home/hyujang/multilingual-inner-lexicon/RQ1/WordIdentity/patchscope_test.py
+python /home/hyujang/multilingual-inner-lexicon/RQ1/WordIdentity/patchscope_test2.py
