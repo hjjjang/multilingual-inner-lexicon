@@ -18,7 +18,7 @@ model = AutoModelForCausalLM.from_pretrained(
     # "meta-llama/Llama-2-7b-chat-hf",
     # quantization_config=quantization_config,
     # device_map="auto"  # Distribute model automatically across available devices
-    token = "HF_TOKEN_REMOVED"
+    token = None
 )
 
 import torch

@@ -4,7 +4,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, Gemma3ForCausalLM
 import numpy as np
 import pandas as pd
 
-token_1 = "HF_TOKEN_REMOVED"
+token_1 = None
 
 # Define a function to extract hidden states
 def get_hidden_states(model, tokenizer, text, device="cuda"):
