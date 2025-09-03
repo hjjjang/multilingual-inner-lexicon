@@ -29,10 +29,18 @@ class AttentionAnalyzer(WordNonwordClassifier):
         
         results = []
         cnt = 0
+        
+        # Shuffle the DataFrame randomly
+        df = df.sample(frac=1, random_state=2025).reset_index(drop=True)
+
         for _, row in tqdm(df.iterrows(), total=len(df)):
             word = row["word"]
             context = row["selected_sentence"]
             
+            # Skip if the word appears more than twice in the context
+            if context.count(word) > 2:
+                continue
+
             encoding = self.tokenizer(context, return_tensors="pt", return_attention_mask=True, add_special_tokens=True)
             input_ids = encoding['input_ids'].to(self.device)
             
@@ -98,6 +106,11 @@ class AttentionAnalyzer(WordNonwordClassifier):
             
             torch.cuda.empty_cache()
 
+            # Stop processing if more than 1000 words' attention scores are counted
+            if cnt >= 1000:
+                print("Reached the limit of 1000 words. Stopping further processing.")
+                break
+
         print(f"Processed {cnt} words with valid attention scores.")
         return pd.DataFrame(results)
 
@@ -111,17 +124,33 @@ class AttentionAnalyzer(WordNonwordClassifier):
     
 
 if __name__ == "__main__":
-    # MODEL_NAME = "Tower-Babel/Babel-9B-Chat"
-    # MODEL_NAME = "google/gemma-3-12b-it"
-    MODEL_NAME = "meta-llama/Llama-2-7b-chat-hf"
-    # LANGUAGE = "English"
-    LANGUAGE = "Korean"
-    # LANGUAGE = "German"
-    analyzer = AttentionAnalyzer(LANGUAGE, MODEL_NAME)
+    # List all combinations of models and languages explicitly
+    configs = [
+        {"model_name": "Tower-Babel/Babel-9B-Chat", "language": "English"},
+        {"model_name": "Tower-Babel/Babel-9B-Chat", "language": "Korean"},
+        {"model_name": "Tower-Babel/Babel-9B-Chat", "language": "German"},
+        {"model_name": "google/gemma-3-12b-it", "language": "English"},
+        {"model_name": "google/gemma-3-12b-it", "language": "Korean"},
+        {"model_name": "google/gemma-3-12b-it", "language": "German"},
+        {"model_name": "meta-llama/Llama-2-7b-chat-hf", "language": "English"},
+        {"model_name": "meta-llama/Llama-2-7b-chat-hf", "language": "Korean"},
+        {"model_name": "meta-llama/Llama-2-7b-chat-hf", "language": "German"}
+    ]
 
-    df = analyzer.run(
-        df_path=f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/ComponentAnalysis/{MODEL_NAME.split('/')[-1]}_{LANGUAGE}_wiki_noun_frequencies_context.csv",
-        target_len=2, 
-        # save_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/ComponentAnalysis/attention_weights/{MODEL_NAME.split('/')[-1]}_{LANGUAGE}_single-token.csv",
-        save_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/ComponentAnalysis/attention_weights/{MODEL_NAME.split('/')[-1]}_{LANGUAGE}_2token.csv"
-    )
+    for config in configs:
+        analyzer = AttentionAnalyzer(config["language"], config["model_name"])
+
+        df = analyzer.run(
+            df_path=f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/ComponentAnalysis/{config['model_name'].split('/')[-1]}_{config['language']}_wiki_noun_frequencies_context.csv",
+            target_len=2, 
+            save_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/ComponentAnalysis/attention_weights2/{config['model_name'].split('/')[-1]}_{config['language']}_2token.csv"
+        )
+
+    for config in configs:
+        analyzer = AttentionAnalyzer(config["language"], config["model_name"])
+
+        df = analyzer.run(
+            df_path=f"/home/hyujang/multilingual-inner-lexicon/data/RQ1/ComponentAnalysis/{config['model_name'].split('/')[-1]}_{config['language']}_wiki_noun_frequencies_context.csv",
+            target_len=1, 
+            save_path=f"/home/hyujang/multilingual-inner-lexicon/output/RQ1/ComponentAnalysis/attention_weights2/{config['model_name'].split('/')[-1]}_{config['language']}_1token.csv"
+        )

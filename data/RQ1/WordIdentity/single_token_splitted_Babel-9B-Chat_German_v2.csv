@@ -1,0 +1,701 @@
+word,splitted_tokens,same_token_num,same_token_num2,freq,freq_quantile,word_len
+Spinner,"['S', 'pin', 'n', 'er']",False,True,6,0,7
+Latin,"['La', 'tin']",True,True,4,0,5
+Checkpoint,"['C', 'heck', 'p', 'oint']",False,True,6,0,10
+Extension,"['Ext', 'en', 's', 'i', 'on']",False,True,6,0,9
+Script,"['Scr', 'ipt']",True,True,6,0,6
+Professional,"['Prof', 'ession', 'al']",True,True,4,0,12
+Destination,"['De', 'st', 'i', 'nation']",False,True,6,0,11
+name,"['na', 'me']",True,True,6,0,4
+Quad,"['Qu', 'ad']",False,True,5,0,4
+Total,"['Tot', 'al']",True,True,5,0,5
+Paper,"['Pa', 'per']",False,True,5,0,5
+Posting,"['Po', 's', 'ti', 'ng']",False,True,4,0,7
+Page,"['Pag', 'e']",True,True,6,0,4
+Visual,"['Vis', 'ual']",True,True,6,0,6
+Remote,"['R', 'em', 'ote']",False,True,6,0,6
+Switch,"['S', 'w', 'itch']",True,True,6,0,6
+Music,"['Mu', 'sic']",True,True,4,0,5
+Output,"['Out', 'put']",True,True,6,0,6
+Content,"['C', 'on', 'te', 'nt']",True,True,5,0,7
+Normal,"['N', 'ormal']",True,True,4,0,6
+Icon,"['I', 'con']",True,True,5,0,4
+Location,"['L', 'oc', 'ati', 'on']",True,True,4,0,8
+Sense,"['Sen', 'se']",False,True,6,0,5
+Packet,"['Pa', 'cket']",False,True,4,0,6
+Keeper,"['Keep', 'e', 'r']",False,True,6,0,6
+Board,"['Bo', 'ard']",True,True,6,0,5
+Lead,"['L', 'ead']",False,True,4,0,4
+Game,"['G', 'ame']",True,True,4,0,4
+Reload,"['Rel', 'oad']",False,True,5,0,6
+Namespace,"['N', 'amespace']",False,True,5,0,9
+Titan,"['T', 'itan']",False,True,4,0,5
+Slots,"['S', 'lots']",False,True,4,0,5
+gesch,"['ges', 'ch']",True,True,4,0,5
+After,"['A', 'fter']",True,True,4,0,5
+post,"['p', 'ost']",True,True,4,0,4
+Inspector,"['In', 'spect', 'o', 'r']",False,True,4,0,9
+Girl,"['G', 'irl']",True,True,4,0,4
+Altern,"['A', 'l', 'tern']",True,True,4,0,6
+Ground,"['Gro', 'un', 'd']",False,True,4,0,6
+Ratio,"['R', 'atio']",False,True,5,0,5
+Interrupt,"['I', 'nt', 'er', 'rupt']",False,True,5,0,9
+Chapter,"['Cha', 'pter']",True,True,4,0,7
+Convention,"['Co', 'n', 'v', 'ention']",True,True,4,0,10
+inner,"['in', 'ner']",True,True,6,0,5
+Dock,"['Do', 'ck']",False,True,6,0,4
+Reset,"['Re', 'set']",False,True,4,0,5
+Chart,"['C', 'hart']",True,True,5,0,5
+Nickname,"['Ni', 'ck', 'n', 'ame']",False,True,4,0,8
+Pull,"['Pu', 'll']",False,True,4,0,4
+Point,"['Po', 'int']",True,True,4,0,5
+international,"['int', 'ernational']",True,True,4,0,13
+Quarter,"['Qu', 'arte', 'r']",False,True,4,0,7
+Death,"['De', 'ath']",True,True,5,0,5
+para,"['par', 'a']",True,True,6,0,4
+Transition,"['T', 'rans', 'i', 't', 'ion']",False,True,4,0,10
+Copyright,"['Copy', 'r', 'ight']",False,True,5,0,9
+Pack,"['Pa', 'ck']",True,True,4,0,4
+Cast,"['Cas', 't']",True,True,6,0,4
+Setup,"['Set', 'up']",False,True,6,0,5
+Horizontal,"['Hor', 'izontal']",False,True,6,0,10
+Ultra,"['Ult', 'ra']",False,True,6,0,5
+Spider,"['S', 'pid', 'er']",True,True,4,0,6
+Workflow,"['Wo', 'rk', 'fl', 'ow']",False,True,4,0,8
+Warn,"['W', 'arn']",False,True,4,0,4
+National,"['Na', 't', 'ion', 'a', 'l']",True,True,6,0,8
+Tester,"['T', 'este', 'r']",False,True,5,0,6
+Feed,"['Fee', 'd']",False,True,6,0,4
+positions,"['posit', 'i', 'on', 's']",True,True,4,0,9
+Half,"['H', 'alf']",True,True,6,0,4
+Abstract,"['A', 'bst', 'r', 'ac', 't']",True,True,4,0,8
+motor,"['m', 'otor']",True,True,4,0,5
+Time,"['T', 'ime']",True,True,6,0,4
+Login,"['Lo', 'gin']",True,True,4,0,5
+Side,"['Si', 'de']",True,True,4,0,4
+frei,"['f', 'rei']",False,True,4,0,4
+Matt,"['Mat', 't']",True,True,5,0,4
+Effect,"['Ef', 'f', 'ect']",True,True,5,0,6
+anti,"['ant', 'i']",True,True,4,0,4
+Span,"['S', 'pan']",True,True,6,0,4
+osten,"['ost', 'en']",False,True,5,0,5
+dorf,"['d', 'orf']",False,True,4,0,4
+techn,"['tec', 'hn']",True,True,5,0,5
+Solar,"['So', 'lar']",False,True,5,0,5
+City,"['Cit', 'y']",True,True,5,0,4
+Trust,"['T', 'rust']",True,True,4,0,5
+Make,"['Ma', 'ke']",True,True,6,0,4
+Coming,"['C', 'omi', 'ng']",False,True,4,0,6
+Provider,"['P', 'r', 'o', 'vid', 'er']",False,True,5,0,8
+queen,"['qu', 'een']",True,True,4,0,5
+voor,"['v', 'oor']",True,True,4,0,4
+Logger,"['Log', 'ger']",True,True,4,0,6
+Subsystem,"['S', 'ubs', 'y', 'ste', 'm']",False,False,4,0,9
+Motion,"['Mot', 'ion']",False,True,5,0,6
+Combo,"['C', 'ombo']",False,True,6,0,5
+Slot,"['S', 'lot']",False,True,5,0,4
+Wire,"['Wir', 'e']",False,True,6,0,4
+down,"['d', 'own']",True,True,4,0,4
+Jesus,"['J', 'esus']",True,True,5,0,5
+Down,"['Do', 'wn']",True,True,4,0,4
+Collect,"['C', 'ollect']",True,True,5,0,7
+meer,"['m', 'eer']",True,True,4,0,4
+Offline,"['Off', 'lin', 'e']",False,True,6,0,7
+Commerce,"['Comm', 'erce']",False,True,4,0,8
+Binder,"['Bi', 'nder']",False,True,5,0,6
+Race,"['Ra', 'ce']",True,True,4,0,4
+Commission,"['Comm', 'iss', 'i', 'on']",True,True,6,0,10
+Debugger,"['De', 'bu', 'g', 'ger']",False,True,4,0,8
+Quiz,"['Qu', 'iz']",False,True,4,0,4
+YouTube,"['You', 'T', 'u', 'be']",True,True,6,0,7
+Patterns,"['P', 'attern', 's']",False,True,6,0,8
+Kenn,"['Ken', 'n']",True,True,6,0,4
+Este,"['Est', 'e']",True,True,5,0,4
+District,"['D', 'i', 'strict']",True,True,6,0,8
+Push,"['P', 'ush']",False,True,4,0,4
+Magnitude,"['Mag', 'n', 'itude']",False,True,6,0,9
+Moder,"['Mode', 'r']",False,True,6,0,5
+acht,"['a', 'cht']",True,True,5,0,4
+Opening,"['O', 'p', 'e', 'ning']",False,True,5,0,7
+Bridge,"['B', 'ri', 'dge']",True,True,4,0,6
+Replacement,"['Rep', 'lace', 'me', 'n', 't']",False,True,6,0,11
+essen,"['esse', 'n']",False,True,6,0,5
+national,"['nat', 'i', 'on', 'a', 'l']",True,True,4,0,8
+Metro,"['Me', 'tro']",True,True,4,0,5
+Adult,"['Ad', 'ult']",False,True,5,0,5
+Timing,"['Ti', 'm', 'ing']",False,True,5,0,6
+else,"['e', 'lse']",True,True,4,0,4
+Hell,"['Hel', 'l']",True,True,4,0,4
+Still,"['St', 'ill']",True,True,4,0,5
+Polit,"['Pol', 'it']",True,True,5,0,5
+Memory,"['M', 'emory']",True,True,4,0,6
+Scanner,"['Sc', 'an', 'ne', 'r']",True,True,4,0,7
+Department,"['Dep', 'ar', 't', 'ment']",True,True,5,0,10
+Joint,"['J', 'oint']",False,True,5,0,5
+Starting,"['S', 't', 'artin', 'g']",True,True,4,0,8
+Blockchain,"['Block', 'chai', 'n']",False,True,4,0,10
+Storyboard,"['S', 'tor', 'yb', 'oa', 'rd']",False,True,5,0,10
+Sure,"['Sur', 'e']",True,True,4,0,4
+ocker,"['o', 'cker']",False,True,4,0,5
+color,"['colo', 'r']",True,True,4,0,5
+Dealer,"['De', 'a', 'ler']",False,True,5,0,6
+Captain,"['Capt', 'ain']",True,True,10,1,7
+Equipment,"['E', 'quip', 'ment']",False,True,11,1,9
+Statement,"['St', 'at', 'e', 'me', 'nt']",False,True,9,1,9
+Background,"['B', 'ack', 'gr', 'oun', 'd']",True,True,10,1,10
+Facebook,"['F', 'a', 'ce', 'boo', 'k']",True,True,9,1,8
+Premium,"['Pr', 'em', 'iu', 'm']",False,True,11,1,7
+Line,"['Lin', 'e']",True,True,7,1,4
+Sold,"['So', 'ld']",True,True,11,1,4
+Fake,"['F', 'ake']",False,True,8,1,4
+sein,"['s', 'ein']",True,True,12,1,4
+Meteor,"['Me', 'te', 'or']",True,True,11,1,6
+Call,"['Ca', 'll']",True,True,10,1,4
+JavaScript,"['Java', 'S', 'cr', 'i', 'pt']",True,True,9,1,10
+Muslim,"['M', 'uslim']",True,True,11,1,6
+Implementation,"['Implement', 'ation']",False,True,7,1,14
+Hack,"['H', 'ack']",False,True,12,1,4
+Button,"['B', 'utton']",True,True,11,1,6
+statt,"['stat', 't']",True,True,8,1,5
+Interpreter,"['Inter', 'pre', 'te', 'r']",False,True,9,1,11
+HTML,"['HT', 'ML']",True,True,10,1,4
+First,"['F', 'irst']",True,True,9,1,5
+Prime,"['Pri', 'me']",True,True,12,1,5
+Gender,"['Gen', 'de', 'r']",False,True,12,1,6
+Kernel,"['K', 'ernel']",False,True,9,1,6
+stop,"['sto', 'p']",True,True,10,1,4
+Spot,"['S', 'pot']",False,True,8,1,4
+Real,"['Re', 'al']",True,True,12,1,4
+Dual,"['D', 'ual']",False,True,9,1,4
+über,"['ü', 'ber']",True,True,8,1,4
+Award,"['A', 'ward']",True,True,7,1,5
+Private,"['Pr', 'i', 'va', 'te']",True,True,8,1,7
+trans,"['tran', 's']",True,True,10,1,5
+Future,"['F', 'ut', 'ure']",True,True,12,1,6
+Cloud,"['Clo', 'ud']",True,True,7,1,5
+Plane,"['Pl', 'ane']",False,True,7,1,5
+Massage,"['Mass', 'a', 'g', 'e']",False,True,8,1,7
+Patch,"['Pat', 'ch']",False,True,9,1,5
+Speaker,"['S', 'p', 'e', 'aker']",False,True,12,1,7
+Ether,"['E', 'ther']",False,True,7,1,5
+Wiki,"['Wi', 'ki']",False,True,7,1,4
+Reality,"['Real', 'i', 'ty']",False,True,10,1,7
+Safe,"['S', 'afe']",False,True,7,1,4
+chef,"['che', 'f']",True,True,7,1,4
+Broker,"['Br', 'o', 'ker']",False,True,9,1,6
+Science,"['Sci', 'e', 'nce']",True,True,12,1,7
+Array,"['A', 'rray']",True,True,8,1,5
+Digital,"['Dig', 'it', 'al']",True,True,9,1,7
+Movie,"['M', 'ovie']",True,True,11,1,5
+Panel,"['Pan', 'el']",False,True,8,1,5
+Strip,"['Str', 'ip']",False,True,12,1,5
+plus,"['p', 'lus']",True,True,10,1,4
+Handling,"['H', 'and', 'l', 'in', 'g']",False,True,7,1,8
+Navigator,"['Navig', 'ator']",False,True,8,1,9
+Mess,"['Mes', 's']",True,True,11,1,4
+Delta,"['D', 'elta']",False,True,12,1,5
+Leader,"['Le', 'ader']",False,True,9,1,6
+Benchmark,"['B', 'en', 'ch', 'm', 'ark']",False,True,7,1,9
+Ethernet,"['Eth', 'ernet']",False,False,7,1,8
+Food,"['Fo', 'od']",True,True,10,1,4
+Soft,"['S', 'oft']",False,True,7,1,4
+Score,"['S', 'core']",False,True,11,1,5
+Startup,"['St', 'ar', 'tu', 'p']",False,True,9,1,7
+Realm,"['Re', 'alm']",False,True,9,1,5
+west,"['we', 'st']",True,True,8,1,4
+Town,"['T', 'own']",True,True,9,1,4
+Kate,"['Ka', 'te']",True,True,7,1,4
+Mini,"['Mi', 'ni']",False,True,12,1,4
+system,"['s', 'ystem']",True,True,11,1,6
+Setting,"['S', 'et', 'ting']",True,True,9,1,7
+Split,"['S', 'plit']",True,True,11,1,5
+kind,"['ki', 'nd']",True,True,8,1,4
+Audit,"['A', 'udit']",False,True,12,1,5
+Operand,"['Op', 'e', 'r', 'and']",False,True,10,1,7
+Pick,"['Pic', 'k']",True,True,11,1,4
+Lemma,"['L', 'emma']",True,True,8,1,5
+Lang,"['L', 'ang']",True,True,7,1,4
+Median,"['Me', 'd', 'ian']",False,True,9,1,6
+Email,"['Em', 'ail']",True,True,9,1,5
+Israeli,"['Israel', 'i']",False,True,7,1,7
+engineering,"['en', 'g', 'in', 'e', 'ering']",True,True,7,1,11
+Screenshot,"['S', 'cre', 'en', 'shot']",False,True,9,1,10
+Tutorial,"['T', 'utorial']",False,True,8,1,8
+Eigen,"['E', 'igen']",False,True,8,1,5
+Hall,"['Hal', 'l']",True,True,9,1,4
+Persona,"['P', 'e', 'rs', 'ona']",False,True,8,1,7
+Sphere,"['S', 'phere']",False,True,9,1,6
+Expression,"['Ex', 'pres', 'si', 'o', 'n']",True,True,11,1,10
+Cursor,"['Curso', 'r']",False,True,8,1,6
+Slave,"['Sl', 'ave']",False,True,9,1,5
+arten,"['ar', 'ten']",False,True,9,1,5
+Site,"['S', 'ite']",True,True,10,1,4
+spiel,"['sp', 'iel']",True,True,11,1,5
+Plugin,"['Plug', 'in']",False,True,10,1,6
+Aura,"['Au', 'ra']",False,False,8,1,4
+User,"['U', 'ser']",True,True,12,1,4
+Date,"['Da', 'te']",True,True,11,1,4
+Order,"['Or', 'der']",True,True,9,1,5
+Angel,"['An', 'gel']",True,True,11,1,5
+Bluetooth,"['B', 'luetooth']",False,True,8,1,9
+Linux,"['L', 'inux']",True,True,7,1,5
+inch,"['in', 'ch']",False,True,10,1,4
+Offset,"['O', 'ffset']",False,True,9,1,6
+Print,"['Pri', 'nt']",True,True,9,1,5
+Rating,"['R', 'ating']",False,True,11,1,6
+Luke,"['Lu', 'ke']",True,True,11,1,4
+Play,"['P', 'lay']",True,True,8,1,4
+Concern,"['Co', 'n', 'ce', 'rn']",False,True,12,1,7
+Stop,"['St', 'op']",True,True,9,1,4
+Shell,"['She', 'll']",False,True,11,1,5
+Look,"['Lo', 'ok']",True,True,8,1,4
+Learning,"['L', 'earn', 'ing']",True,True,7,1,8
+Tracking,"['Track', 'i', 'n', 'g']",False,True,11,1,8
+Transmission,"['Trans', 'miss', 'ion']",False,True,7,1,12
+Limit,"['Li', 'mit']",False,True,10,1,5
+Rail,"['Ra', 'il']",True,True,8,1,4
+Assembler,"['A', 'sse', 'mb', 'ler']",False,False,9,1,9
+ober,"['o', 'ber']",True,True,12,1,4
+Acts,"['Act', 's']",False,True,8,1,4
+Back,"['Ba', 'ck']",True,True,11,1,4
+Over,"['O', 'ver']",True,True,11,1,4
+Framework,"['F', 'rame', 'wo', 'r', 'k']",True,True,12,1,9
+Minus,"['M', 'inus']",False,True,8,1,5
+Store,"['St', 'ore']",True,True,9,1,5
+Mono,"['Mo', 'no']",False,True,7,1,4
+Twitter,"['T', 'witter']",True,True,9,1,7
+Porno,"['Porn', 'o']",False,False,7,1,5
+String,"['S', 'tring']",True,True,8,1,6
+Credits,"['Cr', 'edi', 'ts']",False,True,8,1,7
+Scan,"['Sc', 'an']",False,True,9,1,4
+unter,"['un', 'ter']",True,True,31,2,5
+Adapter,"['Ad', 'apt', 'er']",False,True,13,2,7
+Frames,"['Fra', 'm', 'es']",False,True,13,2,6
+Newsletter,"['N', 'e', 'ws', 'lette', 'r']",False,True,13,2,10
+Monitor,"['M', 'oni', 'to', 'r']",False,True,31,2,7
+Compilation,"['Com', 'p', 'il', 'at', 'ion']",False,True,15,2,11
+parallel,"['par', 'a', 'lle', 'l']",True,True,25,2,8
+Upgrade,"['U', 'pg', 'rade']",False,True,22,2,7
+Layer,"['L', 'ayer']",False,True,15,2,5
+Community,"['Comm', 'unity']",True,True,30,2,9
+Android,"['A', 'nd', 'ro', 'id']",True,True,14,2,7
+Intro,"['Int', 'ro']",False,True,17,2,5
+Maximum,"['Max', 'i', 'mu', 'm']",False,True,27,2,7
+Paragraph,"['P', 'ara', 'gr', 'aph']",False,True,15,2,9
+Center,"['C', 'ent', 'er']",True,True,23,2,6
+Camp,"['C', 'amp']",True,True,28,2,4
+Publisher,"['Publish', 'er']",False,True,31,2,9
+List,"['Li', 'st']",True,True,23,2,4
+Domain,"['Do', 'main']",True,True,18,2,6
+Outdoor,"['O', 'u', 't', 'door']",False,True,13,2,7
+Boss,"['Bo', 'ss']",False,True,27,2,4
+Boom,"['Bo', 'om']",False,True,18,2,4
+Quote,"['Qu', 'ote']",False,True,22,2,5
+Gradient,"['Grad', 'i', 'ent']",False,True,30,2,8
+Monitoring,"['M', 'o', 'nit', 'oring']",False,True,22,2,10
+Ellipse,"['El', 'lip', 's', 'e']",False,True,22,2,7
+Special,"['Spe', 'ci', 'a', 'l']",True,True,28,2,7
+Term,"['Ter', 'm']",True,True,15,2,4
+Beta,"['Bet', 'a']",False,True,15,2,4
+Clip,"['C', 'lip']",False,True,15,2,4
+Super,"['Sup', 'er']",True,True,14,2,5
+Extra,"['Ex', 'tra']",False,True,15,2,5
+Deal,"['De', 'al']",False,True,16,2,4
+Engine,"['Eng', 'ine']",True,True,21,2,6
+Poster,"['P', 'o', 'ster']",False,True,15,2,6
+Draft,"['D', 'raft']",False,True,18,2,5
+value,"['v', 'alue']",True,True,14,2,5
+Animator,"['A', 'ni', 'm', 'ator']",False,True,16,2,8
+Arena,"['Are', 'na']",True,True,25,2,5
+Cluster,"['C', 'lus', 'ter']",False,True,30,2,7
+Account,"['Ac', 'cou', 'nt']",True,True,17,2,7
+Shop,"['Sh', 'op']",False,True,27,2,4
+Fitness,"['Fi', 't', 'n', 'ess']",False,True,21,2,7
+Client,"['Cl', 'ie', 'nt']",True,True,17,2,6
+Highlight,"['Hi', 'g', 'h', 'li', 'ght']",False,True,17,2,9
+Talk,"['T', 'alk']",False,True,13,2,4
+Part,"['Par', 't']",True,True,30,2,4
+Portrait,"['Por', 'trait']",False,True,22,2,8
+Echo,"['E', 'cho']",False,True,30,2,4
+Narr,"['N', 'arr']",False,True,16,2,4
+Backup,"['Back', 'up']",False,True,14,2,6
+Iteration,"['It', 'eration']",False,True,13,2,9
+Skeleton,"['Sk', 'el', 'eton']",False,True,18,2,8
+Pass,"['Pa', 'ss']",True,True,14,2,4
+innen,"['inne', 'n']",False,True,27,2,5
+Suite,"['Su', 'ite']",False,True,29,2,5
+Port,"['P', 'ort']",True,True,22,2,4
+Rotor,"['Rot', 'or']",False,False,13,2,5
+mittel,"['m', 'ittel']",False,True,16,2,6
+Pool,"['Po', 'ol']",True,True,25,2,4
+Pipeline,"['Pi', 'p', 'eli', 'ne']",False,True,28,2,8
+Orange,"['Or', 'ange']",True,True,18,2,6
+Know,"['Kn', 'ow']",True,True,17,2,4
+Plus,"['P', 'lus']",True,True,13,2,4
+Integral,"['In', 'te', 'g', 'ra', 'l']",False,True,19,2,8
+Soap,"['So', 'ap']",False,True,16,2,4
+Levels,"['Le', 'vel', 's']",False,True,24,2,6
+Review,"['Re', 'vie', 'w']",True,True,20,2,6
+Letter,"['L', 'etter']",False,True,15,2,6
+Cache,"['C', 'ache']",True,True,20,2,5
+Translation,"['T', 'ran', 'sl', 'atio', 'n']",False,True,16,2,11
+Evaluation,"['E', 'val', 'uation']",False,True,16,2,10
+Story,"['St', 'ory']",True,True,29,2,5
+Atlas,"['At', 'las']",True,True,17,2,5
+Release,"['Re', 'le', 'ase']",True,True,20,2,7
+Hard,"['H', 'ard']",True,True,13,2,4
+House,"['H', 'ouse']",True,True,17,2,5
+Regression,"['Re', 'gres', 'si', 'on']",False,True,17,2,10
+Stick,"['S', 'tick']",False,True,13,2,5
+fern,"['f', 'ern']",False,True,18,2,4
+Minimum,"['Min', 'imu', 'm']",False,True,24,2,7
+Sounds,"['So', 'unds']",False,True,27,2,6
+Unicode,"['Un', 'icode']",True,True,19,2,7
+Plot,"['P', 'lot']",True,True,13,2,4
+Qual,"['Q', 'ual']",True,True,15,2,4
+American,"['A', 'merican']",True,True,28,2,8
+zeit,"['ze', 'it']",True,True,21,2,4
+Frame,"['Fra', 'me']",True,True,14,2,5
+Meeting,"['Me', 'et', 'ing']",False,True,15,2,7
+Spin,"['Sp', 'in']",False,True,26,2,4
+Manifest,"['Man', 'i', 'f', 'e', 'st']",False,True,29,2,8
+Double,"['Do', 'uble']",True,True,28,2,6
+Director,"['D', 'i', 'r', 'e', 'ctor']",True,True,20,2,8
+Peer,"['P', 'eer']",False,True,28,2,4
+Palette,"['P', 'al', 'et', 'te']",False,True,27,2,7
+Administration,"['Ad', 'min', 'istration']",True,True,28,2,14
+Feedback,"['F', 'e', 'edb', 'a', 'ck']",False,True,18,2,8
+Stream,"['Str', 'e', 'am']",True,True,22,2,6
+Source,"['Sou', 'rc', 'e']",True,True,14,2,6
+Matching,"['Ma', 't', 'chi', 'ng']",False,True,27,2,8
+Beat,"['B', 'eat']",True,True,23,2,4
+Player,"['Play', 'er']",True,True,13,2,6
+Stack,"['St', 'ack']",True,True,18,2,5
+Syntax,"['Syn', 'tax']",True,True,22,2,6
+Express,"['Exp', 'r', 'e', 'ss']",True,True,15,2,7
+Header,"['He', 'a', 'der']",True,True,13,2,6
+Trip,"['Tr', 'ip']",False,True,13,2,4
+Analysis,"['A', 'na', 'lys', 'i', 's']",True,True,22,2,8
+Controller,"['C', 'o', 'nt', 'ro', 'ller']",True,True,28,2,10
+Drink,"['D', 'rink']",False,True,13,2,5
+Balance,"['Ba', 'lan', 'c', 'e']",False,True,14,2,7
+Multi,"['Mul', 'ti']",True,True,17,2,5
+Compiler,"['Comp', 'iler']",False,True,19,2,8
+recht,"['rec', 'ht']",True,True,13,2,5
+Navigation,"['N', 'avig', 'at', 'io', 'n']",True,True,16,2,10
+Null,"['Nu', 'll']",True,True,22,2,4
+Tool,"['T', 'ool']",True,True,26,2,4
+Routine,"['R', 'ou', 't', 'ine']",False,True,16,2,7
+Shader,"['Sha', 'der']",False,True,14,2,6
+Open,"['Op', 'en']",True,True,13,2,4
+Fluid,"['Fl', 'uid']",False,True,22,2,5
+Wild,"['W', 'ild']",True,True,18,2,4
+Power,"['Pow', 'er']",True,True,14,2,5
+Polygon,"['P', 'oly', 'g', 'on']",False,True,23,2,7
+Book,"['B', 'ook']",True,True,25,2,4
+Skin,"['S', 'kin']",False,True,14,2,4
+Chief,"['Ch', 'ief']",True,True,15,2,5
+Volt,"['Vo', 'lt']",False,True,23,2,4
+Euro,"['E', 'uro']",True,True,17,2,4
+Games,"['G', 'ames']",True,True,15,2,5
+Sketch,"['S', 'ket', 'ch']",False,True,29,2,6
+Independent,"['In', 'de', 'pen', 'de', 'nt']",True,True,27,2,11
+Type,"['Typ', 'e']",True,True,18,2,4
+Interface,"['In', 'ter', 'fac', 'e']",True,True,25,2,9
+Grand,"['G', 'rand']",True,True,14,2,5
+Journal,"['Jo', 'urnal']",True,True,30,2,7
+Aware,"['A', 'ware']",False,True,15,2,5
+Artist,"['A', 'rt', 'ist']",False,True,20,2,6
+Photo,"['Phot', 'o']",False,True,15,2,5
+Reader,"['Read', 'er']",False,True,16,2,6
+These,"['Th', 'ese']",True,True,128,3,5
+Filter,"['Fil', 'te', 'r']",True,True,51,3,6
+Assistant,"['A', 'ssi', 'stant']",False,True,35,3,9
+Link,"['Lin', 'k']",True,True,35,3,4
+Marketing,"['Mar', 'k', 'e', 't', 'ing']",False,True,75,3,9
+Sand,"['San', 'd']",True,True,105,3,4
+Relation,"['Rel', 'ation']",False,True,34,3,8
+Dialog,"['D', 'ialog']",True,True,133,3,6
+Installation,"['Ins', 't', 'al', 'l', 'ation']",False,True,124,3,12
+Anti,"['Ant', 'i']",True,True,33,3,4
+Audio,"['Aud', 'io']",True,True,56,3,5
+County,"['Co', 'u', 'nty']",True,True,52,3,6
+Portfolio,"['Po', 'rt', 'f', 'o', 'lio']",False,True,42,3,9
+Labor,"['L', 'abor']",True,True,131,3,5
+Phrase,"['P', 'hra', 'se']",False,True,36,3,6
+Image,"['Im', 'age']",True,True,43,3,5
+Vision,"['Vis', 'ion']",False,True,94,3,6
+Layout,"['La', 'you', 't']",True,True,42,3,6
+Ideal,"['Ide', 'al']",False,True,77,3,5
+Turn,"['Tur', 'n']",True,True,35,3,4
+Lord,"['L', 'ord']",True,True,32,3,4
+Metal,"['Me', 'tal']",True,True,97,3,5
+Essay,"['Ess', 'ay']",False,True,125,3,5
+Mine,"['Mi', 'ne']",True,True,44,3,4
+fade,"['fad', 'e']",True,True,35,3,4
+Mixed,"['Mi', 'xed']",False,True,106,3,5
+land,"['la', 'nd']",True,True,41,3,4
+College,"['Co', 'l', 'leg', 'e']",True,True,67,3,7
+Population,"['Po', 'p', 'ula', 'tion']",True,True,88,3,10
+Generator,"['Gen', 'er', 'ato', 'r']",False,True,73,3,9
+Transfer,"['T', 'ra', 'n', 'sf', 'er']",True,True,36,3,8
+Western,"['We', 's', 'ter', 'n']",True,True,47,3,7
+Uniform,"['U', 'ni', 'fo', 'rm']",False,True,69,3,7
+background,"['back', 'gr', 'oun', 'd']",True,True,50,3,10
+Anime,"['Anim', 'e']",False,True,40,3,5
+Streaming,"['St', 'ream', 'ing']",False,True,49,3,9
+Event,"['E', 'vent']",True,True,77,3,5
+Football,"['Foot', 'ball']",True,True,85,3,8
+Segment,"['Seg', 'm', 'en', 't']",False,True,120,3,7
+Final,"['Fin', 'al']",True,True,32,3,5
+Farm,"['F', 'arm']",True,True,91,3,4
+Demo,"['D', 'emo']",True,True,62,3,4
+Server,"['Serve', 'r']",True,True,52,3,6
+Hardware,"['H', 'ard', 'war', 'e']",False,True,50,3,8
+Monster,"['Mon', 'ster']",False,True,62,3,7
+Master,"['Mas', 'te', 'r']",True,True,124,3,6
+Radius,"['Ra', 'd', 'ius']",False,True,53,3,6
+Disposition,"['Di', 's', 'po', 's', 'ition']",False,True,121,3,11
+Display,"['Dis', 'p', 'l', 'ay']",True,True,45,3,7
+Profit,"['Prof', 'i', 't']",False,True,35,3,6
+Graph,"['Gr', 'aph']",True,True,34,3,5
+Islam,"['Is', 'lam']",True,True,61,3,5
+lang,"['la', 'ng']",True,True,44,3,4
+Schema,"['Sch', 'em', 'a']",False,True,91,3,6
+Union,"['Un', 'ion']",True,True,116,3,5
+Bitte,"['B', 'itte']",True,True,71,3,5
+Baby,"['Ba', 'by']",True,True,45,3,4
+Simulation,"['Si', 'mul', 'atio', 'n']",False,True,41,3,10
+Last,"['L', 'ast']",True,True,87,3,4
+Pause,"['P', 'ause']",False,True,110,3,5
+Animation,"['An', 'i', 'm', 'a', 'tion']",False,True,40,3,9
+Elite,"['E', 'lite']",False,True,52,3,5
+Roll,"['R', 'oll']",True,True,32,3,4
+Byte,"['By', 'te']",True,True,52,3,4
+Browser,"['B', 'rowser']",True,True,42,3,7
+dato,"['da', 'to']",False,True,84,3,4
+Update,"['U', 'p', 'date']",True,True,59,3,6
+Transformation,"['T', 'rans', 'formation']",False,True,37,3,14
+Forum,"['F', 'orum']",True,True,56,3,5
+Rotation,"['R', 'o', 'tat', 'i', 'on']",False,True,55,3,8
+Hospital,"['H', 'ospital']",True,True,54,3,8
+Senior,"['Se', 'ni', 'or']",True,True,114,3,6
+Import,"['I', 'mp', 'ort']",True,True,50,3,6
+Session,"['Se', 'ss', 'ion']",True,True,60,3,7
+Wolf,"['Wo', 'lf']",True,True,33,3,4
+Mutation,"['Mut', 'ation']",False,True,52,3,8
+links,"['lin', 'ks']",True,True,41,3,5
+Bonus,"['Bon', 'us']",False,True,32,3,5
+Chip,"['C', 'hip']",False,True,53,3,4
+Index,"['In', 'dex']",True,True,85,3,5
+Note,"['No', 'te']",True,True,91,3,4
+Variable,"['V', 'aria', 'bl', 'e']",True,True,56,3,8
+Manual,"['Man', 'u', 'al']",False,True,32,3,6
+Desktop,"['De', 's', 'ktop']",False,True,32,3,7
+Probe,"['P', 'robe']",False,True,109,3,5
+Suffix,"['S', 'uff', 'ix']",False,True,60,3,6
+Terminal,"['Term', 'inal']",True,True,36,3,8
+Gift,"['Gi', 'ft']",False,True,47,3,4
+Party,"['Part', 'y']",True,True,89,3,5
+Match,"['Mat', 'ch']",True,True,119,3,5
+Stock,"['St', 'ock']",True,True,107,3,5
+Rose,"['Ro', 'se']",True,True,59,3,4
+Option,"['Op', 'tion']",True,True,105,3,6
+Service,"['Se', 'rv', 'ice']",True,True,94,3,7
+Mode,"['M', 'ode']",True,True,109,3,4
+Blog,"['B', 'log']",False,True,55,3,4
+Export,"['Exp', 'ort']",False,True,68,3,6
+Raster,"['Ra', 'ster']",False,True,38,3,6
+Cover,"['C', 'over']",True,True,96,3,5
+Revision,"['Rev', 'i', 'si', 'on']",False,True,76,3,8
+Operator,"['O', 'p', 'erator']",False,True,33,3,8
+Atom,"['A', 'tom']",False,True,55,3,4
+Sound,"['So', 'und']",True,True,62,3,5
+Pixel,"['Pix', 'el']",False,True,41,3,5
+Country,"['C', 'ou', 'n', 'try']",True,True,32,3,7
+Ticket,"['T', 'ick', 'et']",False,True,38,3,6
+Expansion,"['Ex', 'p', 'an', 's', 'ion']",False,True,62,3,9
+Parameter,"['Para', 'meter']",True,True,107,3,9
+Wildcard,"['Wild', 'card']",False,False,39,3,8
+Tank,"['Tan', 'k']",False,True,39,3,4
+Feature,"['F', 'eat', 'ure']",False,True,51,3,7
+Potential,"['P', 'ote', 'n', 'ti', 'al']",False,True,56,3,9
+Report,"['Rep', 'ort']",True,True,35,3,6
+weit,"['we', 'it']",True,True,46,3,4
+Keyboard,"['Key', 'bo', 'a', 'r', 'd']",False,True,66,3,8
+Template,"['Te', 'm', 'pl', 'at', 'e']",True,True,89,3,8
+Resolution,"['R', 'es', 'o', 'lu', 'tion']",False,True,47,3,10
+Prior,"['Pr', 'ior']",True,True,37,3,5
+Marker,"['Mark', 'er']",False,True,33,3,6
+Deck,"['De', 'ck']",False,True,63,3,4
+Saga,"['S', 'aga']",False,False,52,3,4
+Plug,"['Pl', 'ug']",False,True,36,3,4
+Info,"['Inf', 'o']",True,True,78,3,4
+Budget,"['B', 'udge', 't']",False,True,86,3,6
+Mais,"['Ma', 'is']",True,True,42,3,4
+Mail,"['M', 'ail']",True,True,81,3,4
+Banner,"['Ban', 'ne', 'r']",False,True,47,3,6
+Sampler,"['S', 'a', 'mpl', 'er']",False,True,39,3,7
+Download,"['Do', 'w', 'nl', 'o', 'ad']",True,True,110,3,8
+Argument,"['A', 'rg', 'um', 'ent']",True,True,92,3,8
+Sensor,"['S', 'ensor']",False,True,55,3,6
+Logo,"['L', 'ogo']",False,True,89,3,4
+Sample,"['Sa', 'mpl', 'e']",True,True,38,3,6
+Administrator,"['Admin', 'istrator']",False,True,126,3,13
+Action,"['Act', 'io', 'n']",True,True,38,3,6
+Reporter,"['Re', 'por', 't', 'er']",False,True,59,3,8
+Migration,"['M', 'i', 'g', 'ratio', 'n']",False,True,40,3,9
+Support,"['Su', 'p', 'po', 'rt']",True,True,43,3,7
+Performance,"['P', 'er', 'form', 'ance']",True,True,83,3,11
+Coach,"['Co', 'ach']",False,True,45,3,5
+Film,"['F', 'ilm']",True,True,4538,4,4
+Software,"['S', 'o', 'f', 'tw', 'are']",True,True,276,4,8
+Integration,"['I', 'nte', 'gr', 'ation']",False,True,156,4,11
+Personal,"['Persona', 'l']",True,True,157,4,8
+Medium,"['M', 'edium']",False,True,523,4,6
+Alter,"['Alt', 'er']",True,True,1244,4,5
+Fragment,"['Fra', 'g', 'm', 'ent']",True,True,154,4,8
+Name,"['Nam', 'e']",True,True,5642,4,4
+Band,"['Ba', 'nd']",True,True,3242,4,4
+Block,"['Blo', 'ck']",True,True,151,4,5
+Sender,"['S', 'end', 'er']",False,True,381,4,6
+Rock,"['Ro', 'ck']",True,True,293,4,4
+Wind,"['W', 'ind']",True,True,211,4,4
+Person,"['Pers', 'on']",True,True,4719,4,6
+Formation,"['Form', 'at', 'io', 'n']",False,True,163,4,9
+Experiment,"['Ex', 'per', 'i', 'm', 'ent']",False,True,215,4,10
+Datum,"['D', 'atum']",False,True,941,4,5
+Norm,"['No', 'rm']",True,True,211,4,4
+Oper,"['O', 'per']",True,True,555,4,4
+Comic,"['Co', 'mic']",False,True,160,4,5
+Hang,"['H', 'ang']",False,True,140,4,4
+Single,"['Si', 'n', 'gle']",True,True,1037,4,6
+Meter,"['M', 'eter']",True,True,3276,4,5
+Front,"['Fr', 'ont']",True,True,219,4,5
+Alternative,"['A', 'l', 'tern', 'ativ', 'e']",False,True,157,4,11
+Version,"['Ver', 'si', 'o', 'n']",True,True,1282,4,7
+Detail,"['De', 'ta', 'il']",False,True,201,4,6
+Interview,"['In', 'ter', 'view']",False,True,483,4,9
+Division,"['D', 'i', 'v', 'is', 'ion']",True,True,735,4,8
+Brief,"['B', 'rief']",False,True,514,4,5
+Management,"['Mana', 'gement']",True,True,161,4,10
+Senator,"['S', 'en', 'ator']",True,True,234,4,7
+Start,"['St', 'art']",True,True,504,4,5
+Online,"['On', 'l', 'ine']",True,True,266,4,6
+Zone,"['Z', 'one']",True,True,183,4,4
+Standard,"['St', 'anda', 'rd']",True,True,258,4,8
+Foto,"['Fo', 'to']",False,True,549,4,4
+Material,"['M', 'ate', 'ri', 'al']",True,True,647,4,8
+Region,"['R', 'eg', 'ion']",True,True,2367,4,6
+Matrix,"['M', 'atr', 'ix']",True,True,138,4,6
+Song,"['S', 'ong']",True,True,832,4,4
+Generation,"['Gene', 'ra', 'tion']",True,True,423,4,10
+Format,"['Fo', 'rm', 'at']",True,True,292,4,6
+Mission,"['Mis', 's', 'ion']",True,True,263,4,7
+Phase,"['Ph', 'ase']",False,True,455,4,5
+Kind,"['Ki', 'nd']",True,True,3156,4,4
+Original,"['Or', 'igi', 'n', 'al']",True,True,320,4,8
+Album,"['Al', 'bum']",True,True,2680,4,5
+Portal,"['P', 'or', 'tal']",True,True,221,4,6
+Live,"['Liv', 'e']",True,True,160,4,4
+Ware,"['W', 'are']",False,True,155,4,4
+Status,"['St', 'at', 'us']",True,True,416,4,6
+Register,"['Re', 'gi', 'ste', 'r']",True,True,216,4,8
+Plan,"['P', 'lan']",True,True,827,4,4
+Website,"['Web', 's', 'ite']",True,True,1859,4,7
+Video,"['V', 'ideo']",True,True,511,4,5
+Nation,"['N', 'ati', 'on']",True,True,228,4,6
+Signal,"['S', 'ign', 'al']",False,True,198,4,6
+Element,"['El', 'e', 'me', 'nt']",True,True,721,4,7
+Stand,"['Stan', 'd']",True,True,1690,4,5
+Fort,"['F', 'ort']",True,True,186,4,4
+Gold,"['Go', 'ld']",True,True,300,4,4
+Bachelor,"['B', 'ach', 'el', 'o', 'r']",False,True,146,4,8
+Definition,"['De', 'fin', 'i', 'tion']",True,True,312,4,10
+Show,"['Sh', 'ow']",True,True,208,4,4
+Orden,"['Or', 'den']",False,True,625,4,5
+Studio,"['St', 'u', 'dio']",True,True,386,4,6
+Same,"['Sa', 'me']",True,True,170,4,4
+Club,"['Cl', 'ub']",True,True,385,4,4
+Tour,"['T', 'our']",True,True,358,4,4
+Grad,"['G', 'rad']",True,True,340,4,4
+Roman,"['Rom', 'an']",True,True,1729,4,5
+Ring,"['R', 'ing']",True,True,267,4,4
+Label,"['L', 'abel']",True,True,408,4,5
+Agent,"['Age', 'nt']",True,True,151,4,5
+Internet,"['In', 'tern', 'et']",True,True,300,4,8
+Verb,"['Ve', 'rb']",True,True,195,4,4
+Major,"['M', 'ajor']",True,True,139,4,5
+Auto,"['Aut', 'o']",True,True,333,4,4
+Rest,"['Re', 'st']",True,True,639,4,4
+Hand,"['Han', 'd']",True,True,835,4,4
+Patient,"['P', 'atient']",False,True,371,4,7
+Model,"['M', 'odel']",True,True,145,4,5
+Designer,"['D', 'esi', 'gn', 'e', 'r']",False,True,136,4,8
+Professor,"['Pro', 'f', 'essor']",True,True,1512,4,9
+Bank,"['Ba', 'nk']",True,True,408,4,4
+Post,"['P', 'ost']",True,True,165,4,4
+Manager,"['M', 'an', 'ager']",True,True,241,4,7
+Tier,"['Ti', 'er']",True,True,759,4,4
+Form,"['For', 'm']",True,True,2308,4,4
+System,"['S', 'ystem']",True,True,1338,4,6
+Student,"['S', 't', 'uden', 't']",True,True,403,4,7
+Fall,"['Fal', 'l']",True,True,1149,4,4
+Position,"['P', 'osit', 'io', 'n']",True,True,951,4,8
+Team,"['Te', 'am']",True,True,1602,4,4
+Fund,"['F', 'und']",True,True,355,4,4
+General,"['Gene', 'ral']",True,True,503,4,7
+Adresse,"['A', 'dr', 'es', 'se']",False,True,171,4,7
+Problem,"['Prob', 'l', 'e', 'm']",True,True,967,4,7
+Rand,"['R', 'and']",True,True,526,4,4
+Dimension,"['Dim', 'en', 'si', 'on']",False,True,149,4,9
+Symbol,"['Sym', 'bo', 'l']",True,True,358,4,6
+Sport,"['Sp', 'ort']",True,True,431,4,5
+Planet,"['Pl', 'an', 'et']",True,True,195,4,6
+Vers,"['V', 'ers']",True,True,134,4,4
+Genre,"['Gen', 're']",False,True,172,4,5
+Hotel,"['Ho', 'tel']",True,True,435,4,5
+Text,"['Tex', 't']",True,True,1492,4,4
+Liter,"['Li', 'ter']",True,True,177,4,5
+Code,"['C', 'ode']",True,True,183,4,4
+Restaurant,"['Rest', 'a', 'ur', 'a', 'nt']",False,True,274,4,10
+Junior,"['Jun', 'ior']",True,True,358,4,6
+Level,"['Le', 'vel']",True,True,157,4,5
+Design,"['D', 'esi', 'gn']",True,True,228,4,6
+Grab,"['G', 'rab']",True,True,471,4,4
+Station,"['S', 'ta', 'tion']",True,True,782,4,7
+Operation,"['Oper', 'a', 'tion']",True,True,237,4,9
+Organ,"['Org', 'an']",True,True,168,4,5
+Solo,"['S', 'olo']",True,True,150,4,4
+Instrument,"['In', 'strument']",False,True,469,4,10
+Brand,"['B', 'rand']",True,True,309,4,5
+Edition,"['Edit', 'ion']",True,True,165,4,7
+Park,"['Par', 'k']",True,True,563,4,4
+Motor,"['Mo', 'tor']",True,True,661,4,5
+Ball,"['Ba', 'll']",True,True,165,4,4
+Christ,"['Ch', 'r', 'ist']",True,True,208,4,6
+Homepage,"['Home', 'page']",False,True,574,4,8
+Transport,"['T', 'rans', 'port']",True,True,250,4,9
+Radio,"['Rad', 'io']",True,True,178,4,5
+Präsident,"['P', 'r', 'ä', 'sid', 'ent']",False,False,1721,4,9
+Information,"['In', 'form', 'ati', 'on']",True,True,918,4,11
+Partner,"['Part', 'ner']",False,True,348,4,7
+Episode,"['E', 'pi', 'so', 'de']",False,True,742,4,7
+Training,"['Tra', 'in', 'i', 'n', 'g']",True,True,172,4,8
+Land,"['L', 'and']",True,True,3735,4,4
+Moment,"['Mo', 'men', 't']",False,True,176,4,6
+Chef,"['Che', 'f']",False,True,386,4,4
+Route,"['Ro', 'ute']",True,True,187,4,5
+Computer,"['C', 'o', 'mp', 'u', 'ter']",True,True,216,4,8
+Boot,"['B', 'oot']",True,True,611,4,4
+Track,"['Tra', 'ck']",True,True,117,3,5
+Triple,"['Tri', 'pl', 'e']",False,True,4,0,6
+Winter,"['W', 'inter']",True,True,400,4,6
+Gate,"['Ga', 'te']",True,True,6,0,4
+West,"['W', 'est']",True,True,227,4,4
+Mech,"['M', 'ech']",False,True,4,0,4
+Star,"['St', 'ar']",True,True,148,4,4
+Channel,"['Chan', 'nel']",True,True,6,0,7
+Labour,"['La', 'bour']",True,True,4,0,6
+Charge,"['Cha', 'rg', 'e']",False,True,6,0,6
+Such,"['Suc', 'h']",True,True,16,2,4

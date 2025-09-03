@@ -1,0 +1,1001 @@
+word,tokens_babel_9b,token_num_babel_9b,tokens_gemma_12b,token_num_gemma_12b,tokens_llama_2_7b,token_num_llama_2_7b,avg_token_num,same_token_num,avg_token_num_rounded,avg_token_num2,same_token_num2,avg_token_num2_rounded,any_token_num_is_1,freq,word_len,freq_quantile
+nomen,"['n', 'omen']",2,"['n', 'omen']",2,"['▁nom', 'en']",2,2.0,True,2,2.0,True,2,False,5,5,0
+cantillation,"['cant', 'illation']",2,"['cant', 'illation']",2,"['▁cant', 'ill', 'ation']",3,2.333333333333333,False,2,2.0,True,2,False,5,12,0
+phenomenologist,"['phen', 'omen', 'ologist']",3,"['phen', 'omen', 'ologist']",3,"['▁phenomen', 'ologist']",2,2.6666666666666665,False,3,3.0,True,3,False,4,15,0
+peaceful,"['peace', 'ful']",2,"['peace', 'ful']",2,"['▁peace', 'ful']",2,2.0,True,2,2.0,True,2,False,5,8,0
+anus,['anus'],1,['anus'],1,"['▁an', 'us']",2,1.3333333333333333,False,1,1.0,True,1,True,4,4,0
+sassafras,"['s', 'assa', 'fr', 'as']",4,"['s', 'assa', 'fr', 'as']",4,"['▁s', 'assa', 'fr', 'as']",4,4.0,True,4,4.0,True,4,False,5,9,0
+yearling,"['year', 'ling']",2,"['year', 'ling']",2,"['▁year', 'ling']",2,2.0,True,2,2.0,True,2,False,5,8,0
+homophone,"['hom', 'ophone']",2,"['hom', 'ophone']",2,"['▁hom', 'oph', 'one']",3,2.333333333333333,False,2,2.0,True,2,False,5,9,0
+stonefly,"['stone', 'fly']",2,"['stone', 'fly']",2,"['▁stone', 'fly']",2,2.0,True,2,2.0,True,2,False,5,8,0
+computerization,"['computer', 'ization']",2,"['computer', 'ization']",2,"['▁computer', 'ization']",2,2.0,True,2,2.0,True,2,False,4,15,0
+shawl,"['shaw', 'l']",2,"['shaw', 'l']",2,"['▁sh', 'aw', 'l']",3,2.333333333333333,False,2,2.0,True,2,False,5,5,0
+dramatique,"['d', 'ram', 'at', 'ique']",4,"['d', 'ram', 'atique']",3,"['▁dram', 'atique']",2,3.0,False,3,3.5,False,4,False,4,10,0
+picaresque,"['p', 'ica', 'res', 'que']",4,"['p', 'ica', 'res', 'que']",4,"['▁pic', 'ares', 'que']",3,3.6666666666666665,False,4,4.0,True,4,False,4,10,0
+mane,"['man', 'e']",2,['mane'],1,"['▁man', 'e']",2,1.6666666666666667,False,2,1.5,False,2,True,4,4,0
+coxless,"['cox', 'less']",2,"['cox', 'less']",2,"['▁co', 'x', 'less']",3,2.333333333333333,False,2,2.0,True,2,False,5,7,0
+beehive,"['be', 'eh', 'ive']",3,"['be', 'eh', 'ive']",3,"['▁be', 'eh', 'ive']",3,3.0,True,3,3.0,True,3,False,4,7,0
+trichomes,"['tr', 'ich', 'omes']",3,"['tr', 'ich', 'omes']",3,"['▁tr', 'ich', 'om', 'es']",4,3.333333333333333,False,3,3.0,True,3,False,5,9,0
+italian,"['ital', 'ian']",2,['italian'],1,"['▁ital', 'ian']",2,1.6666666666666667,False,2,1.5,False,2,True,4,7,0
+godson,"['god', 'son']",2,"['god', 'son']",2,"['▁god', 'son']",2,2.0,True,2,2.0,True,2,False,5,6,0
+settle,"['set', 'tle']",2,"['sett', 'le']",2,"['▁sett', 'le']",2,2.0,True,2,2.0,True,2,False,4,6,0
+mindful,"['mind', 'ful']",2,"['mind', 'ful']",2,"['▁mind', 'ful']",2,2.0,True,2,2.0,True,2,False,5,7,0
+evaluator,"['eval', 'uator']",2,"['eval', 'uator']",2,"['▁evalu', 'ator']",2,2.0,True,2,2.0,True,2,False,5,9,0
+frock,"['f', 'rock']",2,"['f', 'rock']",2,"['▁fro', 'ck']",2,2.0,True,2,2.0,True,2,False,4,5,0
+milkweed,"['m', 'ilk', 'weed']",3,"['milk', 'weed']",2,"['▁milk', 'we', 'ed']",3,2.6666666666666665,False,3,2.5,False,3,False,4,8,0
+iser,['iser'],1,['iser'],1,"['▁is', 'er']",2,1.3333333333333333,False,1,1.0,True,1,True,5,4,0
+kingfish,"['king', 'fish']",2,"['king', 'fish']",2,"['▁king', 'fish']",2,2.0,True,2,2.0,True,2,False,5,8,0
+antebellum,"['ant', 'eb', 'ell', 'um']",4,"['ant', 'eb', 'ellum']",3,"['▁ante', 'bell', 'um']",3,3.333333333333333,False,3,3.5,False,4,False,4,10,0
+bickering,"['b', 'ick', 'ering']",3,"['b', 'ick', 'ering']",3,"['▁b', 'ick', 'ering']",3,3.0,True,3,3.0,True,3,False,4,9,0
+unhappiness,"['un', 'h', 'appiness']",3,"['un', 'happiness']",2,"['▁unh', 'app', 'iness']",3,2.6666666666666665,False,3,2.5,False,3,False,5,11,0
+telepathy,"['tele', 'path', 'y']",3,"['tele', 'pathy']",2,"['▁tele', 'path', 'y']",3,2.6666666666666665,False,3,2.5,False,3,False,5,9,0
+minutus,"['min', 'ut', 'us']",3,"['min', 'utus']",2,"['▁min', 'ut', 'us']",3,2.6666666666666665,False,3,2.5,False,3,False,4,7,0
+pictorial,"['p', 'ict', 'orial']",3,"['pict', 'orial']",2,"['▁p', 'ict', 'orial']",3,2.6666666666666665,False,3,2.5,False,3,False,5,9,0
+abductor,"['ab', 'ductor']",2,"['ab', 'ductor']",2,"['▁ab', 'duct', 'or']",3,2.333333333333333,False,2,2.0,True,2,False,5,8,0
+depict,"['dep', 'ict']",2,"['dep', 'ict']",2,"['▁dep', 'ict']",2,2.0,True,2,2.0,True,2,False,4,6,0
+flexuosa,"['flex', 'u', 'osa']",3,"['flex', 'uosa']",2,"['▁flex', 'u', 'osa']",3,2.6666666666666665,False,3,2.5,False,3,False,5,8,0
+rideshare,"['rid', 'esh', 'are']",3,"['rides', 'hare']",2,"['▁r', 'ides', 'h', 'are']",4,3.0,False,3,2.5,False,3,False,4,9,0
+trifle,"['tr', 'ifle']",2,"['tr', 'ifle']",2,"['▁trif', 'le']",2,2.0,True,2,2.0,True,2,False,5,6,0
+anglicisation,"['ang', 'lic', 'isation']",3,"['ang', 'lic', 'isation']",3,"['▁ang', 'lic', 'isation']",3,3.0,True,3,3.0,True,3,False,4,13,0
+vegetarianism,"['veget', 'arian', 'ism']",3,"['vegetarian', 'ism']",2,"['▁veget', 'arian', 'ism']",3,2.6666666666666665,False,3,2.5,False,3,False,4,13,0
+localisation,"['local', 'isation']",2,['localisation'],1,"['▁local', 'isation']",2,1.6666666666666667,False,2,1.5,False,2,True,4,12,0
+diverge,"['div', 'erge']",2,"['diver', 'ge']",2,"['▁diver', 'ge']",2,2.0,True,2,2.0,True,2,False,5,7,0
+grapefruit,"['gr', 'ape', 'fruit']",3,"['gra', 'pe', 'fruit']",3,"['▁gra', 'pe', 'f', 'ruit']",4,3.333333333333333,False,3,3.0,True,3,False,5,10,0
+upcoming,"['up', 'coming']",2,['upcoming'],1,"['▁up', 'coming']",2,1.6666666666666667,False,2,1.5,False,2,True,5,8,0
+nomarchs,"['nom', 'archs']",2,"['nom', 'arch', 's']",3,"['▁nom', 'arch', 's']",3,2.6666666666666665,False,3,2.5,False,3,False,4,8,0
+arachnid,"['ar', 'ach', 'nid']",3,"['arach', 'nid']",2,"['▁ara', 'chn', 'id']",3,2.6666666666666665,False,3,2.5,False,3,False,4,8,0
+shone,"['sh', 'one']",2,"['sh', 'one']",2,"['▁sh', 'one']",2,2.0,True,2,2.0,True,2,False,4,5,0
+acetoacetate,"['ac', 'eto', 'acet', 'ate']",4,"['ac', 'eto', 'acetate']",3,"['▁ac', 'eto', 'ac', 'et', 'ate']",5,4.0,False,4,3.5,False,4,False,4,12,0
+dynamo,"['d', 'ynamo']",2,"['dynam', 'o']",2,"['▁dynam', 'o']",2,2.0,True,2,2.0,True,2,False,5,6,0
+icebox,"['ice', 'box']",2,"['ice', 'box']",2,"['▁ice', 'box']",2,2.0,True,2,2.0,True,2,False,5,6,0
+aficionado,"['af', 'icion', 'ado']",3,"['af', 'icionado']",2,"['▁af', 'icion', 'ado']",3,2.6666666666666665,False,3,2.5,False,3,False,4,10,0
+repent,"['rep', 'ent']",2,['repent'],1,"['▁rep', 'ent']",2,1.6666666666666667,False,2,1.5,False,2,True,4,6,0
+concordat,"['con', 'cord', 'at']",3,"['con', 'cord', 'at']",3,"['▁conc', 'ord', 'at']",3,3.0,True,3,3.0,True,3,False,5,9,0
+mlnghelpcontext,"['ml', 'n', 'gh', 'elp', 'context']",5,"['ml', 'ng', 'help', 'context']",4,"['▁m', 'l', 'ng', 'help', 'context']",5,4.666666666666667,False,5,4.5,False,5,False,4,15,0
+palmitate,"['pal', 'mit', 'ate']",3,"['pal', 'mit', 'ate']",3,"['▁pal', 'mit', 'ate']",3,3.0,True,3,3.0,True,3,False,4,9,0
+trinitatus,"['tr', 'init', 'atus']",3,"['tr', 'init', 'atus']",3,"['▁tr', 'init', 'atus']",3,3.0,True,3,3.0,True,3,False,5,10,0
+stripping,"['stri', 'pping']",2,"['stri', 'pping']",2,"['▁stri', 'pping']",2,2.0,True,2,2.0,True,2,False,4,9,0
+swam,"['sw', 'am']",2,"['sw', 'am']",2,"['▁sw', 'am']",2,2.0,True,2,2.0,True,2,False,5,4,0
+mannerist,"['m', 'anner', 'ist']",3,"['manner', 'ist']",2,"['▁manner', 'ist']",2,2.333333333333333,False,2,2.5,False,3,False,5,9,0
+glaucoma,"['gl', 'au', 'coma']",3,"['gl', 'au', 'coma']",3,"['▁gla', 'u', 'com', 'a']",4,3.333333333333333,False,3,3.0,True,3,False,4,8,0
+cinnamon,"['c', 'innamon']",2,"['c', 'innamon']",2,"['▁c', 'inn', 'am', 'on']",4,2.6666666666666665,False,3,2.0,True,2,False,5,8,0
+itinerary,"['it', 'inerary']",2,"['it', 'inerary']",2,"['▁it', 'iner', 'ary']",3,2.333333333333333,False,2,2.0,True,2,False,5,9,0
+puddle,"['pu', 'dd', 'le']",3,"['p', 'uddle']",2,"['▁p', 'ud', 'd', 'le']",4,3.0,False,3,2.5,False,3,False,5,6,0
+contraindication,"['contr', 'ain', 'd', 'ication']",4,"['contra', 'indication']",2,"['▁contra', 'ind', 'ic', 'ation']",4,3.333333333333333,False,3,3.0,False,3,False,5,16,0
+zebra,"['ze', 'bra']",2,['zebra'],1,"['▁z', 'eb', 'ra']",3,2.0,False,2,1.5,False,2,True,5,5,0
+stoner,"['ston', 'er']",2,"['ston', 'er']",2,"['▁st', 'on', 'er']",3,2.333333333333333,False,2,2.0,True,2,False,4,6,0
+behaviorism,"['behavior', 'ism']",2,"['behavior', 'ism']",2,"['▁behavior', 'ism']",2,2.0,True,2,2.0,True,2,False,4,11,0
+groenlandicus,"['gro', 'en', 'land', 'icus']",4,"['gro', 'en', 'land', 'icus']",4,"['▁gro', 'en', 'land', 'icus']",4,4.0,True,4,4.0,True,4,False,4,13,0
+biopolymers,"['bi', 'opol', 'ym', 'ers']",4,"['bi', 'opolymers']",2,"['▁bi', 'opol', 'ym', 'ers']",4,3.333333333333333,False,3,3.0,False,3,False,5,11,0
+friday,"['fr', 'iday']",2,['friday'],1,"['▁fr', 'iday']",2,1.6666666666666667,False,2,1.5,False,2,True,5,6,0
+posse,"['pos', 'se']",2,"['pos', 'se']",2,"['▁pos', 'se']",2,2.0,True,2,2.0,True,2,False,4,5,0
+sidewall,"['sid', 'ew', 'all']",3,"['sid', 'ewall']",2,"['▁side', 'wall']",2,2.333333333333333,False,2,2.5,False,3,False,4,8,0
+whoever,"['who', 'ever']",2,"['who', 'ever']",2,"['▁who', 'ever']",2,2.0,True,2,2.0,True,2,False,4,7,0
+anastomosis,"['an', 'ast', 'om', 'osis']",4,"['an', 'astom', 'osis']",3,"['▁an', 'ast', 'om', 'osis']",4,3.6666666666666665,False,4,3.5,False,4,False,5,11,0
+blaster,"['bl', 'aster']",2,"['bl', 'aster']",2,"['▁bl', 'aster']",2,2.0,True,2,2.0,True,2,False,5,7,0
+arranges,"['arr', 'anges']",2,"['arr', 'anges']",2,"['▁arr', 'anges']",2,2.0,True,2,2.0,True,2,False,5,8,0
+tracksuit,"['tracks', 'uit']",2,"['track', 'suit']",2,"['▁track', 'suit']",2,2.0,True,2,2.0,True,2,False,4,9,0
+hemoglobin,"['hem', 'oglobin']",2,"['hem', 'oglobin']",2,"['▁hem', 'og', 'lo', 'bin']",4,2.6666666666666665,False,3,2.0,True,2,False,4,10,0
+alike,"['al', 'ike']",2,['alike'],1,"['▁al', 'ike']",2,1.6666666666666667,False,2,1.5,False,2,True,4,5,0
+pacemaker,"['pac', 'emaker']",2,"['pac', 'emaker']",2,"['▁pac', 'em', 'aker']",3,2.333333333333333,False,2,2.0,True,2,False,5,9,0
+seaward,"['se', 'award']",2,"['se', 'award']",2,"['▁sea', 'ward']",2,2.0,True,2,2.0,True,2,False,4,7,0
+ashram,"['ash', 'ram']",2,"['ash', 'ram']",2,"['▁as', 'hr', 'am']",3,2.333333333333333,False,2,2.0,True,2,False,4,6,0
+personhood,"['person', 'hood']",2,"['person', 'hood']",2,"['▁person', 'hood']",2,2.0,True,2,2.0,True,2,False,4,10,0
+ulysses,"['uly', 'ss', 'es']",3,"['ul', 'ys', 'ses']",3,"['▁u', 'ly', 'ss', 'es']",4,3.333333333333333,False,3,3.0,True,3,False,5,7,0
+heck,['heck'],1,"['he', 'ck']",2,"['▁he', 'ck']",2,1.6666666666666667,False,2,1.5,False,2,True,4,4,0
+isopod,"['is', 'op', 'od']",3,"['is', 'opod']",2,"['▁is', 'op', 'od']",3,2.6666666666666665,False,3,2.5,False,3,False,4,6,0
+obliquity,"['ob', 'liqu', 'ity']",3,"['ob', 'liqu', 'ity']",3,"['▁ob', 'liqu', 'ity']",3,3.0,True,3,3.0,True,3,False,5,9,0
+surcharge,"['sur', 'charge']",2,"['s', 'urcharge']",2,"['▁sur', 'charge']",2,2.0,True,2,2.0,True,2,False,5,9,0
+sumo,"['sum', 'o']",2,"['sum', 'o']",2,"['▁sum', 'o']",2,2.0,True,2,2.0,True,2,False,5,4,0
+seduction,"['sed', 'uction']",2,"['s', 'edu', 'ction']",3,"['▁s', 'edu', 'ction']",3,2.6666666666666665,False,3,2.5,False,3,False,5,9,0
+toothpaste,"['to', 'oth', 'paste']",3,['toothpaste'],1,"['▁to', 'oth', 'paste']",3,2.333333333333333,False,2,2.0,False,2,True,5,10,0
+schwarzi,"['sch', 'war', 'zi']",3,"['sch', 'war', 'zi']",3,"['▁sch', 'war', 'zi']",3,3.0,True,3,3.0,True,3,False,4,8,0
+epistle,"['ep', 'istle']",2,"['ep', 'istle']",2,"['▁ep', 'ist', 'le']",3,2.333333333333333,False,2,2.0,True,2,False,4,7,0
+infers,"['inf', 'ers']",2,"['inf', 'ers']",2,"['▁inf', 'ers']",2,2.0,True,2,2.0,True,2,False,4,6,0
+dower,"['d', 'ower']",2,"['d', 'ower']",2,"['▁d', 'ower']",2,2.0,True,2,2.0,True,2,False,4,5,0
+junker,"['j', 'unker']",2,"['j', 'unker']",2,"['▁j', 'unker']",2,2.0,True,2,2.0,True,2,False,5,6,0
+subtracts,"['sub', 'tracts']",2,"['subtract', 's']",2,"['▁subtract', 's']",2,2.0,True,2,2.0,True,2,False,4,9,0
+armchair,"['arm', 'chair']",2,"['arm', 'chair']",2,"['▁arm', 'ch', 'air']",3,2.333333333333333,False,2,2.0,True,2,False,4,8,0
+guilder,"['g', 'uilder']",2,"['guild', 'er']",2,"['▁gu', 'ilder']",2,2.0,True,2,2.0,True,2,False,5,7,0
+criminalization,"['criminal', 'ization']",2,"['criminal', 'ization']",2,"['▁criminal', 'ization']",2,2.0,True,2,2.0,True,2,False,4,15,0
+shouting,"['sh', 'outing']",2,"['sh', 'outing']",2,"['▁shout', 'ing']",2,2.0,True,2,2.0,True,2,False,4,8,0
+revalidation,"['re', 'validation']",2,"['re', 'validation']",2,"['▁re', 'validation']",2,2.0,True,2,2.0,True,2,False,4,12,0
+promiscuity,"['prom', 'isc', 'uity']",3,"['prom', 'is', 'cu', 'ity']",4,"['▁prom', 'is', 'cu', 'ity']",4,3.6666666666666665,False,4,3.5,False,4,False,5,11,0
+quartzite,"['qu', 'artz', 'ite']",3,"['quartz', 'ite']",2,"['▁quart', 'z', 'ite']",3,2.6666666666666665,False,3,2.5,False,3,False,5,9,0
+handkerchief,"['hand', 'ker', 'chief']",3,"['hand', 'kerchief']",2,"['▁hand', 'ker', 'ch', 'ief']",4,3.0,False,3,2.5,False,3,False,4,12,0
+seldom,"['s', 'eldom']",2,"['sel', 'dom']",2,"['▁s', 'eld', 'om']",3,2.333333333333333,False,2,2.0,True,2,False,4,6,0
+internee,"['inter', 'nee']",2,"['inter', 'nee']",2,"['▁inter', 'ne', 'e']",3,2.333333333333333,False,2,2.0,True,2,False,4,8,0
+pike,['pike'],1,['pike'],1,"['▁pi', 'ke']",2,1.3333333333333333,False,1,1.0,True,1,True,5,4,0
+canzonet,"['can', 'zon', 'et']",3,"['can', 'zon', 'et']",3,"['▁can', 'zon', 'et']",3,3.0,True,3,3.0,True,3,False,4,8,0
+dialing,"['d', 'ial', 'ing']",3,"['dial', 'ing']",2,"['▁d', 'ial', 'ing']",3,2.6666666666666665,False,3,2.5,False,3,False,4,7,0
+summertime,"['summ', 'ertime']",2,"['summ', 'ertime']",2,"['▁summ', 'ert', 'ime']",3,2.333333333333333,False,2,2.0,True,2,False,5,10,0
+paradoxum,"['par', 'adox', 'um']",3,"['parad', 'ox', 'um']",3,"['▁par', 'ado', 'x', 'um']",4,3.333333333333333,False,3,3.0,True,3,False,5,9,0
+waterwheel,"['water', 'wheel']",2,"['water', 'wheel']",2,"['▁water', 'w', 'heel']",3,2.333333333333333,False,2,2.0,True,2,False,5,10,0
+fiend,"['fi', 'end']",2,"['fi', 'end']",2,"['▁fi', 'end']",2,2.0,True,2,2.0,True,2,False,5,5,0
+watercolourist,"['water', 'colour', 'ist']",3,"['water', 'colour', 'ist']",3,"['▁water', 'col', 'our', 'ist']",4,3.333333333333333,False,3,3.0,True,3,False,4,14,0
+lifeguard,"['l', 'if', 'eguard']",3,"['lif', 'egu', 'ard']",3,"['▁lif', 'egu', 'ard']",3,3.0,True,3,3.0,True,3,False,5,9,0
+keepsake,"['ke', 'eps', 'ake']",3,"['keeps', 'ake']",2,"['▁keeps', 'ake']",2,2.333333333333333,False,2,2.5,False,3,False,4,8,0
+hastings,"['h', 'ast', 'ings']",3,"['h', 'ast', 'ings']",3,"['▁hast', 'ings']",2,2.6666666666666665,False,3,3.0,True,3,False,4,8,0
+trike,"['tr', 'ike']",2,"['tri', 'ke']",2,"['▁tri', 'ke']",2,2.0,True,2,2.0,True,2,False,5,5,0
+maximus,"['max', 'imus']",2,"['max', 'imus']",2,"['▁maxim', 'us']",2,2.0,True,2,2.0,True,2,False,5,7,0
+hedonism,"['hed', 'on', 'ism']",3,"['hed', 'on', 'ism']",3,"['▁h', 'ed', 'on', 'ism']",4,3.333333333333333,False,3,3.0,True,3,False,4,8,0
+misfire,"['mis', 'fire']",2,"['m', 'isf', 'ire']",3,"['▁mis', 'fire']",2,2.333333333333333,False,2,2.5,False,3,False,4,7,0
+aquaculture,"['aqu', 'ac', 'ulture']",3,"['aqu', 'aculture']",2,"['▁aqu', 'ac', 'ulture']",3,2.6666666666666665,False,3,2.5,False,3,False,4,11,0
+selenocysteine,"['s', 'elen', 'oc', 'yst', 'e', 'ine']",6,"['selen', 'oc', 'ysteine']",3,"['▁s', 'elen', 'oc', 'yst', 'e', 'ine']",6,5.0,False,5,4.5,False,5,False,5,14,0
+sachem,"['s', 'ach', 'em']",3,"['s', 'achem']",2,"['▁s', 'ach', 'em']",3,2.6666666666666665,False,3,2.5,False,3,False,4,6,0
+sparrow,"['spar', 'row']",2,"['sp', 'arrow']",2,"['▁sp', 'arrow']",2,2.0,True,2,2.0,True,2,False,5,7,0
+frontality,"['front', 'ality']",2,"['front', 'ality']",2,"['▁front', 'ality']",2,2.0,True,2,2.0,True,2,False,4,10,0
+leafy,"['leaf', 'y']",2,"['leaf', 'y']",2,"['▁leaf', 'y']",2,2.0,True,2,2.0,True,2,False,4,5,0
+triglyceride,"['tr', 'ig', 'lycer', 'ide']",4,"['tr', 'ig', 'lycer', 'ide']",4,"['▁trig', 'ly', 'cer', 'ide']",4,4.0,True,4,4.0,True,4,False,5,12,0
+subspecialty,"['sub', 'special', 'ty']",3,"['sub', 'special', 'ty']",3,"['▁sub', 'special', 'ty']",3,3.0,True,3,3.0,True,3,False,4,12,0
+reforestation,"['ref', 'orestation']",2,"['re', 'forestation']",2,"['▁re', 'for', 'est', 'ation']",4,2.6666666666666665,False,3,2.0,True,2,False,5,13,0
+pearlfish,"['pear', 'lf', 'ish']",3,"['pearl', 'fish']",2,"['▁p', 'ear', 'l', 'fish']",4,3.0,False,3,2.5,False,3,False,4,9,0
+dieter,"['di', 'eter']",2,"['di', 'eter']",2,"['▁di', 'eter']",2,2.0,True,2,2.0,True,2,False,4,6,0
+aeroclub,"['a', 'er', 'ocl', 'ub']",4,"['aer', 'ocl', 'ub']",3,"['▁aer', 'oc', 'lub']",3,3.333333333333333,False,3,3.5,False,4,False,5,8,0
+traveling,"['travel', 'ing']",2,"['travel', 'ing']",2,"['▁travel', 'ing']",2,2.0,True,2,2.0,True,2,False,5,9,0
+reeve,"['ree', 've']",2,"['ree', 've']",2,"['▁re', 'e', 've']",3,2.333333333333333,False,2,2.0,True,2,False,5,5,0
+plundering,"['pl', 'under', 'ing']",3,"['pl', 'undering']",2,"['▁pl', 'und', 'ering']",3,2.6666666666666665,False,3,2.5,False,3,False,4,10,0
+achromogenes,"['ach', 'rom', 'ogen', 'es']",4,"['ach', 'rom', 'ogenes']",3,"['▁ach', 'rom', 'ogen', 'es']",4,3.6666666666666665,False,4,3.5,False,4,False,5,12,0
+tiredness,"['t', 'ired', 'ness']",3,"['tired', 'ness']",2,"['▁tired', 'ness']",2,2.333333333333333,False,2,2.5,False,3,False,5,9,0
+populaire,"['pop', 'ulaire']",2,"['pop', 'ulaire']",2,"['▁popula', 'ire']",2,2.0,True,2,2.0,True,2,False,5,9,0
+heathland,"['he', 'ath', 'land']",3,"['heath', 'land']",2,"['▁he', 'ath', 'land']",3,2.6666666666666665,False,3,2.5,False,3,False,5,9,0
+warping,"['w', 'arp', 'ing']",3,"['war', 'ping']",2,"['▁war', 'ping']",2,2.333333333333333,False,2,2.5,False,3,False,4,7,0
+cox,['cox'],1,['cox'],1,"['▁co', 'x']",2,1.3333333333333333,False,1,1.0,True,1,True,5,3,0
+grandiosity,"['grand', 'iosity']",2,"['grand', 'iosity']",2,"['▁grand', 'ios', 'ity']",3,2.333333333333333,False,2,2.0,True,2,False,4,11,0
+proviso,"['pro', 'viso']",2,"['pro', 'viso']",2,"['▁prov', 'iso']",2,2.0,True,2,2.0,True,2,False,5,7,0
+traditionalism,"['traditional', 'ism']",2,"['traditional', 'ism']",2,"['▁traditional', 'ism']",2,2.0,True,2,2.0,True,2,False,5,14,0
+colonnade,"['col', 'onn', 'ade']",3,"['col', 'onn', 'ade']",3,"['▁colon', 'na', 'de']",3,3.0,True,3,3.0,True,3,False,5,9,0
+papal,"['p', 'ap', 'al']",3,"['pap', 'al']",2,"['▁pap', 'al']",2,2.333333333333333,False,2,2.5,False,3,False,4,5,0
+dyskinesia,"['d', 'ys', 'k', 'ines', 'ia']",5,"['d', 'ysk', 'ines', 'ia']",4,"['▁dy', 'sk', 'ines', 'ia']",4,4.333333333333333,False,4,4.5,False,5,False,5,10,0
+seasonality,"['season', 'ality']",2,"['season', 'ality']",2,"['▁season', 'ality']",2,2.0,True,2,2.0,True,2,False,5,11,0
+complainant,"['com', 'plain', 'ant']",3,"['com', 'plain', 'ant']",3,"['▁comp', 'lain', 'ant']",3,3.0,True,3,3.0,True,3,False,4,11,0
+resultant,"['result', 'ant']",2,"['result', 'ant']",2,"['▁result', 'ant']",2,2.0,True,2,2.0,True,2,False,4,9,0
+hirsutus,"['h', 'irs', 'ut', 'us']",4,"['h', 'irs', 'utus']",3,"['▁h', 'irs', 'ut', 'us']",4,3.6666666666666665,False,4,3.5,False,4,False,5,8,0
+ranching,"['r', 'anch', 'ing']",3,"['r', 'anch', 'ing']",3,"['▁ran', 'ch', 'ing']",3,3.0,True,3,3.0,True,3,False,5,8,0
+swimsuit,"['sw', 'ims', 'uit']",3,"['swim', 'suit']",2,"['▁sw', 'im', 'suit']",3,2.6666666666666665,False,3,2.5,False,3,False,4,8,0
+pigmentosum,"['pig', 'ment', 'os', 'um']",4,"['pig', 'ment', 'osum']",3,"['▁p', 'ig', 'ment', 'os', 'um']",5,4.0,False,4,3.5,False,4,False,5,11,0
+antisense,"['antis', 'ense']",2,"['antis', 'ense']",2,"['▁ant', 'is', 'ense']",3,2.333333333333333,False,2,2.0,True,2,False,5,9,0
+rhodomystax,"['rh', 'odom', 'yst', 'ax']",4,"['rh', 'odom', 'yst', 'ax']",4,"['▁rh', 'od', 'om', 'yst', 'ax']",5,4.333333333333333,False,4,4.0,True,4,False,4,11,0
+dismemberment,"['d', 'ism', 'ember', 'ment']",4,"['d', 'ism', 'ember', 'ment']",4,"['▁dis', 'member', 'ment']",3,3.6666666666666665,False,4,4.0,True,4,False,5,13,0
+naturist,"['n', 'atur', 'ist']",3,"['natur', 'ist']",2,"['▁natur', 'ist']",2,2.333333333333333,False,2,2.5,False,3,False,4,8,0
+displaces,"['dis', 'places']",2,"['dis', 'places']",2,"['▁disp', 'laces']",2,2.0,True,2,2.0,True,2,False,4,9,0
+condemns,"['cond', 'em', 'ns']",3,"['cond', 'em', 'ns']",3,"['▁condem', 'ns']",2,2.6666666666666665,False,3,3.0,True,3,False,4,8,0
+metalcore,"['metal', 'core']",2,"['metal', 'core']",2,"['▁metal', 'core']",2,2.0,True,2,2.0,True,2,False,4,9,0
+scaffolding,"['s', 'caff', 'olding']",3,"['sc', 'aff', 'olding']",3,"['▁sc', 'aff', 'old', 'ing']",4,3.333333333333333,False,3,3.0,True,3,False,5,11,0
+pood,"['p', 'ood']",2,"['p', 'ood']",2,"['▁po', 'od']",2,2.0,True,2,2.0,True,2,False,5,4,0
+backwater,"['back', 'water']",2,"['back', 'water']",2,"['▁back', 'water']",2,2.0,True,2,2.0,True,2,False,4,9,0
+bulbiferum,"['bul', 'b', 'ifer', 'um']",4,"['bulb', 'ifer', 'um']",3,"['▁bul', 'b', 'ifer', 'um']",4,3.6666666666666665,False,4,3.5,False,4,False,5,10,0
+flume,"['fl', 'ume']",2,"['fl', 'ume']",2,"['▁fl', 'ume']",2,2.0,True,2,2.0,True,2,False,4,5,0
+appoints,"['appoint', 's']",2,"['appoint', 's']",2,"['▁appoint', 's']",2,2.0,True,2,2.0,True,2,False,5,8,0
+unspec,"['un', 'spec']",2,"['un', 'spec']",2,"['▁un', 'spec']",2,2.0,True,2,2.0,True,2,False,4,6,0
+oiler,"['o', 'iler']",2,"['o', 'iler']",2,"['▁o', 'iler']",2,2.0,True,2,2.0,True,2,False,4,5,0
+diaphana,"['di', 'aph', 'ana']",3,"['di', 'aph', 'ana']",3,"['▁dia', 'ph', 'ana']",3,3.0,True,3,3.0,True,3,False,4,8,0
+dojo,['dojo'],1,"['do', 'jo']",2,"['▁do', 'jo']",2,1.6666666666666667,False,2,1.5,False,2,True,5,4,0
+flutist,"['fl', 'ut', 'ist']",3,"['fl', 'ut', 'ist']",3,"['▁fl', 'ut', 'ist']",3,3.0,True,3,3.0,True,3,False,4,7,0
+hemprichii,"['hem', 'pr', 'ich', 'ii']",4,"['hem', 'pr', 'ich', 'ii']",4,"['▁hem', 'pr', 'ich', 'ii']",4,4.0,True,4,4.0,True,4,False,4,10,0
+elongate,"['elong', 'ate']",2,"['elong', 'ate']",2,"['▁el', 'ong', 'ate']",3,2.333333333333333,False,2,2.0,True,2,False,4,8,0
+collusion,"['coll', 'usion']",2,"['coll', 'usion']",2,"['▁coll', 'usion']",2,2.0,True,2,2.0,True,2,False,5,9,0
+monolith,"['mon', 'olith']",2,"['mon', 'olith']",2,"['▁mon', 'ol', 'ith']",3,2.333333333333333,False,2,2.0,True,2,False,4,8,0
+nanometer,"['nan', 'ometer']",2,"['nan', 'ometer']",2,"['▁nan', 'ometer']",2,2.0,True,2,2.0,True,2,False,4,9,0
+denizen,"['den', 'izen']",2,"['den', 'izen']",2,"['▁den', 'izen']",2,2.0,True,2,2.0,True,2,False,4,7,0
+viridis,"['vir', 'idis']",2,['viridis'],1,"['▁vir', 'id', 'is']",3,2.0,False,2,1.5,False,2,True,4,7,0
+giver,"['g', 'iver']",2,['giver'],1,"['▁g', 'iver']",2,1.6666666666666667,False,2,1.5,False,2,True,5,5,0
+arsonist,"['ar', 'son', 'ist']",3,"['ar', 'son', 'ist']",3,"['▁ar', 'son', 'ist']",3,3.0,True,3,3.0,True,3,False,5,8,0
+brittle,"['brit', 'tle']",2,"['br', 'ittle']",2,"['▁brit', 't', 'le']",3,2.333333333333333,False,2,2.0,True,2,False,5,7,0
+ferret,"['fer', 'ret']",2,"['fer', 'ret']",2,"['▁fer', 'ret']",2,2.0,True,2,2.0,True,2,False,4,6,0
+menziesii,"['men', 'z', 'ies', 'ii']",4,"['men', 'z', 'ies', 'ii']",4,"['▁men', 'z', 'ies', 'ii']",4,4.0,True,4,4.0,True,4,False,5,9,0
+ridibundus,"['rid', 'ib', 'und', 'us']",4,"['rid', 'ib', 'und', 'us']",4,"['▁rid', 'ib', 'und', 'us']",4,4.0,True,4,4.0,True,4,False,4,10,0
+extraterrestrial,"['extr', 'ater', 'restrial']",3,"['extr', 'ater', 'restrial']",3,"['▁extr', 'ater', 'rest', 'rial']",4,3.333333333333333,False,3,3.0,True,3,False,4,16,0
+disulfiram,"['dis', 'ulf', 'iram']",3,"['dis', 'ulf', 'iram']",3,"['▁dis', 'ulf', 'ir', 'am']",4,3.333333333333333,False,3,3.0,True,3,False,4,10,0
+amortization,"['am', 'ort', 'ization']",3,"['amort', 'ization']",2,"['▁am', 'ort', 'ization']",3,2.6666666666666665,False,3,2.5,False,3,False,5,12,0
+quartermaster,"['qu', 'ar', 'term', 'aster']",4,"['quarter', 'master']",2,"['▁quarter', 'master']",2,2.6666666666666665,False,3,3.0,False,3,False,4,13,0
+modernizing,"['modern', 'izing']",2,"['modern', 'izing']",2,"['▁modern', 'izing']",2,2.0,True,2,2.0,True,2,False,4,11,0
+lamina,"['lam', 'ina']",2,"['lam', 'ina']",2,"['▁l', 'am', 'ina']",3,2.333333333333333,False,2,2.0,True,2,False,4,6,0
+tory,"['t', 'ory']",2,"['t', 'ory']",2,"['▁t', 'ory']",2,2.0,True,2,2.0,True,2,False,5,4,0
+blowing,"['bl', 'owing']",2,['blowing'],1,"['▁blow', 'ing']",2,1.6666666666666667,False,2,1.5,False,2,True,4,7,0
+stoneware,"['ston', 'eware']",2,"['ston', 'eware']",2,"['▁stone', 'ware']",2,2.0,True,2,2.0,True,2,False,5,9,0
+bassoonist,"['b', 'ass', 'oon', 'ist']",4,"['bass', 'oon', 'ist']",3,"['▁bass', 'oon', 'ist']",3,3.333333333333333,False,3,3.5,False,4,False,5,10,0
+treba,"['tre', 'ba']",2,"['tre', 'ba']",2,"['▁tre', 'ba']",2,2.0,True,2,2.0,True,2,False,4,5,0
+cooperi,"['co', 'oper', 'i']",3,"['co', 'oper', 'i']",3,"['▁co', 'oper', 'i']",3,3.0,True,3,3.0,True,3,False,4,7,0
+posadasii,"['pos', 'adas', 'ii']",3,"['pos', 'adas', 'ii']",3,"['▁pos', 'adas', 'ii']",3,3.0,True,3,3.0,True,3,False,4,9,0
+scapulocoracoid,"['sc', 'ap', 'ul', 'oc', 'or', 'ac', 'oid']",7,"['sc', 'ap', 'ul', 'ocor', 'ac', 'oid']",6,"['▁sc', 'ap', 'ul', 'oc', 'or', 'ac', 'oid']",7,6.666666666666667,False,7,6.5,False,7,False,4,15,0
+dextropropoxyphene,"['d', 'ext', 'ro', 'prop', 'oxy', 'ph', 'ene']",7,"['d', 'ext', 'ro', 'prop', 'ox', 'yp', 'hene']",7,"['▁de', 'xt', 'ro', 'pro', 'po', 'xy', 'ph', 'ene']",8,7.333333333333333,False,7,7.0,True,7,False,6,18,1
+formaldehyde,"['form', 'al', 'dehyde']",3,['formaldehyde'],1,"['▁formal', 'de', 'hy', 'de']",4,2.6666666666666665,False,3,2.0,False,2,True,6,12,1
+sanctification,"['san', 'ct', 'ification']",3,"['san', 'ct', 'ification']",3,"['▁san', 'ct', 'ification']",3,3.0,True,3,3.0,True,3,False,7,14,1
+swatch,"['sw', 'atch']",2,"['sw', 'atch']",2,"['▁sw', 'atch']",2,2.0,True,2,2.0,True,2,False,7,6,1
+lugubris,"['lug', 'ub', 'ris']",3,"['lug', 'ub', 'ris']",3,"['▁lug', 'ub', 'ris']",3,3.0,True,3,3.0,True,3,False,6,8,1
+pessimism,"['p', 'essim', 'ism']",3,"['p', 'ess', 'im', 'ism']",4,"['▁p', 'ess', 'im', 'ism']",4,3.6666666666666665,False,4,3.5,False,4,False,7,9,1
+intelligentsia,"['int', 'ellig', 'ents', 'ia']",4,"['int', 'ellig', 'ents', 'ia']",4,"['▁intellig', 'ents', 'ia']",3,3.6666666666666665,False,4,4.0,True,4,False,6,14,1
+wedlock,"['wed', 'lock']",2,"['wed', 'lock']",2,"['▁wed', 'lock']",2,2.0,True,2,2.0,True,2,False,6,7,1
+hardpoints,"['hard', 'points']",2,"['hard', 'points']",2,"['▁hard', 'points']",2,2.0,True,2,2.0,True,2,False,6,10,1
+chub,"['ch', 'ub']",2,"['ch', 'ub']",2,"['▁ch', 'ub']",2,2.0,True,2,2.0,True,2,False,8,4,1
+lacustris,"['lac', 'ustr', 'is']",3,"['lac', 'ust', 'ris']",3,"['▁lac', 'ust', 'ris']",3,3.0,True,3,3.0,True,3,False,8,9,1
+causation,"['ca', 'us', 'ation']",3,"['ca', 'us', 'ation']",3,"['▁caus', 'ation']",2,2.6666666666666665,False,3,3.0,True,3,False,8,9,1
+retraction,"['re', 'traction']",2,"['ret', 'raction']",2,"['▁retra', 'ction']",2,2.0,True,2,2.0,True,2,False,6,10,1
+isobutylene,"['is', 'ob', 'ut', 'ylene']",4,"['is', 'obut', 'ylene']",3,"['▁is', 'ob', 'ut', 'yl', 'ene']",5,4.0,False,4,3.5,False,4,False,7,11,1
+athens,"['ath', 'ens']",2,"['at', 'hens']",2,"['▁ath', 'ens']",2,2.0,True,2,2.0,True,2,False,8,6,1
+ruck,"['r', 'uck']",2,['ruck'],1,"['▁r', 'uck']",2,1.6666666666666667,False,2,1.5,False,2,True,7,4,1
+counterexample,"['counter', 'example']",2,"['counter', 'example']",2,"['▁counter', 'example']",2,2.0,True,2,2.0,True,2,False,8,14,1
+imperialist,"['im', 'perial', 'ist']",3,"['imperial', 'ist']",2,"['▁imperial', 'ist']",2,2.333333333333333,False,2,2.5,False,3,False,7,11,1
+windstorm,"['wind', 'storm']",2,"['wind', 'storm']",2,"['▁wind', 'st', 'orm']",3,2.333333333333333,False,2,2.0,True,2,False,6,9,1
+cardiologist,"['card', 'i', 'ologist']",3,"['cardi', 'ologist']",2,"['▁card', 'i', 'ologist']",3,2.6666666666666665,False,3,2.5,False,3,False,7,12,1
+herder,"['her', 'der']",2,"['her', 'der']",2,"['▁her', 'der']",2,2.0,True,2,2.0,True,2,False,6,6,1
+varix,"['var', 'ix']",2,"['vari', 'x']",2,"['▁var', 'ix']",2,2.0,True,2,2.0,True,2,False,7,5,1
+monarchia,"['mon', 'arch', 'ia']",3,"['mon', 'arch', 'ia']",3,"['▁monarch', 'ia']",2,2.6666666666666665,False,3,3.0,True,3,False,6,9,1
+goblin,"['g', 'oblin']",2,"['gob', 'lin']",2,"['▁g', 'ob', 'lin']",3,2.333333333333333,False,2,2.0,True,2,False,7,6,1
+tesetaxel,"['tes', 'et', 'ax', 'el']",4,"['tes', 'et', 'axel']",3,"['▁t', 'es', 'et', 'ax', 'el']",5,4.0,False,4,3.5,False,4,False,6,9,1
+antiporters,"['anti', 'port', 'ers']",3,"['antip', 'orters']",2,"['▁ant', 'ip', 'or', 'ters']",4,3.0,False,3,2.5,False,3,False,6,11,1
+autoimmune,"['auto', 'immune']",2,"['auto', 'immune']",2,"['▁auto', 'imm', 'une']",3,2.333333333333333,False,2,2.0,True,2,False,7,10,1
+resonator,"['res', 'on', 'ator']",3,"['reson', 'ator']",2,"['▁reson', 'ator']",2,2.333333333333333,False,2,2.5,False,3,False,8,9,1
+eyelid,"['ey', 'el', 'id']",3,"['ey', 'el', 'id']",3,"['▁e', 'y', 'el', 'id']",4,3.333333333333333,False,3,3.0,True,3,False,6,6,1
+curtis,"['cur', 't', 'is']",3,"['cur', 'tis']",2,"['▁cur', 'tis']",2,2.333333333333333,False,2,2.5,False,3,False,6,6,1
+satin,"['s', 'atin']",2,"['s', 'atin']",2,"['▁sat', 'in']",2,2.0,True,2,2.0,True,2,False,6,5,1
+octane,"['oct', 'ane']",2,"['oct', 'ane']",2,"['▁oct', 'ane']",2,2.0,True,2,2.0,True,2,False,6,6,1
+corallites,"['cor', 'all', 'ites']",3,"['cor', 'all', 'ites']",3,"['▁cor', 'all', 'ites']",3,3.0,True,3,3.0,True,3,False,8,10,1
+pantograph,"['p', 'ant', 'ograph']",3,"['pant', 'ograph']",2,"['▁p', 'ant', 'ograph']",3,2.6666666666666665,False,3,2.5,False,3,False,8,10,1
+mezzo,"['me', 'zzo']",2,"['mez', 'zo']",2,"['▁mez', 'zo']",2,2.0,True,2,2.0,True,2,False,6,5,1
+hypocrite,"['hyp', 'oc', 'rite']",3,"['hyp', 'ocrite']",2,"['▁hyp', 'oc', 'rite']",3,2.6666666666666665,False,3,2.5,False,3,False,7,9,1
+forthcoming,"['forth', 'coming']",2,"['forth', 'coming']",2,"['▁forth', 'coming']",2,2.0,True,2,2.0,True,2,False,7,11,1
+derrick,"['d', 'errick']",2,"['der', 'rick']",2,"['▁der', 'rick']",2,2.0,True,2,2.0,True,2,False,6,7,1
+affricate,"['aff', 'ric', 'ate']",3,"['aff', 'ricate']",2,"['▁aff', 'ric', 'ate']",3,2.6666666666666665,False,3,2.5,False,3,False,8,9,1
+overexpression,"['over', 'expression']",2,"['over', 'expression']",2,"['▁over', 'expression']",2,2.0,True,2,2.0,True,2,False,6,14,1
+basidium,"['bas', 'id', 'ium']",3,"['bas', 'idium']",2,"['▁bas', 'id', 'ium']",3,2.6666666666666665,False,3,2.5,False,3,False,7,8,1
+mucopolysaccharidosis,"['m', 'uc', 'opol', 'ys', 'ac', 'char', 'id', 'osis']",8,"['muc', 'opolys', 'acchar', 'id', 'osis']",5,"['▁m', 'uc', 'opol', 'ys', 'ac', 'char', 'idos', 'is']",8,7.0,False,7,6.5,False,7,False,6,21,1
+ethnodevelopment,"['eth', 'node', 'velopment']",3,"['eth', 'node', 'velopment']",3,"['▁eth', 'node', 'velop', 'ment']",4,3.333333333333333,False,3,3.0,True,3,False,6,16,1
+shrank,"['sh', 'rank']",2,"['sh', 'rank']",2,"['▁sh', 'rank']",2,2.0,True,2,2.0,True,2,False,6,6,1
+groupby,"['group', 'by']",2,['groupby'],1,"['▁group', 'by']",2,1.6666666666666667,False,2,1.5,False,2,True,7,7,1
+mutilation,"['m', 'util', 'ation']",3,"['m', 'util', 'ation']",3,"['▁m', 'util', 'ation']",3,3.0,True,3,3.0,True,3,False,8,10,1
+jukebox,"['ju', 'ke', 'box']",3,"['juk', 'ebox']",2,"['▁ju', 'ke', 'box']",3,2.6666666666666665,False,3,2.5,False,3,False,6,7,1
+purist,"['pur', 'ist']",2,"['pur', 'ist']",2,"['▁pur', 'ist']",2,2.0,True,2,2.0,True,2,False,6,6,1
+origami,"['orig', 'ami']",2,"['orig', 'ami']",2,"['▁orig', 'ami']",2,2.0,True,2,2.0,True,2,False,8,7,1
+underpinnings,"['under', 'p', 'inn', 'ings']",4,"['under', 'p', 'innings']",3,"['▁under', 'p', 'inn', 'ings']",4,3.6666666666666665,False,4,3.5,False,4,False,6,13,1
+slapstick,"['sl', 'ap', 'stick']",3,"['sl', 'ap', 'stick']",3,"['▁s', 'lap', 'st', 'ick']",4,3.333333333333333,False,3,3.0,True,3,False,6,9,1
+venereal,"['ven', 'ereal']",2,"['ven', 'ereal']",2,"['▁ven', 'ere', 'al']",3,2.333333333333333,False,2,2.0,True,2,False,6,8,1
+orgy,"['org', 'y']",2,"['or', 'gy']",2,"['▁org', 'y']",2,2.0,True,2,2.0,True,2,False,6,4,1
+fanaticism,"['fan', 'atic', 'ism']",3,"['fan', 'atic', 'ism']",3,"['▁fan', 'atic', 'ism']",3,3.0,True,3,3.0,True,3,False,8,10,1
+dulcimer,"['d', 'ul', 'c', 'imer']",4,"['dul', 'c', 'imer']",3,"['▁d', 'ul', 'c', 'imer']",4,3.6666666666666665,False,4,3.5,False,4,False,7,8,1
+afar,"['af', 'ar']",2,['afar'],1,"['▁af', 'ar']",2,1.6666666666666667,False,2,1.5,False,2,True,7,4,1
+tenon,"['ten', 'on']",2,"['ten', 'on']",2,"['▁ten', 'on']",2,2.0,True,2,2.0,True,2,False,8,5,1
+welding,"['w', 'eld', 'ing']",3,"['wel', 'ding']",2,"['▁w', 'eld', 'ing']",3,2.6666666666666665,False,3,2.5,False,3,False,8,7,1
+opportunism,"['op', 'portun', 'ism']",3,"['opportun', 'ism']",2,"['▁opportun', 'ism']",2,2.333333333333333,False,2,2.5,False,3,False,6,11,1
+shearwater,"['she', 'ar', 'water']",3,"['shear', 'water']",2,"['▁she', 'ar', 'water']",3,2.6666666666666665,False,3,2.5,False,3,False,6,10,1
+tokamak,"['tok', 'am', 'ak']",3,"['tok', 'amak']",2,"['▁to', 'k', 'am', 'ak']",4,3.0,False,3,2.5,False,3,False,8,7,1
+serenity,"['ser', 'enity']",2,"['ser', 'enity']",2,"['▁ser', 'en', 'ity']",3,2.333333333333333,False,2,2.0,True,2,False,7,8,1
+arterials,"['arter', 'ials']",2,"['arter', 'ials']",2,"['▁ar', 'ter', 'ial', 's']",4,2.6666666666666665,False,3,2.0,True,2,False,7,9,1
+haze,"['h', 'aze']",2,"['h', 'aze']",2,"['▁ha', 'ze']",2,2.0,True,2,2.0,True,2,False,8,4,1
+puppetry,"['p', 'uppet', 'ry']",3,"['pupp', 'etry']",2,"['▁pu', 'ppet', 'ry']",3,2.6666666666666665,False,3,2.5,False,3,False,6,8,1
+thoracic,"['th', 'or', 'acic']",3,"['thor', 'acic']",2,"['▁thor', 'ac', 'ic']",3,2.6666666666666665,False,3,2.5,False,3,False,6,8,1
+vestibular,"['vest', 'ib', 'ular']",3,"['vest', 'ibular']",2,"['▁vest', 'ib', 'ular']",3,2.6666666666666665,False,3,2.5,False,3,False,6,10,1
+credence,"['cred', 'ence']",2,"['cred', 'ence']",2,"['▁cred', 'ence']",2,2.0,True,2,2.0,True,2,False,7,8,1
+lancifolium,"['l', 'anc', 'if', 'ol', 'ium']",5,"['lanc', 'ifolium']",2,"['▁l', 'anc', 'if', 'ol', 'ium']",5,4.0,False,4,3.5,False,4,False,8,11,1
+plow,"['pl', 'ow']",2,"['pl', 'ow']",2,"['▁p', 'low']",2,2.0,True,2,2.0,True,2,False,6,4,1
+scepticism,"['s', 'cept', 'icism']",3,"['s', 'cept', 'icism']",3,"['▁s', 'cept', 'ic', 'ism']",4,3.333333333333333,False,3,3.0,True,3,False,8,10,1
+pudding,"['pu', 'dd', 'ing']",3,"['p', 'ud', 'ding']",3,"['▁p', 'ud', 'ding']",3,3.0,True,3,3.0,True,3,False,6,7,1
+profanity,"['prof', 'anity']",2,"['prof', 'anity']",2,"['▁prof', 'an', 'ity']",3,2.333333333333333,False,2,2.0,True,2,False,7,9,1
+biomarkers,"['bi', 'om', 'arkers']",3,"['bi', 'om', 'ark', 'ers']",4,"['▁bi', 'om', 'ark', 'ers']",4,3.6666666666666665,False,4,3.5,False,4,False,8,10,1
+weekly,['weekly'],1,['weekly'],1,"['▁week', 'ly']",2,1.3333333333333333,False,1,1.0,True,1,True,8,6,1
+streptomyces,"['stre', 'pt', 'omy', 'ces']",4,"['stre', 'pt', 'omyces']",3,"['▁stre', 'pt', 'omy', 'ces']",4,3.6666666666666665,False,4,3.5,False,4,False,7,12,1
+nuisance,"['nu', 'is', 'ance']",3,"['nu', 'isance']",2,"['▁n', 'uis', 'ance']",3,2.6666666666666665,False,3,2.5,False,3,False,6,8,1
+palatine,"['pal', 'at', 'ine']",3,"['pal', 'atine']",2,"['▁pal', 'at', 'ine']",3,2.6666666666666665,False,3,2.5,False,3,False,7,8,1
+moratorium,"['mor', 'atorium']",2,"['mor', 'atorium']",2,"['▁mor', 'ator', 'ium']",3,2.333333333333333,False,2,2.0,True,2,False,8,10,1
+velodrome,"['vel', 'od', 'rome']",3,"['vel', 'odrome']",2,"['▁vel', 'od', 'rome']",3,2.6666666666666665,False,3,2.5,False,3,False,6,9,1
+fuller,"['full', 'er']",2,"['full', 'er']",2,"['▁full', 'er']",2,2.0,True,2,2.0,True,2,False,6,6,1
+cutout,"['cut', 'out']",2,"['cut', 'out']",2,"['▁cut', 'out']",2,2.0,True,2,2.0,True,2,False,8,6,1
+prenylation,"['p', 'ren', 'ylation']",3,"['pren', 'ylation']",2,"['▁pr', 'en', 'yl', 'ation']",4,3.0,False,3,2.5,False,3,False,7,11,1
+cusp,"['c', 'usp']",2,"['cus', 'p']",2,"['▁c', 'us', 'p']",3,2.333333333333333,False,2,2.0,True,2,False,7,4,1
+vendetta,"['v', 'end', 'etta']",3,"['vend', 'etta']",2,"['▁vend', 'etta']",2,2.333333333333333,False,2,2.5,False,3,False,7,8,1
+mtor,"['mt', 'or']",2,"['mt', 'or']",2,"['▁m', 'tor']",2,2.0,True,2,2.0,True,2,False,8,4,1
+penicillin,"['pen', 'ic', 'illin']",3,"['pen', 'icillin']",2,"['▁pen', 'ic', 'ill', 'in']",4,3.0,False,3,2.5,False,3,False,6,10,1
+emo,['emo'],1,['emo'],1,"['▁em', 'o']",2,1.3333333333333333,False,1,1.0,True,1,True,7,3,1
+bongo,"['b', 'ongo']",2,"['b', 'ongo']",2,"['▁b', 'ongo']",2,2.0,True,2,2.0,True,2,False,7,5,1
+caproate,"['cap', 'ro', 'ate']",3,"['cap', 'ro', 'ate']",3,"['▁cap', 'ro', 'ate']",3,3.0,True,3,3.0,True,3,False,8,8,1
+domestication,"['dom', 'estic', 'ation']",3,"['dom', 'est', 'ication']",3,"['▁domestic', 'ation']",2,2.6666666666666665,False,3,3.0,True,3,False,7,13,1
+junta,"['j', 'unta']",2,"['j', 'unta']",2,"['▁jun', 'ta']",2,2.0,True,2,2.0,True,2,False,8,5,1
+trachea,"['tr', 'ache', 'a']",3,"['tr', 'ache', 'a']",3,"['▁tra', 'che', 'a']",3,3.0,True,3,3.0,True,3,False,8,7,1
+seismicity,"['se', 'ismic', 'ity']",3,"['se', 'ism', 'icity']",3,"['▁se', 'ism', 'icity']",3,3.0,True,3,3.0,True,3,False,8,10,1
+photosphere,"['photos', 'phere']",2,"['phot', 'osphere']",2,"['▁photos', 'phere']",2,2.0,True,2,2.0,True,2,False,6,11,1
+diosgenin,"['d', 'ios', 'gen', 'in']",4,"['d', 'ios', 'gen', 'in']",4,"['▁di', 'os', 'gen', 'in']",4,4.0,True,4,4.0,True,4,False,7,9,1
+webcomic,"['web', 'comic']",2,"['web', 'comic']",2,"['▁web', 'com', 'ic']",3,2.333333333333333,False,2,2.0,True,2,False,7,8,1
+elm,['elm'],1,['elm'],1,"['▁el', 'm']",2,1.3333333333333333,False,1,1.0,True,1,True,8,3,1
+respectability,"['respect', 'ability']",2,"['respect', 'ability']",2,"['▁respect', 'ability']",2,2.0,True,2,2.0,True,2,False,6,14,1
+ringleader,"['r', 'ingle', 'ader']",3,"['ring', 'leader']",2,"['▁ring', 'le', 'ader']",3,2.6666666666666665,False,3,2.5,False,3,False,6,10,1
+puja,"['pu', 'ja']",2,"['pu', 'ja']",2,"['▁pu', 'ja']",2,2.0,True,2,2.0,True,2,False,6,4,1
+adhesive,"['ad', 'hesive']",2,['adhesive'],1,"['▁ad', 'hes', 'ive']",3,2.0,False,2,1.5,False,2,True,8,8,1
+inhabits,"['in', 'hab', 'its']",3,"['in', 'hab', 'its']",3,"['▁inhab', 'its']",2,2.6666666666666665,False,3,3.0,True,3,False,6,8,1
+euphoria,"['e', 'up', 'horia']",3,"['eu', 'ph', 'oria']",3,"['▁eu', 'ph', 'oria']",3,3.0,True,3,3.0,True,3,False,6,8,1
+multiplicity,"['multip', 'licity']",2,"['multi', 'plicity']",2,"['▁multip', 'licity']",2,2.0,True,2,2.0,True,2,False,7,12,1
+albolabris,"['al', 'bol', 'ab', 'ris']",4,"['al', 'bol', 'ab', 'ris']",4,"['▁al', 'bol', 'ab', 'ris']",4,4.0,True,4,4.0,True,4,False,6,10,1
+morphogenesis,"['morph', 'ogenesis']",2,"['morph', 'ogenesis']",2,"['▁morph', 'ogen', 'esis']",3,2.333333333333333,False,2,2.0,True,2,False,6,13,1
+indigo,"['ind', 'igo']",2,['indigo'],1,"['▁ind', 'igo']",2,1.6666666666666667,False,2,1.5,False,2,True,6,6,1
+defenseman,"['defense', 'man']",2,"['defense', 'man']",2,"['▁def', 'ens', 'eman']",3,2.333333333333333,False,2,2.0,True,2,False,6,10,1
+mistreatment,"['mist', 'reatment']",2,"['mist', 'reatment']",2,"['▁mist', 're', 'at', 'ment']",4,2.6666666666666665,False,3,2.0,True,2,False,7,12,1
+pumping,"['p', 'umping']",2,"['p', 'umping']",2,"['▁p', 'ump', 'ing']",3,2.333333333333333,False,2,2.0,True,2,False,6,7,1
+rutgers,"['rut', 'gers']",2,"['rut', 'gers']",2,"['▁r', 'ut', 'gers']",3,2.333333333333333,False,2,2.0,True,2,False,7,7,1
+idiot,"['id', 'iot']",2,"['idi', 'ot']",2,"['▁id', 'iot']",2,2.0,True,2,2.0,True,2,False,7,5,1
+ciliolata,"['c', 'ili', 'ol', 'ata']",4,"['c', 'ili', 'olata']",3,"['▁c', 'ili', 'ol', 'ata']",4,3.6666666666666665,False,4,3.5,False,4,False,6,9,1
+reviewing,"['review', 'ing']",2,"['review', 'ing']",2,"['▁review', 'ing']",2,2.0,True,2,2.0,True,2,False,6,9,1
+hype,"['h', 'ype']",2,['hype'],1,"['▁h', 'ype']",2,1.6666666666666667,False,2,1.5,False,2,True,7,4,1
+ozone,"['o', 'zone']",2,['ozone'],1,"['▁o', 'zone']",2,1.6666666666666667,False,2,1.5,False,2,True,8,5,1
+loam,"['lo', 'am']",2,"['lo', 'am']",2,"['▁lo', 'am']",2,2.0,True,2,2.0,True,2,False,8,4,1
+tinnitus,"['t', 'innitus']",2,"['t', 'innitus']",2,"['▁t', 'inn', 'it', 'us']",4,2.6666666666666665,False,3,2.0,True,2,False,6,8,1
+sander,"['s', 'ander']",2,"['s', 'ander']",2,"['▁s', 'ander']",2,2.0,True,2,2.0,True,2,False,7,6,1
+crossfire,"['cross', 'fire']",2,"['cross', 'fire']",2,"['▁cross', 'fire']",2,2.0,True,2,2.0,True,2,False,6,9,1
+feudatory,"['fe', 'ud', 'atory']",3,"['fe', 'ud', 'atory']",3,"['▁fe', 'ud', 'atory']",3,3.0,True,3,3.0,True,3,False,6,9,1
+lignin,"['l', 'ign', 'in']",3,"['l', 'ign', 'in']",3,"['▁l', 'ign', 'in']",3,3.0,True,3,3.0,True,3,False,6,6,1
+raj,['raj'],1,['raj'],1,"['▁ra', 'j']",2,1.3333333333333333,False,1,1.0,True,1,True,6,3,1
+overboard,"['over', 'board']",2,"['over', 'board']",2,"['▁over', 'board']",2,2.0,True,2,2.0,True,2,False,7,9,1
+bella,"['b', 'ella']",2,['bella'],1,"['▁bel', 'la']",2,1.6666666666666667,False,2,1.5,False,2,True,7,5,1
+qanat,"['q', 'an', 'at']",3,"['q', 'anat']",2,"['▁q', 'an', 'at']",3,2.6666666666666665,False,3,2.5,False,3,False,6,5,1
+volute,"['v', 'olute']",2,"['vol', 'ute']",2,"['▁vol', 'ute']",2,2.0,True,2,2.0,True,2,False,8,6,1
+daring,"['d', 'aring']",2,"['d', 'aring']",2,"['▁d', 'aring']",2,2.0,True,2,2.0,True,2,False,6,6,1
+macabre,"['mac', 'ab', 're']",3,"['mac', 'abre']",2,"['▁mac', 'ab', 're']",3,2.6666666666666665,False,3,2.5,False,3,False,8,7,1
+scraper,"['scr', 'aper']",2,['scraper'],1,"['▁scra', 'per']",2,1.6666666666666667,False,2,1.5,False,2,True,8,7,1
+akin,['akin'],1,['akin'],1,"['▁a', 'kin']",2,1.3333333333333333,False,1,1.0,True,1,True,6,4,1
+washboard,"['w', 'ashboard']",2,"['w', 'ashboard']",2,"['▁was', 'h', 'board']",3,2.333333333333333,False,2,2.0,True,2,False,7,9,1
+seafarer,"['se', 'af', 'arer']",3,"['se', 'afar', 'er']",3,"['▁se', 'af', 'ar', 'er']",4,3.333333333333333,False,3,3.0,True,3,False,7,8,1
+ogre,"['og', 're']",2,"['og', 're']",2,"['▁og', 're']",2,2.0,True,2,2.0,True,2,False,6,4,1
+troublemaker,"['tr', 'ouble', 'maker']",3,"['trou', 'blem', 'aker']",3,"['▁trou', 'blem', 'aker']",3,3.0,True,3,3.0,True,3,False,7,12,1
+shopworkers,"['shop', 'workers']",2,"['shop', 'workers']",2,"['▁shop', 'work', 'ers']",3,2.333333333333333,False,2,2.0,True,2,False,7,11,1
+trimming,"['trim', 'ming']",2,"['trim', 'ming']",2,"['▁trim', 'ming']",2,2.0,True,2,2.0,True,2,False,6,8,1
+semifinalist,"['sem', 'if', 'inal', 'ist']",4,"['sem', 'if', 'inal', 'ist']",4,"['▁semif', 'inal', 'ist']",3,3.6666666666666665,False,4,4.0,True,4,False,8,12,1
+umbellata,"['umb', 'ell', 'ata']",3,"['umb', 'ell', 'ata']",3,"['▁um', 'bell', 'ata']",3,3.0,True,3,3.0,True,3,False,7,9,1
+scoop,"['s', 'coop']",2,"['sco', 'op']",2,"['▁sc', 'oop']",2,2.0,True,2,2.0,True,2,False,8,5,1
+usurer,"['us', 'urer']",2,"['us', 'urer']",2,"['▁us', 'urer']",2,2.0,True,2,2.0,True,2,False,6,6,1
+whirlwind,"['wh', 'irl', 'wind']",3,"['wh', 'irl', 'wind']",3,"['▁wh', 'irl', 'wind']",3,3.0,True,3,3.0,True,3,False,8,9,1
+neopositivism,"['ne', 'op', 'osit', 'ivism']",4,"['ne', 'op', 'osit', 'ivism']",4,"['▁ne', 'op', 'os', 'it', 'iv', 'ism']",6,4.666666666666667,False,5,4.0,True,4,False,7,13,1
+stella,"['st', 'ella']",2,"['st', 'ella']",2,"['▁st', 'ella']",2,2.0,True,2,2.0,True,2,False,6,6,1
+figment,"['fig', 'ment']",2,"['fig', 'ment']",2,"['▁fig', 'ment']",2,2.0,True,2,2.0,True,2,False,6,7,1
+gladiator,"['gl', 'adiator']",2,"['gl', 'adiator']",2,"['▁gl', 'adi', 'ator']",3,2.333333333333333,False,2,2.0,True,2,False,6,9,1
+swagger,['swagger'],1,['swagger'],1,"['▁sw', 'agger']",2,1.3333333333333333,False,1,1.0,True,1,True,6,7,1
+washroom,"['wash', 'room']",2,"['wash', 'room']",2,"['▁was', 'h', 'room']",3,2.333333333333333,False,2,2.0,True,2,False,7,8,1
+tranche,"['tr', 'anche']",2,"['tr', 'anche']",2,"['▁tr', 'anche']",2,2.0,True,2,2.0,True,2,False,6,7,1
+propagandist,"['prop', 'ag', 'and', 'ist']",4,"['propag', 'and', 'ist']",3,"['▁propag', 'and', 'ist']",3,3.333333333333333,False,3,3.5,False,4,False,8,12,1
+mayhem,"['may', 'hem']",2,"['may', 'hem']",2,"['▁may', 'hem']",2,2.0,True,2,2.0,True,2,False,6,6,1
+amphitheatre,"['am', 'ph', 'ithe', 'atre']",4,"['am', 'ph', 'ithe', 'atre']",4,"['▁am', 'ph', 'it', 'he', 'atre']",5,4.333333333333333,False,4,4.0,True,4,False,8,12,1
+mailbox,['mailbox'],1,['mailbox'],1,"['▁mail', 'box']",2,1.3333333333333333,False,1,1.0,True,1,True,8,7,1
+brute,"['br', 'ute']",2,"['br', 'ute']",2,"['▁br', 'ute']",2,2.0,True,2,2.0,True,2,False,7,5,1
+telson,"['t', 'elson']",2,"['t', 'elson']",2,"['▁tel', 'son']",2,2.0,True,2,2.0,True,2,False,6,6,1
+pitfall,"['pit', 'fall']",2,"['pit', 'fall']",2,"['▁pit', 'fall']",2,2.0,True,2,2.0,True,2,False,7,7,1
+sepsis,"['se', 'ps', 'is']",3,"['se', 'psis']",2,"['▁se', 'ps', 'is']",3,2.6666666666666665,False,3,2.5,False,3,False,6,6,1
+trnava,"['tr', 'n', 'ava']",3,"['trn', 'ava']",2,"['▁tr', 'n', 'ava']",3,2.6666666666666665,False,3,2.5,False,3,False,7,6,1
+permutohedron,"['perm', 'uto', 'hed', 'ron']",4,"['perm', 'uto', 'hedron']",3,"['▁permut', 'oh', 'ed', 'ron']",4,3.6666666666666665,False,4,3.5,False,4,False,6,13,1
+amphoe,"['am', 'ph', 'oe']",3,"['am', 'ph', 'oe']",3,"['▁am', 'ph', 'oe']",3,3.0,True,3,3.0,True,3,False,8,6,1
+viscera,"['vis', 'c', 'era']",3,"['vis', 'c', 'era']",3,"['▁vis', 'cera']",2,2.6666666666666665,False,3,3.0,True,3,False,7,7,1
+gudgeon,"['g', 'udge', 'on']",3,"['g', 'udge', 'on']",3,"['▁g', 'ud', 'geon']",3,3.0,True,3,3.0,True,3,False,8,7,1
+garlic,"['gar', 'lic']",2,"['gar', 'lic']",2,"['▁gar', 'lic']",2,2.0,True,2,2.0,True,2,False,8,6,1
+sarong,"['sar', 'ong']",2,"['sar', 'ong']",2,"['▁sar', 'ong']",2,2.0,True,2,2.0,True,2,False,8,6,1
+recourse,"['rec', 'ourse']",2,"['rec', 'ourse']",2,"['▁rec', 'ourse']",2,2.0,True,2,2.0,True,2,False,6,8,1
+palmer,"['pal', 'mer']",2,"['pal', 'mer']",2,"['▁pal', 'mer']",2,2.0,True,2,2.0,True,2,False,6,6,1
+plinthocoelium,"['pl', 'inth', 'oco', 'el', 'ium']",5,"['pl', 'inth', 'oco', 'el', 'ium']",5,"['▁pl', 'inth', 'oco', 'el', 'ium']",5,5.0,True,5,5.0,True,5,False,7,14,1
+upgrading,"['up', 'grading']",2,"['up', 'grading']",2,"['▁upgrad', 'ing']",2,2.0,True,2,2.0,True,2,False,6,9,1
+jamaicensis,"['j', 'ama', 'icens', 'is']",4,"['jama', 'ic', 'ensis']",3,"['▁j', 'ama', 'ic', 'ensis']",4,3.6666666666666665,False,4,3.5,False,4,False,7,11,1
+vodka,"['v', 'odka']",2,"['vod', 'ka']",2,"['▁v', 'od', 'ka']",3,2.333333333333333,False,2,2.0,True,2,False,7,5,1
+roaming,"['ro', 'aming']",2,"['ro', 'aming']",2,"['▁ro', 'aming']",2,2.0,True,2,2.0,True,2,False,6,7,1
+infatuation,"['inf', 'at', 'uation']",3,"['inf', 'at', 'uation']",3,"['▁inf', 'atu', 'ation']",3,3.0,True,3,3.0,True,3,False,8,11,1
+questioning,"['question', 'ing']",2,"['question', 'ing']",2,"['▁question', 'ing']",2,2.0,True,2,2.0,True,2,False,8,11,1
+pontificate,"['p', 'ont', 'ificate']",3,"['pont', 'ificate']",2,"['▁pont', 'ificate']",2,2.333333333333333,False,2,2.5,False,3,False,6,11,1
+hatchet,"['h', 'atchet']",2,"['hat', 'chet']",2,"['▁h', 'atch', 'et']",3,2.333333333333333,False,2,2.0,True,2,False,8,7,1
+prion,"['pr', 'ion']",2,"['pr', 'ion']",2,"['▁pr', 'ion']",2,2.0,True,2,2.0,True,2,False,8,5,1
+catchment,"['catch', 'ment']",2,"['catch', 'ment']",2,"['▁catch', 'ment']",2,2.0,True,2,2.0,True,2,False,8,9,1
+trimester,"['tr', 'imest', 'er']",3,"['tr', 'imester']",2,"['▁trim', 'ester']",2,2.333333333333333,False,2,2.5,False,3,False,8,9,1
+insufficient,"['ins', 'ufficient']",2,"['ins', 'ufficient']",2,"['▁ins', 'u', 'fficient']",3,2.333333333333333,False,2,2.0,True,2,False,8,12,1
+magnificence,"['m', 'agn', 'ific', 'ence']",4,"['magn', 'ific', 'ence']",3,"['▁magnific', 'ence']",2,3.0,False,3,3.5,False,4,False,8,12,1
+muddy,"['m', 'uddy']",2,"['mud', 'dy']",2,"['▁mud', 'dy']",2,2.0,True,2,2.0,True,2,False,7,5,1
+madame,"['mad', 'ame']",2,"['mad', 'ame']",2,"['▁mad', 'ame']",2,2.0,True,2,2.0,True,2,False,6,6,1
+cadence,"['cad', 'ence']",2,"['cad', 'ence']",2,"['▁cad', 'ence']",2,2.0,True,2,2.0,True,2,False,7,7,1
+broadleaf,"['b', 'road', 'leaf']",3,"['broad', 'leaf']",2,"['▁broad', 'leaf']",2,2.333333333333333,False,2,2.5,False,3,False,8,9,1
+moki,"['m', 'oki']",2,"['m', 'oki']",2,"['▁m', 'oki']",2,2.0,True,2,2.0,True,2,False,6,4,1
+microbiology,"['micro', 'biology']",2,"['micro', 'biology']",2,"['▁micro', 'bi', 'ology']",3,2.333333333333333,False,2,2.0,True,2,False,8,12,1
+chancery,"['ch', 'anc', 'ery']",3,"['ch', 'anc', 'ery']",3,"['▁ch', 'anc', 'ery']",3,3.0,True,3,3.0,True,3,False,6,8,1
+ohm,"['oh', 'm']",2,['ohm'],1,"['▁o', 'hm']",2,1.6666666666666667,False,2,1.5,False,2,True,7,3,1
+nestling,"['nest', 'ling']",2,"['nest', 'ling']",2,"['▁nest', 'ling']",2,2.0,True,2,2.0,True,2,False,6,8,1
+twilight,"['tw', 'ilight']",2,"['tw', 'ilight']",2,"['▁tw', 'il', 'ight']",3,2.333333333333333,False,2,2.0,True,2,False,6,8,1
+eps,['eps'],1,['eps'],1,"['▁e', 'ps']",2,1.3333333333333333,False,1,1.0,True,1,True,6,3,1
+labrum,"['lab', 'rum']",2,"['lab', 'rum']",2,"['▁lab', 'rum']",2,2.0,True,2,2.0,True,2,False,6,6,1
+faqih,"['faq', 'ih']",2,"['faq', 'ih']",2,"['▁fa', 'q', 'ih']",3,2.333333333333333,False,2,2.0,True,2,False,6,5,1
+protectionism,"['pro', 'tection', 'ism']",3,"['protection', 'ism']",2,"['▁protection', 'ism']",2,2.333333333333333,False,2,2.5,False,3,False,6,13,1
+pyrolysis,"['py', 'ro', 'ly', 'sis']",4,"['py', 'rolysis']",2,"['▁py', 'ro', 'ly', 's', 'is']",5,3.6666666666666665,False,4,3.0,False,3,False,6,9,1
+woodcut,"['wood', 'cut']",2,"['wood', 'cut']",2,"['▁wood', 'cut']",2,2.0,True,2,2.0,True,2,False,8,7,1
+consulship,"['cons', 'ul', 'ship']",3,"['cons', 'ul', 'ship']",3,"['▁cons', 'ul', 'ship']",3,3.0,True,3,3.0,True,3,False,7,10,1
+gunsmith,"['gun', 'smith']",2,"['gun', 'smith']",2,"['▁gun', 'sm', 'ith']",3,2.333333333333333,False,2,2.0,True,2,False,8,8,1
+tighter,"['tight', 'er']",2,"['t', 'ighter']",2,"['▁t', 'ighter']",2,2.0,True,2,2.0,True,2,False,6,7,1
+toast,['toast'],1,['toast'],1,"['▁to', 'ast']",2,1.3333333333333333,False,1,1.0,True,1,True,10,5,2
+cytoplasm,"['cy', 'topl', 'asm']",3,"['cyt', 'oplasm']",2,"['▁cy', 'top', 'las', 'm']",4,3.0,False,3,2.5,False,3,False,13,9,2
+proportionality,"['pro', 'portion', 'ality']",3,"['pro', 'portional', 'ity']",3,"['▁proportional', 'ity']",2,2.6666666666666665,False,3,3.0,True,3,False,12,15,2
+isotopic,"['is', 'ot', 'opic']",3,"['isot', 'opic']",2,"['▁is', 'ot', 'op', 'ic']",4,3.0,False,3,2.5,False,3,False,11,8,2
+tally,"['t', 'ally']",2,"['t', 'ally']",2,"['▁t', 'ally']",2,2.0,True,2,2.0,True,2,False,11,5,2
+orienteers,"['or', 'iente', 'ers']",3,"['or', 'iente', 'ers']",3,"['▁or', 'iente', 'ers']",3,3.0,True,3,3.0,True,3,False,10,10,2
+backward,['backward'],1,['backward'],1,"['▁back', 'ward']",2,1.3333333333333333,False,1,1.0,True,1,True,11,8,2
+rocker,"['ro', 'cker']",2,"['rock', 'er']",2,"['▁ro', 'cker']",2,2.0,True,2,2.0,True,2,False,9,6,2
+boldface,"['bold', 'face']",2,"['bold', 'face']",2,"['▁bold', 'face']",2,2.0,True,2,2.0,True,2,False,13,8,2
+supernova,"['sup', 'ern', 'ova']",3,"['super', 'nova']",2,"['▁super', 'n', 'ova']",3,2.6666666666666665,False,3,2.5,False,3,False,14,9,2
+nationalization,"['national', 'ization']",2,"['national', 'ization']",2,"['▁national', 'ization']",2,2.0,True,2,2.0,True,2,False,10,15,2
+afterburner,"['after', 'burn', 'er']",3,"['after', 'burner']",2,"['▁after', 'burn', 'er']",3,2.6666666666666665,False,3,2.5,False,3,False,11,11,2
+dehydration,"['dehy', 'dration']",2,"['de', 'hydration']",2,"['▁de', 'h', 'yd', 'r', 'ation']",5,3.0,False,3,2.0,True,2,False,12,11,2
+cambridge,"['cam', 'bridge']",2,"['cam', 'bridge']",2,"['▁camb', 'ridge']",2,2.0,True,2,2.0,True,2,False,14,9,2
+paranoia,"['par', 'anoia']",2,"['par', 'anoia']",2,"['▁par', 'ano', 'ia']",3,2.333333333333333,False,2,2.0,True,2,False,13,8,2
+winery,"['win', 'ery']",2,"['win', 'ery']",2,"['▁win', 'ery']",2,2.0,True,2,2.0,True,2,False,9,6,2
+spinoff,"['spin', 'off']",2,"['sp', 'inoff']",2,"['▁sp', 'ino', 'ff']",3,2.333333333333333,False,2,2.0,True,2,False,13,7,2
+cervix,"['c', 'erv', 'ix']",3,"['c', 'erv', 'ix']",3,"['▁cer', 'v', 'ix']",3,3.0,True,3,3.0,True,3,False,13,6,2
+bogy,"['b', 'ogy']",2,"['b', 'ogy']",2,"['▁b', 'ogy']",2,2.0,True,2,2.0,True,2,False,10,4,2
+beachhead,"['be', 'ach', 'head']",3,"['beach', 'head']",2,"['▁beach', 'head']",2,2.333333333333333,False,2,2.5,False,3,False,9,9,2
+reclamation,"['re', 'clamation']",2,"['re', 'clamation']",2,"['▁re', 'clam', 'ation']",3,2.333333333333333,False,2,2.0,True,2,False,11,11,2
+freemason,"['fre', 'em', 'ason']",3,"['fre', 'em', 'ason']",3,"['▁fre', 'em', 'ason']",3,3.0,True,3,3.0,True,3,False,13,9,2
+auditory,"['aud', 'itory']",2,"['aud', 'itory']",2,"['▁aud', 'itory']",2,2.0,True,2,2.0,True,2,False,12,8,2
+standoff,"['stand', 'off']",2,"['stand', 'off']",2,"['▁st', 'ando', 'ff']",3,2.333333333333333,False,2,2.0,True,2,False,9,8,2
+sanctum,"['san', 'ct', 'um']",3,"['san', 'ct', 'um']",3,"['▁san', 'ct', 'um']",3,3.0,True,3,3.0,True,3,False,10,7,2
+balancing,"['bal', 'ancing']",2,['balancing'],1,"['▁bal', 'ancing']",2,1.6666666666666667,False,2,1.5,False,2,True,13,9,2
+cosmos,"['cos', 'mos']",2,['cosmos'],1,"['▁cos', 'mos']",2,1.6666666666666667,False,2,1.5,False,2,True,12,6,2
+infiltration,"['in', 'filtr', 'ation']",3,['infiltration'],1,"['▁in', 'fil', 'tr', 'ation']",4,2.6666666666666665,False,3,2.0,False,2,True,12,12,2
+hatha,"['h', 'atha']",2,"['h', 'atha']",2,"['▁hath', 'a']",2,2.0,True,2,2.0,True,2,False,9,5,2
+airbase,"['air', 'base']",2,"['air', 'base']",2,"['▁air', 'base']",2,2.0,True,2,2.0,True,2,False,11,7,2
+utterance,"['utter', 'ance']",2,"['utter', 'ance']",2,"['▁utter', 'ance']",2,2.0,True,2,2.0,True,2,False,9,9,2
+cheating,"['che', 'ating']",2,"['che', 'ating']",2,"['▁che', 'ating']",2,2.0,True,2,2.0,True,2,False,10,8,2
+autofocus,"['aut', 'of', 'ocus']",3,"['aut', 'of', 'ocus']",3,"['▁aut', 'of', 'ocus']",3,3.0,True,3,3.0,True,3,False,13,9,2
+ballast,"['ball', 'ast']",2,"['ball', 'ast']",2,"['▁ball', 'ast']",2,2.0,True,2,2.0,True,2,False,13,7,2
+oregon,"['ore', 'gon']",2,"['ore', 'gon']",2,"['▁or', 'eg', 'on']",3,2.333333333333333,False,2,2.0,True,2,False,12,6,2
+afterlife,"['after', 'life']",2,"['after', 'life']",2,"['▁after', 'life']",2,2.0,True,2,2.0,True,2,False,13,9,2
+remodelling,"['rem', 'od', 'elling']",3,"['re', 'mod', 'elling']",3,"['▁rem', 'od', 'elling']",3,3.0,True,3,3.0,True,3,False,9,11,2
+subversion,"['sub', 'version']",2,"['sub', 'version']",2,"['▁sub', 'version']",2,2.0,True,2,2.0,True,2,False,10,10,2
+basemen,"['bas', 'emen']",2,"['bas', 'emen']",2,"['▁bas', 'emen']",2,2.0,True,2,2.0,True,2,False,10,7,2
+datestamps,"['date', 'st', 'amps']",3,"['dat', 'estamps']",2,"['▁dat', 'est', 'amps']",3,2.6666666666666665,False,3,2.5,False,3,False,12,10,2
+bitch,"['b', 'itch']",2,"['b', 'itch']",2,"['▁b', 'itch']",2,2.0,True,2,2.0,True,2,False,11,5,2
+eligible,['eligible'],1,['eligible'],1,"['▁el', 'ig', 'ible']",3,1.6666666666666667,False,2,1.0,True,1,True,10,8,2
+tornus,"['t', 'orn', 'us']",3,"['torn', 'us']",2,"['▁torn', 'us']",2,2.333333333333333,False,2,2.5,False,3,False,11,6,2
+magnetopause,"['m', 'agnet', 'opause']",3,"['magnet', 'opause']",2,"['▁magnet', 'op', 'ause']",3,2.6666666666666665,False,3,2.5,False,3,False,10,12,2
+pronouncement,"['pron', 'ouncement']",2,"['pron', 'ouncement']",2,"['▁pron', 'oun', 'cement']",3,2.333333333333333,False,2,2.0,True,2,False,12,13,2
+panniculitis,"['pan', 'nic', 'ul', 'itis']",4,"['pann', 'icul', 'itis']",3,"['▁p', 'ann', 'icul', 'itis']",4,3.6666666666666665,False,4,3.5,False,4,False,9,12,2
+sulfate,"['s', 'ulf', 'ate']",3,"['sulf', 'ate']",2,"['▁sul', 'f', 'ate']",3,2.6666666666666665,False,3,2.5,False,3,False,12,7,2
+salesperson,"['sales', 'person']",2,"['sales', 'person']",2,"['▁sales', 'person']",2,2.0,True,2,2.0,True,2,False,11,11,2
+charming,"['char', 'ming']",2,"['ch', 'arming']",2,"['▁char', 'ming']",2,2.0,True,2,2.0,True,2,False,9,8,2
+tympanum,"['t', 'ym', 'pan', 'um']",4,"['tym', 'pan', 'um']",3,"['▁tym', 'pan', 'um']",3,3.333333333333333,False,3,3.5,False,4,False,12,8,2
+zh,['zh'],1,['zh'],1,"['▁z', 'h']",2,1.3333333333333333,False,1,1.0,True,1,True,9,2,2
+cauldron,"['ca', 'uld', 'ron']",3,"['ca', 'uldron']",2,"['▁ca', 'uld', 'ron']",3,2.6666666666666665,False,3,2.5,False,3,False,12,8,2
+obsolete,['obsolete'],1,"['ob', 'solete']",2,"['▁ob', 'sole', 'te']",3,2.0,False,2,1.5,False,2,True,10,8,2
+psychotherapy,"['psy', 'cho', 'therapy']",3,"['psych', 'otherapy']",2,"['▁psych', 'other', 'apy']",3,2.6666666666666665,False,3,2.5,False,3,False,9,13,2
+aramburui,"['aram', 'bur', 'ui']",3,"['ar', 'amb', 'ur', 'ui']",4,"['▁ar', 'amb', 'ur', 'ui']",4,3.6666666666666665,False,4,3.5,False,4,False,14,9,2
+sorority,"['s', 'or', 'or', 'ity']",4,"['sor', 'ority']",2,"['▁sor', 'or', 'ity']",3,3.0,False,3,3.0,False,3,False,9,8,2
+focusing,"['f', 'ocusing']",2,"['focus', 'ing']",2,"['▁foc', 'using']",2,2.0,True,2,2.0,True,2,False,12,8,2
+splinter,"['spl', 'inter']",2,"['spl', 'inter']",2,"['▁spl', 'inter']",2,2.0,True,2,2.0,True,2,False,10,8,2
+subtype,['subtype'],1,['subtype'],1,"['▁sub', 'type']",2,1.3333333333333333,False,1,1.0,True,1,True,9,7,2
+distancing,"['dist', 'ancing']",2,"['dist', 'ancing']",2,"['▁dist', 'ancing']",2,2.0,True,2,2.0,True,2,False,9,10,2
+emerges,"['em', 'erg', 'es']",3,"['emer', 'ges']",2,"['▁emer', 'ges']",2,2.333333333333333,False,2,2.5,False,3,False,11,7,2
+moderation,"['mod', 'eration']",2,"['moder', 'ation']",2,"['▁moder', 'ation']",2,2.0,True,2,2.0,True,2,False,12,10,2
+cardboard,"['card', 'board']",2,"['card', 'board']",2,"['▁card', 'board']",2,2.0,True,2,2.0,True,2,False,14,9,2
+starch,"['st', 'arch']",2,['starch'],1,"['▁st', 'arch']",2,1.6666666666666667,False,2,1.5,False,2,True,12,6,2
+mockery,"['mock', 'ery']",2,"['mock', 'ery']",2,"['▁mock', 'ery']",2,2.0,True,2,2.0,True,2,False,9,7,2
+glue,"['gl', 'ue']",2,['glue'],1,"['▁gl', 'ue']",2,1.6666666666666667,False,2,1.5,False,2,True,12,4,2
+tubercle,"['t', 'ub', 'erc', 'le']",4,"['tub', 'erc', 'le']",3,"['▁t', 'uber', 'cle']",3,3.333333333333333,False,3,3.5,False,4,False,13,8,2
+sweat,"['s', 'we', 'at']",3,"['swe', 'at']",2,"['▁swe', 'at']",2,2.333333333333333,False,2,2.5,False,3,False,14,5,2
+barefoot,"['bare', 'foot']",2,"['bare', 'foot']",2,"['▁bare', 'foot']",2,2.0,True,2,2.0,True,2,False,9,8,2
+reformation,"['re', 'formation']",2,"['re', 'formation']",2,"['▁re', 'formation']",2,2.0,True,2,2.0,True,2,False,13,11,2
+retailing,"['ret', 'ailing']",2,"['ret', 'ailing']",2,"['▁ret', 'ail', 'ing']",3,2.333333333333333,False,2,2.0,True,2,False,10,9,2
+jacques,"['jac', 'ques']",2,"['jac', 'ques']",2,"['▁j', 'ac', 'ques']",3,2.333333333333333,False,2,2.0,True,2,False,11,7,2
+wastewater,"['w', 'ast', 'ewater']",3,"['wast', 'ewater']",2,"['▁waste', 'water']",2,2.333333333333333,False,2,2.5,False,3,False,12,10,2
+chorale,"['chor', 'ale']",2,"['chor', 'ale']",2,"['▁ch', 'or', 'ale']",3,2.333333333333333,False,2,2.0,True,2,False,9,7,2
+urine,"['ur', 'ine']",2,['urine'],1,"['▁ur', 'ine']",2,1.6666666666666667,False,2,1.5,False,2,True,11,5,2
+enmity,"['en', 'm', 'ity']",3,"['en', 'mity']",2,"['▁en', 'm', 'ity']",3,2.6666666666666665,False,3,2.5,False,3,False,12,6,2
+guan,"['gu', 'an']",2,['guan'],1,"['▁gu', 'an']",2,1.6666666666666667,False,2,1.5,False,2,True,11,4,2
+etching,"['etch', 'ing']",2,"['etch', 'ing']",2,"['▁et', 'ch', 'ing']",3,2.333333333333333,False,2,2.0,True,2,False,9,7,2
+soloensis,"['s', 'olo', 'ensis']",3,"['solo', 'ensis']",2,"['▁solo', 'ensis']",2,2.333333333333333,False,2,2.5,False,3,False,10,9,2
+tracklist,"['track', 'list']",2,"['track', 'list']",2,"['▁track', 'list']",2,2.0,True,2,2.0,True,2,False,9,9,2
+illiteracy,"['ill', 'iter', 'acy']",3,"['ill', 'iteracy']",2,"['▁ill', 'iter', 'acy']",3,2.6666666666666665,False,3,2.5,False,3,False,9,10,2
+champagne,"['ch', 'amp', 'agne']",3,"['champ', 'agne']",2,"['▁champ', 'agne']",2,2.333333333333333,False,2,2.5,False,3,False,13,9,2
+rotunda,"['rot', 'unda']",2,"['rot', 'unda']",2,"['▁rot', 'unda']",2,2.0,True,2,2.0,True,2,False,10,7,2
+beforehand,"['before', 'hand']",2,"['before', 'hand']",2,"['▁before', 'hand']",2,2.0,True,2,2.0,True,2,False,11,10,2
+chime,"['ch', 'ime']",2,"['ch', 'ime']",2,"['▁ch', 'ime']",2,2.0,True,2,2.0,True,2,False,9,5,2
+telescopic,"['te', 'lesc', 'opic']",3,"['teles', 'copic']",2,"['▁teles', 'cop', 'ic']",3,2.6666666666666665,False,3,2.5,False,3,False,14,10,2
+corolla,"['cor', 'olla']",2,"['cor', 'olla']",2,"['▁cor', 'ol', 'la']",3,2.333333333333333,False,2,2.0,True,2,False,12,7,2
+neon,"['ne', 'on']",2,['neon'],1,"['▁ne', 'on']",2,1.6666666666666667,False,2,1.5,False,2,True,9,4,2
+takeaway,"['take', 'away']",2,"['take', 'away']",2,"['▁take', 'away']",2,2.0,True,2,2.0,True,2,False,9,8,2
+waviness,"['wav', 'iness']",2,"['wav', 'iness']",2,"['▁w', 'av', 'iness']",3,2.333333333333333,False,2,2.0,True,2,False,13,8,2
+thirteenth,"['th', 'ir', 'teenth']",3,"['th', 'irteenth']",2,"['▁th', 'ir', 'teenth']",3,2.6666666666666665,False,3,2.5,False,3,False,14,10,2
+coleoptera,"['cole', 'opt', 'era']",3,"['cole', 'optera']",2,"['▁cole', 'optera']",2,2.333333333333333,False,2,2.5,False,3,False,12,10,2
+adjoining,"['ad', 'joining']",2,"['ad', 'joining']",2,"['▁ad', 'jo', 'ining']",3,2.333333333333333,False,2,2.0,True,2,False,10,9,2
+paddy,"['p', 'addy']",2,"['p', 'addy']",2,"['▁p', 'addy']",2,2.0,True,2,2.0,True,2,False,12,5,2
+junk,"['j', 'unk']",2,['junk'],1,"['▁j', 'unk']",2,1.6666666666666667,False,2,1.5,False,2,True,14,4,2
+hippie,"['hip', 'pie']",2,"['hipp', 'ie']",2,"['▁hi', 'pp', 'ie']",3,2.333333333333333,False,2,2.0,True,2,False,11,6,2
+sunrise,"['sun', 'rise']",2,['sunrise'],1,"['▁sun', 'r', 'ise']",3,2.0,False,2,1.5,False,2,True,11,7,2
+toddler,"['t', 'odd', 'ler']",3,"['t', 'odd', 'ler']",3,"['▁to', 'dd', 'ler']",3,3.0,True,3,3.0,True,3,False,12,7,2
+bonnet,"['bon', 'net']",2,"['bon', 'net']",2,"['▁bon', 'net']",2,2.0,True,2,2.0,True,2,False,10,6,2
+cirrhosis,"['cir', 'rh', 'osis']",3,"['cir', 'rh', 'osis']",3,"['▁cir', 'r', 'hos', 'is']",4,3.333333333333333,False,3,3.0,True,3,False,10,9,2
+mileage,"['mile', 'age']",2,"['mile', 'age']",2,"['▁mile', 'age']",2,2.0,True,2,2.0,True,2,False,13,7,2
+amidst,"['am', 'id', 'st']",3,"['amid', 'st']",2,"['▁amid', 'st']",2,2.333333333333333,False,2,2.5,False,3,False,11,6,2
+lust,['lust'],1,['lust'],1,"['▁l', 'ust']",2,1.3333333333333333,False,1,1.0,True,1,True,12,4,2
+stalemate,"['st', 'ale', 'mate']",3,"['stal', 'emate']",2,"['▁st', 'alem', 'ate']",3,2.6666666666666665,False,3,2.5,False,3,False,9,9,2
+carload,"['car', 'load']",2,"['car', 'load']",2,"['▁car', 'load']",2,2.0,True,2,2.0,True,2,False,9,7,2
+charisma,"['char', 'isma']",2,['charisma'],1,"['▁char', 'is', 'ma']",3,2.0,False,2,1.5,False,2,True,10,8,2
+hypotheticodeductivism,"['hyp', 'oth', 'etic', 'oded', 'uct', 'ivism']",6,"['hyp', 'ot', 'hetic', 'oded', 'uct', 'ivism']",6,"['▁hypoth', 'etic', 'oded', 'uct', 'iv', 'ism']",6,6.0,True,6,6.0,True,6,False,9,22,2
+flatness,"['flat', 'ness']",2,"['flat', 'ness']",2,"['▁flat', 'ness']",2,2.0,True,2,2.0,True,2,False,11,8,2
+browsing,"['b', 'rowsing']",2,"['brows', 'ing']",2,"['▁brow', 'sing']",2,2.0,True,2,2.0,True,2,False,11,8,2
+exciton,"['exc', 'iton']",2,"['ex', 'cit', 'on']",3,"['▁exc', 'it', 'on']",3,2.6666666666666665,False,3,2.5,False,3,False,10,7,2
+seedling,"['seed', 'ling']",2,"['seed', 'ling']",2,"['▁seed', 'ling']",2,2.0,True,2,2.0,True,2,False,14,8,2
+byproduct,"['by', 'product']",2,"['by', 'product']",2,"['▁by', 'product']",2,2.0,True,2,2.0,True,2,False,14,9,2
+glassware,"['glass', 'ware']",2,"['glass', 'ware']",2,"['▁glass', 'ware']",2,2.0,True,2,2.0,True,2,False,13,9,2
+depicts,"['dep', 'icts']",2,"['dep', 'icts']",2,"['▁dep', 'ict', 's']",3,2.333333333333333,False,2,2.0,True,2,False,9,7,2
+specifies,"['spec', 'ifies']",2,"['spec', 'ifies']",2,"['▁spec', 'ifies']",2,2.0,True,2,2.0,True,2,False,11,9,2
+downside,"['down', 'side']",2,"['down', 'side']",2,"['▁down', 'side']",2,2.0,True,2,2.0,True,2,False,14,8,2
+pratique,"['pr', 'at', 'ique']",3,"['pr', 'atique']",2,"['▁pr', 'atique']",2,2.333333333333333,False,2,2.5,False,3,False,9,8,2
+understudy,"['under', 'study']",2,"['under', 'study']",2,"['▁under', 'stud', 'y']",3,2.333333333333333,False,2,2.0,True,2,False,9,10,2
+cartographer,"['cart', 'ographer']",2,"['cart', 'ographer']",2,"['▁cart', 'ograph', 'er']",3,2.333333333333333,False,2,2.0,True,2,False,12,12,2
+redistricting,"['red', 'istrict', 'ing']",3,"['red', 'ist', 'ricting']",3,"['▁red', 'istrict', 'ing']",3,3.0,True,3,3.0,True,3,False,10,13,2
+urdu,"['ur', 'du']",2,['urdu'],1,"['▁ur', 'du']",2,1.6666666666666667,False,2,1.5,False,2,True,9,4,2
+phillies,"['ph', 'ill', 'ies']",3,"['phill', 'ies']",2,"['▁ph', 'ill', 'ies']",3,2.6666666666666665,False,3,2.5,False,3,False,9,8,2
+transcendence,"['trans', 'c', 'end', 'ence']",4,"['trans', 'cend', 'ence']",3,"['▁trans', 'c', 'end', 'ence']",4,3.6666666666666665,False,4,3.5,False,4,False,9,13,2
+detonation,"['det', 'onation']",2,"['det', 'onation']",2,"['▁det', 'on', 'ation']",3,2.333333333333333,False,2,2.0,True,2,False,10,10,2
+suburban,"['sub', 'urban']",2,"['sub', 'urban']",2,"['▁sub', 'urban']",2,2.0,True,2,2.0,True,2,False,10,8,2
+puberty,"['pub', 'erty']",2,"['pub', 'erty']",2,"['▁pub', 'ert', 'y']",3,2.333333333333333,False,2,2.0,True,2,False,12,7,2
+expropriation,"['ex', 'propri', 'ation']",3,"['ex', 'propri', 'ation']",3,"['▁ex', 'prop', 'ri', 'ation']",4,3.333333333333333,False,3,3.0,True,3,False,12,13,2
+rhatany,"['r', 'hat', 'any']",3,"['r', 'hat', 'any']",3,"['▁r', 'hat', 'any']",3,3.0,True,3,3.0,True,3,False,9,7,2
+plebiscite,"['ple', 'b', 'isc', 'ite']",4,"['ple', 'bis', 'cite']",3,"['▁ple', 'bis', 'cite']",3,3.333333333333333,False,3,3.5,False,4,False,12,10,2
+exceeds,"['ex', 'ceed', 's']",3,"['ex', 'ceed', 's']",3,"['▁exceed', 's']",2,2.6666666666666665,False,3,3.0,True,3,False,12,7,2
+raven,"['r', 'aven']",2,['raven'],1,"['▁ra', 'ven']",2,1.6666666666666667,False,2,1.5,False,2,True,11,5,2
+fuze,"['fu', 'ze']",2,"['fu', 'ze']",2,"['▁fu', 'ze']",2,2.0,True,2,2.0,True,2,False,13,4,2
+lighter,"['light', 'er']",2,['lighter'],1,"['▁l', 'ighter']",2,1.6666666666666667,False,2,1.5,False,2,True,12,7,2
+brewer,"['brew', 'er']",2,['brewer'],1,"['▁bre', 'wer']",2,1.6666666666666667,False,2,1.5,False,2,True,9,6,2
+hump,"['h', 'ump']",2,"['h', 'ump']",2,"['▁hum', 'p']",2,2.0,True,2,2.0,True,2,False,13,4,2
+despot,"['des', 'pot']",2,"['des', 'pot']",2,"['▁desp', 'ot']",2,2.0,True,2,2.0,True,2,False,10,6,2
+tunic,"['t', 'unic']",2,"['t', 'unic']",2,"['▁t', 'unic']",2,2.0,True,2,2.0,True,2,False,9,5,2
+hyperplasia,"['hyper', 'pl', 'asia']",3,"['hyper', 'plasia']",2,"['▁hyper', 'pl', 'asia']",3,2.6666666666666665,False,3,2.5,False,3,False,12,11,2
+microscopic,"['micro', 'scopic']",2,"['micro', 'scopic']",2,"['▁micro', 'scop', 'ic']",3,2.333333333333333,False,2,2.0,True,2,False,9,11,2
+zenith,"['zen', 'ith']",2,"['zen', 'ith']",2,"['▁z', 'en', 'ith']",3,2.333333333333333,False,2,2.0,True,2,False,14,6,2
+waiter,"['wait', 'er']",2,"['wait', 'er']",2,"['▁wait', 'er']",2,2.0,True,2,2.0,True,2,False,9,6,2
+iscsi,"['isc', 'si']",2,"['is', 'cs', 'i']",3,"['▁is', 'c', 'si']",3,2.6666666666666665,False,3,2.5,False,3,False,13,5,2
+betting,"['bet', 'ting']",2,"['bet', 'ting']",2,"['▁bet', 'ting']",2,2.0,True,2,2.0,True,2,False,14,7,2
+tuba,"['t', 'uba']",2,"['t', 'uba']",2,"['▁t', 'uba']",2,2.0,True,2,2.0,True,2,False,9,4,2
+dichotomy,"['d', 'ich', 'otomy']",3,"['d', 'ich', 'otomy']",3,"['▁dich', 'ot', 'omy']",3,3.0,True,3,3.0,True,3,False,13,9,2
+electronica,"['electron', 'ica']",2,"['electron', 'ica']",2,"['▁electron', 'ica']",2,2.0,True,2,2.0,True,2,False,12,11,2
+conditioner,"['condition', 'er']",2,"['condition', 'er']",2,"['▁condition', 'er']",2,2.0,True,2,2.0,True,2,False,12,11,2
+vibrator,"['v', 'ibrator']",2,"['v', 'ibr', 'ator']",3,"['▁v', 'ibr', 'ator']",3,2.6666666666666665,False,3,2.5,False,3,False,10,8,2
+metallurgy,"['met', 'all', 'urgy']",3,"['metall', 'urgy']",2,"['▁met', 'all', 'ur', 'gy']",4,3.0,False,3,2.5,False,3,False,13,10,2
+petrochemical,"['pet', 'ro', 'chemical']",3,"['pet', 'rochemical']",2,"['▁pet', 'ro', 'chem', 'ical']",4,3.0,False,3,2.5,False,3,False,10,13,2
+hepatitis,"['he', 'pat', 'itis']",3,"['hepat', 'itis']",2,"['▁he', 'pat', 'itis']",3,2.6666666666666665,False,3,2.5,False,3,False,12,9,2
+levy,"['lev', 'y']",2,"['lev', 'y']",2,"['▁le', 'vy']",2,2.0,True,2,2.0,True,2,False,14,4,2
+cork,"['c', 'ork']",2,"['c', 'ork']",2,"['▁c', 'ork']",2,2.0,True,2,2.0,True,2,False,13,4,2
+khutor,"['kh', 'utor']",2,"['kh', 'utor']",2,"['▁k', 'h', 'utor']",3,2.333333333333333,False,2,2.0,True,2,False,14,6,2
+cation,['cation'],1,['cation'],1,"['▁c', 'ation']",2,1.3333333333333333,False,1,1.0,True,1,True,12,6,2
+scape,['scape'],1,['scape'],1,"['▁sc', 'ape']",2,1.3333333333333333,False,1,1.0,True,1,True,10,5,2
+bradykinin,"['br', 'ady', 'kin', 'in']",4,"['br', 'ady', 'kin', 'in']",4,"['▁br', 'ady', 'kin', 'in']",4,4.0,True,4,4.0,True,4,False,13,10,2
+vii,"['v', 'ii']",2,['vii'],1,"['▁v', 'ii']",2,1.6666666666666667,False,2,1.5,False,2,True,9,3,2
+engage,['engage'],1,['engage'],1,"['▁eng', 'age']",2,1.3333333333333333,False,1,1.0,True,1,True,13,6,2
+ultranationalism,"['ul', 'tran', 'ational', 'ism']",4,"['ult', 'ran', 'ational', 'ism']",4,"['▁ul', 'tr', 'an', 'ational', 'ism']",5,4.333333333333333,False,4,4.0,True,4,False,11,16,2
+grease,"['gre', 'ase']",2,"['gre', 'ase']",2,"['▁gre', 'ase']",2,2.0,True,2,2.0,True,2,False,9,6,2
+plexus,"['plex', 'us']",2,"['plex', 'us']",2,"['▁p', 'lex', 'us']",3,2.333333333333333,False,2,2.0,True,2,False,10,6,2
+recovers,"['rec', 'overs']",2,"['re', 'covers']",2,"['▁re', 'co', 'vers']",3,2.333333333333333,False,2,2.0,True,2,False,11,8,2
+trone,"['tr', 'one']",2,['trone'],1,"['▁tr', 'one']",2,1.6666666666666667,False,2,1.5,False,2,True,9,5,2
+weevil,"['we', 'evil']",2,"['we', 'evil']",2,"['▁we', 'ev', 'il']",3,2.333333333333333,False,2,2.0,True,2,False,12,6,2
+gadget,"['g', 'adget']",2,"['gad', 'get']",2,"['▁g', 'ad', 'get']",3,2.333333333333333,False,2,2.0,True,2,False,13,6,2
+hostess,"['host', 'ess']",2,"['host', 'ess']",2,"['▁host', 'ess']",2,2.0,True,2,2.0,True,2,False,9,7,2
+contributes,"['con', 'tributes']",2,"['cont', 'ributes']",2,"['▁cont', 'ributes']",2,2.0,True,2,2.0,True,2,False,13,11,2
+teleprinter,"['tele', 'printer']",2,"['tele', 'printer']",2,"['▁tele', 'pr', 'inter']",3,2.333333333333333,False,2,2.0,True,2,False,10,11,2
+awarding,"['aw', 'arding']",2,"['aw', 'arding']",2,"['▁award', 'ing']",2,2.0,True,2,2.0,True,2,False,11,8,2
+bailiff,"['b', 'ail', 'iff']",3,"['bail', 'iff']",2,"['▁b', 'ail', 'iff']",3,2.6666666666666665,False,3,2.5,False,3,False,11,7,2
+wrought,"['w', 'rought']",2,"['w', 'rought']",2,"['▁wr', 'ought']",2,2.0,True,2,2.0,True,2,False,10,7,2
+magnetism,"['m', 'agnet', 'ism']",3,"['magnet', 'ism']",2,"['▁magnet', 'ism']",2,2.333333333333333,False,2,2.5,False,3,False,14,9,2
+calvary,"['cal', 'vary']",2,"['cal', 'vary']",2,"['▁cal', 'v', 'ary']",3,2.333333333333333,False,2,2.0,True,2,False,10,7,2
+blotch,"['bl', 'otch']",2,"['bl', 'otch']",2,"['▁bl', 'ot', 'ch']",3,2.333333333333333,False,2,2.0,True,2,False,12,6,2
+townsite,"['town', 'site']",2,"['town', 'site']",2,"['▁town', 'site']",2,2.0,True,2,2.0,True,2,False,11,8,2
+airstrip,"['a', 'irst', 'rip']",3,"['a', 'irstrip']",2,"['▁a', 'irst', 'rip']",3,2.6666666666666665,False,3,2.5,False,3,False,11,8,2
+twentieth,"['tw', 'entieth']",2,"['tw', 'entieth']",2,"['▁tw', 'enti', 'eth']",3,2.333333333333333,False,2,2.0,True,2,False,10,9,2
+figuration,"['fig', 'uration']",2,['figuration'],1,"['▁fig', 'uration']",2,1.6666666666666667,False,2,1.5,False,2,True,14,10,2
+fibrillation,"['f', 'ibr', 'illation']",3,"['fibr', 'illation']",2,"['▁f', 'ibr', 'ill', 'ation']",4,3.0,False,3,2.5,False,3,False,10,12,2
+thickening,"['th', 'ick', 'ening']",3,"['thick', 'ening']",2,"['▁thick', 'ening']",2,2.333333333333333,False,2,2.5,False,3,False,13,10,2
+manipulator,"['man', 'ip', 'ulator']",3,"['manip', 'ulator']",2,"['▁manip', 'ulator']",2,2.333333333333333,False,2,2.5,False,3,False,11,11,2
+glans,"['gl', 'ans']",2,"['gl', 'ans']",2,"['▁gl', 'ans']",2,2.0,True,2,2.0,True,2,False,12,5,2
+librarianship,"['lib', 'r', 'arians', 'hip']",4,"['libr', 'arians', 'hip']",3,"['▁li', 'br', 'ari', 'ans', 'hip']",5,4.0,False,4,3.5,False,4,False,13,13,2
+incompetence,"['in', 'compet', 'ence']",3,"['in', 'compet', 'ence']",3,"['▁in', 'comp', 'et', 'ence']",4,3.333333333333333,False,3,3.0,True,3,False,10,12,2
+watercolour,"['water', 'colour']",2,"['water', 'colour']",2,"['▁water', 'col', 'our']",3,2.333333333333333,False,2,2.0,True,2,False,13,11,2
+professionalism,"['professional', 'ism']",2,"['professional', 'ism']",2,"['▁professional', 'ism']",2,2.0,True,2,2.0,True,2,False,10,15,2
+mandal,"['mand', 'al']",2,"['m', 'andal']",2,"['▁mand', 'al']",2,2.0,True,2,2.0,True,2,False,10,6,2
+tern,['tern'],1,['tern'],1,"['▁t', 'ern']",2,1.3333333333333333,False,1,1.0,True,1,True,14,4,2
+duality,"['d', 'uality']",2,"['du', 'ality']",2,"['▁du', 'ality']",2,2.0,True,2,2.0,True,2,False,13,7,2
+islamist,"['isl', 'am', 'ist']",3,"['islam', 'ist']",2,"['▁is', 'lam', 'ist']",3,2.6666666666666665,False,3,2.5,False,3,False,14,8,2
+indifference,"['ind', 'ifference']",2,"['ind', 'ifference']",2,"['▁ind', 'ifference']",2,2.0,True,2,2.0,True,2,False,14,12,2
+earthen,"['ear', 'then']",2,"['e', 'arthen']",2,"['▁ear', 'then']",2,2.0,True,2,2.0,True,2,False,11,7,2
+incline,"['in', 'cline']",2,"['in', 'cline']",2,"['▁incl', 'ine']",2,2.0,True,2,2.0,True,2,False,11,7,2
+hatred,"['hat', 'red']",2,"['hat', 'red']",2,"['▁hat', 'red']",2,2.0,True,2,2.0,True,2,False,14,6,2
+insecticide,"['in', 'sect', 'icide']",3,"['insect', 'icide']",2,"['▁insect', 'ic', 'ide']",3,2.6666666666666665,False,3,2.5,False,3,False,9,11,2
+denunciation,"['den', 'unciation']",2,"['den', 'unciation']",2,"['▁den', 'unci', 'ation']",3,2.333333333333333,False,2,2.0,True,2,False,14,12,2
+roost,"['ro', 'ost']",2,"['ro', 'ost']",2,"['▁ro', 'ost']",2,2.0,True,2,2.0,True,2,False,9,5,2
+sting,"['st', 'ing']",2,['sting'],1,"['▁st', 'ing']",2,1.6666666666666667,False,2,1.5,False,2,True,10,5,2
+forfeiture,"['for', 'fe', 'iture']",3,"['for', 'fe', 'iture']",3,"['▁for', 'fe', 'iture']",3,3.0,True,3,3.0,True,3,False,14,10,2
+campground,"['camp', 'ground']",2,"['camp', 'ground']",2,"['▁camp', 'ground']",2,2.0,True,2,2.0,True,2,False,20,10,3
+symbiosis,"['s', 'ymb', 'iosis']",3,"['sym', 'b', 'iosis']",3,"['▁sym', 'b', 'ios', 'is']",4,3.333333333333333,False,3,3.0,True,3,False,16,9,3
+semitone,"['se', 'mit', 'one']",3,"['sem', 'itone']",2,"['▁sem', 'it', 'one']",3,2.6666666666666665,False,3,2.5,False,3,False,16,8,3
+stanza,"['stan', 'za']",2,['stanza'],1,"['▁st', 'anza']",2,1.6666666666666667,False,2,1.5,False,2,True,34,6,3
+turmoil,"['tur', 'moil']",2,"['tur', 'moil']",2,"['▁tur', 'mo', 'il']",3,2.333333333333333,False,2,2.0,True,2,False,32,7,3
+normalization,"['normal', 'ization']",2,['normalization'],1,"['▁normal', 'ization']",2,1.6666666666666667,False,2,1.5,False,2,True,21,13,3
+estradiol,"['estr', 'adi', 'ol']",3,"['est', 'radiol']",2,"['▁est', 'rad', 'i', 'ol']",4,3.0,False,3,2.5,False,3,False,15,9,3
+charcoal,"['char', 'coal']",2,"['char', 'coal']",2,"['▁char', 'co', 'al']",3,2.333333333333333,False,2,2.0,True,2,False,17,8,3
+kinship,"['kin', 'ship']",2,"['kin', 'ship']",2,"['▁kin', 'ship']",2,2.0,True,2,2.0,True,2,False,19,7,3
+tibia,"['t', 'ibia']",2,"['t', 'ibia']",2,"['▁tib', 'ia']",2,2.0,True,2,2.0,True,2,False,20,5,3
+planting,"['plant', 'ing']",2,['planting'],1,"['▁plant', 'ing']",2,1.6666666666666667,False,2,1.5,False,2,True,30,8,3
+jumping,"['jump', 'ing']",2,['jumping'],1,"['▁jump', 'ing']",2,1.6666666666666667,False,2,1.5,False,2,True,31,7,3
+aspiration,"['as', 'piration']",2,"['as', 'piration']",2,"['▁asp', 'iration']",2,2.0,True,2,2.0,True,2,False,33,10,3
+inaccuracy,"['in', 'accuracy']",2,"['in', 'accuracy']",2,"['▁in', 'ac', 'cur', 'acy']",4,2.6666666666666665,False,3,2.0,True,2,False,22,10,3
+snooker,"['sn', 'ook', 'er']",3,"['sn', 'ooker']",2,"['▁s', 'no', 'oker']",3,2.6666666666666665,False,3,2.5,False,3,False,32,7,3
+corpus,"['cor', 'pus']",2,['corpus'],1,"['▁cor', 'pus']",2,1.6666666666666667,False,2,1.5,False,2,True,20,6,3
+prerequisite,"['pr', 'erequisite']",2,"['pr', 'erequisite']",2,"['▁pr', 'ere', 'quis', 'ite']",4,2.6666666666666665,False,3,2.0,True,2,False,19,12,3
+sacrament,"['s', 'ac', 'ram', 'ent']",4,"['sac', 'rament']",2,"['▁sacr', 'ament']",2,2.6666666666666665,False,3,3.0,False,3,False,21,9,3
+insistence,"['ins', 'istence']",2,"['ins', 'istence']",2,"['▁ins', 'istence']",2,2.0,True,2,2.0,True,2,False,28,10,3
+memo,['memo'],1,['memo'],1,"['▁mem', 'o']",2,1.3333333333333333,False,1,1.0,True,1,True,21,4,3
+patriot,"['p', 'atri', 'ot']",3,"['pat', 'riot']",2,"['▁patri', 'ot']",2,2.333333333333333,False,2,2.5,False,3,False,19,7,3
+baroque,"['bar', 'oque']",2,"['bar', 'oque']",2,"['▁bar', 'o', 'que']",3,2.333333333333333,False,2,2.0,True,2,False,25,7,3
+eighteen,"['eight', 'een']",2,"['eight', 'een']",2,"['▁eigh', 'teen']",2,2.0,True,2,2.0,True,2,False,31,8,3
+edifice,"['ed', 'ifice']",2,"['ed', 'ifice']",2,"['▁ed', 'ifice']",2,2.0,True,2,2.0,True,2,False,21,7,3
+aground,"['ag', 'round']",2,"['ag', 'round']",2,"['▁a', 'ground']",2,2.0,True,2,2.0,True,2,False,15,7,3
+bolt,['bolt'],1,['bolt'],1,"['▁b', 'olt']",2,1.3333333333333333,False,1,1.0,True,1,True,29,4,3
+aggression,"['ag', 'gression']",2,"['agg', 'ression']",2,"['▁ag', 'gression']",2,2.0,True,2,2.0,True,2,False,30,10,3
+culmination,"['cul', 'mination']",2,"['cul', 'mination']",2,"['▁cul', 'min', 'ation']",3,2.333333333333333,False,2,2.0,True,2,False,27,11,3
+subchannel,"['sub', 'channel']",2,"['sub', 'channel']",2,"['▁sub', 'channel']",2,2.0,True,2,2.0,True,2,False,17,10,3
+simulator,"['sim', 'ulator']",2,['simulator'],1,"['▁sim', 'ulator']",2,1.6666666666666667,False,2,1.5,False,2,True,30,9,3
+chop,"['ch', 'op']",2,['chop'],1,"['▁ch', 'op']",2,1.6666666666666667,False,2,1.5,False,2,True,16,4,3
+polita,"['pol', 'ita']",2,"['pol', 'ita']",2,"['▁pol', 'ita']",2,2.0,True,2,2.0,True,2,False,16,6,3
+darter,"['d', 'arter']",2,"['d', 'arter']",2,"['▁d', 'arter']",2,2.0,True,2,2.0,True,2,False,23,6,3
+fledgling,"['f', 'led', 'g', 'ling']",4,"['f', 'led', 'gling']",3,"['▁fled', 'g', 'ling']",3,3.333333333333333,False,3,3.5,False,4,False,15,9,3
+autoantibody,"['auto', 'ant', 'ib', 'ody']",4,"['auto', 'antibody']",2,"['▁auto', 'ant', 'ib', 'ody']",4,3.333333333333333,False,3,3.0,False,3,False,22,12,3
+trance,"['tr', 'ance']",2,"['tr', 'ance']",2,"['▁tr', 'ance']",2,2.0,True,2,2.0,True,2,False,17,6,3
+supremacist,"['sup', 'rem', 'acist']",3,"['sup', 'rem', 'ac', 'ist']",4,"['▁supre', 'mac', 'ist']",3,3.333333333333333,False,3,3.5,False,4,False,16,11,3
+rapist,"['rap', 'ist']",2,"['rap', 'ist']",2,"['▁rap', 'ist']",2,2.0,True,2,2.0,True,2,False,20,6,3
+mya,"['my', 'a']",2,"['m', 'ya']",2,"['▁my', 'a']",2,2.0,True,2,2.0,True,2,False,15,3,3
+gulf,"['g', 'ulf']",2,"['g', 'ulf']",2,"['▁g', 'ulf']",2,2.0,True,2,2.0,True,2,False,25,4,3
+fascination,"['f', 'asc', 'ination']",3,"['fasc', 'ination']",2,"['▁fasc', 'ination']",2,2.333333333333333,False,2,2.5,False,3,False,24,11,3
+deletion,"['de', 'letion']",2,['deletion'],1,"['▁delet', 'ion']",2,1.6666666666666667,False,2,1.5,False,2,True,15,8,3
+recess,"['re', 'cess']",2,"['re', 'cess']",2,"['▁re', 'cess']",2,2.0,True,2,2.0,True,2,False,22,6,3
+footing,"['foot', 'ing']",2,"['foot', 'ing']",2,"['▁foot', 'ing']",2,2.0,True,2,2.0,True,2,False,15,7,3
+obedience,"['ob', 'ed', 'ience']",3,['obedience'],1,"['▁ob', 'ed', 'ience']",3,2.333333333333333,False,2,2.0,False,2,True,19,9,3
+centipede,"['cent', 'ip', 'ede']",3,"['cent', 'ipede']",2,"['▁cent', 'ip', 'ede']",3,2.6666666666666665,False,3,2.5,False,3,False,16,9,3
+musicianship,"['mus', 'icians', 'hip']",3,"['mus', 'icians', 'hip']",3,"['▁mus', 'icians', 'hip']",3,3.0,True,3,3.0,True,3,False,15,12,3
+extermination,"['exter', 'mination']",2,"['ex', 'termination']",2,"['▁ex', 'termin', 'ation']",3,2.333333333333333,False,2,2.0,True,2,False,29,13,3
+trump,"['tr', 'ump']",2,['trump'],1,"['▁tr', 'ump']",2,1.6666666666666667,False,2,1.5,False,2,True,25,5,3
+environs,"['env', 'ir', 'ons']",3,"['env', 'irons']",2,"['▁en', 'vir', 'ons']",3,2.6666666666666665,False,3,2.5,False,3,False,17,8,3
+hipster,['hipster'],1,['hipster'],1,"['▁hip', 'ster']",2,1.3333333333333333,False,1,1.0,True,1,True,16,7,3
+strangelet,"['str', 'ange', 'let']",3,"['strange', 'let']",2,"['▁strange', 'let']",2,2.333333333333333,False,2,2.5,False,3,False,19,10,3
+resilience,"['res', 'il', 'ience']",3,"['res', 'ilience']",2,"['▁res', 'ili', 'ence']",3,2.6666666666666665,False,3,2.5,False,3,False,19,10,3
+visitation,"['vis', 'itation']",2,"['vis', 'itation']",2,"['▁visit', 'ation']",2,2.0,True,2,2.0,True,2,False,16,10,3
+sloop,"['s', 'loop']",2,"['s', 'loop']",2,"['▁s', 'loop']",2,2.0,True,2,2.0,True,2,False,27,5,3
+penultimate,"['pen', 'ultimate']",2,"['pen', 'ultimate']",2,"['▁pen', 'ult', 'imate']",3,2.333333333333333,False,2,2.0,True,2,False,32,11,3
+realignment,"['real', 'ignment']",2,"['real', 'ignment']",2,"['▁real', 'ignment']",2,2.0,True,2,2.0,True,2,False,21,11,3
+conscript,"['con', 'script']",2,"['con', 'script']",2,"['▁cons', 'cript']",2,2.0,True,2,2.0,True,2,False,18,9,3
+juice,"['ju', 'ice']",2,['juice'],1,"['▁ju', 'ice']",2,1.6666666666666667,False,2,1.5,False,2,True,27,5,3
+odor,['odor'],1,['odor'],1,"['▁od', 'or']",2,1.3333333333333333,False,1,1.0,True,1,True,26,4,3
+carcinoma,"['car', 'cin', 'oma']",3,"['car', 'cinoma']",2,"['▁car', 'cin', 'oma']",3,2.6666666666666665,False,3,2.5,False,3,False,34,9,3
+prank,"['pr', 'ank']",2,"['pr', 'ank']",2,"['▁pr', 'ank']",2,2.0,True,2,2.0,True,2,False,18,5,3
+negotiator,"['neg', 'ot', 'iator']",3,"['negoti', 'ator']",2,"['▁negoti', 'ator']",2,2.333333333333333,False,2,2.5,False,3,False,17,10,3
+plural,['plural'],1,['plural'],1,"['▁pl', 'ural']",2,1.3333333333333333,False,1,1.0,True,1,True,24,6,3
+metropolis,"['met', 'ropolis']",2,"['met', 'ropolis']",2,"['▁metropol', 'is']",2,2.0,True,2,2.0,True,2,False,16,10,3
+lupus,"['l', 'up', 'us']",3,"['l', 'up', 'us']",3,"['▁l', 'up', 'us']",3,3.0,True,3,3.0,True,3,False,15,5,3
+maize,"['ma', 'ize']",2,"['ma', 'ize']",2,"['▁ma', 'ize']",2,2.0,True,2,2.0,True,2,False,18,5,3
+proficiency,"['prof', 'iciency']",2,['proficiency'],1,"['▁prof', 'ic', 'iency']",3,2.0,False,2,1.5,False,2,True,16,11,3
+expanse,"['ex', 'panse']",2,"['ex', 'pan', 'se']",3,"['▁exp', 'anse']",2,2.333333333333333,False,2,2.5,False,3,False,16,7,3
+eating,['eating'],1,['eating'],1,"['▁e', 'ating']",2,1.3333333333333333,False,1,1.0,True,1,True,16,6,3
+polyp,"['pol', 'yp']",2,"['pol', 'yp']",2,"['▁pol', 'yp']",2,2.0,True,2,2.0,True,2,False,15,5,3
+burger,['burger'],1,['burger'],1,"['▁bur', 'ger']",2,1.3333333333333333,False,1,1.0,True,1,True,22,6,3
+condemnation,"['cond', 'em', 'nation']",3,"['cond', 'em', 'nation']",3,"['▁condem', 'n', 'ation']",3,3.0,True,3,3.0,True,3,False,33,12,3
+moss,"['m', 'oss']",2,['moss'],1,"['▁m', 'oss']",2,1.6666666666666667,False,2,1.5,False,2,True,18,4,3
+zeal,"['ze', 'al']",2,"['ze', 'al']",2,"['▁ze', 'al']",2,2.0,True,2,2.0,True,2,False,16,4,3
+echelon,"['ech', 'elon']",2,"['e', 'chelon']",2,"['▁e', 'ch', 'el', 'on']",4,2.6666666666666665,False,3,2.0,True,2,False,15,7,3
+bikini,"['b', 'ik', 'ini']",3,"['bik', 'ini']",2,"['▁b', 'ik', 'ini']",3,2.6666666666666665,False,3,2.5,False,3,False,32,6,3
+iteratee,"['iterate', 'e']",2,"['iter', 'atee']",2,"['▁iterate', 'e']",2,2.0,True,2,2.0,True,2,False,24,8,3
+frontage,"['front', 'age']",2,"['front', 'age']",2,"['▁front', 'age']",2,2.0,True,2,2.0,True,2,False,23,8,3
+cactus,"['c', 'actus']",2,['cactus'],1,"['▁c', 'act', 'us']",3,2.0,False,2,1.5,False,2,True,25,6,3
+relaxation,"['rel', 'ax', 'ation']",3,['relaxation'],1,"['▁relax', 'ation']",2,2.0,False,2,2.0,False,2,True,27,10,3
+sidekick,"['side', 'kick']",2,"['side', 'kick']",2,"['▁side', 'k', 'ick']",3,2.333333333333333,False,2,2.0,True,2,False,16,8,3
+festivity,"['fest', 'ivity']",2,"['fest', 'ivity']",2,"['▁fest', 'ivity']",2,2.0,True,2,2.0,True,2,False,29,9,3
+botany,"['bot', 'any']",2,"['bot', 'any']",2,"['▁bot', 'any']",2,2.0,True,2,2.0,True,2,False,21,6,3
+protector,"['prot', 'ector']",2,"['prote', 'ctor']",2,"['▁prote', 'ctor']",2,2.0,True,2,2.0,True,2,False,25,9,3
+storyteller,"['story', 't', 'eller']",3,"['story', 'teller']",2,"['▁story', 't', 'eller']",3,2.6666666666666665,False,3,2.5,False,3,False,19,11,3
+syndicate,"['sy', 'nd', 'icate']",3,"['sy', 'nd', 'icate']",3,"['▁synd', 'icate']",2,2.6666666666666665,False,3,3.0,True,3,False,24,9,3
+spear,"['s', 'pear']",2,"['spe', 'ar']",2,"['▁spe', 'ar']",2,2.0,True,2,2.0,True,2,False,28,5,3
+midway,"['mid', 'way']",2,"['mid', 'way']",2,"['▁mid', 'way']",2,2.0,True,2,2.0,True,2,False,18,6,3
+truce,"['tr', 'uce']",2,"['t', 'ruce']",2,"['▁tr', 'uce']",2,2.0,True,2,2.0,True,2,False,24,5,3
+pulsar,"['p', 'uls', 'ar']",3,"['puls', 'ar']",2,"['▁p', 'uls', 'ar']",3,2.6666666666666665,False,3,2.5,False,3,False,21,6,3
+carcinosomatids,"['car', 'c', 'inos', 'omat', 'ids']",5,"['car', 'cin', 'os', 'omat', 'ids']",5,"['▁car', 'c', 'inos', 'om', 'at', 'ids']",6,5.333333333333333,False,5,5.0,True,5,False,15,15,3
+cinematography,"['cin', 'emat', 'ography']",3,"['cin', 'emat', 'ography']",3,"['▁cinemat', 'ography']",2,2.6666666666666665,False,3,3.0,True,3,False,33,14,3
+elasticity,"['elastic', 'ity']",2,"['elastic', 'ity']",2,"['▁el', 'astic', 'ity']",3,2.333333333333333,False,2,2.0,True,2,False,15,10,3
+purchaser,"['p', 'urch', 'aser']",3,"['purch', 'aser']",2,"['▁purch', 'aser']",2,2.333333333333333,False,2,2.5,False,3,False,16,9,3
+maturation,"['mat', 'uration']",2,"['mat', 'uration']",2,"['▁m', 'atur', 'ation']",3,2.333333333333333,False,2,2.0,True,2,False,18,10,3
+profound,"['pro', 'found']",2,"['pro', 'found']",2,"['▁prof', 'ound']",2,2.0,True,2,2.0,True,2,False,16,8,3
+cafe,"['ca', 'fe']",2,['cafe'],1,"['▁ca', 'fe']",2,1.6666666666666667,False,2,1.5,False,2,True,32,4,3
+plaster,"['pl', 'aster']",2,"['pl', 'aster']",2,"['▁pl', 'aster']",2,2.0,True,2,2.0,True,2,False,29,7,3
+obsession,"['obs', 'ession']",2,"['ob', 'session']",2,"['▁ob', 'session']",2,2.0,True,2,2.0,True,2,False,31,9,3
+moor,"['mo', 'or']",2,['moor'],1,"['▁mo', 'or']",2,1.6666666666666667,False,2,1.5,False,2,True,19,4,3
+postmaster,"['post', 'master']",2,"['post', 'master']",2,"['▁post', 'master']",2,2.0,True,2,2.0,True,2,False,22,10,3
+offshore,"['off', 'shore']",2,"['off', 'shore']",2,"['▁off', 'sh', 'ore']",3,2.333333333333333,False,2,2.0,True,2,False,22,8,3
+housewife,"['house', 'wife']",2,"['house', 'wife']",2,"['▁house', 'w', 'ife']",3,2.333333333333333,False,2,2.0,True,2,False,20,9,3
+pollutant,"['poll', 'ut', 'ant']",3,"['poll', 'utant']",2,"['▁poll', 'ut', 'ant']",3,2.6666666666666665,False,3,2.5,False,3,False,17,9,3
+exaggeration,"['ex', 'agger', 'ation']",3,"['ex', 'agger', 'ation']",3,"['▁ex', 'agger', 'ation']",3,3.0,True,3,3.0,True,3,False,15,12,3
+woe,"['wo', 'e']",2,"['wo', 'e']",2,"['▁w', 'oe']",2,2.0,True,2,2.0,True,2,False,23,3,3
+transmittance,"['trans', 'mitt', 'ance']",3,"['trans', 'mittance']",2,"['▁trans', 'mitt', 'ance']",3,2.6666666666666665,False,3,2.5,False,3,False,15,13,3
+trajectory,['trajectory'],1,['trajectory'],1,"['▁traject', 'ory']",2,1.3333333333333333,False,1,1.0,True,1,True,33,10,3
+episcopate,"['ep', 'isc', 'op', 'ate']",4,"['ep', 'isc', 'op', 'ate']",4,"['▁epis', 'cop', 'ate']",3,3.6666666666666665,False,4,4.0,True,4,False,16,10,3
+folklorist,"['folk', 'lor', 'ist']",3,"['folk', 'lor', 'ist']",3,"['▁folk', 'lor', 'ist']",3,3.0,True,3,3.0,True,3,False,15,10,3
+mastering,"['master', 'ing']",2,"['master', 'ing']",2,"['▁master', 'ing']",2,2.0,True,2,2.0,True,2,False,18,9,3
+conga,"['con', 'ga']",2,"['con', 'ga']",2,"['▁con', 'ga']",2,2.0,True,2,2.0,True,2,False,15,5,3
+racetrack,"['rac', 'etr', 'ack']",3,"['r', 'acet', 'rack']",3,"['▁rac', 'et', 'rack']",3,3.0,True,3,3.0,True,3,False,15,9,3
+pedestrian,"['ped', 'est', 'rian']",3,"['ped', 'estrian']",2,"['▁ped', 'est', 'rian']",3,2.6666666666666665,False,3,2.5,False,3,False,29,10,3
+incubator,"['inc', 'ub', 'ator']",3,"['incub', 'ator']",2,"['▁inc', 'ub', 'ator']",3,2.6666666666666665,False,3,2.5,False,3,False,23,9,3
+claimant,"['claim', 'ant']",2,"['claim', 'ant']",2,"['▁claim', 'ant']",2,2.0,True,2,2.0,True,2,False,17,8,3
+topography,"['top', 'ography']",2,"['top', 'ography']",2,"['▁top', 'ography']",2,2.0,True,2,2.0,True,2,False,27,10,3
+realist,"['real', 'ist']",2,"['real', 'ist']",2,"['▁real', 'ist']",2,2.0,True,2,2.0,True,2,False,32,7,3
+thug,"['th', 'ug']",2,"['th', 'ug']",2,"['▁th', 'ug']",2,2.0,True,2,2.0,True,2,False,24,4,3
+prioress,"['p', 'rio', 'ress']",3,"['p', 'rio', 'ress']",3,"['▁prior', 'ess']",2,2.6666666666666665,False,3,3.0,True,3,False,25,8,3
+fern,['fern'],1,['fern'],1,"['▁f', 'ern']",2,1.3333333333333333,False,1,1.0,True,1,True,22,4,3
+lava,"['l', 'ava']",2,['lava'],1,"['▁la', 'va']",2,1.6666666666666667,False,2,1.5,False,2,True,16,4,3
+princeling,"['pr', 'inc', 'eling']",3,"['princ', 'eling']",2,"['▁prin', 'cel', 'ing']",3,2.6666666666666665,False,3,2.5,False,3,False,20,10,3
+scanner,['scanner'],1,['scanner'],1,"['▁sc', 'anner']",2,1.3333333333333333,False,1,1.0,True,1,True,26,7,3
+shingle,"['sh', 'ingle']",2,"['sh', 'ingle']",2,"['▁sh', 'ing', 'le']",3,2.333333333333333,False,2,2.0,True,2,False,27,7,3
+capillary,"['cap', 'illary']",2,"['cap', 'illary']",2,"['▁cap', 'ill', 'ary']",3,2.333333333333333,False,2,2.0,True,2,False,19,9,3
+exhibitor,"['ex', 'hib', 'itor']",3,"['ex', 'hib', 'itor']",3,"['▁exhib', 'itor']",2,2.6666666666666665,False,3,3.0,True,3,False,18,9,3
+trouser,"['tr', 'ouser']",2,"['trou', 'ser']",2,"['▁trou', 'ser']",2,2.0,True,2,2.0,True,2,False,29,7,3
+delinquent,"['del', 'in', 'quent']",3,"['del', 'inqu', 'ent']",3,"['▁del', 'in', 'quent']",3,3.0,True,3,3.0,True,3,False,18,10,3
+pairing,"['pair', 'ing']",2,['pairing'],1,"['▁pair', 'ing']",2,1.6666666666666667,False,2,1.5,False,2,True,29,7,3
+neuron,"['ne', 'uron']",2,['neuron'],1,"['▁neur', 'on']",2,1.6666666666666667,False,2,1.5,False,2,True,24,6,3
+cascade,['cascade'],1,['cascade'],1,"['▁cas', 'cade']",2,1.3333333333333333,False,1,1.0,True,1,True,27,7,3
+haiku,"['ha', 'iku']",2,"['ha', 'iku']",2,"['▁ha', 'iku']",2,2.0,True,2,2.0,True,2,False,25,5,3
+faulty,"['fault', 'y']",2,"['fault', 'y']",2,"['▁fault', 'y']",2,2.0,True,2,2.0,True,2,False,23,6,3
+pact,"['p', 'act']",2,"['p', 'act']",2,"['▁p', 'act']",2,2.0,True,2,2.0,True,2,False,30,4,3
+bullying,"['bul', 'lying']",2,['bullying'],1,"['▁bul', 'lying']",2,1.6666666666666667,False,2,1.5,False,2,True,18,8,3
+shiner,"['sh', 'iner']",2,"['sh', 'iner']",2,"['▁sh', 'iner']",2,2.0,True,2,2.0,True,2,False,19,6,3
+cholera,"['ch', 'ol', 'era']",3,"['chol', 'era']",2,"['▁ch', 'ol', 'era']",3,2.6666666666666665,False,3,2.5,False,3,False,22,7,3
+hoop,"['ho', 'op']",2,"['ho', 'op']",2,"['▁ho', 'op']",2,2.0,True,2,2.0,True,2,False,15,4,3
+completa,"['com', 'ple', 'ta']",3,"['comple', 'ta']",2,"['▁comple', 'ta']",2,2.333333333333333,False,2,2.5,False,3,False,18,8,3
+breaker,['breaker'],1,['breaker'],1,"['▁break', 'er']",2,1.3333333333333333,False,1,1.0,True,1,True,15,7,3
+stipend,"['st', 'ip', 'end']",3,"['st', 'ip', 'end']",3,"['▁st', 'ip', 'end']",3,3.0,True,3,3.0,True,3,False,17,7,3
+rowing,['rowing'],1,"['row', 'ing']",2,"['▁row', 'ing']",2,1.6666666666666667,False,2,1.5,False,2,True,29,6,3
+malnutrition,"['mal', 'nutrition']",2,"['mal', 'nutrition']",2,"['▁mal', 'nut', 'r', 'ition']",4,2.6666666666666665,False,3,2.0,True,2,False,17,12,3
+stallion,"['st', 'all', 'ion']",3,"['stall', 'ion']",2,"['▁st', 'all', 'ion']",3,2.6666666666666665,False,3,2.5,False,3,False,24,8,3
+mating,"['m', 'ating']",2,"['m', 'ating']",2,"['▁m', 'ating']",2,2.0,True,2,2.0,True,2,False,27,6,3
+gown,"['g', 'own']",2,['gown'],1,"['▁g', 'own']",2,1.6666666666666667,False,2,1.5,False,2,True,26,4,3
+indeterminate,"['ind', 'eterminate']",2,['indeterminate'],1,"['▁ind', 'et', 'erm', 'inate']",4,2.333333333333333,False,2,1.5,False,2,True,15,13,3
+beak,"['be', 'ak']",2,"['be', 'ak']",2,"['▁be', 'ak']",2,2.0,True,2,2.0,True,2,False,22,4,3
+maternity,"['mat', 'ernity']",2,"['m', 'aternity']",2,"['▁mat', 'ern', 'ity']",3,2.333333333333333,False,2,2.0,True,2,False,23,9,3
+mitigation,"['mit', 'igation']",2,"['mit', 'igation']",2,"['▁mit', 'ig', 'ation']",3,2.333333333333333,False,2,2.0,True,2,False,24,10,3
+sweep,"['s', 'weep']",2,['sweep'],1,"['▁swe', 'ep']",2,1.6666666666666667,False,2,1.5,False,2,True,33,5,3
+plumage,"['pl', 'um', 'age']",3,"['plum', 'age']",2,"['▁pl', 'um', 'age']",3,2.6666666666666665,False,3,2.5,False,3,False,27,7,3
+passionate,"['pass', 'ionate']",2,"['pass', 'ionate']",2,"['▁passion', 'ate']",2,2.0,True,2,2.0,True,2,False,24,10,3
+tph,"['t', 'ph']",2,"['t', 'ph']",2,"['▁t', 'ph']",2,2.0,True,2,2.0,True,2,False,18,3,3
+curry,"['cur', 'ry']",2,"['cur', 'ry']",2,"['▁cur', 'ry']",2,2.0,True,2,2.0,True,2,False,18,5,3
+skepticism,"['s', 'ke', 'ptic', 'ism']",4,"['ske', 'ptic', 'ism']",3,"['▁ske', 'ptic', 'ism']",3,3.333333333333333,False,3,3.5,False,4,False,28,10,3
+capitalist,"['capital', 'ist']",2,"['capital', 'ist']",2,"['▁capital', 'ist']",2,2.0,True,2,2.0,True,2,False,28,10,3
+homology,"['hom', 'ology']",2,"['hom', 'ology']",2,"['▁hom', 'ology']",2,2.0,True,2,2.0,True,2,False,34,8,3
+greatness,"['great', 'ness']",2,"['great', 'ness']",2,"['▁great', 'ness']",2,2.0,True,2,2.0,True,2,False,16,9,3
+vagina,"['v', 'agina']",2,"['v', 'agina']",2,"['▁v', 'ag', 'ina']",3,2.333333333333333,False,2,2.0,True,2,False,16,6,3
+interruption,"['int', 'err', 'u', 'ption']",4,"['inter', 'ruption']",2,"['▁inter', 'ruption']",2,2.6666666666666665,False,3,3.0,False,3,False,16,12,3
+courtroom,"['court', 'room']",2,"['court', 'room']",2,"['▁court', 'room']",2,2.0,True,2,2.0,True,2,False,18,9,3
+certainty,"['cert', 'ainty']",2,"['certain', 'ty']",2,"['▁certain', 'ty']",2,2.0,True,2,2.0,True,2,False,32,9,3
+cereal,"['c', 'ereal']",2,"['c', 'ereal']",2,"['▁c', 'ere', 'al']",3,2.333333333333333,False,2,2.0,True,2,False,28,6,3
+foremost,"['fore', 'most']",2,"['fore', 'most']",2,"['▁for', 'em', 'ost']",3,2.333333333333333,False,2,2.0,True,2,False,16,8,3
+outdoor,"['out', 'door']",2,['outdoor'],1,"['▁out', 'door']",2,1.6666666666666667,False,2,1.5,False,2,True,27,7,3
+outcast,"['out', 'cast']",2,"['out', 'cast']",2,"['▁out', 'cast']",2,2.0,True,2,2.0,True,2,False,15,7,3
+foam,"['fo', 'am']",2,['foam'],1,"['▁fo', 'am']",2,1.6666666666666667,False,2,1.5,False,2,True,25,4,3
+ligand,"['lig', 'and']",2,"['lig', 'and']",2,"['▁lig', 'and']",2,2.0,True,2,2.0,True,2,False,25,6,3
+protestors,"['pro', 'test', 'ors']",3,"['pro', 'test', 'ors']",3,"['▁protest', 'ors']",2,2.6666666666666665,False,3,3.0,True,3,False,32,10,3
+semen,"['se', 'men']",2,"['se', 'men']",2,"['▁sem', 'en']",2,2.0,True,2,2.0,True,2,False,18,5,3
+cambium,"['c', 'amb', 'ium']",3,"['camb', 'ium']",2,"['▁camb', 'ium']",2,2.333333333333333,False,2,2.5,False,3,False,15,7,3
+corona,"['cor', 'ona']",2,['corona'],1,"['▁cor', 'ona']",2,1.6666666666666667,False,2,1.5,False,2,True,22,6,3
+onstage,"['on', 'stage']",2,"['on', 'stage']",2,"['▁on', 'stage']",2,2.0,True,2,2.0,True,2,False,29,7,3
+footbridge,"['foot', 'bridge']",2,"['foot', 'bridge']",2,"['▁foot', 'bridge']",2,2.0,True,2,2.0,True,2,False,30,10,3
+boss,['boss'],1,['boss'],1,"['▁b', 'oss']",2,1.3333333333333333,False,1,1.0,True,1,True,29,4,3
+floodplain,"['f', 'lood', 'plain']",3,"['flood', 'plain']",2,"['▁flo', 'od', 'plain']",3,2.6666666666666665,False,3,2.5,False,3,False,18,10,3
+forehead,"['fore', 'head']",2,"['fore', 'head']",2,"['▁fore', 'head']",2,2.0,True,2,2.0,True,2,False,28,8,3
+emerald,"['em', 'erald']",2,['emerald'],1,"['▁emer', 'ald']",2,1.6666666666666667,False,2,1.5,False,2,True,23,7,3
+shortcoming,"['short', 'coming']",2,"['short', 'coming']",2,"['▁short', 'coming']",2,2.0,True,2,2.0,True,2,False,28,11,3
+plagiarism,"['pl', 'ag', 'iar', 'ism']",4,"['pl', 'agiarism']",2,"['▁pl', 'ag', 'iar', 'ism']",4,3.333333333333333,False,3,3.0,False,3,False,18,10,3
+handgun,"['hand', 'gun']",2,"['hand', 'gun']",2,"['▁hand', 'gun']",2,2.0,True,2,2.0,True,2,False,22,7,3
+vestment,['vestment'],1,"['vest', 'ment']",2,"['▁vest', 'ment']",2,1.6666666666666667,False,2,1.5,False,2,True,23,8,3
+diatom,"['di', 'atom']",2,"['di', 'atom']",2,"['▁di', 'atom']",2,2.0,True,2,2.0,True,2,False,21,6,3
+excitatory,"['exc', 'it', 'atory']",3,"['ex', 'cit', 'atory']",3,"['▁exc', 'itat', 'ory']",3,3.0,True,3,3.0,True,3,False,15,10,3
+laccoliths,"['lac', 'col', 'ith', 's']",4,"['lac', 'col', 'iths']",3,"['▁la', 'cc', 'ol', 'ith', 's']",5,4.0,False,4,3.5,False,4,False,25,10,3
+historiography,"['histor', 'i', 'ography']",3,"['hist', 'ori', 'ography']",3,"['▁histor', 'i', 'ography']",3,3.0,True,3,3.0,True,3,False,28,14,3
+connotation,"['con', 'notation']",2,"['con', 'notation']",2,"['▁con', 'notation']",2,2.0,True,2,2.0,True,2,False,27,11,3
+monoxide,"['mon', 'oxide']",2,"['mon', 'oxide']",2,"['▁mon', 'ox', 'ide']",3,2.333333333333333,False,2,2.0,True,2,False,27,8,3
+goodbye,"['good', 'bye']",2,"['good', 'bye']",2,"['▁good', 'bye']",2,2.0,True,2,2.0,True,2,False,24,7,3
+bribe,"['b', 'ri', 'be']",3,"['b', 'ribe']",2,"['▁b', 'ri', 'be']",3,2.6666666666666665,False,3,2.5,False,3,False,23,5,3
+staple,"['st', 'ap', 'le']",3,"['stap', 'le']",2,"['▁st', 'ap', 'le']",3,2.6666666666666665,False,3,2.5,False,3,False,23,6,3
+orthography,"['orth', 'ography']",2,"['orth', 'ography']",2,"['▁orth', 'ography']",2,2.0,True,2,2.0,True,2,False,16,11,3
+infusion,"['inf', 'usion']",2,"['inf', 'usion']",2,"['▁inf', 'usion']",2,2.0,True,2,2.0,True,2,False,20,8,3
+synths,"['syn', 'ths']",2,"['syn', 'ths']",2,"['▁synth', 's']",2,2.0,True,2,2.0,True,2,False,21,6,3
+melatonin,"['mel', 'atonin']",2,"['mel', 'atonin']",2,"['▁mel', 'aton', 'in']",3,2.333333333333333,False,2,2.0,True,2,False,29,9,3
+chairmanship,"['chair', 'manship']",2,"['chair', 'manship']",2,"['▁chair', 'mans', 'hip']",3,2.333333333333333,False,2,2.0,True,2,False,24,12,3
+guardianship,"['guard', 'ians', 'hip']",3,"['guard', 'ians', 'hip']",3,"['▁guard', 'ians', 'hip']",3,3.0,True,3,3.0,True,3,False,22,12,3
+empire,"['emp', 'ire']",2,['empire'],1,"['▁emp', 'ire']",2,1.6666666666666667,False,2,1.5,False,2,True,199,6,4
+partisan,"['part', 'isan']",2,['partisan'],1,"['▁part', 'isan']",2,1.6666666666666667,False,2,1.5,False,2,True,40,8,4
+belt,['belt'],1,['belt'],1,"['▁bel', 't']",2,1.3333333333333333,False,1,1.0,True,1,True,180,4,4
+masking,"['mask', 'ing']",2,"['mask', 'ing']",2,"['▁mask', 'ing']",2,2.0,True,2,2.0,True,2,False,44,7,4
+nationalism,"['national', 'ism']",2,"['national', 'ism']",2,"['▁national', 'ism']",2,2.0,True,2,2.0,True,2,False,87,11,4
+aristocrat,"['ar', 'ist', 'ocrat']",3,"['arist', 'ocrat']",2,"['▁arist', 'ocrat']",2,2.333333333333333,False,2,2.5,False,3,False,41,10,4
+outskirt,"['out', 'sk', 'irt']",3,"['out', 'sk', 'irt']",3,"['▁out', 'sk', 'irt']",3,3.0,True,3,3.0,True,3,False,59,8,4
+ceiling,"['ce', 'iling']",2,['ceiling'],1,"['▁ce', 'iling']",2,1.6666666666666667,False,2,1.5,False,2,True,123,7,4
+cottage,"['c', 'ottage']",2,"['cott', 'age']",2,"['▁c', 'ott', 'age']",3,2.333333333333333,False,2,2.0,True,2,False,123,7,4
+rotor,"['rot', 'or']",2,['rotor'],1,"['▁rot', 'or']",2,1.6666666666666667,False,2,1.5,False,2,True,40,5,4
+steppe,"['step', 'pe']",2,['steppe'],1,"['▁ste', 'ppe']",2,1.6666666666666667,False,2,1.5,False,2,True,39,6,4
+conscription,"['cons', 'cription']",2,"['con', 'scription']",2,"['▁cons', 'cription']",2,2.0,True,2,2.0,True,2,False,49,12,4
+mast,['mast'],1,['mast'],1,"['▁m', 'ast']",2,1.3333333333333333,False,1,1.0,True,1,True,73,4,4
+behalf,"['beh', 'alf']",2,"['be', 'half']",2,"['▁beh', 'alf']",2,2.0,True,2,2.0,True,2,False,254,6,4
+mollusk,"['m', 'oll', 'usk']",3,"['m', 'oll', 'usk']",3,"['▁m', 'oll', 'usk']",3,3.0,True,3,3.0,True,3,False,83,7,4
+paradise,"['par', 'ad', 'ise']",3,"['parad', 'ise']",2,"['▁parad', 'ise']",2,2.333333333333333,False,2,2.5,False,3,False,50,8,4
+symphony,"['sym', 'phony']",2,"['s', 'ymph', 'ony']",3,"['▁sym', 'phony']",2,2.333333333333333,False,2,2.5,False,3,False,44,8,4
+homework,"['hom', 'ework']",2,['homework'],1,"['▁home', 'work']",2,1.6666666666666667,False,2,1.5,False,2,True,35,8,4
+archbishop,"['arch', 'bishop']",2,"['arch', 'bishop']",2,"['▁arch', 'bishop']",2,2.0,True,2,2.0,True,2,False,86,10,4
+downtown,"['d', 'owntown']",2,"['d', 'owntown']",2,"['▁dow', 'nt', 'own']",3,2.333333333333333,False,2,2.0,True,2,False,150,8,4
+contingent,"['cont', 'ing', 'ent']",3,"['con', 'ting', 'ent']",3,"['▁cont', 'ing', 'ent']",3,3.0,True,3,3.0,True,3,False,71,10,4
+seating,"['se', 'ating']",2,"['se', 'ating']",2,"['▁se', 'ating']",2,2.0,True,2,2.0,True,2,False,44,7,4
+geology,"['ge', 'ology']",2,"['ge', 'ology']",2,"['▁ge', 'ology']",2,2.0,True,2,2.0,True,2,False,92,7,4
+detainee,"['det', 'ain', 'ee']",3,"['det', 'ain', 'ee']",3,"['▁d', 'eta', 'ine', 'e']",4,3.333333333333333,False,3,3.0,True,3,False,60,8,4
+fantasy,"['fant', 'asy']",2,['fantasy'],1,"['▁fant', 'asy']",2,1.6666666666666667,False,2,1.5,False,2,True,144,7,4
+touring,"['tour', 'ing']",2,"['tour', 'ing']",2,"['▁tour', 'ing']",2,2.0,True,2,2.0,True,2,False,59,7,4
+influx,"['in', 'flux']",2,"['infl', 'ux']",2,"['▁infl', 'ux']",2,2.0,True,2,2.0,True,2,False,40,6,4
+veto,"['v', 'eto']",2,"['vet', 'o']",2,"['▁v', 'eto']",2,2.0,True,2,2.0,True,2,False,46,4,4
+narrator,"['n', 'arr', 'ator']",3,"['narr', 'ator']",2,"['▁narr', 'ator']",2,2.333333333333333,False,2,2.5,False,3,False,97,8,4
+pottery,"['pot', 'tery']",2,"['pot', 'tery']",2,"['▁pot', 'tery']",2,2.0,True,2,2.0,True,2,False,82,7,4
+pharmacy,"['ph', 'armacy']",2,"['pharm', 'acy']",2,"['▁ph', 'arm', 'acy']",3,2.333333333333333,False,2,2.0,True,2,False,40,8,4
+vocalist,"['v', 'ocal', 'ist']",3,"['v', 'ocal', 'ist']",3,"['▁vocal', 'ist']",2,2.6666666666666665,False,3,3.0,True,3,False,179,8,4
+ffdddd,"['ff', 'dddd']",2,"['ff', 'dd', 'dd']",3,"['▁ff', 'dd', 'dd']",3,2.6666666666666665,False,3,2.5,False,3,False,41,6,4
+endemic,"['end', 'emic']",2,"['end', 'emic']",2,"['▁en', 'demic']",2,2.0,True,2,2.0,True,2,False,178,7,4
+colonist,"['colon', 'ist']",2,"['colon', 'ist']",2,"['▁colon', 'ist']",2,2.0,True,2,2.0,True,2,False,54,8,4
+boyfriend,"['boy', 'friend']",2,['boyfriend'],1,"['▁boy', 'friend']",2,1.6666666666666667,False,2,1.5,False,2,True,69,9,4
+scam,"['sc', 'am']",2,"['sc', 'am']",2,"['▁sc', 'am']",2,2.0,True,2,2.0,True,2,False,75,4,4
+sits,"['s', 'its']",2,"['s', 'its']",2,"['▁s', 'its']",2,2.0,True,2,2.0,True,2,False,40,4,4
+ancestry,"['ance', 'stry']",2,"['anc', 'estry']",2,"['▁ancest', 'ry']",2,2.0,True,2,2.0,True,2,False,105,8,4
+laborer,"['l', 'abor', 'er']",3,"['labor', 'er']",2,"['▁labor', 'er']",2,2.333333333333333,False,2,2.5,False,3,False,41,7,4
+characterization,"['character', 'ization']",2,"['character', 'ization']",2,"['▁character', 'ization']",2,2.0,True,2,2.0,True,2,False,51,16,4
+inspiration,"['ins', 'piration']",2,['inspiration'],1,"['▁insp', 'iration']",2,1.6666666666666667,False,2,1.5,False,2,True,216,11,4
+erectus,"['er', 'ect', 'us']",3,"['ere', 'ctus']",2,"['▁ere', 'ct', 'us']",3,2.6666666666666665,False,3,2.5,False,3,False,40,7,4
+ink,['ink'],1,['ink'],1,"['▁in', 'k']",2,1.3333333333333333,False,1,1.0,True,1,True,49,3,4
+antigen,"['ant', 'igen']",2,"['ant', 'igen']",2,"['▁ant', 'igen']",2,2.0,True,2,2.0,True,2,False,145,7,4
+vicar,"['vic', 'ar']",2,"['v', 'icar']",2,"['▁vic', 'ar']",2,2.0,True,2,2.0,True,2,False,45,5,4
+offspring,"['off', 'spring']",2,"['off', 'spring']",2,"['▁off', 'spring']",2,2.0,True,2,2.0,True,2,False,36,9,4
+willingness,"['w', 'illing', 'ness']",3,"['willing', 'ness']",2,"['▁willing', 'ness']",2,2.333333333333333,False,2,2.5,False,3,False,39,11,4
+crush,"['cr', 'ush']",2,"['cr', 'ush']",2,"['▁cr', 'ush']",2,2.0,True,2,2.0,True,2,False,48,5,4
+testimony,"['test', 'imony']",2,"['test', 'imony']",2,"['▁testim', 'ony']",2,2.0,True,2,2.0,True,2,False,140,9,4
+mrna,"['mr', 'na']",2,"['mr', 'na']",2,"['▁m', 'r', 'na']",3,2.333333333333333,False,2,2.0,True,2,False,38,4,4
+immigration,"['imm', 'igration']",2,['immigration'],1,"['▁imm', 'igration']",2,1.6666666666666667,False,2,1.5,False,2,True,139,11,4
+privilege,"['priv', 'ilege']",2,"['priv', 'ilege']",2,"['▁privile', 'ge']",2,2.0,True,2,2.0,True,2,False,115,9,4
+crane,"['cr', 'ane']",2,"['cr', 'ane']",2,"['▁c', 'rane']",2,2.0,True,2,2.0,True,2,False,40,5,4
+journalism,"['journal', 'ism']",2,"['journal', 'ism']",2,"['▁journal', 'ism']",2,2.0,True,2,2.0,True,2,False,160,10,4
+rudder,"['ru', 'dd', 'er']",3,"['rud', 'der']",2,"['▁rud', 'der']",2,2.333333333333333,False,2,2.5,False,3,False,37,6,4
+anthem,"['anth', 'em']",2,['anthem'],1,"['▁anth', 'em']",2,1.6666666666666667,False,2,1.5,False,2,True,61,6,4
+gasoline,"['gas', 'oline']",2,"['gas', 'oline']",2,"['▁gas', 'oline']",2,2.0,True,2,2.0,True,2,False,42,8,4
+incumbent,"['inc', 'umb', 'ent']",3,"['inc', 'umbent']",2,"['▁inc', 'umb', 'ent']",3,2.6666666666666665,False,3,2.5,False,3,False,108,9,4
+barge,"['bar', 'ge']",2,"['b', 'arge']",2,"['▁bar', 'ge']",2,2.0,True,2,2.0,True,2,False,70,5,4
+elector,"['elect', 'or']",2,"['e', 'lector']",2,"['▁elect', 'or']",2,2.0,True,2,2.0,True,2,False,86,7,4
+priesthood,"['pri', 'est', 'hood']",3,"['p', 'ries', 'thood']",3,"['▁priest', 'hood']",2,2.6666666666666665,False,3,3.0,True,3,False,47,10,4
+entertainer,"['ent', 'ert', 'ainer']",3,"['entertain', 'er']",2,"['▁ent', 'ert', 'ainer']",3,2.6666666666666665,False,3,2.5,False,3,False,54,11,4
+planter,"['plan', 'ter']",2,"['plan', 'ter']",2,"['▁plan', 'ter']",2,2.0,True,2,2.0,True,2,False,37,7,4
+quotient,"['quot', 'ient']",2,"['quot', 'ient']",2,"['▁quot', 'ient']",2,2.0,True,2,2.0,True,2,False,35,8,4
+antisemitism,"['antis', 'emit', 'ism']",3,"['antis', 'emit', 'ism']",3,"['▁ant', 'is', 'emit', 'ism']",4,3.333333333333333,False,3,3.0,True,3,False,53,12,4
+bite,['bite'],1,['bite'],1,"['▁b', 'ite']",2,1.3333333333333333,False,1,1.0,True,1,True,56,4,4
+drought,"['d', 'rought']",2,"['d', 'rought']",2,"['▁dr', 'ought']",2,2.0,True,2,2.0,True,2,False,48,7,4
+disappointment,"['dis', 'appointment']",2,"['dis', 'appointment']",2,"['▁disappoint', 'ment']",2,2.0,True,2,2.0,True,2,False,42,14,4
+pink,['pink'],1,['pink'],1,"['▁p', 'ink']",2,1.3333333333333333,False,1,1.0,True,1,True,71,4,4
+tape,['tape'],1,['tape'],1,"['▁t', 'ape']",2,1.3333333333333333,False,1,1.0,True,1,True,240,4,4
+insignia,"['ins', 'ign', 'ia']",3,"['ins', 'ign', 'ia']",3,"['▁ins', 'ign', 'ia']",3,3.0,True,3,3.0,True,3,False,45,8,4
+weekend,"['week', 'end']",2,['weekend'],1,"['▁week', 'end']",2,1.6666666666666667,False,2,1.5,False,2,True,243,7,4
+capacitor,"['cap', 'ac', 'itor']",3,['capacitor'],1,"['▁capac', 'itor']",2,2.0,False,2,2.0,False,2,True,84,9,4
+carpenter,"['car', 'p', 'enter']",3,"['carp', 'enter']",2,"['▁car', 'p', 'enter']",3,2.6666666666666665,False,3,2.5,False,3,False,41,9,4
+compressor,"['compress', 'or']",2,"['compress', 'or']",2,"['▁compress', 'or']",2,2.0,True,2,2.0,True,2,False,40,10,4
+lyric,"['ly', 'ric']",2,"['ly', 'ric']",2,"['▁ly', 'ric']",2,2.0,True,2,2.0,True,2,False,450,5,4
+porch,"['por', 'ch']",2,"['por', 'ch']",2,"['▁por', 'ch']",2,2.0,True,2,2.0,True,2,False,91,5,4
+apartment,"['ap', 'artment']",2,['apartment'],1,"['▁a', 'partment']",2,1.6666666666666667,False,2,1.5,False,2,True,320,9,4
+axle,"['ax', 'le']",2,"['ax', 'le']",2,"['▁ax', 'le']",2,2.0,True,2,2.0,True,2,False,44,4,4
+smoking,"['sm', 'oking']",2,['smoking'],1,"['▁sm', 'oking']",2,1.6666666666666667,False,2,1.5,False,2,True,39,7,4
+autonomy,"['aut', 'onomy']",2,"['aut', 'onomy']",2,"['▁aut', 'onomy']",2,2.0,True,2,2.0,True,2,False,57,8,4
+treatise,"['t', 'reat', 'ise']",3,"['treat', 'ise']",2,"['▁treat', 'ise']",2,2.333333333333333,False,2,2.5,False,3,False,83,8,4
+demolition,"['dem', 'ol', 'ition']",3,"['dem', 'olition']",2,"['▁demol', 'ition']",2,2.333333333333333,False,2,2.5,False,3,False,80,10,4
+magistrate,"['mag', 'istrate']",2,"['mag', 'ist', 'rate']",3,"['▁magistr', 'ate']",2,2.333333333333333,False,2,2.5,False,3,False,90,10,4
+clay,"['cl', 'ay']",2,['clay'],1,"['▁cl', 'ay']",2,1.6666666666666667,False,2,1.5,False,2,True,149,4,4
+grafting,"['gra', 'ft', 'ing']",3,"['g', 'raft', 'ing']",3,"['▁gra', 'ft', 'ing']",3,3.0,True,3,3.0,True,3,False,35,8,4
+crore,"['cro', 're']",2,"['cro', 're']",2,"['▁cr', 'ore']",2,2.0,True,2,2.0,True,2,False,52,5,4
+revival,"['rev', 'ival']",2,"['rev', 'ival']",2,"['▁rev', 'ival']",2,2.0,True,2,2.0,True,2,False,179,7,4
+attorney,"['att', 'orney']",2,"['att', 'orney']",2,"['▁att', 'orney']",2,2.0,True,2,2.0,True,2,False,308,8,4
+lane,['lane'],1,['lane'],1,"['▁l', 'ane']",2,1.3333333333333333,False,1,1.0,True,1,True,160,4,4
+unionist,"['union', 'ist']",2,"['union', 'ist']",2,"['▁union', 'ist']",2,2.0,True,2,2.0,True,2,False,51,8,4
+pilgrimage,"['p', 'il', 'gr', 'image']",4,"['pil', 'gr', 'image']",3,"['▁pil', 'gr', 'image']",3,3.333333333333333,False,3,3.5,False,4,False,74,10,4
+dislocation,"['dis', 'location']",2,"['dis', 'location']",2,"['▁dis', 'location']",2,2.0,True,2,2.0,True,2,False,41,11,4
+entrant,['entrant'],1,['entrant'],1,"['▁entr', 'ant']",2,1.3333333333333333,False,1,1.0,True,1,True,62,7,4
+summit,"['sum', 'mit']",2,"['sum', 'mit']",2,"['▁sum', 'mit']",2,2.0,True,2,2.0,True,2,False,211,6,4
+canoeist,"['can', 'oe', 'ist']",3,"['canoe', 'ist']",2,"['▁can', 'oe', 'ist']",3,2.6666666666666665,False,3,2.5,False,3,False,53,8,4
+remake,"['rem', 'ake']",2,"['rem', 'ake']",2,"['▁re', 'make']",2,2.0,True,2,2.0,True,2,False,106,6,4
+itunes,['itunes'],1,"['it', 'unes']",2,"['▁it', 'unes']",2,1.6666666666666667,False,2,1.5,False,2,True,60,6,4
+climb,"['cl', 'imb']",2,"['cl', 'imb']",2,"['▁clim', 'b']",2,2.0,True,2,2.0,True,2,False,58,5,4
+pastor,"['past', 'or']",2,"['past', 'or']",2,"['▁past', 'or']",2,2.0,True,2,2.0,True,2,False,149,6,4
+bluegrass,"['blue', 'grass']",2,"['blue', 'grass']",2,"['▁bl', 'u', 'egr', 'ass']",4,2.6666666666666665,False,3,2.0,True,2,False,50,9,4
+academy,"['acad', 'emy']",2,['academy'],1,"['▁a', 'cademy']",2,1.6666666666666667,False,2,1.5,False,2,True,212,7,4
+garment,"['gar', 'ment']",2,"['gar', 'ment']",2,"['▁gar', 'ment']",2,2.0,True,2,2.0,True,2,False,63,7,4
+nominee,"['nom', 'inee']",2,"['nom', 'inee']",2,"['▁nom', 'ine', 'e']",3,2.333333333333333,False,2,2.0,True,2,False,260,7,4
+voter,"['v', 'oter']",2,"['v', 'oter']",2,"['▁vot', 'er']",2,2.0,True,2,2.0,True,2,False,390,5,4
+soundtrack,"['sound', 'track']",2,"['sound', 'track']",2,"['▁sound', 'track']",2,2.0,True,2,2.0,True,2,False,387,10,4
+advertisement,['advertisement'],1,"['advert', 'isement']",2,"['▁advert', 'is', 'ement']",3,2.0,False,2,1.5,False,2,True,154,13,4
+nurse,"['n', 'urse']",2,['nurse'],1,"['▁nur', 'se']",2,1.6666666666666667,False,2,1.5,False,2,True,161,5,4
+cuisine,"['c', 'uisine']",2,['cuisine'],1,"['▁cu', 'is', 'ine']",3,2.0,False,2,1.5,False,2,True,131,7,4
+telegraph,"['tele', 'graph']",2,"['te', 'legraph']",2,"['▁te', 'legraph']",2,2.0,True,2,2.0,True,2,False,69,9,4
+emigration,"['em', 'igration']",2,"['em', 'igration']",2,"['▁em', 'igration']",2,2.0,True,2,2.0,True,2,False,41,10,4
+globe,"['g', 'lobe']",2,['globe'],1,"['▁glo', 'be']",2,1.6666666666666667,False,2,1.5,False,2,True,83,5,4
+bassist,"['b', 'assist']",2,"['b', 'assist']",2,"['▁bass', 'ist']",2,2.0,True,2,2.0,True,2,False,113,7,4
+kilometre,"['kil', 'omet', 're']",3,"['kilomet', 're']",2,"['▁kilomet', 're']",2,2.333333333333333,False,2,2.5,False,3,False,135,9,4
+vacancy,"['vac', 'ancy']",2,['vacancy'],1,"['▁vac', 'ancy']",2,1.6666666666666667,False,2,1.5,False,2,True,80,7,4
+coaster,"['co', 'aster']",2,['coaster'],1,"['▁co', 'aster']",2,1.6666666666666667,False,2,1.5,False,2,True,41,7,4
+sportsman,"['sports', 'man']",2,"['sports', 'man']",2,"['▁sports', 'man']",2,2.0,True,2,2.0,True,2,False,38,9,4
+turnout,"['turn', 'out']",2,"['turn', 'out']",2,"['▁turn', 'out']",2,2.0,True,2,2.0,True,2,False,107,7,4
+discard,['discard'],1,['discard'],1,"['▁disc', 'ard']",2,1.3333333333333333,False,1,1.0,True,1,True,39,7,4
+mineral,"['min', 'eral']",2,['mineral'],1,"['▁min', 'eral']",2,1.6666666666666667,False,2,1.5,False,2,True,130,7,4
+beetle,"['be', 'et', 'le']",3,"['beet', 'le']",2,"['▁be', 'et', 'le']",3,2.6666666666666665,False,3,2.5,False,3,False,209,6,4
+vulture,"['v', 'ulture']",2,"['v', 'ulture']",2,"['▁v', 'ulture']",2,2.0,True,2,2.0,True,2,False,40,7,4
+ward,['ward'],1,['ward'],1,"['▁w', 'ard']",2,1.3333333333333333,False,1,1.0,True,1,True,254,4,4
+toll,"['t', 'oll']",2,['toll'],1,"['▁to', 'll']",2,1.6666666666666667,False,2,1.5,False,2,True,234,4,4
+childhood,"['child', 'hood']",2,"['child', 'hood']",2,"['▁child', 'hood']",2,2.0,True,2,2.0,True,2,False,271,9,4
+stakeholder,"['st', 'ake', 'holder']",3,"['stake', 'holder']",2,"['▁st', 'ake', 'holder']",3,2.6666666666666665,False,3,2.5,False,3,False,35,11,4
+diamond,['diamond'],1,['diamond'],1,"['▁diam', 'ond']",2,1.3333333333333333,False,1,1.0,True,1,True,111,7,4
+estuary,"['est', 'uary']",2,"['est', 'uary']",2,"['▁est', 'u', 'ary']",3,2.333333333333333,False,2,2.0,True,2,False,46,7,4
+compromise,"['comp', 'romise']",2,"['comprom', 'ise']",2,"['▁comprom', 'ise']",2,2.0,True,2,2.0,True,2,False,68,10,4
+bull,['bull'],1,['bull'],1,"['▁b', 'ull']",2,1.3333333333333333,False,1,1.0,True,1,True,89,4,4
+annexation,"['ann', 'ex', 'ation']",3,"['ann', 'ex', 'ation']",3,"['▁an', 'nex', 'ation']",3,3.0,True,3,3.0,True,3,False,41,10,4
+accolade,"['ac', 'col', 'ade']",3,"['ac', 'col', 'ade']",3,"['▁acc', 'ol', 'ade']",3,3.0,True,3,3.0,True,3,False,49,8,4
+environmentalist,"['environment', 'alist']",2,"['environment', 'alist']",2,"['▁environmental', 'ist']",2,2.0,True,2,2.0,True,2,False,44,16,4
+striker,"['stri', 'ker']",2,"['stri', 'ker']",2,"['▁stri', 'ker']",2,2.0,True,2,2.0,True,2,False,137,7,4
+streetcar,"['street', 'car']",2,"['street', 'car']",2,"['▁street', 'car']",2,2.0,True,2,2.0,True,2,False,167,9,4
+invention,"['in', 'vention']",2,['invention'],1,"['▁in', 'vention']",2,1.6666666666666667,False,2,1.5,False,2,True,115,9,4
+altitude,['altitude'],1,['altitude'],1,"['▁alt', 'itude']",2,1.3333333333333333,False,1,1.0,True,1,True,179,8,4
+hospitality,"['hospital', 'ity']",2,"['hospital', 'ity']",2,"['▁hospital', 'ity']",2,2.0,True,2,2.0,True,2,False,37,11,4
+litigation,"['lit', 'igation']",2,"['lit', 'igation']",2,"['▁lit', 'ig', 'ation']",3,2.333333333333333,False,2,2.0,True,2,False,42,10,4
+melody,"['mel', 'ody']",2,['melody'],1,"['▁mel', 'ody']",2,1.6666666666666667,False,2,1.5,False,2,True,173,6,4
+deacon,"['de', 'acon']",2,"['de', 'acon']",2,"['▁de', 'acon']",2,2.0,True,2,2.0,True,2,False,46,6,4
+catalogue,"['catalog', 'ue']",2,"['catal', 'ogue']",2,"['▁catalog', 'ue']",2,2.0,True,2,2.0,True,2,False,138,9,4
+shooter,"['sh', 'ooter']",2,['shooter'],1,"['▁shoot', 'er']",2,1.6666666666666667,False,2,1.5,False,2,True,162,7,4
+physic,"['phys', 'ic']",2,"['phys', 'ic']",2,"['▁phys', 'ic']",2,2.0,True,2,2.0,True,2,False,226,6,4
+wheelchair,"['wheel', 'chair']",2,"['wheel', 'chair']",2,"['▁wheel', 'ch', 'air']",3,2.333333333333333,False,2,2.0,True,2,False,68,10,4
+mainstream,"['main', 'stream']",2,"['main', 'stream']",2,"['▁main', 'stream']",2,2.0,True,2,2.0,True,2,False,67,10,4
+homer,"['h', 'omer']",2,"['h', 'omer']",2,"['▁hom', 'er']",2,2.0,True,2,2.0,True,2,False,56,5,4
+geologist,"['ge', 'ologist']",2,"['ge', 'ologist']",2,"['▁ge', 'ologist']",2,2.0,True,2,2.0,True,2,False,66,9,4
+sanitation,"['san', 'itation']",2,"['san', 'itation']",2,"['▁san', 'itation']",2,2.0,True,2,2.0,True,2,False,36,10,4
+lighting,"['light', 'ing']",2,['lighting'],1,"['▁light', 'ing']",2,1.6666666666666667,False,2,1.5,False,2,True,59,8,4
+graduate,['graduate'],1,['graduate'],1,"['▁gradu', 'ate']",2,1.3333333333333333,False,1,1.0,True,1,True,393,8,4
+bison,"['b', 'ison']",2,"['b', 'ison']",2,"['▁b', 'ison']",2,2.0,True,2,2.0,True,2,False,105,5,4
+advocacy,"['adv', 'oc', 'acy']",3,"['adv', 'oc', 'acy']",3,"['▁advoc', 'acy']",2,2.6666666666666665,False,3,3.0,True,3,False,114,8,4
+footage,"['foot', 'age']",2,['footage'],1,"['▁foot', 'age']",2,1.6666666666666667,False,2,1.5,False,2,True,185,7,4
+sepal,"['se', 'pal']",2,"['se', 'pal']",2,"['▁se', 'pal']",2,2.0,True,2,2.0,True,2,False,50,5,4
+popularity,"['pop', 'ularity']",2,['popularity'],1,"['▁popular', 'ity']",2,1.6666666666666667,False,2,1.5,False,2,True,258,10,4
+liner,['liner'],1,['liner'],1,"['▁l', 'iner']",2,1.3333333333333333,False,1,1.0,True,1,True,98,5,4
+commissioner,"['commission', 'er']",2,"['commission', 'er']",2,"['▁commission', 'er']",2,2.0,True,2,2.0,True,2,False,191,12,4
+pronunciation,"['pron', 'unciation']",2,"['pron', 'unciation']",2,"['▁pron', 'unci', 'ation']",3,2.333333333333333,False,2,2.0,True,2,False,77,13,4
+pollution,"['poll', 'ution']",2,['pollution'],1,"['▁poll', 'ution']",2,1.6666666666666667,False,2,1.5,False,2,True,119,9,4
+grandchild,"['grand', 'child']",2,"['grand', 'child']",2,"['▁grand', 'child']",2,2.0,True,2,2.0,True,2,False,63,10,4
+corp,['corp'],1,['corp'],1,"['▁cor', 'p']",2,1.3333333333333333,False,1,1.0,True,1,True,184,4,4
+blacksmith,"['black', 'smith']",2,"['black', 'smith']",2,"['▁black', 'sm', 'ith']",3,2.333333333333333,False,2,2.0,True,2,False,42,10,4
+commitment,"['commit', 'ment']",2,['commitment'],1,"['▁commit', 'ment']",2,1.6666666666666667,False,2,1.5,False,2,True,178,10,4
+emotion,['emotion'],1,['emotion'],1,"['▁em', 'otion']",2,1.3333333333333333,False,1,1.0,True,1,True,134,7,4
+prostate,"['pro', 'state']",2,"['pro', 'state']",2,"['▁pro', 'state']",2,2.0,True,2,2.0,True,2,False,35,8,4
+odds,"['od', 'ds']",2,['odds'],1,"['▁odd', 's']",2,1.6666666666666667,False,2,1.5,False,2,True,70,4,4
+reptile,"['re', 'pt', 'ile']",3,"['rept', 'ile']",2,"['▁re', 'pt', 'ile']",3,2.6666666666666665,False,3,2.5,False,3,False,74,7,4
+sodium,"['s', 'odium']",2,['sodium'],1,"['▁sod', 'ium']",2,1.6666666666666667,False,2,1.5,False,2,True,42,6,4
+lesson,['lesson'],1,['lesson'],1,"['▁less', 'on']",2,1.3333333333333333,False,1,1.0,True,1,True,198,6,4
+sediment,"['sed', 'iment']",2,"['sed', 'iment']",2,"['▁sed', 'iment']",2,2.0,True,2,2.0,True,2,False,107,8,4
+etymology,"['et', 'ymology']",2,"['et', 'ymology']",2,"['▁et', 'ym', 'ology']",3,2.333333333333333,False,2,2.0,True,2,False,38,9,4
+seller,['seller'],1,['seller'],1,"['▁s', 'eller']",2,1.3333333333333333,False,1,1.0,True,1,True,49,6,4
+theorist,"['the', 'or', 'ist']",3,"['the', 'or', 'ist']",3,"['▁the', 'or', 'ist']",3,3.0,True,3,3.0,True,3,False,67,8,4
+apparatus,"['app', 'ar', 'atus']",3,"['appar', 'atus']",2,"['▁appar', 'atus']",2,2.333333333333333,False,2,2.5,False,3,False,74,9,4
+inductee,"['ind', 'uct', 'ee']",3,"['ind', 'uct', 'ee']",3,"['▁induct', 'ee']",2,2.6666666666666665,False,3,3.0,True,3,False,48,8,4
+refugee,"['ref', 'uge', 'e']",3,"['ref', 'uge', 'e']",3,"['▁refuge', 'e']",2,2.6666666666666665,False,3,3.0,True,3,False,287,7,4
+quarterfinal,"['quarter', 'final']",2,"['quarter', 'final']",2,"['▁quarter', 'final']",2,2.0,True,2,2.0,True,2,False,120,12,4
+strikeout,"['strike', 'out']",2,"['strike', 'out']",2,"['▁strike', 'out']",2,2.0,True,2,2.0,True,2,False,85,9,4
+skiing,"['ski', 'ing']",2,"['ski', 'ing']",2,"['▁ski', 'ing']",2,2.0,True,2,2.0,True,2,False,68,6,4
+warrior,"['war', 'rior']",2,"['war', 'rior']",2,"['▁war', 'rior']",2,2.0,True,2,2.0,True,2,False,136,7,4
+retreat,"['ret', 'reat']",2,['retreat'],1,"['▁retre', 'at']",2,1.6666666666666667,False,2,1.5,False,2,True,103,7,4
+cello,"['cel', 'lo']",2,['cello'],1,"['▁c', 'ello']",2,1.6666666666666667,False,2,1.5,False,2,True,90,5,4
+freshman,"['fresh', 'man']",2,"['fresh', 'man']",2,"['▁fresh', 'man']",2,2.0,True,2,2.0,True,2,False,71,8,4
+deterioration,"['d', 'eter', 'ior', 'ation']",4,"['deter', 'ior', 'ation']",3,"['▁d', 'eter', 'ior', 'ation']",4,3.6666666666666665,False,4,3.5,False,4,False,35,13,4
+enzyme,['enzyme'],1,['enzyme'],1,"['▁en', 'zym', 'e']",3,1.6666666666666667,False,2,1.0,True,1,True,116,6,4
+gravel,"['gr', 'avel']",2,"['gra', 'vel']",2,"['▁gra', 'vel']",2,2.0,True,2,2.0,True,2,False,48,6,4
+coconut,"['co', 'conut']",2,['coconut'],1,"['▁co', 'con', 'ut']",3,2.0,False,2,1.5,False,2,True,35,7,4
+deposition,"['de', 'position']",2,['deposition'],1,"['▁de', 'position']",2,1.6666666666666667,False,2,1.5,False,2,True,44,10,4
+fraternity,"['fr', 'aternity']",2,"['fr', 'aternity']",2,"['▁frat', 'ern', 'ity']",3,2.333333333333333,False,2,2.0,True,2,False,41,10,4
+endorsement,"['endor', 'se', 'ment']",3,"['endor', 'sement']",2,"['▁end', 'ors', 'ement']",3,2.6666666666666665,False,3,2.5,False,3,False,90,11,4
+funk,"['f', 'unk']",2,['funk'],1,"['▁fun', 'k']",2,1.6666666666666667,False,2,1.5,False,2,True,35,4,4
+sidewalk,"['sid', 'ew', 'alk']",3,"['sid', 'ewalk']",2,"['▁side', 'walk']",2,2.333333333333333,False,2,2.5,False,3,False,50,8,4
+resignation,"['res', 'ign', 'ation']",3,"['res', 'ignation']",2,"['▁res', 'ignation']",2,2.333333333333333,False,2,2.5,False,3,False,221,11,4
+mechanic,"['me', 'chan', 'ic']",3,"['mechan', 'ic']",2,"['▁mechan', 'ic']",2,2.333333333333333,False,2,2.5,False,3,False,157,8,4
+upwards,"['up', 'wards']",2,"['up', 'wards']",2,"['▁up', 'wards']",2,2.0,True,2,2.0,True,2,False,55,7,4
+roadway,"['road', 'way']",2,"['road', 'way']",2,"['▁road', 'way']",2,2.0,True,2,2.0,True,2,False,76,7,4
+marketing,['marketing'],1,['marketing'],1,"['▁market', 'ing']",2,1.3333333333333333,False,1,1.0,True,1,True,222,9,4
+installment,"['install', 'ment']",2,['installment'],1,"['▁install', 'ment']",2,1.6666666666666667,False,2,1.5,False,2,True,62,11,4

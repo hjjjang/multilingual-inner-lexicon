@@ -1,0 +1,1001 @@
+word,tokens_babel_9b,token_num_babel_9b,tokens_gemma_12b,token_num_gemma_12b,tokens_llama_2_7b,token_num_llama_2_7b,avg_token_num,same_token_num,avg_token_num_rounded,avg_token_num2,same_token_num2,avg_token_num2_rounded,any_token_num_is_1,freq,word_len,freq_quantile
+Steppenklima,"['Ste', 'pp', 'enk', 'lim', 'a']",5,"['Ste', 'ppen', 'k', 'lima']",4,"['▁Ste', 'pp', 'enk', 'lim', 'a']",5,4.666666666666667,False,5,4.5,False,5,False,4,12,0
+Kehlsack,"['K', 'eh', 'ls', 'ack']",4,"['Ke', 'h', 'ls', 'ack']",4,"['▁Ke', 'h', 'ls', 'ack']",4,4.0,True,4,4.0,True,4,False,4,8,0
+Vereinschronik,"['V', 'ere', 'ins', 'chron', 'ik']",5,"['Vere', 'ins', 'chron', 'ik']",4,"['▁Verein', 'sch', 'ron', 'ik']",4,4.333333333333333,False,4,4.5,False,5,False,4,14,0
+Gefriertruhe,"['G', 'ef', 'rier', 'tru', 'he']",5,"['G', 'ef', 'riert', 'ru', 'he']",5,"['▁Gef', 'rier', 'tr', 'u', 'he']",5,5.0,True,5,5.0,True,5,False,4,12,0
+Zeughaus,"['Ze', 'ug', 'haus']",3,"['Ze', 'ugh', 'aus']",3,"['▁Ze', 'ugh', 'aus']",3,3.0,True,3,3.0,True,3,False,5,8,0
+Rechtsbruch,"['Re', 'chts', 'br', 'uch']",4,"['Re', 'chts', 'bruch']",3,"['▁Rechts', 'bru', 'ch']",3,3.333333333333333,False,3,3.5,False,4,False,5,11,0
+Fliegerdivision,"['Fl', 'ie', 'ger', 'division']",4,"['Fl', 'ieger', 'division']",3,"['▁Fl', 'ie', 'ger', 'div', 'ision']",5,4.0,False,4,3.5,False,4,False,4,15,0
+Trainingszeit,"['Train', 'ings', 'zeit']",3,"['Train', 'ings', 'zeit']",3,"['▁Train', 'ings', 'zeit']",3,3.0,True,3,3.0,True,3,False,4,13,0
+Karteneditor,"['K', 'art', 'ened', 'itor']",4,"['Kart', 'ened', 'itor']",3,"['▁K', 'art', 'ened', 'itor']",4,3.6666666666666665,False,4,3.5,False,4,False,4,12,0
+Studentenmeister,"['Student', 'en', 'me', 'ister']",4,"['Student', 'en', 'meister']",3,"['▁Student', 'en', 'meister']",3,3.333333333333333,False,3,3.5,False,4,False,4,16,0
+Grafikdesignerin,"['G', 'raf', 'ik', 'design', 'erin']",5,"['Graf', 'ik', 'design', 'erin']",4,"['▁Graf', 'ik', 'design', 'er', 'in']",5,4.666666666666667,False,5,4.5,False,5,False,4,16,0
+Atemantrieb,"['A', 'tem', 'an', 'trie', 'b']",5,"['A', 'tem', 'ant', 'rieb']",4,"['▁A', 'tem', 'ant', 'rieb']",4,4.333333333333333,False,4,4.5,False,5,False,4,11,0
+Mischkristallreihe,"['M', 'isch', 'k', 'rist', 'all', 'rei', 'he']",7,"['M', 'isch', 'k', 'rist', 'all', 'reihe']",6,"['▁M', 'isch', 'k', 'rist', 'all', 'rei', 'he']",7,6.666666666666667,False,7,6.5,False,7,False,4,18,0
+Geheimarmee,"['Ge', 'heim', 'arm', 'ee']",4,"['Ge', 'heim', 'arme', 'e']",4,"['▁Ge', 'heim', 'ar', 'mee']",4,4.0,True,4,4.0,True,4,False,4,11,0
+Getreidelager,"['Get', 're', 'idel', 'ager']",4,"['Get', 're', 'idel', 'ager']",4,"['▁Get', 're', 'idel', 'ager']",4,4.0,True,4,4.0,True,4,False,5,13,0
+Mitgliederzeitschrift,"['Mit', 'gli', 'eder', 'ze', 'its', 'chrift']",6,"['Mit', 'glieder', 'ze', 'itschrift']",4,"['▁Mitglieder', 'zeit', 'schrift']",3,4.333333333333333,False,4,5.0,False,5,False,5,21,0
+Kehrtwende,"['K', 'eh', 'rt', 'w', 'ende']",5,"['Ke', 'hrt', 'w', 'ende']",4,"['▁Ke', 'hr', 'tw', 'ende']",4,4.333333333333333,False,4,4.5,False,5,False,5,10,0
+Blinker,"['B', 'link', 'er']",3,"['B', 'linker']",2,"['▁B', 'link', 'er']",3,2.6666666666666665,False,3,2.5,False,3,False,5,7,0
+Erziehungsgehalt,"['Er', 'zie', 'h', 'ungs', 'ge', 'halt']",6,"['Er', 'ziehungs', 'ge', 'halt']",4,"['▁Er', 'zie', 'h', 'ungs', 'ge', 'halt']",6,5.333333333333333,False,5,5.0,False,5,False,4,16,0
+Prüfgerät,"['Pr', 'Ã¼', 'f', 'gerÃ¤t']",4,"['Pr', 'ü', 'f', 'gerät']",4,"['▁Pr', 'ü', 'f', 'ger', 'ät']",5,4.333333333333333,False,4,4.0,True,4,False,5,9,0
+Bürgerunternehmen,"['B', 'Ã¼rger', 'unter', 'nehmen']",4,"['B', 'ür', 'ger', 'unternehmen']",4,"['▁Bürger', 'unter', 'nehmen']",3,3.6666666666666665,False,4,4.0,True,4,False,4,17,0
+Saaleeiszeit,"['Sa', 'ale', 'e', 'is', 'zeit']",5,"['Sa', 'ale', 'eis', 'zeit']",4,"['▁Sa', 'ale', 'e', 'is', 'zeit']",5,4.666666666666667,False,5,4.5,False,5,False,4,12,0
+Kunstmusik,"['K', 'un', 'stm', 'us', 'ik']",5,"['Kunst', 'musik']",2,"['▁Kunst', 'mus', 'ik']",3,3.333333333333333,False,3,3.5,False,4,False,5,10,0
+Kronkolonie,"['K', 'ron', 'kol', 'on', 'ie']",5,"['Kron', 'kol', 'onie']",3,"['▁K', 'ron', 'kol', 'onie']",4,4.0,False,4,4.0,False,4,False,4,11,0
+Verbundsystem,"['Verb', 'und', 'system']",3,"['Ver', 'bund', 'system']",3,"['▁Ver', 'bund', 'system']",3,3.0,True,3,3.0,True,3,False,5,13,0
+Blausäure,"['B', 'laus', 'Ã¤', 'ure']",4,"['B', 'laus', 'äure']",3,"['▁Bla', 'us', 'ä', 'ure']",4,3.6666666666666665,False,4,3.5,False,4,False,4,9,0
+Etappenziel,"['Et', 'appen', 'ziel']",3,"['Et', 'app', 'enz', 'iel']",4,"['▁Et', 'app', 'enz', 'iel']",4,3.6666666666666665,False,4,3.5,False,4,False,5,11,0
+Nachbarsprache,"['Nach', 'bars', 'pr', 'ache']",4,"['Nach', 'bars', 'prache']",3,"['▁Nach', 'bar', 'sp', 'rache']",4,3.6666666666666665,False,4,3.5,False,4,False,5,14,0
+Planungsauftrag,"['Plan', 'ung', 'sa', 'uf', 'trag']",5,"['Plan', 'ungs', 'auft', 'rag']",4,"['▁Plan', 'ungs', 'au', 'ftrag']",4,4.333333333333333,False,4,4.5,False,5,False,5,15,0
+Oberarmknochen,"['O', 'ber', 'arm', 'k', 'no', 'chen']",6,"['Ober', 'arm', 'kn', 'ochen']",4,"['▁Ober', 'arm', 'k', 'no', 'chen']",5,5.0,False,5,5.0,False,5,False,5,14,0
+Druckwasserreaktor,"['Dr', 'uck', 'w', 'asser', 'reak', 'tor']",6,"['D', 'ruck', 'wasser', 're', 'aktor']",5,"['▁D', 'ruck', 'w', 'asser', 're', 'akt', 'or']",7,6.0,False,6,5.5,False,6,False,5,18,0
+Finanzpolitik,"['Fin', 'anz', 'polit', 'ik']",4,"['Fin', 'anz', 'politik']",3,"['▁Fin', 'anz', 'polit', 'ik']",4,3.6666666666666665,False,4,3.5,False,4,False,4,13,0
+Dressurreiten,"['D', 'ress', 'urre', 'iten']",4,"['Dress', 'urre', 'iten']",3,"['▁D', 'ress', 'urre', 'iten']",4,3.6666666666666665,False,4,3.5,False,4,False,5,13,0
+Arbeitsmarktprüfung,"['Ar', 'beits', 'markt', 'prÃ¼', 'fung']",5,"['Ar', 'be', 'its', 'markt', 'prüfung']",5,"['▁Arbeits', 'markt', 'prü', 'f', 'ung']",5,5.0,True,5,5.0,True,5,False,4,19,0
+Schluckvorgang,"['Sch', 'luck', 'v', 'org', 'ang']",5,"['Sch', 'luck', 'v', 'org', 'ang']",5,"['▁Schl', 'uck', 'v', 'org', 'ang']",5,5.0,True,5,5.0,True,5,False,5,14,0
+Großmütige,"['Gro', 'ÃŁ', 'm', 'Ã¼t', 'ige']",5,"['Gro', 'ß', 'm', 'üt', 'ige']",5,"['▁Groß', 'm', 'üt', 'ige']",4,4.666666666666667,False,5,5.0,True,5,False,4,10,0
+Ehescheidung,"['E', 'hes', 'cheid', 'ung']",4,"['E', 'hes', 'cheidung']",3,"['▁E', 'hes', 'che', 'id', 'ung']",5,4.0,False,4,3.5,False,4,False,5,12,0
+Volksrat,"['Vol', 'ks', 'rat']",3,"['Vol', 'ks', 'rat']",3,"['▁Volks', 'rat']",2,2.6666666666666665,False,3,3.0,True,3,False,5,8,0
+Steherrennen,"['Ste', 'her', 'ren', 'nen']",4,"['Ste', 'her', 'rennen']",3,"['▁Ste', 'her', 'ren', 'nen']",4,3.6666666666666665,False,4,3.5,False,4,False,4,12,0
+Verdichtungsverhältnis,"['Ver', 'd', 'icht', 'ungs', 'ver', 'h', 'Ã¤l', 'tn', 'is']",9,"['Ver', 'd', 'icht', 'ungsver', 'hältnis']",5,"['▁Verd', 'icht', 'ungs', 'ver', 'hält', 'nis']",6,6.666666666666667,False,7,7.0,False,7,False,4,22,0
+Feldhalle,"['F', 'eld', 'h', 'alle']",4,"['F', 'eld', 'halle']",3,"['▁Feld', 'h', 'alle']",3,3.333333333333333,False,3,3.5,False,4,False,4,9,0
+Bürgerstiftung,"['B', 'Ã¼rger', 'st', 'ift', 'ung']",5,"['B', 'ür', 'ger', 'st', 'iftung']",5,"['▁Bürger', 'st', 'iftung']",3,4.333333333333333,False,4,5.0,True,5,False,5,14,0
+Sammlungsschwerpunkt,"['Sam', 'ml', 'ung', 'ss', 'ch', 'wer', 'punkt']",7,"['Sam', 'mlung', 'ssch', 'wer', 'punkt']",5,"['▁Sam', 'ml', 'ungs', 'sch', 'werp', 'unkt']",6,6.0,False,6,6.0,False,6,False,4,20,0
+Dreifachbindung,"['D', 're', 'if', 'ach', 'bindung']",5,"['Dre', 'if', 'ach', 'bindung']",4,"['▁Dre', 'if', 'ach', 'bindung']",4,4.333333333333333,False,4,4.5,False,5,False,4,15,0
+Schulband,"['Sch', 'ul', 'band']",3,"['Sch', 'ul', 'band']",3,"['▁Schul', 'band']",2,2.6666666666666665,False,3,3.0,True,3,False,4,9,0
+Gefäßform,"['G', 'ef', 'Ã¤ÃŁ', 'form']",4,"['G', 'ef', 'äß', 'form']",4,"['▁Gef', 'äß', 'form']",3,3.6666666666666665,False,4,4.0,True,4,False,4,9,0
+Entwertung,"['Ent', 'wert', 'ung']",3,"['Ent', 'wertung']",2,"['▁Ent', 'wert', 'ung']",3,2.6666666666666665,False,3,2.5,False,3,False,5,10,0
+Holocaustüberlebender,"['Hol', 'ocaust', 'Ã¼ber', 'le', 'b', 'ender']",6,"['Hol', 'ocaust', 'über', 'leb', 'ender']",5,"['▁Hol', 'oca', 'ust', 'über', 'leb', 'ender']",6,5.666666666666667,False,6,5.5,False,6,False,5,21,0
+Thiolgruppe,"['Th', 'iol', 'gr', 'uppe']",4,"['Th', 'iol', 'gruppe']",3,"['▁Th', 'i', 'ol', 'gruppe']",4,3.6666666666666665,False,4,3.5,False,4,False,5,11,0
+Fürstenspiegel,"['FÃ¼r', 'st', 'ens', 'pie', 'gel']",5,"['Für', 'stens', 'piegel']",3,"['▁Für', 'st', 'ens', 'p', 'iegel']",5,4.333333333333333,False,4,4.0,False,4,False,4,14,0
+Wertsteigerung,"['W', 'ert', 'ste', 'iger', 'ung']",5,"['Wert', 'steiger', 'ung']",3,"['▁W', 'ert', 'ste', 'iger', 'ung']",5,4.333333333333333,False,4,4.0,False,4,False,4,14,0
+Regierungspolitik,"['Reg', 'ierung', 'sp', 'ol', 'it', 'ik']",6,"['Reg', 'ierung', 'spolit', 'ik']",4,"['▁Regierung', 'sp', 'olit', 'ik']",4,4.666666666666667,False,5,5.0,False,5,False,5,17,0
+Kornhaus,"['K', 'orn', 'haus']",3,"['K', 'orn', 'haus']",3,"['▁K', 'orn', 'haus']",3,3.0,True,3,3.0,True,3,False,4,8,0
+Holzrahmen,"['Hol', 'z', 'rah', 'men']",4,"['Hol', 'z', 'rahmen']",3,"['▁Holz', 'rah', 'men']",3,3.333333333333333,False,3,3.5,False,4,False,4,10,0
+Dialogbuchautor,"['Dialog', 'buch', 'autor']",3,"['Dialog', 'buch', 'autor']",3,"['▁Dialog', 'buch', 'autor']",3,3.0,True,3,3.0,True,3,False,5,15,0
+Wartesaal,"['W', 'art', 'esa', 'al']",4,"['W', 'art', 'esa', 'al']",4,"['▁W', 'art', 'esa', 'al']",4,4.0,True,4,4.0,True,4,False,4,9,0
+Gemeindeschwester,"['G', 'eme', 'ind', 'esch', 'w', 'ester']",6,"['Geme', 'ind', 'esch', 'w', 'ester']",5,"['▁Geme', 'ind', 'esch', 'w', 'ester']",5,5.333333333333333,False,5,5.5,False,6,False,5,17,0
+Einflussmöglichkeit,"['Ein', 'fl', 'uss', 'mÃ¶glich', 'keit']",5,"['E', 'infl', 'uss', 'möglich', 'keit']",5,"['▁Ein', 'fluss', 'm', 'öglich', 'keit']",5,5.0,True,5,5.0,True,5,False,4,19,0
+Tetrabenazin,"['T', 'etr', 'aben', 'az', 'in']",5,"['T', 'etr', 'aben', 'azin']",4,"['▁T', 'etra', 'ben', 'az', 'in']",5,4.666666666666667,False,5,4.5,False,5,False,4,12,0
+Ausnahmetatbestand,"['Aus', 'nah', 'met', 'at', 'best', 'and']",6,"['Aus', 'nah', 'met', 'at', 'bestand']",5,"['▁Aus', 'nah', 'met', 'at', 'best', 'and']",6,5.666666666666667,False,6,5.5,False,6,False,4,18,0
+Familienplanung,"['F', 'amil', 'ien', 'plan', 'ung']",5,"['Famil', 'ien', 'planung']",3,"['▁Familien', 'plan', 'ung']",3,3.6666666666666665,False,4,4.0,False,4,False,4,15,0
+Schwerhörigkeit,"['Sch', 'wer', 'hÃ¶r', 'igkeit']",4,"['Sch', 'wer', 'hör', 'igkeit']",4,"['▁Sch', 'wer', 'hör', 'igkeit']",4,4.0,True,4,4.0,True,4,False,4,15,0
+Seidenindustrie,"['Se', 'iden', 'ind', 'ust', 'rie']",5,"['Se', 'iden', 'industrie']",3,"['▁Se', 'iden', 'indust', 'rie']",4,4.0,False,4,4.0,False,4,False,4,15,0
+Luftschlacht,"['Lu', 'ft', 'sch', 'l', 'acht']",5,"['Lu', 'ft', 'sch', 'lacht']",4,"['▁Luft', 'sch', 'lacht']",3,4.0,False,4,4.5,False,5,False,5,12,0
+Reiseausweis,"['Re', 'ise', 'aus', 'weis']",4,"['Re', 'ise', 'aus', 'weis']",4,"['▁Re', 'ise', 'aus', 'weis']",4,4.0,True,4,4.0,True,4,False,5,12,0
+Trolleybus,"['T', 'rolley', 'bus']",3,"['T', 'rol', 'ley', 'bus']",4,"['▁T', 'rol', 'ley', 'bus']",4,3.6666666666666665,False,4,3.5,False,4,False,4,10,0
+Feuerkugel,"['Fe', 'uer', 'k', 'ug', 'el']",5,"['Fe', 'uer', 'k', 'ugel']",4,"['▁Feuer', 'k', 'ugel']",3,4.0,False,4,4.5,False,5,False,4,10,0
+Interrogator,"['Inter', 'rog', 'ator']",3,"['Inter', 'rog', 'ator']",3,"['▁Inter', 'rog', 'ator']",3,3.0,True,3,3.0,True,3,False,4,12,0
+Funktionsaufruf,"['F', 'unkt', 'ions', 'au', 'fr', 'uf']",6,"['Fun', 'ktions', 'auf', 'ruf']",4,"['▁F', 'unkt', 'ions', 'auf', 'ruf']",5,5.0,False,5,5.0,False,5,False,4,15,0
+Ordnungsnummer,"['Or', 'dn', 'ungs', 'nummer']",4,"['Or', 'dn', 'ungs', 'nummer']",4,"['▁Or', 'dn', 'ungs', 'num', 'mer']",5,4.333333333333333,False,4,4.0,True,4,False,4,14,0
+Caritasverband,"['Car', 'itas', 'ver', 'band']",4,"['Car', 'itas', 'verband']",3,"['▁Car', 'itas', 'verband']",3,3.333333333333333,False,3,3.5,False,4,False,4,14,0
+Ausgleichsfläche,"['Aus', 'gle', 'ich', 's', 'flÃ¤che']",5,"['Aus', 'gleich', 's', 'fläche']",4,"['▁Aus', 'gleich', 's', 'fl', 'äche']",5,4.666666666666667,False,5,4.5,False,5,False,5,16,0
+Quantenfluktuation,"['Quant', 'en', 'fl', 'ukt', 'uation']",5,"['Quant', 'en', 'fl', 'ukt', 'uation']",5,"['▁Qu', 'anten', 'flu', 'kt', 'u', 'ation']",6,5.333333333333333,False,5,5.0,True,5,False,5,18,0
+Empfängnisverhütung,"['Emp', 'f', 'Ã¤ng', 'nis', 'ver', 'h', 'Ã¼t', 'ung']",8,"['Emp', 'f', 'äng', 'nis', 'ver', 'h', 'üt', 'ung']",8,"['▁Emp', 'f', 'äng', 'nis', 'ver', 'h', 'üt', 'ung']",8,8.0,True,8,8.0,True,8,False,4,19,0
+Eisenbahnfahrzeug,"['E', 'isen', 'b', 'ahn', 'f', 'ahr', 'zeug']",7,"['Eisen', 'bahn', 'fahr', 'zeug']",4,"['▁Eisen', 'bahn', 'fahr', 'zeug']",4,5.0,False,5,5.5,False,6,False,5,17,0
+Strukturgene,"['Str', 'ukt', 'urg', 'ene']",4,"['St', 'rukt', 'urg', 'ene']",4,"['▁Str', 'u', 'kt', 'urg', 'ene']",5,4.333333333333333,False,4,4.0,True,4,False,5,12,0
+Musizier,"['Mus', 'iz', 'ier']",3,"['Mus', 'iz', 'ier']",3,"['▁Mus', 'iz', 'ier']",3,3.0,True,3,3.0,True,3,False,5,8,0
+Höhenlinie,"['H', 'Ã¶', 'hen', 'lin', 'ie']",5,"['Hö', 'hen', 'linie']",3,"['▁Hö', 'hen', 'lin', 'ie']",4,4.0,False,4,4.0,False,4,False,4,10,0
+Hybridantrieb,"['Hy', 'brid', 'an', 'trie', 'b']",5,"['Hybrid', 'ant', 'rieb']",3,"['▁Hy', 'brid', 'ant', 'rieb']",4,4.0,False,4,4.0,False,4,False,4,13,0
+Tumorerkrankung,"['T', 'um', 'orer', 'kr', 'ank', 'ung']",6,"['Tum', 'or', 'erk', 'rank', 'ung']",5,"['▁T', 'um', 'or', 'erk', 'rank', 'ung']",6,5.666666666666667,False,6,5.5,False,6,False,4,15,0
+Stadtbach,"['St', 'ad', 'tb', 'ach']",4,"['Stadt', 'bach']",2,"['▁Stadt', 'bach']",2,2.6666666666666665,False,3,3.0,False,3,False,4,9,0
+Salzsumpf,"['Sal', 'z', 'sum', 'pf']",4,"['Sal', 'z', 'sum', 'pf']",4,"['▁Sal', 'z', 'sum', 'pf']",4,4.0,True,4,4.0,True,4,False,4,9,0
+Hellseher,"['Hell', 'se', 'her']",3,"['Hell', 'se', 'her']",3,"['▁Hell', 'se', 'her']",3,3.0,True,3,3.0,True,3,False,4,9,0
+Begriffspaar,"['B', 'egr', 'iff', 'sp', 'aar']",5,"['Begriff', 'sp', 'aar']",3,"['▁Begriff', 'sp', 'aar']",3,3.6666666666666665,False,4,4.0,False,4,False,4,12,0
+Schlossermeister,"['Sch', 'loss', 'er', 'me', 'ister']",5,"['Sch', 'loss', 'ermeister']",3,"['▁Sch', 'los', 'ser', 'meister']",4,4.0,False,4,4.0,False,4,False,5,16,0
+Mietfläche,"['M', 'iet', 'flÃ¤che']",3,"['M', 'iet', 'fläche']",3,"['▁M', 'iet', 'fl', 'äche']",4,3.333333333333333,False,3,3.0,True,3,False,5,10,0
+Textverarbeitung,"['Text', 'ver', 'arbeit', 'ung']",4,"['Text', 'ver', 'arbeitung']",3,"['▁Text', 'ver', 'arbeit', 'ung']",4,3.6666666666666665,False,4,3.5,False,4,False,5,16,0
+Stadtplanerin,"['St', 'adt', 'plan', 'erin']",4,"['Stadt', 'plan', 'erin']",3,"['▁Stadt', 'plan', 'er', 'in']",4,3.6666666666666665,False,4,3.5,False,4,False,5,13,0
+Stammbuch,"['St', 'am', 'mb', 'uch']",4,"['St', 'amm', 'buch']",3,"['▁St', 'amm', 'buch']",3,3.333333333333333,False,3,3.5,False,4,False,4,9,0
+Talbecken,"['T', 'al', 'be', 'cken']",4,"['Tal', 'be', 'cken']",3,"['▁Tal', 'be', 'cken']",3,3.333333333333333,False,3,3.5,False,4,False,4,9,0
+Beraterkreis,"['Ber', 'ater', 'kre', 'is']",4,"['Ber', 'ater', 'kreis']",3,"['▁Ber', 'ater', 'kreis']",3,3.333333333333333,False,3,3.5,False,4,False,4,12,0
+Dreheisenmesswerk,"['D', 're', 'he', 'isen', 'mess', 'werk']",6,"['Dre', 'he', 'isen', 'mess', 'werk']",5,"['▁Dre', 'he', 'isen', 'mess', 'werk']",5,5.333333333333333,False,5,5.5,False,6,False,4,17,0
+Höchstleistung,"['H', 'Ã¶', 'ch', 'st', 'le', 'istung']",6,"['Hö', 'chst', 'leistung']",3,"['▁Hö', 'ch', 'st', 'le', 'ist', 'ung']",6,5.0,False,5,4.5,False,5,False,5,14,0
+Schiffgraben,"['Sch', 'iff', 'gr', 'aben']",4,"['Sch', 'iff', 'gr', 'aben']",4,"['▁Schiff', 'gra', 'ben']",3,3.6666666666666665,False,4,4.0,True,4,False,4,12,0
+Staatsbahnhof,"['St', 'a', 'ats', 'bah', 'nh', 'of']",6,"['Sta', 'ats', 'bahnhof']",3,"['▁Staats', 'bahn', 'hof']",3,4.0,False,4,4.5,False,5,False,5,13,0
+Bildausschnitt,"['B', 'ilda', 'uss', 'chnitt']",4,"['B', 'ilda', 'uss', 'chnitt']",4,"['▁Bild', 'aus', 'schnitt']",3,3.6666666666666665,False,4,4.0,True,4,False,4,14,0
+Gemeinschaftseinrichtung,"['G', 'eme', 'ins', 'chaft', 'sein', 'richt', 'ung']",7,"['Geme', 'inschaft', 'sein', 'richtung']",4,"['▁G', 'emein', 'schaft', 'sein', 'richtung']",5,5.333333333333333,False,5,5.5,False,6,False,4,24,0
+Serienteil,"['Ser', 'iente', 'il']",3,"['Ser', 'iente', 'il']",3,"['▁Ser', 'iente', 'il']",3,3.0,True,3,3.0,True,3,False,4,10,0
+Bildervorführer,"['B', 'ild', 'erv', 'or', 'fÃ¼hrer']",5,"['Bild', 'erv', 'or', 'führer']",4,"['▁Bilder', 'v', 'orf', 'ühr', 'er']",5,4.666666666666667,False,5,4.5,False,5,False,5,15,0
+Amtsgebäude,"['Amt', 's', 'geb', 'Ã¤', 'ude']",5,"['Am', 'ts', 'gebäude']",3,"['▁Amts', 'geb', 'äude']",3,3.6666666666666665,False,4,4.0,False,4,False,5,11,0
+Tannin,"['T', 'ann', 'in']",3,"['T', 'ann', 'in']",3,"['▁T', 'ann', 'in']",3,3.0,True,3,3.0,True,3,False,5,6,0
+Außendienstmitarbeiter,"['Au', 'ÃŁ', 'end', 'ien', 'st', 'mit', 'ar', 'beiter']",8,"['Au', 'ß', 'end', 'ienst', 'mit', 'arbeiter']",6,"['▁Auß', 'end', 'ienst', 'mit', 'arbe', 'iter']",6,6.666666666666667,False,7,7.0,False,7,False,5,22,0
+Planänderung,"['Plan', 'Ã¤nder', 'ung']",3,"['Plan', 'änder', 'ung']",3,"['▁Plan', 'änder', 'ung']",3,3.0,True,3,3.0,True,3,False,4,12,0
+Tragflügelboot,"['Tr', 'ag', 'fl', 'Ã¼', 'gel', 'boot']",6,"['Tr', 'ag', 'fl', 'ügel', 'boot']",5,"['▁T', 'rag', 'fl', 'ügel', 'boot']",5,5.333333333333333,False,5,5.5,False,6,False,5,14,0
+Lesereise,"['Les', 'ere', 'ise']",3,"['Les', 'ere', 'ise']",3,"['▁Les', 'ere', 'ise']",3,3.0,True,3,3.0,True,3,False,5,9,0
+Tunika,"['T', 'un', 'ika']",3,"['Tun', 'ika']",2,"['▁Tun', 'ika']",2,2.333333333333333,False,2,2.5,False,3,False,4,6,0
+Solequelle,"['S', 'ole', 'quelle']",3,"['Sole', 'quelle']",2,"['▁So', 'le', 'quelle']",3,2.6666666666666665,False,3,2.5,False,3,False,5,10,0
+Halsseite,"['H', 'als', 'seite']",3,"['H', 'als', 'seite']",3,"['▁H', 'als', 'seite']",3,3.0,True,3,3.0,True,3,False,5,9,0
+Schattenriss,"['Sch', 'atten', 'r', 'iss']",4,"['S', 'chat', 'ten', 'riss']",4,"['▁Sch', 'atten', 'r', 'iss']",4,4.0,True,4,4.0,True,4,False,4,12,0
+Soforthilfe,"['S', 'of', 'orth', 'il', 'fe']",5,"['Sof', 'orth', 'ilfe']",3,"['▁Sof', 'orth', 'il', 'fe']",4,4.0,False,4,4.0,False,4,False,5,11,0
+Verlagsleiter,"['Ver', 'lags', 'le', 'iter']",4,"['Ver', 'l', 'ags', 'leiter']",4,"['▁Verl', 'ags', 'le', 'iter']",4,4.0,True,4,4.0,True,4,False,5,13,0
+ZuhauseKraftwerk,"['Z', 'uh', 'ause', 'K', 'raft', 'werk']",6,"['Z', 'uh', 'ause', 'Kraft', 'werk']",5,"['▁Zu', 'h', 'ause', 'K', 'raft', 'werk']",6,5.666666666666667,False,6,5.5,False,6,False,4,16,0
+Crosslinking,"['Cross', 'link', 'ing']",3,"['Cross', 'linking']",2,"['▁Cross', 'link', 'ing']",3,2.6666666666666665,False,3,2.5,False,3,False,5,12,0
+Kiefernbestand,"['K', 'ie', 'fern', 'best', 'and']",5,"['K', 'iefer', 'nb', 'estand']",4,"['▁K', 'ie', 'fer', 'nb', 'est', 'and']",6,5.0,False,5,4.5,False,5,False,4,14,0
+Diashow,"['Di', 'ash', 'ow']",3,"['Di', 'ash', 'ow']",3,"['▁Di', 'ash', 'ow']",3,3.0,True,3,3.0,True,3,False,4,7,0
+Lactamase,"['L', 'act', 'am', 'ase']",4,"['L', 'act', 'am', 'ase']",4,"['▁L', 'act', 'am', 'ase']",4,4.0,True,4,4.0,True,4,False,4,9,0
+Richtungsfahrbahn,"['R', 'icht', 'ung', 'sf', 'ah', 'rb', 'ahn']",7,"['Richt', 'ungs', 'fahr', 'bahn']",4,"['▁R', 'icht', 'ungs', 'fahr', 'bahn']",5,5.333333333333333,False,5,5.5,False,6,False,5,17,0
+Tauchsport,"['Ta', 'uchs', 'port']",3,"['Tau', 'chs', 'port']",3,"['▁T', 'au', 'chs', 'port']",4,3.333333333333333,False,3,3.0,True,3,False,4,10,0
+Helligkeitsänderung,"['H', 'ellig', 'ke', 'its', 'Ã¤nder', 'ung']",6,"['H', 'ellig', 'keits', 'änder', 'ung']",5,"['▁H', 'ellig', 'ke', 'its', 'änder', 'ung']",6,5.666666666666667,False,6,5.5,False,6,False,4,19,0
+Kerl,"['K', 'er', 'l']",3,"['Ker', 'l']",2,"['▁Ker', 'l']",2,2.333333333333333,False,2,2.5,False,3,False,5,4,0
+Theaterauftritt,"['The', 'ater', 'auf', 'tr', 'itt']",5,"['Theater', 'auft', 'ritt']",3,"['▁Theater', 'auf', 'tritt']",3,3.6666666666666665,False,4,4.0,False,4,False,5,15,0
+Produktionssektor,"['Produ', 'kt', 'ions', 'se', 'ktor']",5,"['Produ', 'ktions', 'se', 'ktor']",4,"['▁Produ', 'kt', 'ions', 'se', 'ktor']",5,4.666666666666667,False,5,4.5,False,5,False,4,17,0
+Erdhaus,"['E', 'rd', 'haus']",3,"['Erd', 'haus']",2,"['▁Erd', 'haus']",2,2.333333333333333,False,2,2.5,False,3,False,4,7,0
+Erbreichsplan,"['E', 'rb', 'reich', 's', 'plan']",5,"['Er', 'bre', 'ich', 's', 'plan']",5,"['▁Er', 'bre', 'ich', 's', 'plan']",5,5.0,True,5,5.0,True,5,False,5,13,0
+Messehaus,"['M', 'esse', 'haus']",3,"['M', 'esse', 'haus']",3,"['▁M', 'esse', 'haus']",3,3.0,True,3,3.0,True,3,False,4,9,0
+Sufismus,"['S', 'uf', 'ism', 'us']",4,"['S', 'uf', 'ismus']",3,"['▁S', 'uf', 'ismus']",3,3.333333333333333,False,3,3.5,False,4,False,5,8,0
+Kanalhafen,"['K', 'anal', 'h', 'afen']",4,"['K', 'anal', 'ha', 'fen']",4,"['▁K', 'anal', 'h', 'afen']",4,4.0,True,4,4.0,True,4,False,4,10,0
+Kanaren,"['K', 'an', 'aren']",3,"['Kan', 'aren']",2,"['▁Kan', 'aren']",2,2.333333333333333,False,2,2.5,False,3,False,5,7,0
+Flachbeil,"['Fl', 'ach', 'be', 'il']",4,"['Fl', 'ach', 'be', 'il']",4,"['▁F', 'lach', 'be', 'il']",4,4.0,True,4,4.0,True,4,False,5,9,0
+Agnostiker,"['A', 'gn', 'ost', 'iker']",4,"['A', 'gn', 'ost', 'iker']",4,"['▁Ag', 'nost', 'iker']",3,3.6666666666666665,False,4,4.0,True,4,False,4,10,0
+Naturschutzpark,"['Nat', 'urs', 'ch', 'utz', 'park']",5,"['Nat', 'urschutz', 'park']",3,"['▁Natur', 'schutz', 'park']",3,3.6666666666666665,False,4,4.0,False,4,False,4,15,0
+Wirtschaftsgruppe,"['W', 'irtschaft', 's', 'gr', 'uppe']",5,"['W', 'irtschaft', 'sg', 'ruppe']",4,"['▁Wirtschaft', 'sg', 'ru', 'ppe']",4,4.333333333333333,False,4,4.5,False,5,False,4,17,0
+Einfahrsignal,"['E', 'inf', 'ah', 'rs', 'ignal']",5,"['E', 'inf', 'ah', 'rs', 'ignal']",5,"['▁Ein', 'fah', 'rs', 'ign', 'al']",5,5.0,True,5,5.0,True,5,False,4,13,0
+Galeere,"['G', 'ale', 'ere']",3,"['G', 'ale', 'ere']",3,"['▁G', 'ale', 'ere']",3,3.0,True,3,3.0,True,3,False,5,7,0
+Schlussphase,"['Sch', 'l', 'uss', 'phase']",4,"['Sch', 'luss', 'phase']",3,"['▁Sch', 'luss', 'phase']",3,3.333333333333333,False,3,3.5,False,4,False,5,12,0
+Fahrerin,"['F', 'ahr', 'erin']",3,"['F', 'ahr', 'erin']",3,"['▁F', 'ah', 'rer', 'in']",4,3.333333333333333,False,3,3.0,True,3,False,5,8,0
+Mikroprosodie,"['M', 'ik', 'ro', 'pro', 's', 'odie']",6,"['Mik', 'ro', 'pros', 'odie']",4,"['▁Mik', 'ro', 'pro', 's', 'od', 'ie']",6,5.333333333333333,False,5,5.0,False,5,False,5,13,0
+Urfassung,"['U', 'rf', 'ass', 'ung']",4,"['U', 'rf', 'assung']",3,"['▁Ur', 'fass', 'ung']",3,3.333333333333333,False,3,3.5,False,4,False,5,9,0
+Freiheitsrecht,"['Fre', 'i', 'heits', 'recht']",4,"['Fre', 'i', 'heits', 'recht']",4,"['▁Fre', 'ihe', 'its', 'recht']",4,4.0,True,4,4.0,True,4,False,5,14,0
+Komplexseifenfett,"['Kom', 'plex', 'se', 'ifen', 'f', 'ett']",6,"['Kom', 'plex', 'se', 'if', 'enf', 'ett']",6,"['▁Kom', 'plex', 'se', 'if', 'enf', 'ett']",6,6.0,True,6,6.0,True,6,False,5,17,0
+Luftturbulenz,"['Lu', 'ft', 't', 'urb', 'ul', 'enz']",6,"['Lu', 'ft', 'turb', 'ul', 'enz']",5,"['▁Luft', 't', 'ur', 'bul', 'enz']",5,5.333333333333333,False,5,5.5,False,6,False,4,13,0
+Generalstabsdienst,"['General', 'st', 'abs', 'd', 'ien', 'st']",6,"['General', 'st', 'abs', 'dienst']",4,"['▁General', 'stab', 'sd', 'ienst']",4,4.666666666666667,False,5,5.0,False,5,False,5,18,0
+Fachausdruck,"['F', 'ach', 'aus', 'dr', 'uck']",5,"['Fach', 'aus', 'druck']",3,"['▁Fach', 'aus', 'd', 'ruck']",4,4.0,False,4,4.0,False,4,False,5,12,0
+Mähwiese,"['M', 'Ã¤h', 'w', 'iese']",4,"['M', 'äh', 'w', 'iese']",4,"['▁M', 'äh', 'w', 'iese']",4,4.0,True,4,4.0,True,4,False,5,8,0
+Beobachtungszeitraum,"['Be', 'ob', 'acht', 'ungs', 'zeit', 'ra', 'um']",7,"['Be', 'ob', 'acht', 'ungs', 'zeit', 'raum']",6,"['▁Be', 'ob', 'acht', 'ungs', 'zeit', 'raum']",6,6.333333333333333,False,6,6.5,False,7,False,4,20,0
+Kolonialpolitik,"['K', 'olon', 'ial', 'polit', 'ik']",5,"['Kol', 'onial', 'politik']",3,"['▁Kol', 'onial', 'polit', 'ik']",4,4.0,False,4,4.0,False,4,False,5,15,0
+Schiffsuntergang,"['Sch', 'iffs', 'unter', 'gang']",4,"['Sch', 'iffs', 'unter', 'gang']",4,"['▁Schiff', 's', 'unter', 'gang']",4,4.0,True,4,4.0,True,4,False,4,16,0
+Denunziant,"['Den', 'un', 'z', 'iant']",4,"['Den', 'un', 'zi', 'ant']",4,"['▁Den', 'un', 'zi', 'ant']",4,4.0,True,4,4.0,True,4,False,4,10,0
+Widmanstätte,"['W', 'id', 'man', 'st', 'Ã¤t', 'te']",6,"['Wid', 'man', 'stätte']",3,"['▁W', 'id', 'man', 'st', 'ätte']",5,4.666666666666667,False,5,4.5,False,5,False,4,12,0
+Tälchen,"['T', 'Ã¤l', 'chen']",3,"['T', 'äl', 'chen']",3,"['▁T', 'äl', 'chen']",3,3.0,True,3,3.0,True,3,False,4,7,0
+Kondenswasser,"['K', 'ond', 'ens', 'w', 'asser']",5,"['K', 'ond', 'ens', 'wasser']",4,"['▁K', 'ond', 'ens', 'w', 'asser']",5,4.666666666666667,False,5,4.5,False,5,False,5,13,0
+Briefverkehr,"['Brief', 'ver', 'kehr']",3,"['Brief', 'verkehr']",2,"['▁Br', 'ief', 'verkehr']",3,2.6666666666666665,False,3,2.5,False,3,False,4,12,0
+Schützenplatz,"['Sch', 'Ã¼t', 'zen', 'platz']",4,"['Sch', 'ützen', 'platz']",3,"['▁Sch', 'üt', 'zen', 'platz']",4,3.6666666666666665,False,4,3.5,False,4,False,5,13,0
+Museumsratten,"['M', 'use', 'ums', 'r', 'atten']",5,"['Museum', 's', 'rat', 'ten']",4,"['▁Museum', 's', 'rat', 'ten']",4,4.333333333333333,False,4,4.5,False,5,False,4,13,0
+Kastration,"['K', 'astr', 'ation']",3,"['K', 'ast', 'ration']",3,"['▁K', 'astr', 'ation']",3,3.0,True,3,3.0,True,3,False,5,10,0
+Sammlungsbewegung,"['Sam', 'ml', 'ung', 'sb', 'ew', 'eg', 'ung']",7,"['Sam', 'ml', 'ungs', 'bewegung']",4,"['▁Sam', 'ml', 'ungs', 'bew', 'egung']",5,5.333333333333333,False,5,5.5,False,6,False,5,17,0
+Schriftgrad,"['S', 'chrift', 'grad']",3,"['Sch', 'rift', 'grad']",3,"['▁Schrift', 'grad']",2,2.6666666666666665,False,3,3.0,True,3,False,4,11,0
+Einzelrichter,"['Ein', 'zel', 'richt', 'er']",4,"['Einzel', 'richter']",2,"['▁Einzel', 'rich', 'ter']",3,3.0,False,3,3.0,False,3,False,4,13,0
+Aluminiumchlorid,"['Al', 'uminium', 'chlor', 'id']",4,"['Al', 'uminium', 'chlor', 'id']",4,"['▁Al', 'umin', 'ium', 'ch', 'lor', 'id']",6,4.666666666666667,False,5,4.0,True,4,False,4,16,0
+Koedukation,"['K', 'o', 'ed', 'uk', 'ation']",5,"['Ko', 'ed', 'uk', 'ation']",4,"['▁Ko', 'ed', 'uk', 'ation']",4,4.333333333333333,False,4,4.5,False,5,False,5,11,0
+Bußteig,"['Bu', 'ÃŁ', 'te', 'ig']",4,"['Bu', 'ß', 'te', 'ig']",4,"['▁B', 'uß', 'te', 'ig']",4,4.0,True,4,4.0,True,4,False,5,7,0
+Schienbein,"['Sch', 'ien', 'be', 'in']",4,"['Sch', 'ien', 'bein']",3,"['▁Sch', 'ien', 'be', 'in']",4,3.6666666666666665,False,4,3.5,False,4,False,4,10,0
+Kreuzform,"['K', 're', 'uz', 'form']",4,"['Kre', 'uz', 'form']",3,"['▁Kreuz', 'form']",2,3.0,False,3,3.5,False,4,False,4,9,0
+Brunnenstock,"['Brun', 'nen', 'stock']",3,"['Brun', 'nen', 'stock']",3,"['▁Brun', 'nen', 'stock']",3,3.0,True,3,3.0,True,3,False,4,12,0
+Frauenporträt,"['Fra', 'uen', 'port', 'r', 'Ã¤t']",5,"['Fra', 'uen', 'port', 'rät']",4,"['▁Frauen', 'port', 'r', 'ät']",4,4.333333333333333,False,4,4.5,False,5,False,4,13,0
+Schlagzeugspiel,"['Sch', 'lag', 'zeug', 'spiel']",4,"['Sch', 'lag', 'zeug', 'spiel']",4,"['▁Sch', 'lag', 'zeug', 'spiel']",4,4.0,True,4,4.0,True,4,False,5,15,0
+Flugtag,"['Fl', 'ug', 'tag']",3,"['Fl', 'ug', 'tag']",3,"['▁Flug', 'tag']",2,2.6666666666666665,False,3,3.0,True,3,False,5,7,0
+Artabgrenzung,"['Art', 'ab', 'gren', 'zung']",4,"['Ar', 'tab', 'gren', 'zung']",4,"['▁Art', 'ab', 'gr', 'enz', 'ung']",5,4.333333333333333,False,4,4.0,True,4,False,4,13,0
+Hymnologe,"['H', 'ym', 'n', 'olog', 'e']",5,"['H', 'ym', 'n', 'ologe']",4,"['▁H', 'ymn', 'ologe']",3,4.0,False,4,4.5,False,5,False,4,9,0
+Filmfigur,"['Film', 'fig', 'ur']",3,"['Film', 'figur']",2,"['▁Film', 'fig', 'ur']",3,2.6666666666666665,False,3,2.5,False,3,False,4,9,0
+Farbenfabrik,"['Far', 'ben', 'fab', 'rik']",4,"['Far', 'ben', 'fabrik']",3,"['▁Far', 'ben', 'fab', 'rik']",4,3.6666666666666665,False,4,3.5,False,4,False,4,12,0
+Nachtklub,"['Nach', 'tk', 'l', 'ub']",4,"['N', 'acht', 'kl', 'ub']",4,"['▁Nach', 't', 'kl', 'ub']",4,4.0,True,4,4.0,True,4,False,4,9,0
+Kevelaerer,"['Ke', 'vel', 'a', 'erer']",4,"['Ke', 'vela', 'erer']",3,"['▁Ke', 'vel', 'a', 'erer']",4,3.6666666666666665,False,4,3.5,False,4,False,5,10,0
+Flugerprobung,"['Fl', 'uger', 'prob', 'ung']",4,"['Fl', 'uger', 'prob', 'ung']",4,"['▁Flug', 'er', 'prob', 'ung']",4,4.0,True,4,4.0,True,4,False,4,13,0
+Einzelwahlkreis,"['Ein', 'zel', 'wahl', 'kre', 'is']",5,"['Einzel', 'wahl', 'kreis']",3,"['▁Einzel', 'wahl', 'kreis']",3,3.6666666666666665,False,4,4.0,False,4,False,5,15,0
+Wanderziel,"['W', 'ander', 'ziel']",3,"['W', 'ander', 'ziel']",3,"['▁W', 'ander', 'ziel']",3,3.0,True,3,3.0,True,3,False,4,10,0
+Beziehungsgeflecht,"['Be', 'zie', 'h', 'ungs', 'gef', 'le', 'cht']",7,"['Be', 'ziehungs', 'gef', 'lecht']",4,"['▁Be', 'zie', 'h', 'ungs', 'gef', 'lecht']",6,5.666666666666667,False,6,5.5,False,6,False,4,18,0
+Blutzufuhr,"['Bl', 'utz', 'uf', 'u', 'hr']",5,"['Bl', 'utz', 'ufu', 'hr']",4,"['▁Bl', 'utz', 'uf', 'u', 'hr']",5,4.666666666666667,False,5,4.5,False,5,False,4,10,0
+Nachwuchsarbeit,"['Nach', 'w', 'uchs', 'arbeit']",4,"['Nach', 'w', 'uch', 'sar', 'beit']",5,"['▁Nach', 'w', 'uchs', 'arbeit']",4,4.333333333333333,False,4,4.5,False,5,False,5,15,0
+Motorraum,"['Motor', 'ra', 'um']",3,"['Motor', 'raum']",2,"['▁Motor', 'raum']",2,2.333333333333333,False,2,2.5,False,3,False,4,9,0
+Orchesterbesetzung,"['Or', 'chester', 'bes', 'et', 'zung']",5,"['Or', 'chester', 'bes', 'etzung']",4,"['▁Or', 'chester', 'bes', 'etzung']",4,4.333333333333333,False,4,4.5,False,5,False,4,18,0
+Ausbildungsjahr,"['A', 'usb', 'ild', 'ung', 'sj', 'ahr']",6,"['Aus', 'bildungs', 'jahr']",3,"['▁Aus', 'bild', 'ungs', 'jahr']",4,4.333333333333333,False,4,4.5,False,5,False,5,15,0
+Kunstauffassung,"['K', 'un', 'sta', 'uff', 'ass', 'ung']",6,"['Kunst', 'auff', 'assung']",3,"['▁Kunst', 'auff', 'ass', 'ung']",4,4.333333333333333,False,4,4.5,False,5,False,5,15,0
+Erhaben,"['Er', 'hab', 'en']",3,"['Er', 'haben']",2,"['▁Er', 'hab', 'en']",3,2.6666666666666665,False,3,2.5,False,3,False,5,7,0
+Wasserprobe,"['W', 'asser', 'probe']",3,"['Wasser', 'probe']",2,"['▁Wasser', 'pro', 'be']",3,2.6666666666666665,False,3,2.5,False,3,False,4,11,0
+Finanzierungsvereinbarung,"['Fin', 'anz', 'ier', 'ungs', 'vere', 'in', 'bar', 'ung']",8,"['Fin', 'anz', 'ierungs', 'verein', 'barung']",5,"['▁Fin', 'anz', 'ierungs', 'verein', 'bar', 'ung']",6,6.333333333333333,False,6,6.5,False,7,False,4,25,0
+Frachtschifffahrt,"['Fr', 'achts', 'ch', 'if', 'ff', 'ah', 'rt']",7,"['Fr', 'acht', 'sch', 'if', 'ff', 'ahrt']",6,"['▁Fra', 'cht', 'sch', 'if', 'ff', 'ah', 'rt']",7,6.666666666666667,False,7,6.5,False,7,False,5,17,0
+Elektroakustik,"['Ele', 'kt', 'ro', 'ak', 'ust', 'ik']",6,"['Elekt', 'ro', 'ak', 'ust', 'ik']",5,"['▁Ele', 'kt', 'ro', 'ak', 'ust', 'ik']",6,5.666666666666667,False,6,5.5,False,6,False,5,14,0
+Interserie,"['Int', 'ers', 'erie']",3,"['Inter', 'serie']",2,"['▁Inter', 'serie']",2,2.333333333333333,False,2,2.5,False,3,False,4,10,0
+Verarbeitungsschritt,"['Ver', 'arbeit', 'ung', 'ss', 'ch', 'ritt']",6,"['Ver', 'arbeitung', 'ssch', 'ritt']",4,"['▁Ver', 'arbeit', 'ungs', 'sch', 'ritt']",5,5.0,False,5,5.0,False,5,False,4,20,0
+Namenforschung,"['N', 'amen', 'f', 'orsch', 'ung']",5,"['N', 'amen', 'forschung']",3,"['▁Namen', 'forsch', 'ung']",3,3.6666666666666665,False,4,4.0,False,4,False,4,14,0
+Verwerfungszone,"['Ver', 'wer', 'f', 'ungs', 'zone']",5,"['Ver', 'wer', 'f', 'ungs', 'zone']",5,"['▁Ver', 'wer', 'f', 'ungs', 'zone']",5,5.0,True,5,5.0,True,5,False,5,15,0
+Fotoproduktion,"['F', 'ot', 'op', 'rodu', 'ktion']",5,"['Fot', 'op', 'rodu', 'ktion']",4,"['▁Fot', 'op', 'rodu', 'ktion']",4,4.333333333333333,False,4,4.5,False,5,False,4,14,0
+Rückenmark,"['R', 'Ã¼cken', 'mark']",3,"['R', 'ücken', 'mark']",3,"['▁Rück', 'en', 'mark']",3,3.0,True,3,3.0,True,3,False,4,10,0
+Frauennationalmannschaft,"['Fra', 'u', 'enn', 'ational', 'mann', 's', 'chaft']",7,"['Fra', 'u', 'enn', 'ational', 'mannschaft']",5,"['▁Frau', 'enn', 'ational', 'mannschaft']",4,5.333333333333333,False,5,6.0,False,6,False,4,24,0
+Gegenbesuch,"['G', 'egen', 'bes', 'uch']",4,"['G', 'egen', 'bes', 'uch']",4,"['▁Gegen', 'bes', 'uch']",3,3.6666666666666665,False,4,4.0,True,4,False,4,11,0
+Schleimpilz,"['Sch', 'le', 'imp', 'il', 'z']",5,"['Sch', 'le', 'imp', 'il', 'z']",5,"['▁Sch', 'le', 'imp', 'il', 'z']",5,5.0,True,5,5.0,True,5,False,5,11,0
+Regelversorgung,"['Reg', 'el', 'vers', 'org', 'ung']",5,"['Reg', 'el', 'versorgung']",3,"['▁Reg', 'el', 'vers', 'org', 'ung']",5,4.333333333333333,False,4,4.0,False,4,False,4,15,0
+Gebäudetyp,"['G', 'eb', 'Ã¤', 'ud', 'et', 'yp']",6,"['Geb', 'ä', 'udet', 'yp']",4,"['▁Geb', 'ä', 'ud', 'et', 'yp']",5,5.0,False,5,5.0,False,5,False,4,10,0
+Zigarrenfabrikant,"['Z', 'igar', 'ren', 'fab', 'rik', 'ant']",6,"['Z', 'igar', 'ren', 'fabrik', 'ant']",5,"['▁Z', 'ig', 'ar', 'ren', 'fab', 'rik', 'ant']",7,6.0,False,6,5.5,False,6,False,5,17,0
+Zweckbestimmung,"['Z', 'we', 'ck', 'best', 'imm', 'ung']",6,"['Z', 'we', 'ck', 'best', 'immung']",5,"['▁Zwe', 'ck', 'best', 'imm', 'ung']",5,5.333333333333333,False,5,5.5,False,6,False,6,15,1
+Aushebung,"['Aus', 'he', 'bung']",3,"['Aus', 'hebung']",2,"['▁Aus', 'heb', 'ung']",3,2.6666666666666665,False,3,2.5,False,3,False,6,9,1
+Ausflugsort,"['Aus', 'fl', 'ug', 'sort']",4,"['Aus', 'flug', 'sort']",3,"['▁Aus', 'flug', 'sort']",3,3.333333333333333,False,3,3.5,False,4,False,6,11,1
+Rentnerinteresse,"['Rent', 'ner', 'inter', 'esse']",4,"['Rent', 'ner', 'interesse']",3,"['▁R', 'ent', 'ner', 'inter', 'esse']",5,4.0,False,4,3.5,False,4,False,6,16,1
+Beitragsmodell,"['Be', 'itr', 'ags', 'mod', 'ell']",5,"['Be', 'itr', 'ags', 'modell']",4,"['▁Beit', 'rag', 's', 'mod', 'ell']",5,4.666666666666667,False,5,4.5,False,5,False,6,14,1
+Bahnmeisterei,"['B', 'ahn', 'me', 'ist', 'ere', 'i']",6,"['Bahn', 'meister', 'ei']",3,"['▁Bahn', 'meister', 'ei']",3,4.0,False,4,4.5,False,5,False,6,13,1
+Konzerthalle,"['Kon', 'zer', 'th', 'alle']",4,"['Kon', 'zer', 'th', 'alle']",4,"['▁Kon', 'zer', 'th', 'alle']",4,4.0,True,4,4.0,True,4,False,6,12,1
+Kriegstag,"['K', 'rieg', 'stag']",3,"['K', 'rieg', 'stag']",3,"['▁Krieg', 'stag']",2,2.6666666666666665,False,3,3.0,True,3,False,6,9,1
+Masthöhe,"['M', 'ast', 'h', 'Ã¶', 'he']",5,"['Mas', 'th', 'ö', 'he']",4,"['▁Mas', 'th', 'ö', 'he']",4,4.333333333333333,False,4,4.5,False,5,False,6,8,1
+Kriminalfilmreihe,"['K', 'riminal', 'film', 'rei', 'he']",5,"['K', 'riminal', 'film', 'reihe']",4,"['▁K', 'riminal', 'film', 'rei', 'he']",5,4.666666666666667,False,5,4.5,False,5,False,6,17,1
+Postverkehr,"['Post', 'ver', 'kehr']",3,"['Post', 'verkehr']",2,"['▁Post', 'verkehr']",2,2.333333333333333,False,2,2.5,False,3,False,6,11,1
+Vorsehung,"['V', 'orse', 'hung']",3,"['V', 'orse', 'hung']",3,"['▁Vor', 'seh', 'ung']",3,3.0,True,3,3.0,True,3,False,6,9,1
+Synthie,"['Syn', 'th', 'ie']",3,"['Synth', 'ie']",2,"['▁Syn', 'th', 'ie']",3,2.6666666666666665,False,3,2.5,False,3,False,6,7,1
+Ordovizium,"['Ord', 'ov', 'iz', 'ium']",4,"['Ord', 'ov', 'iz', 'ium']",4,"['▁Ord', 'ov', 'iz', 'ium']",4,4.0,True,4,4.0,True,4,False,6,10,1
+Straßenweltmeisterschaft,"['Stra', 'ÃŁen', 'w', 'elt', 'me', 'isters', 'chaft']",7,"['Stra', 'ßen', 'welt', 'meisterschaft']",4,"['▁Straßen', 'welt', 'meisterschaft']",3,4.666666666666667,False,5,5.5,False,6,False,6,24,1
+Seereise,"['Se', 'ere', 'ise']",3,"['Se', 'ere', 'ise']",3,"['▁Se', 'ere', 'ise']",3,3.0,True,3,3.0,True,3,False,6,8,1
+Wohntrakt,"['W', 'ohn', 'tr', 'akt']",4,"['Woh', 'nt', 'rakt']",3,"['▁W', 'oh', 'nt', 'ra', 'kt']",5,4.0,False,4,3.5,False,4,False,6,9,1
+Schuldverschreibung,"['Sch', 'uld', 'vers', 'ch', 'reibung']",5,"['Sch', 'uld', 'versch', 'reibung']",4,"['▁Schul', 'd', 'ver', 'sch', 'reibung']",5,4.666666666666667,False,5,4.5,False,5,False,6,19,1
+Fliehburg,"['Fl', 'ie', 'h', 'burg']",4,"['Fl', 'ieh', 'burg']",3,"['▁Fl', 'ie', 'h', 'burg']",4,3.6666666666666665,False,4,3.5,False,4,False,6,9,1
+Königinmutter,"['K', 'Ã¶n', 'igin', 'm', 'utter']",5,"['K', 'önig', 'in', 'm', 'utter']",5,"['▁K', 'ön', 'igin', 'mut', 'ter']",5,5.0,True,5,5.0,True,5,False,6,13,1
+Früherkennung,"['Fr', 'Ã¼', 'her', 'k', 'enn', 'ung']",6,"['Fr', 'ü', 'her', 'kennung']",4,"['▁Fr', 'ü', 'her', 'ken', 'nung']",5,5.0,False,5,5.0,False,5,False,6,13,1
+Raumtransporter,"['Ra', 'um', 'transport', 'er']",4,"['Ra', 'um', 'trans', 'porter']",4,"['▁Raum', 'trans', 'porter']",3,3.6666666666666665,False,4,4.0,True,4,False,6,15,1
+Deckschicht,"['De', 'cks', 'ch', 'icht']",4,"['Deck', 'sch', 'icht']",3,"['▁De', 'ck', 'sch', 'icht']",4,3.6666666666666665,False,4,3.5,False,4,False,6,11,1
+Vakanz,"['V', 'ak', 'anz']",3,"['V', 'akan', 'z']",3,"['▁V', 'ak', 'anz']",3,3.0,True,3,3.0,True,3,False,6,6,1
+Schablone,"['Sch', 'abl', 'one']",3,"['Sch', 'abl', 'one']",3,"['▁Sch', 'abl', 'one']",3,3.0,True,3,3.0,True,3,False,6,9,1
+Pilzinfektion,"['P', 'il', 'z', 'inf', 'ekt', 'ion']",6,"['Pil', 'z', 'inf', 'ektion']",4,"['▁Pil', 'zin', 'fe', 'ktion']",4,4.666666666666667,False,5,5.0,False,5,False,6,13,1
+Berechtigter,"['B', 'ere', 'cht', 'ig', 'ter']",5,"['Bere', 'chtig', 'ter']",3,"['▁Bere', 'cht', 'ig', 'ter']",4,4.0,False,4,4.0,False,4,False,6,12,1
+Erzählweise,"['Er', 'zÃ¤hl', 'weise']",3,"['E', 'rz', 'ähl', 'weise']",4,"['▁Erz', 'ähl', 'weise']",3,3.333333333333333,False,3,3.5,False,4,False,6,11,1
+Nostalgie,"['N', 'ost', 'al', 'gie']",4,"['N', 'ost', 'alg', 'ie']",4,"['▁N', 'ost', 'alg', 'ie']",4,4.0,True,4,4.0,True,4,False,6,9,1
+Gemeinnützigkeit,"['G', 'eme', 'inn', 'Ã¼t', 'zig', 'keit']",6,"['Geme', 'inn', 'üt', 'zig', 'keit']",5,"['▁Geme', 'inn', 'üt', 'zig', 'keit']",5,5.333333333333333,False,5,5.5,False,6,False,6,16,1
+Oberpräsidium,"['O', 'ber', 'pr', 'Ã¤', 'sid', 'ium']",6,"['Ober', 'prä', 'sid', 'ium']",4,"['▁Ober', 'pr', 'äs', 'id', 'ium']",5,5.0,False,5,5.0,False,5,False,6,13,1
+Bibelübersetzung,"['B', 'ibel', 'Ã¼', 'bers', 'et', 'zung']",6,"['B', 'ibel', 'ü', 'bers', 'etzung']",5,"['▁Bib', 'el', 'ü', 'bers', 'etzung']",5,5.333333333333333,False,5,5.5,False,6,False,6,16,1
+Bibliograph,"['B', 'ibli', 'ograph']",3,"['Bibli', 'ograph']",2,"['▁Bibli', 'ograph']",2,2.333333333333333,False,2,2.5,False,3,False,6,11,1
+Tauchtiefe,"['Ta', 'ucht', 'ie', 'fe']",4,"['Tau', 'cht', 'ie', 'fe']",4,"['▁T', 'au', 'cht', 'ie', 'fe']",5,4.333333333333333,False,4,4.0,True,4,False,6,10,1
+Memorieren,"['Mem', 'or', 'ieren']",3,"['Memor', 'ieren']",2,"['▁Mem', 'or', 'ieren']",3,2.6666666666666665,False,3,2.5,False,3,False,6,10,1
+Fabrikat,"['Fab', 'rik', 'at']",3,"['Fab', 'ri', 'kat']",3,"['▁Fab', 'rik', 'at']",3,3.0,True,3,3.0,True,3,False,6,8,1
+Lebensabschnitt,"['Le', 'bens', 'abs', 'chnitt']",4,"['Leb', 'ens', 'abs', 'chnitt']",4,"['▁Lebens', 'ab', 'schnitt']",3,3.6666666666666665,False,4,4.0,True,4,False,6,15,1
+Ortsverzeichnis,"['Or', 'ts', 'ver', 'zeich', 'nis']",5,"['Or', 'ts', 'ver', 'zeichnis']",4,"['▁Orts', 'ver', 'zeichnis']",3,4.0,False,4,4.5,False,5,False,6,15,1
+Nudel,"['N', 'ud', 'el']",3,"['N', 'udel']",2,"['▁N', 'ud', 'el']",3,2.6666666666666665,False,3,2.5,False,3,False,6,5,1
+Titelverzicht,"['Tit', 'el', 'ver', 'z', 'icht']",5,"['T', 'itel', 'ver', 'zicht']",4,"['▁Titel', 'ver', 'z', 'icht']",4,4.333333333333333,False,4,4.5,False,5,False,6,13,1
+Enkelsohn,"['En', 'kel', 'so', 'hn']",4,"['En', 'kel', 'sohn']",3,"['▁En', 'kel', 'so', 'hn']",4,3.6666666666666665,False,4,3.5,False,4,False,6,9,1
+Steinmetzmeister,"['Ste', 'in', 'met', 'z', 'me', 'ister']",6,"['Stein', 'met', 'z', 'meister']",4,"['▁Stein', 'met', 'z', 'meister']",4,4.666666666666667,False,5,5.0,False,5,False,6,16,1
+Außenfahne,"['Au', 'ÃŁen', 'f', 'ah', 'ne']",5,"['Au', 'ßen', 'fah', 'ne']",4,"['▁Auß', 'en', 'fah', 'ne']",4,4.333333333333333,False,4,4.5,False,5,False,6,10,1
+Grenz,"['G', 'ren', 'z']",3,"['G', 'renz']",2,"['▁Gren', 'z']",2,2.333333333333333,False,2,2.5,False,3,False,6,5,1
+Hospitant,"['H', 'osp', 'itant']",3,"['H', 'osp', 'itant']",3,"['▁H', 'osp', 'it', 'ant']",4,3.333333333333333,False,3,3.0,True,3,False,6,9,1
+Skulpturengarten,"['Sk', 'ulpt', 'ure', 'ng', 'arten']",5,"['Sk', 'ulpt', 'ure', 'ng', 'arten']",5,"['▁Sk', 'ulpt', 'ur', 'eng', 'arten']",5,5.0,True,5,5.0,True,5,False,6,16,1
+Holzbläser,"['Hol', 'z', 'bl', 'Ã¤', 'ser']",5,"['Hol', 'z', 'bl', 'äser']",4,"['▁Holz', 'bl', 'ä', 'ser']",4,4.333333333333333,False,4,4.5,False,5,False,6,10,1
+Gewandhausorchester,"['G', 'ew', 'and', 'haus', 'or', 'chester']",6,"['Gew', 'and', 'haus', 'or', 'chester']",5,"['▁Gew', 'and', 'haus', 'or', 'chester']",5,5.333333333333333,False,5,5.5,False,6,False,6,19,1
+Deutschlandbild,"['De', 'utsch', 'land', 'bild']",4,"['Deutschland', 'bild']",2,"['▁Deutschland', 'bild']",2,2.6666666666666665,False,3,3.0,False,3,False,6,15,1
+Studentenweltspiel,"['Student', 'en', 'w', 'elt', 'spiel']",5,"['Student', 'en', 'welt', 'spiel']",4,"['▁Student', 'en', 'welt', 'spiel']",4,4.333333333333333,False,4,4.5,False,5,False,6,18,1
+Stoffrecycling,"['St', 'off', 'rec', 'ycling']",4,"['St', 'off', 'recycl', 'ing']",4,"['▁Sto', 'ff', 're', 'cy', 'cling']",5,4.333333333333333,False,4,4.0,True,4,False,6,14,1
+Führungsschicht,"['F', 'Ã¼hrung', 'ss', 'ch', 'icht']",5,"['F', 'ührung', 'ssch', 'icht']",4,"['▁F', 'ühr', 'ungs', 'sch', 'icht']",5,4.666666666666667,False,5,4.5,False,5,False,6,15,1
+Flüchtlingsunterkunft,"['Fl', 'Ã¼', 'ch', 'tl', 'ings', 'unter', 'k', 'unft']",8,"['Fl', 'ücht', 'lings', 'unter', 'kunft']",5,"['▁Fl', 'ü', 'cht', 'lings', 'unter', 'kunft']",6,6.333333333333333,False,6,6.5,False,7,False,6,21,1
+Autoindustrie,"['Auto', 'ind', 'ust', 'rie']",4,"['Auto', 'industrie']",2,"['▁Auto', 'indust', 'rie']",3,3.0,False,3,3.0,False,3,False,6,13,1
+Richtige,"['R', 'icht', 'ige']",3,"['Richt', 'ige']",2,"['▁R', 'icht', 'ige']",3,2.6666666666666665,False,3,2.5,False,3,False,6,8,1
+Personenbezeichnung,"['Person', 'en', 'be', 'zeich', 'nung']",5,"['Person', 'en', 'be', 'zeichnung']",4,"['▁Personen', 'be', 'zeichnung']",3,4.0,False,4,4.5,False,5,False,6,19,1
+Sonnentau,"['S', 'onn', 'ent', 'au']",4,"['S', 'onn', 'ent', 'au']",4,"['▁S', 'onn', 'ent', 'au']",4,4.0,True,4,4.0,True,4,False,6,9,1
+Nachschwimmen,"['Nach', 'sch', 'w', 'im', 'men']",5,"['Nach', 'schw', 'immen']",3,"['▁Nach', 'sch', 'w', 'im', 'men']",5,4.333333333333333,False,4,4.0,False,4,False,6,13,1
+Ministerialengeschlecht,"['Min', 'ister', 'ial', 'eng', 'esch', 'le', 'cht']",7,"['Minister', 'ial', 'eng', 'esch', 'lecht']",5,"['▁Minister', 'ial', 'eng', 'esch', 'lecht']",5,5.666666666666667,False,6,6.0,False,6,False,6,23,1
+Oberstudienrat,"['O', 'ber', 'stud', 'ien', 'rat']",5,"['Ober', 'stud', 'ien', 'rat']",4,"['▁Ober', 'stud', 'ien', 'rat']",4,4.333333333333333,False,4,4.5,False,5,False,6,14,1
+Funktionentheorie,"['F', 'unk', 'tion', 'ent', 'he', 'orie']",6,"['Fun', 'ktion', 'ent', 'he', 'orie']",5,"['▁Fun', 'ktion', 'ent', 'he', 'orie']",5,5.333333333333333,False,5,5.5,False,6,False,6,17,1
+Koalitionspartner,"['K', 'o', 'al', 'ition', 'sp', 'artner']",6,"['Ko', 'al', 'ition', 'sp', 'artner']",5,"['▁Ko', 'al', 'ition', 'sp', 'art', 'ner']",6,5.666666666666667,False,6,5.5,False,6,False,6,17,1
+Viertplatzierten,"['V', 'iert', 'plat', 'zi', 'erten']",5,"['V', 'iert', 'plat', 'zi', 'erten']",5,"['▁V', 'iert', 'platz', 'ierten']",4,4.666666666666667,False,5,5.0,True,5,False,6,16,1
+Einzelstimme,"['Ein', 'zel', 'stim', 'me']",4,"['Einzel', 'stim', 'me']",3,"['▁Einzel', 'st', 'im', 'me']",4,3.6666666666666665,False,4,3.5,False,4,False,6,12,1
+Juniorinnendoppel,"['Junior', 'inn', 'end', 'oppel']",4,"['Junior', 'inn', 'endo', 'ppel']",4,"['▁Junior', 'inn', 'endo', 'ppel']",4,4.0,True,4,4.0,True,4,False,6,17,1
+Fortbewegungsmittel,"['Fort', 'bew', 'eg', 'ung', 'sm', 'ittel']",6,"['Fort', 'bewegung', 'smittel']",3,"['▁Fort', 'bew', 'eg', 'ungs', 'mittel']",5,4.666666666666667,False,5,4.5,False,5,False,6,19,1
+Genussmittel,"['Gen', 'uss', 'mittel']",3,"['Gen', 'uss', 'mittel']",3,"['▁Gen', 'uss', 'mittel']",3,3.0,True,3,3.0,True,3,False,6,12,1
+Schachfreund,"['Sch', 'ach', 'fre', 'und']",4,"['Sch', 'ach', 'freund']",3,"['▁Sch', 'ach', 'fre', 'und']",4,3.6666666666666665,False,4,3.5,False,4,False,6,12,1
+Vorab,"['V', 'or', 'ab']",3,"['Vor', 'ab']",2,"['▁Vor', 'ab']",2,2.333333333333333,False,2,2.5,False,3,False,6,5,1
+Spreng,"['S', 'pre', 'ng']",3,"['S', 'pre', 'ng']",3,"['▁Spr', 'eng']",2,2.6666666666666665,False,3,3.0,True,3,False,6,6,1
+Spitzengeschwindigkeit,"['Sp', 'itz', 'eng', 'esch', 'wind', 'igkeit']",6,"['Sp', 'itz', 'eng', 'esch', 'windigkeit']",5,"['▁Sp', 'itz', 'eng', 'esch', 'wind', 'igkeit']",6,5.666666666666667,False,6,5.5,False,6,False,6,22,1
+Hauptrichtung,"['Ha', 'up', 'tr', 'icht', 'ung']",5,"['Haupt', 'richtung']",2,"['▁H', 'au', 'ptr', 'ichtung']",4,3.6666666666666665,False,4,3.5,False,4,False,6,13,1
+Rauschsperre,"['R', 'aus', 'chs', 'per', 're']",5,"['R', 'aus', 'chs', 'per', 're']",5,"['▁R', 'aus', 'chs', 'per', 're']",5,5.0,True,5,5.0,True,5,False,6,12,1
+Ordensgelübde,"['Ord', 'ens', 'gel', 'Ã¼b', 'de']",5,"['Ord', 'ens', 'gel', 'üb', 'de']",5,"['▁Ord', 'ens', 'gel', 'üb', 'de']",5,5.0,True,5,5.0,True,5,False,6,13,1
+Quellgras,"['Qu', 'ell', 'gr', 'as']",4,"['Qu', 'ell', 'gras']",3,"['▁Qu', 'ell', 'gr', 'as']",4,3.6666666666666665,False,4,3.5,False,4,False,6,9,1
+Randstreifen,"['Rand', 'stre', 'ifen']",3,"['Rand', 'stre', 'ifen']",3,"['▁Rand', 'stre', 'ifen']",3,3.0,True,3,3.0,True,3,False,6,12,1
+Bauernheer,"['B', 'au', 'ern', 'he', 'er']",5,"['Bau', 'ern', 'heer']",3,"['▁Bau', 'ern', 'he', 'er']",4,4.0,False,4,4.0,False,4,False,6,10,1
+Turminneres,"['Tur', 'min', 'ner', 'es']",4,"['Tur', 'min', 'ner', 'es']",4,"['▁Tur', 'min', 'ner', 'es']",4,4.0,True,4,4.0,True,4,False,6,11,1
+Entrüstung,"['Entr', 'Ã¼st', 'ung']",3,"['Ent', 'rüstung']",2,"['▁En', 'tr', 'üst', 'ung']",4,3.0,False,3,2.5,False,3,False,6,10,1
+Feldgeschütz,"['F', 'eld', 'gesch', 'Ã¼t', 'z']",5,"['F', 'eld', 'gesch', 'ütz']",4,"['▁Feld', 'gesch', 'üt', 'z']",4,4.333333333333333,False,4,4.5,False,5,False,6,12,1
+Mauereidechse,"['M', 'au', 'ere', 'ide', 'ch', 'se']",6,"['Mau', 'ere', 'ide', 'ch', 'se']",5,"['▁Mau', 'ere', 'ide', 'ch', 'se']",5,5.333333333333333,False,5,5.5,False,6,False,6,13,1
+Reichswehrminister,"['Re', 'ich', 's', 'we', 'hr', 'min', 'ister']",7,"['Re', 'ich', 'swe', 'hrm', 'in', 'ister']",6,"['▁Reichs', 'wehr', 'minister']",3,5.333333333333333,False,5,6.5,False,7,False,6,18,1
+Gebirgsstelze,"['G', 'eb', 'ir', 'gs', 'st', 'el', 'ze']",7,"['Geb', 'ir', 'gs', 'stel', 'ze']",5,"['▁Geb', 'ir', 'gs', 'st', 'el', 'ze']",6,6.0,False,6,6.0,False,6,False,6,13,1
+Rinnsal,"['R', 'in', 'ns', 'al']",4,"['R', 'in', 'ns', 'al']",4,"['▁R', 'in', 'ns', 'al']",4,4.0,True,4,4.0,True,4,False,6,7,1
+Hinterseite,"['H', 'inter', 'seite']",3,"['H', 'inter', 'seite']",3,"['▁Hinter', 'seite']",2,2.6666666666666665,False,3,3.0,True,3,False,6,11,1
+Anlagenteil,"['An', 'lag', 'ente', 'il']",4,"['An', 'lag', 'ente', 'il']",4,"['▁An', 'lag', 'ente', 'il']",4,4.0,True,4,4.0,True,4,False,6,11,1
+Längenkontraktion,"['L', 'Ã¤ng', 'en', 'kon', 'tr', 'aktion']",6,"['L', 'äng', 'enk', 'ont', 'ra', 'ktion']",6,"['▁L', 'äng', 'enk', 'ont', 'ra', 'ktion']",6,6.0,True,6,6.0,True,6,False,6,17,1
+Kristallkugel,"['Krist', 'all', 'k', 'ug', 'el']",5,"['Krist', 'all', 'k', 'ugel']",4,"['▁Krist', 'all', 'k', 'ugel']",4,4.333333333333333,False,4,4.5,False,5,False,6,13,1
+Talentscout,"['T', 'al', 'ents', 'cout']",4,"['Tal', 'ents', 'cout']",3,"['▁Tal', 'ents', 'cout']",3,3.333333333333333,False,3,3.5,False,4,False,6,11,1
+Routinier,"['R', 'out', 'in', 'ier']",4,"['R', 'out', 'in', 'ier']",4,"['▁Rout', 'in', 'ier']",3,3.6666666666666665,False,4,4.0,True,4,False,6,9,1
+Medienarbeit,"['Med', 'ien', 'arbeit']",3,"['Med', 'ien', 'arbeit']",3,"['▁Medien', 'arbeit']",2,2.6666666666666665,False,3,3.0,True,3,False,6,12,1
+Hautfalte,"['H', 'aut', 'f', 'alte']",4,"['H', 'aut', 'fal', 'te']",4,"['▁Haut', 'fal', 'te']",3,3.6666666666666665,False,4,4.0,True,4,False,6,9,1
+Lymphödem,"['L', 'ymph', 'Ã¶', 'dem']",4,"['Lymph', 'ö', 'dem']",3,"['▁L', 'ym', 'ph', 'ö', 'dem']",5,4.0,False,4,3.5,False,4,False,6,9,1
+Umrüstung,"['U', 'mr', 'Ã¼st', 'ung']",4,"['Um', 'rüstung']",2,"['▁Um', 'r', 'üst', 'ung']",4,3.333333333333333,False,3,3.0,False,3,False,6,9,1
+Textilbranche,"['Text', 'il', 'br', 'anche']",4,"['Text', 'il', 'branche']",3,"['▁Text', 'il', 'b', 'ran', 'che']",5,4.0,False,4,3.5,False,4,False,6,13,1
+Motorradclub,"['Motor', 'rad', 'club']",3,"['Motor', 'rad', 'club']",3,"['▁Motor', 'rad', 'club']",3,3.0,True,3,3.0,True,3,False,6,12,1
+Fortentwicklung,"['Fort', 'ent', 'wicklung']",3,"['Fort', 'entwicklung']",2,"['▁Fort', 'ent', 'wicklung']",3,2.6666666666666665,False,3,2.5,False,3,False,6,15,1
+Textilkombinat,"['Text', 'ilk', 'omb', 'in', 'at']",5,"['Text', 'ilk', 'omb', 'inat']",4,"['▁Text', 'il', 'kom', 'bin', 'at']",5,4.666666666666667,False,5,4.5,False,5,False,6,14,1
+Verbraucherpolitik,"['Ver', 'bra', 'ucher', 'polit', 'ik']",5,"['Ver', 'brauch', 'er', 'politik']",4,"['▁Ver', 'bra', 'uch', 'er', 'polit', 'ik']",6,5.0,False,5,4.5,False,5,False,6,18,1
+Assemblersprache,"['As', 'sembl', 'ers', 'pr', 'ache']",5,"['Assembl', 'ers', 'prache']",3,"['▁Ass', 'emb', 'lers', 'p', 'rache']",5,4.333333333333333,False,4,4.0,False,4,False,6,16,1
+Braumeister,"['B', 'ra', 'ume', 'ister']",4,"['Bra', 'ume', 'ister']",3,"['▁Bra', 'ume', 'ister']",3,3.333333333333333,False,3,3.5,False,4,False,6,11,1
+Delegat,"['De', 'leg', 'at']",3,"['Deleg', 'at']",2,"['▁De', 'leg', 'at']",3,2.6666666666666665,False,3,2.5,False,3,False,6,7,1
+Trunksucht,"['Tr', 'unks', 'ucht']",3,"['Tr', 'unks', 'ucht']",3,"['▁Tr', 'unks', 'ucht']",3,3.0,True,3,3.0,True,3,False,6,10,1
+Immobilienbesitz,"['Imm', 'obil', 'ien', 'bes', 'itz']",5,"['Im', 'mobil', 'ien', 'bes', 'itz']",5,"['▁Im', 'm', 'obil', 'ien', 'bes', 'itz']",6,5.333333333333333,False,5,5.0,True,5,False,6,16,1
+Ausgrabungsstätte,"['Aus', 'grab', 'ungs', 'st', 'Ã¤t', 'te']",6,"['Aus', 'grab', 'ungs', 'stätte']",4,"['▁Aus', 'gra', 'b', 'ungs', 'st', 'ätte']",6,5.333333333333333,False,5,5.0,False,5,False,6,17,1
+Fischereischutz,"['F', 'isch', 'ere', 'isch', 'utz']",5,"['F', 'isch', 'ere', 'isch', 'utz']",5,"['▁F', 'isch', 'ere', 'isch', 'utz']",5,5.0,True,5,5.0,True,5,False,6,15,1
+Holztransport,"['Hol', 'z', 'transport']",3,"['Hol', 'z', 'transport']",3,"['▁Holz', 'transport']",2,2.6666666666666665,False,3,3.0,True,3,False,6,13,1
+Laderampe,"['L', 'ader', 'am', 'pe']",4,"['L', 'ader', 'ampe']",3,"['▁L', 'ader', 'am', 'pe']",4,3.6666666666666665,False,4,3.5,False,4,False,6,9,1
+Verwertungsrecht,"['Ver', 'wert', 'ungs', 'recht']",4,"['Ver', 'wert', 'ungs', 'recht']",4,"['▁Ver', 'wert', 'ungs', 'recht']",4,4.0,True,4,4.0,True,4,False,6,16,1
+Autofähre,"['Aut', 'of', 'Ã¤h', 're']",4,"['Aut', 'of', 'äh', 're']",4,"['▁Aut', 'of', 'äh', 're']",4,4.0,True,4,4.0,True,4,False,6,9,1
+Pflanzenbewuchs,"['P', 'fl', 'an', 'zen', 'bew', 'uchs']",6,"['P', 'fl', 'anzen', 'bew', 'uchs']",5,"['▁Pfl', 'anzen', 'bew', 'uchs']",4,5.0,False,5,5.5,False,6,False,6,15,1
+Jahrtausendwechsel,"['J', 'ahr', 'ta', 'us', 'end', 'we', 'chsel']",7,"['Jahr', 'taus', 'end', 'wechsel']",4,"['▁Jahr', 'ta', 'us', 'end', 'we', 'chsel']",6,5.666666666666667,False,6,5.5,False,6,False,6,18,1
+Kriegsteilnehmer,"['K', 'rieg', 'ste', 'il', 'nehmer']",5,"['K', 'rieg', 'steil', 'nehmer']",4,"['▁Krieg', 'ste', 'il', 'nehmer']",4,4.333333333333333,False,4,4.5,False,5,False,6,16,1
+Zeichenfolge,"['Ze', 'ichen', 'fol', 'ge']",4,"['Ze', 'ichen', 'folge']",3,"['▁Ze', 'ichen', 'folge']",3,3.333333333333333,False,3,3.5,False,4,False,6,12,1
+Nachkriegsbebauung,"['Nach', 'k', 'rieg', 's', 'be', 'bau', 'ung']",7,"['Nach', 'krieg', 's', 'be', 'bau', 'ung']",6,"['▁Nach', 'krie', 'gs', 'b', 'eb', 'au', 'ung']",7,6.666666666666667,False,7,6.5,False,7,False,6,18,1
+Modellversuch,"['Mod', 'ell', 'vers', 'uch']",4,"['Mod', 'ell', 'vers', 'uch']",4,"['▁Mod', 'ell', 'vers', 'uch']",4,4.0,True,4,4.0,True,4,False,6,13,1
+Zielpunkt,"['Z', 'i', 'elp', 'unkt']",4,"['Ziel', 'punkt']",2,"['▁Ziel', 'punkt']",2,2.6666666666666665,False,3,3.0,False,3,False,6,9,1
+Berufsgenossenschaft,"['Ber', 'uf', 'sg', 'en', 'oss', 'enschaft']",6,"['Ber', 'ufs', 'gen', 'oss', 'enschaft']",5,"['▁Beruf', 's', 'gen', 'oss', 'enschaft']",5,5.333333333333333,False,5,5.5,False,6,False,6,20,1
+Kurzdistanz,"['K', 'ur', 'zd', 'istan', 'z']",5,"['Kur', 'z', 'dist', 'anz']",4,"['▁Kurz', 'dist', 'anz']",3,4.0,False,4,4.5,False,5,False,6,11,1
+Werberatschlag,"['Wer', 'ber', 'ats', 'ch', 'lag']",5,"['Wer', 'ber', 'atsch', 'lag']",4,"['▁Wer', 'ber', 'at', 'sch', 'lag']",5,4.666666666666667,False,5,4.5,False,5,False,6,14,1
+Bewährungszeit,"['B', 'ew', 'Ã¤hr', 'ungs', 'zeit']",5,"['Bew', 'ähr', 'ungs', 'zeit']",4,"['▁Bew', 'ähr', 'ungs', 'zeit']",4,4.333333333333333,False,4,4.5,False,5,False,6,14,1
+Sauerstoffzufuhr,"['S', 'auer', 'stoff', 'z', 'uf', 'u', 'hr']",7,"['S', 'auer', 'stoff', 'z', 'ufu', 'hr']",6,"['▁S', 'auer', 'stoff', 'z', 'uf', 'u', 'hr']",7,6.666666666666667,False,7,6.5,False,7,False,6,16,1
+Gesangsstil,"['G', 'es', 'ang', 'sst', 'il']",5,"['Ges', 'ang', 'sst', 'il']",4,"['▁Ges', 'angs', 'st', 'il']",4,4.333333333333333,False,4,4.5,False,5,False,6,11,1
+Dauerserie,"['D', 'au', 'ers', 'erie']",4,"['D', 'au', 'ers', 'erie']",4,"['▁D', 'au', 'ers', 'erie']",4,4.0,True,4,4.0,True,4,False,6,10,1
+Evaluierung,"['E', 'valu', 'ierung']",3,"['Evalu', 'ierung']",2,"['▁E', 'valu', 'ierung']",3,2.6666666666666665,False,3,2.5,False,3,False,6,11,1
+Erfolgsgeschichte,"['E', 'rf', 'olg', 'sg', 'esch', 'ichte']",6,"['Er', 'fol', 'gs', 'geschichte']",4,"['▁Er', 'fol', 'gs', 'geschichte']",4,4.666666666666667,False,5,5.0,False,5,False,6,17,1
+Elbseite,"['El', 'b', 'seite']",3,"['El', 'b', 'seite']",3,"['▁El', 'b', 'seite']",3,3.0,True,3,3.0,True,3,False,6,8,1
+Kontinentalbezug,"['K', 'ont', 'in', 'ental', 'be', 'zug']",6,"['Kont', 'inental', 'bez', 'ug']",4,"['▁Kont', 'inental', 'bez', 'ug']",4,4.666666666666667,False,5,5.0,False,5,False,6,16,1
+Rebranding,"['Re', 'brand', 'ing']",3,"['Re', 'branding']",2,"['▁Reb', 'rand', 'ing']",3,2.6666666666666665,False,3,2.5,False,3,False,6,10,1
+Romanreihe,"['Roman', 'rei', 'he']",3,"['Roman', 'reihe']",2,"['▁Roman', 'rei', 'he']",3,2.6666666666666665,False,3,2.5,False,3,False,6,10,1
+Frauenbild,"['Fra', 'uen', 'bild']",3,"['Fra', 'uen', 'bild']",3,"['▁Frauen', 'bild']",2,2.6666666666666665,False,3,3.0,True,3,False,6,10,1
+Theaterakademie,"['The', 'ater', 'ak', 'adem', 'ie']",5,"['Theater', 'ak', 'ademie']",3,"['▁Theater', 'ak', 'adem', 'ie']",4,4.0,False,4,4.0,False,4,False,6,15,1
+Soldatenfriedhof,"['Sold', 'aten', 'fried', 'hof']",4,"['Sold', 'aten', 'fried', 'hof']",4,"['▁Sold', 'aten', 'fried', 'hof']",4,4.0,True,4,4.0,True,4,False,6,16,1
+Umarmung,"['Um', 'arm', 'ung']",3,"['Um', 'arm', 'ung']",3,"['▁Um', 'arm', 'ung']",3,3.0,True,3,3.0,True,3,False,6,8,1
+Programmheft,"['Program', 'm', 'he', 'ft']",4,"['Programm', 'he', 'ft']",3,"['▁Program', 'm', 'he', 'ft']",4,3.6666666666666665,False,4,3.5,False,4,False,6,12,1
+Eigentor,"['E', 'ig', 'ent', 'or']",4,"['E', 'igent', 'or']",3,"['▁E', 'igent', 'or']",3,3.333333333333333,False,3,3.5,False,4,False,6,8,1
+Amerikanistik,"['A', 'mer', 'ikan', 'istik']",4,"['Amer', 'ikan', 'istik']",3,"['▁Amer', 'ikan', 'istik']",3,3.333333333333333,False,3,3.5,False,4,False,6,13,1
+Trockengewicht,"['T', 'rock', 'eng', 'ew', 'icht']",5,"['T', 'rock', 'eng', 'ew', 'icht']",5,"['▁Tro', 'cken', 'gew', 'icht']",4,4.666666666666667,False,5,5.0,True,5,False,6,14,1
+Seitentrieb,"['Se', 'it', 'ent', 'rieb']",4,"['Seit', 'ent', 'rieb']",3,"['▁Seit', 'ent', 'rieb']",3,3.333333333333333,False,3,3.5,False,4,False,6,11,1
+Überalterung,"['Ãľ', 'ber', 'alter', 'ung']",4,"['Über', 'alter', 'ung']",3,"['▁Über', 'alter', 'ung']",3,3.333333333333333,False,3,3.5,False,4,False,6,12,1
+Kupfergrube,"['K', 'up', 'fer', 'gr', 'ube']",5,"['K', 'up', 'fer', 'gr', 'ube']",5,"['▁K', 'up', 'fer', 'gr', 'ube']",5,5.0,True,5,5.0,True,5,False,6,11,1
+Mikrowelle,"['M', 'ik', 'row', 'elle']",4,"['Mik', 'row', 'elle']",3,"['▁Mik', 'row', 'elle']",3,3.333333333333333,False,3,3.5,False,4,False,6,10,1
+Experimentalfilm,"['Experiment', 'alf', 'ilm']",3,"['Experimental', 'film']",2,"['▁Ex', 'perimental', 'film']",3,2.6666666666666665,False,3,2.5,False,3,False,6,16,1
+Küstenboot,"['K', 'Ã¼', 'sten', 'boot']",4,"['Kü', 'sten', 'boot']",3,"['▁Kü', 'sten', 'boot']",3,3.333333333333333,False,3,3.5,False,4,False,6,10,1
+Fantasyliteratur,"['Fant', 'as', 'yl', 'iter', 'atur']",5,"['F', 'antas', 'yl', 'iter', 'atur']",5,"['▁Fant', 'as', 'yl', 'iter', 'atur']",5,5.0,True,5,5.0,True,5,False,6,16,1
+Talaue,"['T', 'ala', 'ue']",3,"['T', 'ala', 'ue']",3,"['▁T', 'ala', 'ue']",3,3.0,True,3,3.0,True,3,False,6,6,1
+Fraktionsvorstand,"['Fr', 'akt', 'ions', 'vor', 'stand']",5,"['Fra', 'ktions', 'vor', 'stand']",4,"['▁Fra', 'kt', 'ions', 'vor', 'stand']",5,4.666666666666667,False,5,4.5,False,5,False,6,17,1
+Kostenplatz,"['K', 'osten', 'platz']",3,"['K', 'osten', 'platz']",3,"['▁K', 'osten', 'platz']",3,3.0,True,3,3.0,True,3,False,6,11,1
+Mysophobie,"['M', 'ys', 'oph', 'ob', 'ie']",5,"['Mys', 'oph', 'obie']",3,"['▁Mys', 'oph', 'ob', 'ie']",4,4.0,False,4,4.0,False,4,False,6,10,1
+Schutzumschlag,"['Sch', 'utz', 'ums', 'ch', 'lag']",5,"['Sch', 'utz', 'um', 'schlag']",4,"['▁Schutz', 'um', 'sch', 'lag']",4,4.333333333333333,False,4,4.5,False,5,False,6,14,1
+Korantext,"['K', 'or', 'ant', 'ext']",4,"['Kor', 'ant', 'ext']",3,"['▁Kor', 'an', 'text']",3,3.333333333333333,False,3,3.5,False,4,False,6,9,1
+Kraftverkehr,"['K', 'raft', 'ver', 'kehr']",4,"['Kraft', 'verkehr']",2,"['▁Kraft', 'verkehr']",2,2.6666666666666665,False,3,3.0,False,3,False,6,12,1
+Heidelandschaft,"['He', 'idel', 'ands', 'chaft']",4,"['He', 'idel', 'ands', 'chaft']",4,"['▁Heidel', 'and', 'schaft']",3,3.6666666666666665,False,4,4.0,True,4,False,6,15,1
+Landbauinspektor,"['Land', 'bau', 'ins', 'pe', 'ktor']",5,"['Land', 'bau', 'ins', 'pe', 'ktor']",5,"['▁Land', 'bau', 'ins', 'pe', 'ktor']",5,5.0,True,5,5.0,True,5,False,6,16,1
+Hügelschüttung,"['H', 'Ã¼', 'g', 'els', 'ch', 'Ã¼', 'tt', 'ung']",8,"['H', 'ü', 'gels', 'ch', 'ütt', 'ung']",6,"['▁H', 'ügel', 'sch', 'ütt', 'ung']",5,6.333333333333333,False,6,7.0,False,7,False,6,14,1
+Variationsrechnung,"['Vari', 'ations', 're', 'chn', 'ung']",5,"['Vari', 'ations', 're', 'chnung']",4,"['▁Vari', 'ations', 're', 'chn', 'ung']",5,4.666666666666667,False,5,4.5,False,5,False,6,18,1
+Liedbegleiter,"['L', 'ied', 'beg', 'le', 'iter']",5,"['L', 'ied', 'beg', 'leiter']",4,"['▁Lied', 'beg', 'le', 'iter']",4,4.333333333333333,False,4,4.5,False,5,False,6,13,1
+Autoritätsperson,"['Autor', 'itÃ¤t', 'sp', 'erson']",4,"['Autor', 'ität', 'sp', 'erson']",4,"['▁Autor', 'ität', 'sp', 'erson']",4,4.0,True,4,4.0,True,4,False,6,16,1
+Hotelkette,"['Hotel', 'k', 'ette']",3,"['Hotel', 'kette']",2,"['▁Hotel', 'k', 'ette']",3,2.6666666666666665,False,3,2.5,False,3,False,6,10,1
+Taubenhaus,"['T', 'aub', 'en', 'haus']",4,"['Ta', 'uben', 'haus']",3,"['▁Ta', 'uben', 'haus']",3,3.333333333333333,False,3,3.5,False,4,False,6,10,1
+Sprachgeschichte,"['Spr', 'ach', 'gesch', 'ichte']",4,"['Spr', 'ach', 'geschichte']",3,"['▁Sp', 'rach', 'geschichte']",3,3.333333333333333,False,3,3.5,False,4,False,6,16,1
+Vorortzug,"['V', 'or', 'ort', 'zug']",4,"['Vor', 'ort', 'zug']",3,"['▁Vor', 'ort', 'zug']",3,3.333333333333333,False,3,3.5,False,4,False,6,9,1
+Gesellschaftssystem,"['G', 'es', 'ellschaft', 'ss', 'ystem']",5,"['Gesellschaft', 'ssystem']",2,"['▁Gesellschaft', 'ss', 'ystem']",3,3.333333333333333,False,3,3.5,False,4,False,6,19,1
+Pyrotechnik,"['Py', 'rote', 'chn', 'ik']",4,"['Py', 'rote', 'chnik']",3,"['▁Py', 'rote', 'chn', 'ik']",4,3.6666666666666665,False,4,3.5,False,4,False,6,11,1
+Auftragen,"['Auf', 'tr', 'agen']",3,"['Au', 'ft', 'ragen']",3,"['▁Au', 'ft', 'ragen']",3,3.0,True,3,3.0,True,3,False,6,9,1
+Glasmalerin,"['Gl', 'asm', 'aler', 'in']",4,"['Glas', 'mal', 'erin']",3,"['▁Glas', 'mal', 'er', 'in']",4,3.6666666666666665,False,4,3.5,False,4,False,6,11,1
+Branchenreport,"['Branch', 'en', 'report']",3,"['Br', 'anchen', 'report']",3,"['▁Bran', 'chen', 'report']",3,3.0,True,3,3.0,True,3,False,6,14,1
+Vorreiterrolle,"['V', 'orre', 'iter', 'rol', 'le']",5,"['Vor', 're', 'iter', 'rolle']",4,"['▁Vor', 're', 'iter', 'rolle']",4,4.333333333333333,False,4,4.5,False,5,False,6,14,1
+Tempelritter,"['Temp', 'el', 'rit', 'ter']",4,"['Temp', 'el', 'rit', 'ter']",4,"['▁Temp', 'el', 'rit', 'ter']",4,4.0,True,4,4.0,True,4,False,6,12,1
+Antriebswelle,"['An', 'trie', 'bs', 'w', 'elle']",5,"['Ant', 'rieb', 'sw', 'elle']",4,"['▁An', 'tr', 'ieb', 'sw', 'elle']",5,4.666666666666667,False,5,4.5,False,5,False,6,13,1
+Textilunternehmen,"['Text', 'il', 'unter', 'nehmen']",4,"['Text', 'il', 'unternehmen']",3,"['▁Text', 'il', 'unter', 'nehmen']",4,3.6666666666666665,False,4,3.5,False,4,False,6,17,1
+Virusspezies,"['Vir', 'uss', 'pez', 'ies']",4,"['Vir', 'uss', 'pez', 'ies']",4,"['▁Vir', 'uss', 'pez', 'ies']",4,4.0,True,4,4.0,True,4,False,6,12,1
+Anästhesiologie,"['An', 'Ã¤', 'st', 'hes', 'i', 'ologie']",6,"['An', 'äst', 'hesi', 'ologie']",4,"['▁An', 'äst', 'h', 'esi', 'ologie']",5,5.0,False,5,5.0,False,5,False,6,15,1
+Verbindungsgang,"['Ver', 'bindung', 'sg', 'ang']",4,"['Ver', 'bindung', 'sg', 'ang']",4,"['▁Ver', 'bind', 'ungs', 'gang']",4,4.0,True,4,4.0,True,4,False,6,15,1
+Fallanalyse,"['Fall', 'analy', 'se']",3,"['Fall', 'analyse']",2,"['▁Fall', 'analy', 'se']",3,2.6666666666666665,False,3,2.5,False,3,False,6,11,1
+Verteidigungskraft,"['Vert', 'eid', 'igung', 'sk', 'raft']",5,"['Ver', 'te', 'id', 'igung', 'skraft']",5,"['▁Ver', 'te', 'id', 'igung', 'sk', 'raft']",6,5.333333333333333,False,5,5.0,True,5,False,6,18,1
+Lichtspieltheater,"['L', 'icht', 'spiel', 'the', 'ater']",5,"['L', 'icht', 'spiel', 'theater']",4,"['▁L', 'icht', 'spiel', 'the', 'ater']",5,4.666666666666667,False,5,4.5,False,5,False,6,17,1
+Verbindungsmann,"['Ver', 'bindung', 'sm', 'ann']",4,"['Ver', 'bindung', 'sm', 'ann']",4,"['▁Ver', 'bind', 'ungs', 'mann']",4,4.0,True,4,4.0,True,4,False,6,15,1
+Judenfeindschaft,"['J', 'uden', 'fe', 'inds', 'chaft']",5,"['J', 'uden', 'fe', 'inds', 'chaft']",5,"['▁Jud', 'en', 'fe', 'ind', 'schaft']",5,5.0,True,5,5.0,True,5,False,6,16,1
+Gartendenkmal,"['G', 'art', 'enden', 'k', 'mal']",5,"['G', 'art', 'enden', 'k', 'mal']",5,"['▁G', 'art', 'enden', 'kmal']",4,4.666666666666667,False,5,5.0,True,5,False,6,13,1
+Volksverhetzung,"['Vol', 'ks', 'ver', 'het', 'zung']",5,"['Vol', 'ks', 'ver', 'het', 'zung']",5,"['▁Volks', 'ver', 'h', 'etzung']",4,4.666666666666667,False,5,5.0,True,5,False,6,15,1
+Traditionsklub,"['Trad', 'ition', 'sk', 'l', 'ub']",5,"['Trad', 'itions', 'kl', 'ub']",4,"['▁Trad', 'ition', 'sk', 'lub']",4,4.333333333333333,False,4,4.5,False,5,False,6,14,1
+Kehlfleck,"['K', 'eh', 'lf', 'leck']",4,"['Ke', 'hl', 'f', 'leck']",4,"['▁Ke', 'hl', 'f', 'le', 'ck']",5,4.333333333333333,False,4,4.0,True,4,False,6,9,1
+Verkehrslage,"['Ver', 'kehr', 'sl', 'age']",4,"['Ver', 'kehr', 'sl', 'age']",4,"['▁Verkehr', 'sl', 'age']",3,3.6666666666666665,False,4,4.0,True,4,False,6,12,1
+Tuffstein,"['T', 'uff', 'stein']",3,"['T', 'uff', 'stein']",3,"['▁T', 'uff', 'stein']",3,3.0,True,3,3.0,True,3,False,6,9,1
+Bevölkerungsstruktur,"['Be', 'v', 'Ã¶l', 'ker', 'ungs', 'str', 'uktur']",7,"['Bev', 'ölker', 'ungs', 'struktur']",4,"['▁Bevölker', 'ungs', 'stru', 'ktur']",4,5.0,False,5,5.5,False,6,False,6,20,1
+Kloake,"['K', 'lo', 'ake']",3,"['K', 'lo', 'ake']",3,"['▁K', 'lo', 'ake']",3,3.0,True,3,3.0,True,3,False,6,6,1
+Heimatarmee,"['He', 'imat', 'arm', 'ee']",4,"['He', 'im', 'atar', 'mee']",4,"['▁He', 'im', 'atar', 'mee']",4,4.0,True,4,4.0,True,4,False,6,11,1
+Reiseroute,"['Re', 'iser', 'oute']",3,"['Re', 'iser', 'oute']",3,"['▁Re', 'iser', 'oute']",3,3.0,True,3,3.0,True,3,False,6,10,1
+Objektmodell,"['Obj', 'ekt', 'mod', 'ell']",4,"['Obj', 'ekt', 'modell']",3,"['▁Ob', 'jekt', 'mod', 'ell']",4,3.6666666666666665,False,4,3.5,False,4,False,6,12,1
+Titelaufnahme,"['Tit', 'ela', 'uf', 'nahme']",4,"['T', 'itel', 'aufnahme']",3,"['▁Titel', 'auf', 'nahme']",3,3.333333333333333,False,3,3.5,False,4,False,6,13,1
+Chefredaktor,"['Che', 'fred', 'akt', 'or']",4,"['Che', 'fred', 'aktor']",3,"['▁Che', 'fred', 'akt', 'or']",4,3.6666666666666665,False,4,3.5,False,4,False,6,12,1
+Delinquent,"['Del', 'in', 'quent']",3,"['Del', 'inqu', 'ent']",3,"['▁Del', 'in', 'quent']",3,3.0,True,3,3.0,True,3,False,6,10,1
+Auswandererschiff,"['Aus', 'w', 'ander', 'ers', 'ch', 'iff']",6,"['Aus', 'wander', 'ersch', 'iff']",4,"['▁Aus', 'w', 'ander', 'ersch', 'iff']",5,5.0,False,5,5.0,False,5,False,6,17,1
+Abweisung,"['Ab', 'weis', 'ung']",3,"['Ab', 'weisung']",2,"['▁Ab', 'weis', 'ung']",3,2.6666666666666665,False,3,2.5,False,3,False,6,9,1
+Architekturtheoretiker,"['Arch', 'ite', 'kt', 'ur', 'the', 'oret', 'iker']",7,"['Arch', 'itektur', 'the', 'oret', 'iker']",5,"['▁Archite', 'ktur', 'the', 'oret', 'iker']",5,5.666666666666667,False,6,6.0,False,6,False,6,22,1
+Vergewaltiger,"['V', 'erg', 'ew', 'alt', 'iger']",5,"['Ver', 'gew', 'alt', 'iger']",4,"['▁Ver', 'gew', 'alt', 'iger']",4,4.333333333333333,False,4,4.5,False,5,False,6,13,1
+Weltruhm,"['Wel', 'tr', 'uh', 'm']",4,"['Welt', 'ru', 'hm']",3,"['▁Wel', 'tr', 'u', 'hm']",4,3.6666666666666665,False,4,3.5,False,4,False,6,8,1
+Bankräuber,"['Bank', 'rÃ¤', 'uber']",3,"['Bank', 'rä', 'uber']",3,"['▁Bank', 'rä', 'uber']",3,3.0,True,3,3.0,True,3,False,6,10,1
+Oppositionelle,"['Opp', 'osition', 'elle']",3,"['Opposition', 'elle']",2,"['▁O', 'pp', 'osition', 'elle']",4,3.0,False,3,2.5,False,3,False,6,14,1
+Bereifung,"['B', 'ere', 'if', 'ung']",4,"['Bere', 'if', 'ung']",3,"['▁Bere', 'if', 'ung']",3,3.333333333333333,False,3,3.5,False,4,False,9,9,2
+Schlangenadler,"['Sch', 'lang', 'en', 'ad', 'ler']",5,"['Sch', 'langen', 'ad', 'ler']",4,"['▁Sch', 'lang', 'en', 'ad', 'ler']",5,4.666666666666667,False,5,4.5,False,5,False,9,14,2
+Gelächter,"['G', 'el', 'Ã¤ch', 'ter']",4,"['Gel', 'äch', 'ter']",3,"['▁Gel', 'äch', 'ter']",3,3.333333333333333,False,3,3.5,False,4,False,10,9,2
+Arbeiterkolonie,"['Ar', 'beiter', 'kol', 'on', 'ie']",5,"['Ar', 'beiter', 'kol', 'onie']",4,"['▁Arbe', 'iter', 'kol', 'onie']",4,4.333333333333333,False,4,4.5,False,5,False,7,15,2
+Verfassungszusatz,"['Ver', 'f', 'ass', 'ung', 'sz', 'us', 'atz']",7,"['Ver', 'fass', 'ungs', 'zus', 'atz']",5,"['▁Ver', 'fass', 'ungs', 'z', 'us', 'atz']",6,6.0,False,6,6.0,False,6,False,9,17,2
+Tabellendritter,"['Tab', 'ell', 'end', 'rit', 'ter']",5,"['Tab', 'ell', 'end', 'rit', 'ter']",5,"['▁Tab', 'ell', 'end', 'rit', 'ter']",5,5.0,True,5,5.0,True,5,False,8,15,2
+Medienpräsenz,"['Med', 'ien', 'pr', 'Ã¤', 'sen', 'z']",6,"['Med', 'ien', 'prä', 'senz']",4,"['▁Medien', 'pr', 'äs', 'enz']",4,4.666666666666667,False,5,5.0,False,5,False,7,13,2
+Fahrradfahrer,"['F', 'ah', 'rr', 'adf', 'ahr', 'er']",6,"['F', 'ahr', 'rad', 'fahrer']",4,"['▁Fahr', 'rad', 'fah', 'rer']",4,4.666666666666667,False,5,5.0,False,5,False,7,13,2
+Therme,"['Th', 'er', 'me']",3,"['Ther', 'me']",2,"['▁Th', 'erme']",2,2.333333333333333,False,2,2.5,False,3,False,9,6,2
+Glashaus,"['G', 'lash', 'aus']",3,"['Gl', 'ash', 'aus']",3,"['▁Gl', 'ash', 'aus']",3,3.0,True,3,3.0,True,3,False,7,8,2
+Freizeitbad,"['Fre', 'ize', 'it', 'bad']",4,"['Fre', 'izeit', 'bad']",3,"['▁Fre', 'ize', 'it', 'bad']",4,3.6666666666666665,False,4,3.5,False,4,False,8,11,2
+Teufarbeit,"['Te', 'uf', 'arbeit']",3,"['Te', 'uf', 'arbeit']",3,"['▁Te', 'uf', 'arbeit']",3,3.0,True,3,3.0,True,3,False,10,10,2
+Rasenplatz,"['R', 'as', 'en', 'platz']",4,"['R', 'asen', 'platz']",3,"['▁Ras', 'en', 'platz']",3,3.333333333333333,False,3,3.5,False,4,False,8,10,2
+Geschwindigkeitsrekord,"['G', 'esch', 'wind', 'ig', 'ke', 'its', 'rek', 'ord']",8,"['Gesch', 'wind', 'igkeits', 'rek', 'ord']",5,"['▁Gesch', 'wind', 'ig', 'ke', 'its', 'rek', 'ord']",7,6.666666666666667,False,7,6.5,False,7,False,10,22,2
+Pharmazeut,"['Ph', 'arm', 'aze', 'ut']",4,"['Ph', 'arma', 'ze', 'ut']",4,"['▁Ph', 'arma', 'ze', 'ut']",4,4.0,True,4,4.0,True,4,False,7,10,2
+Frauengeschichte,"['Fra', 'u', 'eng', 'esch', 'ichte']",5,"['Fra', 'u', 'eng', 'esch', 'ichte']",5,"['▁Frau', 'eng', 'esch', 'ichte']",4,4.666666666666667,False,5,5.0,True,5,False,9,16,2
+Berbersprache,"['Ber', 'bers', 'pr', 'ache']",4,"['Ber', 'bers', 'prache']",3,"['▁Ber', 'bers', 'p', 'rache']",4,3.6666666666666665,False,4,3.5,False,4,False,10,13,2
+Nahrungs,"['N', 'ahr', 'ungs']",3,"['N', 'ahr', 'ungs']",3,"['▁N', 'ahr', 'ungs']",3,3.0,True,3,3.0,True,3,False,10,8,2
+Laderahmen,"['L', 'ader', 'ah', 'men']",4,"['L', 'ader', 'ah', 'men']",4,"['▁L', 'ader', 'ah', 'men']",4,4.0,True,4,4.0,True,4,False,7,10,2
+Königsfamilie,"['K', 'Ã¶n', 'igs', 'f', 'amil', 'ie']",6,"['K', 'ön', 'igs', 'famil', 'ie']",5,"['▁König', 'sf', 'amil', 'ie']",4,5.0,False,5,5.5,False,6,False,10,13,2
+Transplantation,"['Trans', 'plant', 'ation']",3,"['Trans', 'plantation']",2,"['▁Trans', 'plant', 'ation']",3,2.6666666666666665,False,3,2.5,False,3,False,10,15,2
+Heimerfolg,"['He', 'imer', 'fol', 'g']",4,"['He', 'imer', 'folg']",3,"['▁He', 'imer', 'folg']",3,3.333333333333333,False,3,3.5,False,4,False,10,10,2
+Hörspielautor,"['H', 'Ã¶r', 'spiel', 'autor']",4,"['H', 'ör', 'spiel', 'autor']",4,"['▁H', 'ör', 'spiel', 'autor']",4,4.0,True,4,4.0,True,4,False,9,13,2
+Psychoanalytikerin,"['Psy', 'cho', 'analy', 't', 'iker', 'in']",6,"['Psy', 'cho', 'anal', 'yt', 'iker', 'in']",6,"['▁Ps', 'y', 'cho', 'anal', 'yt', 'iker', 'in']",7,6.333333333333333,False,6,6.0,True,6,False,7,18,2
+Nahrungsangebot,"['N', 'ahr', 'ungs', 'ange', 'bot']",5,"['N', 'ahr', 'ungs', 'angebot']",4,"['▁N', 'ahr', 'ungs', 'ange', 'bot']",5,4.666666666666667,False,5,4.5,False,5,False,8,15,2
+Dienstbote,"['D', 'ien', 'st', 'bote']",4,"['D', 'ienst', 'bote']",3,"['▁Dienst', 'b', 'ote']",3,3.333333333333333,False,3,3.5,False,4,False,9,10,2
+Landesminister,"['Land', 'es', 'min', 'ister']",4,"['Land', 'es', 'minister']",3,"['▁Landes', 'minister']",2,3.0,False,3,3.5,False,4,False,9,14,2
+Knananit,"['K', 'nan', 'an', 'it']",4,"['K', 'nan', 'an', 'it']",4,"['▁Kn', 'an', 'an', 'it']",4,4.0,True,4,4.0,True,4,False,7,8,2
+Gelenkwagen,"['G', 'elen', 'kw', 'agen']",4,"['G', 'elen', 'kw', 'agen']",4,"['▁G', 'elen', 'kw', 'agen']",4,4.0,True,4,4.0,True,4,False,9,11,2
+Rundschreiben,"['R', 'und', 'sch', 'reiben']",4,"['R', 'und', 'sch', 'reiben']",4,"['▁Rund', 'sch', 'reib', 'en']",4,4.0,True,4,4.0,True,4,False,8,13,2
+Kreisel,"['K', 're', 'isel']",3,"['Kre', 'isel']",2,"['▁Kreis', 'el']",2,2.333333333333333,False,2,2.5,False,3,False,9,7,2
+Montessoripädagogik,"['Mont', 'essor', 'ip', 'Ã¤d', 'agog', 'ik']",6,"['Mont', 'essor', 'ip', 'ä', 'dagog', 'ik']",6,"['▁Mont', 'essor', 'ip', 'äd', 'agog', 'ik']",6,6.0,True,6,6.0,True,6,False,7,19,2
+Zeichentrick,"['Ze', 'ich', 'ent', 'rick']",4,"['Ze', 'ic', 'hent', 'rick']",4,"['▁Ze', 'ich', 'ent', 'rick']",4,4.0,True,4,4.0,True,4,False,8,12,2
+komponist,"['kom', 'pon', 'ist']",3,"['kom', 'pon', 'ist']",3,"['▁kom', 'pon', 'ist']",3,3.0,True,3,3.0,True,3,False,7,9,2
+Luftschloss,"['Lu', 'ft', 'sch', 'loss']",4,"['Lu', 'ft', 'sch', 'loss']",4,"['▁Luft', 'sch', 'loss']",3,3.6666666666666665,False,4,4.0,True,4,False,8,11,2
+Erythrozyt,"['E', 'ry', 'thro', 'zy', 't']",5,"['E', 'ry', 'thro', 'zy', 't']",5,"['▁E', 'ry', 'th', 'ro', 'zy', 't']",6,5.333333333333333,False,5,5.0,True,5,False,7,10,2
+Offiziersrang,"['Off', 'iz', 'iers', 'rang']",4,"['Off', 'iz', 'iers', 'rang']",4,"['▁Offiz', 'iers', 'r', 'ang']",4,4.0,True,4,4.0,True,4,False,9,13,2
+Kulturzeitschrift,"['K', 'ultur', 'ze', 'its', 'chrift']",5,"['K', 'ultur', 'ze', 'itschrift']",4,"['▁Kultur', 'zeit', 'schrift']",3,4.0,False,4,4.5,False,5,False,10,17,2
+Kommissär,"['Kom', 'miss', 'Ã¤r']",3,"['Kom', 'miss', 'är']",3,"['▁Komm', 'iss', 'är']",3,3.0,True,3,3.0,True,3,False,7,9,2
+Schnellkäfer,"['S', 'chn', 'ell', 'k', 'Ã¤', 'fer']",6,"['Schn', 'ell', 'kä', 'fer']",4,"['▁Sch', 'nell', 'k', 'ä', 'fer']",5,5.0,False,5,5.0,False,5,False,9,12,2
+Kurzauftritt,"['K', 'ur', 'za', 'uf', 'tr', 'itt']",6,"['Kur', 'z', 'auft', 'ritt']",4,"['▁Kurz', 'auf', 'tritt']",3,4.333333333333333,False,4,5.0,False,5,False,10,12,2
+Windwurf,"['Wind', 'w', 'urf']",3,"['Wind', 'wurf']",2,"['▁Wind', 'w', 'ur', 'f']",4,3.0,False,3,2.5,False,3,False,7,8,2
+Geldpreis,"['G', 'eld', 'pre', 'is']",4,"['G', 'eld', 'preis']",3,"['▁G', 'eld', 'preis']",3,3.333333333333333,False,3,3.5,False,4,False,7,9,2
+Dinosaurier,"['D', 'inosaur', 'ier']",3,"['D', 'inosaur', 'ier']",3,"['▁Din', 'osa', 'ur', 'ier']",4,3.333333333333333,False,3,3.0,True,3,False,10,11,2
+Dreifaltigkeitskirche,"['D', 're', 'if', 'alt', 'ig', 'ke', 'its', 'kir', 'che']",9,"['Dre', 'if', 'alt', 'igkeits', 'kirche']",5,"['▁Dre', 'if', 'alt', 'igkeit', 'sk', 'irche']",6,6.666666666666667,False,7,7.0,False,7,False,10,21,2
+Marktversagen,"['Mark', 't', 'vers', 'agen']",4,"['Mark', 't', 'vers', 'agen']",4,"['▁Mark', 't', 'vers', 'agen']",4,4.0,True,4,4.0,True,4,False,7,13,2
+Briefsammlung,"['Brief', 'sam', 'ml', 'ung']",4,"['Brief', 'sam', 'mlung']",3,"['▁Br', 'ief', 'sam', 'mlung']",4,3.6666666666666665,False,4,3.5,False,4,False,7,13,2
+Nacktheit,"['N', 'ack', 'the', 'it']",4,"['N', 'ack', 'theit']",3,"['▁N', 'ack', 'the', 'it']",4,3.6666666666666665,False,4,3.5,False,4,False,8,9,2
+Arachnologe,"['Ar', 'ach', 'n', 'olog', 'e']",5,"['Ar', 'ach', 'n', 'ologe']",4,"['▁Ara', 'chn', 'ologe']",3,4.0,False,4,4.5,False,5,False,7,11,2
+Kontoinhaber,"['K', 'ont', 'oin', 'hab', 'er']",5,"['Kont', 'oin', 'haber']",3,"['▁Kon', 'to', 'in', 'hab', 'er']",5,4.333333333333333,False,4,4.0,False,4,False,7,12,2
+Reformierung,"['Re', 'form', 'ierung']",3,"['Reform', 'ierung']",2,"['▁Reform', 'ierung']",2,2.333333333333333,False,2,2.5,False,3,False,7,12,2
+Raffinesse,"['R', 'aff', 'ines', 'se']",4,"['R', 'aff', 'ines', 'se']",4,"['▁R', 'aff', 'ines', 'se']",4,4.0,True,4,4.0,True,4,False,7,10,2
+Munizip,"['M', 'un', 'iz', 'ip']",4,"['Mun', 'iz', 'ip']",3,"['▁Mun', 'iz', 'ip']",3,3.333333333333333,False,3,3.5,False,4,False,7,7,2
+Kabelnetz,"['K', 'abel', 'net', 'z']",4,"['K', 'abel', 'netz']",3,"['▁K', 'abel', 'net', 'z']",4,3.6666666666666665,False,4,3.5,False,4,False,8,9,2
+Besucherrekord,"['Bes', 'ucher', 'rek', 'ord']",4,"['Bes', 'ucher', 'rek', 'ord']",4,"['▁Bes', 'uch', 'er', 'rek', 'ord']",5,4.333333333333333,False,4,4.0,True,4,False,7,14,2
+Gedankengang,"['G', 'ed', 'ank', 'eng', 'ang']",5,"['G', 'ed', 'ank', 'eng', 'ang']",5,"['▁Ged', 'ank', 'eng', 'ang']",4,4.666666666666667,False,5,5.0,True,5,False,7,12,2
+Titelgeschichte,"['Tit', 'el', 'gesch', 'ichte']",4,"['T', 'itel', 'geschichte']",3,"['▁Titel', 'geschichte']",2,3.0,False,3,3.5,False,4,False,8,15,2
+Sozialarbeiterin,"['So', 'zial', 'ar', 'beiter', 'in']",5,"['So', 'zial', 'arbeiter', 'in']",4,"['▁Sozial', 'arbe', 'iter', 'in']",4,4.333333333333333,False,4,4.5,False,5,False,9,16,2
+Ritornell,"['R', 'it', 'orn', 'ell']",4,"['Rit', 'orn', 'ell']",3,"['▁R', 'it', 'orn', 'ell']",4,3.6666666666666665,False,4,3.5,False,4,False,9,9,2
+Verschwörungstheoretiker,"['Vers', 'chw', 'Ã¶r', 'ung', 'st', 'he', 'oret', 'iker']",8,"['V', 'ersch', 'w', 'örung', 'sthe', 'oret', 'iker']",7,"['▁V', 'ersch', 'w', 'ör', 'ung', 'st', 'he', 'oret', 'iker']",9,8.0,False,8,7.5,False,8,False,9,24,2
+Tieflader,"['T', 'ie', 'fl', 'ader']",4,"['Tie', 'fl', 'ader']",3,"['▁T', 'ie', 'fl', 'ader']",4,3.6666666666666665,False,4,3.5,False,4,False,7,9,2
+Zuggattung,"['Z', 'ugg', 'att', 'ung']",4,"['Z', 'ugg', 'att', 'ung']",4,"['▁Z', 'ugg', 'attung']",3,3.6666666666666665,False,4,4.0,True,4,False,7,10,2
+Grenzgänger,"['G', 'ren', 'z', 'g', 'Ã¤nger']",5,"['Gren', 'zg', 'änger']",3,"['▁Gren', 'z', 'g', 'änger']",4,4.0,False,4,4.0,False,4,False,7,11,2
+Vaterunser,"['V', 'ater', 'un', 'ser']",4,"['Vater', 'un', 'ser']",3,"['▁Vater', 'un', 'ser']",3,3.333333333333333,False,3,3.5,False,4,False,9,10,2
+Altkreis,"['Al', 'tk', 're', 'is']",4,"['Al', 'tk', 'reis']",3,"['▁Alt', 'kreis']",2,3.0,False,3,3.5,False,4,False,8,8,2
+Schauspielkollege,"['S', 'cha', 'us', 'piel', 'kol', 'lege']",6,"['Scha', 'usp', 'iel', 'kol', 'lege']",5,"['▁Schaus', 'piel', 'kol', 'lege']",4,5.0,False,5,5.5,False,6,False,7,17,2
+Leitungswasser,"['Le', 'itung', 'sw', 'asser']",4,"['Le', 'itung', 'sw', 'asser']",4,"['▁Le', 'itung', 'sw', 'asser']",4,4.0,True,4,4.0,True,4,False,8,14,2
+Aktionsprogramm,"['Akt', 'ions', 'program', 'm']",4,"['A', 'ktions', 'programm']",3,"['▁Akt', 'ions', 'program', 'm']",4,3.6666666666666665,False,4,3.5,False,4,False,9,15,2
+Gerichtsurteil,"['Ger', 'icht', 'sur', 'teil']",4,"['Ger', 'icht', 'sur', 'teil']",4,"['▁Ger', 'icht', 'sur', 'teil']",4,4.0,True,4,4.0,True,4,False,9,14,2
+Bassklarinette,"['B', 'ass', 'kl', 'arin', 'ette']",5,"['Bass', 'klar', 'in', 'ette']",4,"['▁Bass', 'k', 'lar', 'in', 'ette']",5,4.666666666666667,False,5,4.5,False,5,False,10,14,2
+Reihenschwingkreis,"['Re', 'ih', 'ensch', 'wing', 'kre', 'is']",6,"['Re', 'i', 'hen', 'sch', 'wing', 'kreis']",6,"['▁Re', 'ih', 'ensch', 'wing', 'kreis']",5,5.666666666666667,False,6,6.0,True,6,False,7,18,2
+Waldboden,"['Wal', 'db', 'oden']",3,"['Wal', 'db', 'oden']",3,"['▁Wal', 'db', 'oden']",3,3.0,True,3,3.0,True,3,False,7,9,2
+Schmelzpunkt,"['Sch', 'mel', 'z', 'punkt']",4,"['Sch', 'mel', 'z', 'punkt']",4,"['▁Sch', 'mel', 'z', 'punkt']",4,4.0,True,4,4.0,True,4,False,10,12,2
+Holzhändler,"['Hol', 'zh', 'Ã¤nd', 'ler']",4,"['Hol', 'zh', 'ändler']",3,"['▁Hol', 'zh', 'änd', 'ler']",4,3.6666666666666665,False,4,3.5,False,4,False,10,11,2
+Unterwasser,"['Unt', 'er', 'w', 'asser']",4,"['Unter', 'wasser']",2,"['▁Unter', 'w', 'asser']",3,3.0,False,3,3.0,False,3,False,7,11,2
+Heimaturlaub,"['He', 'imat', 'url', 'aub']",4,"['He', 'im', 'atur', 'laub']",4,"['▁He', 'im', 'atur', 'la', 'ub']",5,4.333333333333333,False,4,4.0,True,4,False,9,12,2
+Pleite,"['P', 'le', 'ite']",3,"['Ple', 'ite']",2,"['▁Ple', 'ite']",2,2.333333333333333,False,2,2.5,False,3,False,10,6,2
+Automatik,"['Autom', 'at', 'ik']",3,"['Aut', 'omatik']",2,"['▁Autom', 'at', 'ik']",3,2.6666666666666665,False,3,2.5,False,3,False,10,9,2
+Kettenfahrzeug,"['K', 'etten', 'f', 'ahr', 'zeug']",5,"['K', 'etten', 'fahr', 'zeug']",4,"['▁K', 'etten', 'fahr', 'zeug']",4,4.333333333333333,False,4,4.5,False,5,False,7,14,2
+Rechtsordnung,"['Re', 'chts', 'ord', 'nung']",4,"['Re', 'chts', 'ordnung']",3,"['▁Rechts', 'ordnung']",2,3.0,False,3,3.5,False,4,False,10,13,2
+Regierungsführung,"['Reg', 'ierung', 'sf', 'Ã¼hrung']",4,"['Reg', 'ierungs', 'führung']",3,"['▁Reg', 'ierungs', 'führung']",3,3.333333333333333,False,3,3.5,False,4,False,7,17,2
+Löss,"['L', 'Ã¶', 'ss']",3,"['L', 'öss']",2,"['▁Lö', 'ss']",2,2.333333333333333,False,2,2.5,False,3,False,9,4,2
+Blutfluss,"['Bl', 'ut', 'fl', 'uss']",4,"['Bl', 'ut', 'fluss']",3,"['▁Bl', 'ut', 'fluss']",3,3.333333333333333,False,3,3.5,False,4,False,7,9,2
+Kriminalkomödie,"['K', 'riminal', 'kom', 'Ã¶', 'die']",5,"['K', 'riminal', 'kom', 'ö', 'die']",5,"['▁K', 'riminal', 'kom', 'öd', 'ie']",5,5.0,True,5,5.0,True,5,False,8,15,2
+Bildrand,"['B', 'ild', 'rand']",3,"['Bild', 'rand']",2,"['▁Bild', 'rand']",2,2.333333333333333,False,2,2.5,False,3,False,10,8,2
+Ausnahmegenehmigung,"['Aus', 'nah', 'meg', 'ene', 'hm', 'igung']",6,"['Aus', 'nah', 'meg', 'ene', 'hm', 'igung']",6,"['▁Aus', 'nahm', 'eg', 'ene', 'hm', 'igung']",6,6.0,True,6,6.0,True,6,False,10,19,2
+Artilleriedivision,"['Art', 'iller', 'ied', 'iv', 'ision']",5,"['Art', 'iller', 'ied', 'iv', 'ision']",5,"['▁Art', 'iller', 'ied', 'iv', 'ision']",5,5.0,True,5,5.0,True,5,False,9,18,2
+Kirchdorf,"['Kir', 'ch', 'dorf']",3,"['Kir', 'ch', 'dorf']",3,"['▁Kirch', 'dorf']",2,2.6666666666666665,False,3,3.0,True,3,False,8,9,2
+Rorschachtest,"['R', 'orsch', 'ach', 'test']",4,"['R', 'orsch', 'acht', 'est']",4,"['▁R', 'or', 'sch', 'ach', 'test']",5,4.333333333333333,False,4,4.0,True,4,False,10,13,2
+Überwinterung,"['Ãľ', 'ber', 'winter', 'ung']",4,"['Über', 'winter', 'ung']",3,"['▁Über', 'w', 'inter', 'ung']",4,3.6666666666666665,False,4,3.5,False,4,False,10,13,2
+Klaviatur,"['K', 'l', 'avi', 'atur']",4,"['Kl', 'avi', 'atur']",3,"['▁K', 'la', 'vi', 'atur']",4,3.6666666666666665,False,4,3.5,False,4,False,8,9,2
+Gewalttat,"['G', 'ew', 'alt', 'tat']",4,"['Gew', 'al', 'tt', 'at']",4,"['▁Gew', 'al', 'tt', 'at']",4,4.0,True,4,4.0,True,4,False,7,9,2
+Themenschwerpunkt,"['Them', 'ensch', 'wer', 'punkt']",4,"['The', 'm', 'ensch', 'wer', 'punkt']",5,"['▁Th', 'em', 'ensch', 'werp', 'unkt']",5,4.666666666666667,False,5,4.5,False,5,False,9,17,2
+Sammelbezeichnung,"['S', 'amm', 'el', 'be', 'zeich', 'nung']",6,"['S', 'amm', 'elbe', 'zeichnung']",4,"['▁Sam', 'mel', 'be', 'zeichnung']",4,4.666666666666667,False,5,5.0,False,5,False,7,17,2
+Versteinerung,"['Ver', 'ste', 'iner', 'ung']",4,"['Ver', 'steiner', 'ung']",3,"['▁Ver', 'ste', 'iner', 'ung']",4,3.6666666666666665,False,4,3.5,False,4,False,7,13,2
+Akkadisch,"['A', 'kk', 'ad', 'isch']",4,"['A', 'kk', 'ad', 'isch']",4,"['▁A', 'kk', 'ad', 'isch']",4,4.0,True,4,4.0,True,4,False,9,9,2
+Schichtdick,"['Sch', 'icht', 'd', 'ick']",4,"['Sch', 'icht', 'dick']",3,"['▁Sch', 'icht', 'd', 'ick']",4,3.6666666666666665,False,4,3.5,False,4,False,7,11,2
+Vogelinsel,"['V', 'og', 'el', 'ins', 'el']",5,"['V', 'ogel', 'insel']",3,"['▁Vog', 'el', 'ins', 'el']",4,4.0,False,4,4.0,False,4,False,8,10,2
+Handyspiel,"['Hand', 'ys', 'piel']",3,"['Hand', 'ys', 'piel']",3,"['▁Hand', 'ys', 'piel']",3,3.0,True,3,3.0,True,3,False,8,10,2
+Entnazifizierung,"['Ent', 'naz', 'if', 'iz', 'ierung']",5,"['Ent', 'naz', 'ifizierung']",3,"['▁Ent', 'n', 'az', 'ifiz', 'ierung']",5,4.333333333333333,False,4,4.0,False,4,False,9,16,2
+Grablied,"['Grab', 'li', 'ed']",3,"['Grab', 'lied']",2,"['▁Grab', 'lied']",2,2.333333333333333,False,2,2.5,False,3,False,10,8,2
+Luxemburger,"['Lux', 'emb', 'urger']",3,"['Lux', 'emb', 'urger']",3,"['▁Luxemb', 'urger']",2,2.6666666666666665,False,3,3.0,True,3,False,8,11,2
+Ausweichen,"['Aus', 'we', 'ichen']",3,"['Aus', 'weichen']",2,"['▁Aus', 'we', 'ichen']",3,2.6666666666666665,False,3,2.5,False,3,False,7,10,2
+Animeserie,"['An', 'imes', 'erie']",3,"['An', 'imes', 'erie']",3,"['▁An', 'imes', 'erie']",3,3.0,True,3,3.0,True,3,False,7,10,2
+Niwche,"['N', 'iw', 'che']",3,"['N', 'iw', 'che']",3,"['▁N', 'iw', 'che']",3,3.0,True,3,3.0,True,3,False,8,6,2
+Zurschaustellung,"['Z', 'urs', 'cha', 'ust', 'ellung']",5,"['Z', 'urs', 'cha', 'ust', 'ellung']",5,"['▁Zur', 'sch', 'a', 'ust', 'ell', 'ung']",6,5.333333333333333,False,5,5.0,True,5,False,7,16,2
+Nährstoffzahl,"['N', 'Ã¤hr', 'stoff', 'zahl']",4,"['N', 'ähr', 'stoff', 'zahl']",4,"['▁N', 'ähr', 'stoff', 'zahl']",4,4.0,True,4,4.0,True,4,False,9,13,2
+Einzelhändler,"['Ein', 'zel', 'h', 'Ã¤nd', 'ler']",5,"['Einzel', 'h', 'ändler']",3,"['▁Einzel', 'h', 'änd', 'ler']",4,4.0,False,4,4.0,False,4,False,9,13,2
+Maschinenbauunternehmen,"['Mas', 'ch', 'inen', 'bau', 'unter', 'nehmen']",6,"['Mas', 'chinen', 'bau', 'unternehmen']",4,"['▁Mas', 'ch', 'inen', 'bau', 'unter', 'nehmen']",6,5.333333333333333,False,5,5.0,False,5,False,8,23,2
+Glasfabrik,"['G', 'las', 'fab', 'rik']",4,"['Glas', 'fabrik']",2,"['▁Glas', 'fab', 'rik']",3,3.0,False,3,3.0,False,3,False,8,10,2
+Gartenarchitekt,"['G', 'arten', 'arch', 'ite', 'kt']",5,"['G', 'arten', 'arch', 'itekt']",4,"['▁G', 'arten', 'arch', 'ite', 'kt']",5,4.666666666666667,False,5,4.5,False,5,False,10,15,2
+Nationalbewusstsein,"['National', 'bew', 'us', 'st', 'sein']",5,"['National', 'bew', 'usstsein']",3,"['▁National', 'bew', 'us', 'st', 'sein']",5,4.333333333333333,False,4,4.0,False,4,False,7,19,2
+Umriß,"['Um', 'ri', 'ÃŁ']",3,"['Um', 'ri', 'ß']",3,"['▁Um', 'ri', 'ß']",3,3.0,True,3,3.0,True,3,False,8,5,2
+Livekonzert,"['Live', 'k', 'onz', 'ert']",4,"['Live', 'kon', 'zert']",3,"['▁Live', 'kon', 'z', 'ert']",4,3.6666666666666665,False,4,3.5,False,4,False,10,11,2
+Biomarker,"['B', 'iom', 'arker']",3,"['Bi', 'om', 'arker']",3,"['▁Bi', 'om', 'ark', 'er']",4,3.333333333333333,False,3,3.0,True,3,False,7,9,2
+Wegekreuz,"['We', 'ge', 'kre', 'uz']",4,"['We', 'ge', 'kreuz']",3,"['▁Weg', 'ek', 're', 'uz']",4,3.6666666666666665,False,4,3.5,False,4,False,9,9,2
+Ölfeld,"['Ãĸ', 'lf', 'eld']",3,"['Ö', 'l', 'feld']",3,"['▁Ö', 'l', 'feld']",3,3.0,True,3,3.0,True,3,False,10,6,2
+Schuppenblatt,"['Sch', 'uppen', 'bl', 'att']",4,"['Sch', 'upp', 'en', 'blatt']",4,"['▁Sch', 'u', 'ppen', 'blatt']",4,4.0,True,4,4.0,True,4,False,7,13,2
+Anrufer,"['An', 'ru', 'fer']",3,"['An', 'ru', 'fer']",3,"['▁An', 'ru', 'fer']",3,3.0,True,3,3.0,True,3,False,7,7,2
+Prothallium,"['Pro', 'th', 'all', 'ium']",4,"['Pro', 'th', 'all', 'ium']",4,"['▁Pro', 'th', 'al', 'li', 'um']",5,4.333333333333333,False,4,4.0,True,4,False,7,11,2
+Moorwald,"['M', 'oor', 'wald']",3,"['M', 'oor', 'wald']",3,"['▁Mo', 'or', 'wald']",3,3.0,True,3,3.0,True,3,False,8,8,2
+Übermittlung,"['Ãľ', 'ber', 'mitt', 'lung']",4,"['Über', 'mitt', 'lung']",3,"['▁Über', 'mitt', 'lung']",3,3.333333333333333,False,3,3.5,False,4,False,10,12,2
+Regierungsdirektor,"['Reg', 'ierung', 'sd', 'ire', 'ktor']",5,"['Reg', 'ierungs', 'dire', 'ktor']",4,"['▁Reg', 'ierungs', 'dire', 'ktor']",4,4.333333333333333,False,4,4.5,False,5,False,10,18,2
+Begabungsförderung,"['B', 'eg', 'ab', 'ung', 'sf', 'Ã¶r', 'der', 'ung']",8,"['Beg', 'ab', 'ungs', 'för', 'der', 'ung']",6,"['▁Beg', 'ab', 'ungs', 'för', 'der', 'ung']",6,6.666666666666667,False,7,7.0,False,7,False,8,18,2
+Deichbau,"['De', 'ich', 'bau']",3,"['De', 'ich', 'bau']",3,"['▁De', 'ich', 'bau']",3,3.0,True,3,3.0,True,3,False,7,8,2
+Abteufe,"['Ab', 'te', 'ufe']",3,"['Ab', 'te', 'ufe']",3,"['▁Ab', 'te', 'ufe']",3,3.0,True,3,3.0,True,3,False,10,7,2
+Gefallenendenkmal,"['G', 'ef', 'allen', 'enden', 'k', 'mal']",6,"['G', 'ef', 'allen', 'enden', 'k', 'mal']",6,"['▁Gef', 'allen', 'enden', 'kmal']",4,5.333333333333333,False,5,6.0,True,6,False,9,17,2
+Sandsteinplatte,"['Sand', 'stein', 'plat', 'te']",4,"['Sand', 'stein', 'platte']",3,"['▁Sand', 'stein', 'pl', 'atte']",4,3.6666666666666665,False,4,3.5,False,4,False,7,15,2
+Militärlaufbahn,"['M', 'ilit', 'Ã¤', 'rl', 'auf', 'b', 'ahn']",7,"['M', 'ilit', 'är', 'lauf', 'bahn']",5,"['▁Militär', 'lauf', 'bahn']",3,5.0,False,5,6.0,False,6,False,9,15,2
+Kinderpoliklinik,"['K', 'inder', 'pol', 'ik', 'linik']",5,"['Kinder', 'pol', 'ik', 'lin', 'ik']",5,"['▁Kinder', 'pol', 'ik', 'lin', 'ik']",5,5.0,True,5,5.0,True,5,False,9,16,2
+Audiokopf,"['A', 'udi', 'ok', 'op', 'f']",5,"['Audi', 'ok', 'opf']",3,"['▁A', 'udi', 'ok', 'opf']",4,4.0,False,4,4.0,False,4,False,8,9,2
+Kameralamt,"['K', 'am', 'eral', 'amt']",4,"['Kam', 'eral', 'amt']",3,"['▁K', 'amer', 'al', 'amt']",4,3.6666666666666665,False,4,3.5,False,4,False,9,10,2
+Blütenpflanze,"['Bl', 'Ã¼', 'ten', 'p', 'fl', 'an', 'ze']",7,"['Bl', 'üten', 'pfl', 'anze']",4,"['▁Bl', 'ü', 'ten', 'p', 'fl', 'anze']",6,5.666666666666667,False,6,5.5,False,6,False,8,13,2
+Paarregel,"['Pa', 'ar', 'reg', 'el']",4,"['Pa', 'arreg', 'el']",3,"['▁Pa', 'ar', 'reg', 'el']",4,3.6666666666666665,False,4,3.5,False,4,False,8,9,2
+Bluthochdruck,"['Bl', 'uth', 'och', 'dr', 'uck']",5,"['Bl', 'ut', 'hoch', 'druck']",4,"['▁Bl', 'ut', 'ho', 'ch', 'd', 'ruck']",6,5.0,False,5,4.5,False,5,False,8,13,2
+Tierschützer,"['T', 'iers', 'ch', 'Ã¼t', 'zer']",5,"['T', 'iers', 'ch', 'üt', 'zer']",5,"['▁T', 'iers', 'ch', 'üt', 'zer']",5,5.0,True,5,5.0,True,5,False,10,12,2
+Vertrauensverhältnis,"['Ver', 'tra', 'u', 'ens', 'ver', 'h', 'Ã¤l', 'tn', 'is']",9,"['Vert', 'rau', 'ens', 'ver', 'hältnis']",5,"['▁Vert', 'ra', 'u', 'ens', 'ver', 'hält', 'nis']",7,7.0,False,7,7.0,False,7,False,7,20,2
+Unendlichkeit,"['Un', 'end', 'lichkeit']",3,"['Un', 'end', 'lichkeit']",3,"['▁Un', 'end', 'lichkeit']",3,3.0,True,3,3.0,True,3,False,7,13,2
+Raumfahrtagentur,"['Ra', 'um', 'f', 'ah', 'rt', 'agent', 'ur']",7,"['Ra', 'um', 'fahrt', 'agent', 'ur']",5,"['▁Raum', 'fahrt', 'agent', 'ur']",4,5.333333333333333,False,5,6.0,False,6,False,7,16,2
+Schneckenart,"['Sch', 'ne', 'cken', 'art']",4,"['Sch', 'ne', 'cken', 'art']",4,"['▁Schne', 'cken', 'art']",3,3.6666666666666665,False,4,4.0,True,4,False,8,12,2
+Oberflächenspannung,"['O', 'ber', 'fl', 'Ã¤ch', 'ens', 'pan', 'nung']",7,"['Ober', 'flächen', 'spannung']",3,"['▁Ober', 'fl', 'äch', 'ens', 'p', 'ann', 'ung']",7,5.666666666666667,False,6,5.0,False,5,False,7,19,2
+Matrize,"['Mat', 'r', 'ize']",3,"['Mat', 'ri', 'ze']",3,"['▁Mat', 'ri', 'ze']",3,3.0,True,3,3.0,True,3,False,9,7,2
+Ermahnung,"['E', 'rm', 'ahn', 'ung']",4,"['E', 'rm', 'ahn', 'ung']",4,"['▁Er', 'ma', 'hn', 'ung']",4,4.0,True,4,4.0,True,4,False,7,9,2
+Entwurfsmuster,"['Ent', 'w', 'urf', 'sm', 'uster']",5,"['Ent', 'wurf', 'sm', 'uster']",4,"['▁Ent', 'w', 'ur', 'f', 'sm', 'uster']",6,5.0,False,5,4.5,False,5,False,7,14,2
+Bodenschicht,"['B', 'od', 'ensch', 'icht']",4,"['Bod', 'ensch', 'icht']",3,"['▁Bod', 'ensch', 'icht']",3,3.333333333333333,False,3,3.5,False,4,False,7,12,2
+Sesquilinearform,"['S', 'es', 'qu', 'ilinear', 'form']",5,"['Ses', 'qu', 'ilinear', 'form']",4,"['▁Ses', 'qu', 'il', 'ine', 'ar', 'form']",6,5.0,False,5,4.5,False,5,False,7,16,2
+Nässe,"['N', 'Ã¤s', 'se']",3,"['N', 'äs', 'se']",3,"['▁N', 'äs', 'se']",3,3.0,True,3,3.0,True,3,False,7,5,2
+Emaillierwerk,"['E', 'ma', 'ill', 'ier', 'werk']",5,"['E', 'ma', 'illier', 'werk']",4,"['▁E', 'ma', 'ill', 'ier', 'werk']",5,4.666666666666667,False,5,4.5,False,5,False,8,13,2
+Kriegszug,"['K', 'rieg', 'sz', 'ug']",4,"['K', 'rieg', 'sz', 'ug']",4,"['▁Kriegs', 'zug']",2,3.333333333333333,False,3,4.0,True,4,False,10,9,2
+Verfassungsreform,"['Ver', 'f', 'ass', 'ungs', 're', 'form']",6,"['Ver', 'fass', 'ungs', 'reform']",4,"['▁Ver', 'fass', 'ungs', 're', 'form']",5,5.0,False,5,5.0,False,5,False,10,17,2
+Einkaufen,"['E', 'inka', 'ufen']",3,"['E', 'ink', 'aufen']",3,"['▁E', 'ink', 'auf', 'en']",4,3.333333333333333,False,3,3.0,True,3,False,10,9,2
+Bildungsangebot,"['B', 'ild', 'ungs', 'ange', 'bot']",5,"['Bild', 'ungs', 'angebot']",3,"['▁Bild', 'ungs', 'ange', 'bot']",4,4.0,False,4,4.0,False,4,False,9,15,2
+Schattenspielfigur,"['Sch', 'att', 'ens', 'pi', 'elf', 'ig', 'ur']",7,"['Sch', 'att', 'ens', 'pi', 'elf', 'igur']",6,"['▁Sch', 'att', 'ens', 'piel', 'fig', 'ur']",6,6.333333333333333,False,6,6.5,False,7,False,9,18,2
+Literatursprache,"['Liter', 'at', 'urs', 'pr', 'ache']",5,"['Liter', 'at', 'urs', 'prache']",4,"['▁Literatur', 'sp', 'rache']",3,4.0,False,4,4.5,False,5,False,9,16,2
+Zeitrechnung,"['Ze', 'itre', 'chn', 'ung']",4,"['Ze', 'itre', 'chnung']",3,"['▁Zeit', 're', 'chn', 'ung']",4,3.6666666666666665,False,4,3.5,False,4,False,7,12,2
+Dachform,"['D', 'ach', 'form']",3,"['D', 'ach', 'form']",3,"['▁D', 'ach', 'form']",3,3.0,True,3,3.0,True,3,False,8,8,2
+Insuffizienz,"['Ins', 'uff', 'iz', 'ien', 'z']",5,"['Ins', 'uff', 'izienz']",3,"['▁In', 'su', 'ff', 'iz', 'ien', 'z']",6,4.666666666666667,False,5,4.0,False,4,False,9,12,2
+Bischofsstuhl,"['B', 'is', 'cho', 'fs', 'st', 'uhl']",6,"['B', 'isch', 'of', 'sst', 'uhl']",5,"['▁Bischof', 's', 'st', 'u', 'hl']",5,5.333333333333333,False,5,5.5,False,6,False,10,13,2
+Alleinstellungsmerkmal,"['Alle', 'inst', 'ell', 'ungs', 'mer', 'k', 'mal']",7,"['Alle', 'instell', 'ungs', 'merk', 'mal']",5,"['▁Alle', 'inst', 'ell', 'ungs', 'mer', 'kmal']",6,6.0,False,6,6.0,False,6,False,9,22,2
+Reisepelz,"['Re', 'is', 'ep', 'el', 'z']",5,"['Re', 'is', 'ep', 'el', 'z']",5,"['▁Re', 'ise', 'pel', 'z']",4,4.666666666666667,False,5,5.0,True,5,False,10,9,2
+Atomprogramm,"['Atom', 'program', 'm']",3,"['Atom', 'programm']",2,"['▁At', 'om', 'program', 'm']",4,3.0,False,3,2.5,False,3,False,10,12,2
+Kulturhauptstadt,"['K', 'ultur', 'h', 'aupt', 'stadt']",5,"['K', 'ultur', 'haupt', 'stadt']",4,"['▁Kultur', 'haupt', 'stadt']",3,4.0,False,4,4.5,False,5,False,8,16,2
+Stirnfläche,"['St', 'ir', 'n', 'flÃ¤che']",4,"['St', 'ir', 'n', 'fläche']",4,"['▁St', 'ir', 'n', 'fl', 'äche']",5,4.333333333333333,False,4,4.0,True,4,False,7,11,2
+Einfärbung,"['E', 'inf', 'Ã¤', 'rb', 'ung']",5,"['E', 'inf', 'är', 'bung']",4,"['▁Ein', 'f', 'är', 'b', 'ung']",5,4.666666666666667,False,5,4.5,False,5,False,7,10,2
+Litzenende,"['Lit', 'zen', 'ende']",3,"['L', 'itzen', 'ende']",3,"['▁Lit', 'zen', 'ende']",3,3.0,True,3,3.0,True,3,False,7,10,2
+Sozialisationstheorie,"['So', 'zial', 'isation', 'st', 'he', 'orie']",6,"['So', 'zial', 'isation', 'sthe', 'orie']",5,"['▁Sozial', 'isation', 'st', 'he', 'orie']",5,5.333333333333333,False,5,5.5,False,6,False,7,21,2
+Originalwappenstück,"['Original', 'w', 'appen', 'stÃ¼ck']",4,"['Original', 'w', 'appen', 'stück']",4,"['▁Original', 'w', 'appen', 'st', 'ück']",5,4.333333333333333,False,4,4.0,True,4,False,8,19,2
+Weidetier,"['We', 'id', 'et', 'ier']",4,"['We', 'idet', 'ier']",3,"['▁We', 'id', 'et', 'ier']",4,3.6666666666666665,False,4,3.5,False,4,False,8,9,2
+Agrarwissenschaft,"['A', 'gr', 'ar', 'w', 'issenschaft']",5,"['Agr', 'ar', 'wissenschaft']",3,"['▁Agr', 'ar', 'wissenschaft']",3,3.6666666666666665,False,4,4.0,False,4,False,8,17,2
+Hofseite,"['H', 'of', 'seite']",3,"['H', 'of', 'seite']",3,"['▁Hof', 'seite']",2,2.6666666666666665,False,3,3.0,True,3,False,7,8,2
+Wanderjahre,"['W', 'ander', 'jah', 're']",4,"['W', 'ander', 'jah', 're']",4,"['▁W', 'ander', 'j', 'ah', 're']",5,4.333333333333333,False,4,4.0,True,4,False,7,11,2
+Seminarist,"['Sem', 'inar', 'ist']",3,"['Seminar', 'ist']",2,"['▁Sem', 'inar', 'ist']",3,2.6666666666666665,False,3,2.5,False,3,False,7,10,2
+Hauswand,"['H', 'aus', 'wand']",3,"['Haus', 'wand']",2,"['▁Haus', 'wand']",2,2.333333333333333,False,2,2.5,False,3,False,7,8,2
+Treibgas,"['T', 'reib', 'gas']",3,"['T', 'reib', 'gas']",3,"['▁Tre', 'ib', 'gas']",3,3.0,True,3,3.0,True,3,False,8,8,2
+Überhitzung,"['Ãľ', 'ber', 'h', 'itz', 'ung']",5,"['Über', 'h', 'itz', 'ung']",4,"['▁Über', 'h', 'itz', 'ung']",4,4.333333333333333,False,4,4.5,False,5,False,7,11,2
+Zufuhr,"['Z', 'uf', 'u', 'hr']",4,"['Z', 'ufu', 'hr']",3,"['▁Z', 'uf', 'u', 'hr']",4,3.6666666666666665,False,4,3.5,False,4,False,10,6,2
+Technologietransfer,"['Techn', 'olog', 'iet', 'rans', 'fer']",5,"['Techn', 'olog', 'iet', 'ransfer']",4,"['▁Techn', 'olog', 'iet', 'r', 'ans', 'fer']",6,5.0,False,5,4.5,False,5,False,9,19,2
+Ziegelwerk,"['Z', 'iegel', 'werk']",3,"['Z', 'iegel', 'werk']",3,"['▁Z', 'iegel', 'werk']",3,3.0,True,3,3.0,True,3,False,7,10,2
+Kochsalz,"['K', 'och', 'sal', 'z']",4,"['Koch', 'sal', 'z']",3,"['▁Koch', 'sal', 'z']",3,3.333333333333333,False,3,3.5,False,4,False,9,8,2
+Unterstufe,"['Unt', 'er', 'st', 'ufe']",4,"['Unter', 'stufe']",2,"['▁Unter', 'st', 'ufe']",3,3.0,False,3,3.0,False,3,False,8,10,2
+Urkataster,"['U', 'rk', 'ata', 'ster']",4,"['Ur', 'kat', 'aster']",3,"['▁Ur', 'k', 'at', 'aster']",4,3.6666666666666665,False,4,3.5,False,4,False,8,10,2
+Resttief,"['Rest', 't', 'ief']",3,"['Rest', 't', 'ief']",3,"['▁Rest', 't', 'ief']",3,3.0,True,3,3.0,True,3,False,9,8,2
+Medienkritik,"['Med', 'ien', 'krit', 'ik']",4,"['Med', 'ien', 'krit', 'ik']",4,"['▁Medien', 'k', 'rit', 'ik']",4,4.0,True,4,4.0,True,4,False,7,12,2
+Widerstandswert,"['W', 'ider', 'stand', 'sw', 'ert']",5,"['W', 'ider', 'stand', 'sw', 'ert']",5,"['▁W', 'ider', 'stand', 'swer', 't']",5,5.0,True,5,5.0,True,5,False,7,15,2
+Beichtvater,"['Be', 'icht', 'v', 'ater']",4,"['Be', 'icht', 'v', 'ater']",4,"['▁Be', 'icht', 'v', 'ater']",4,4.0,True,4,4.0,True,4,False,8,11,2
+Begradigung,"['B', 'eg', 'rad', 'igung']",4,"['B', 'egrad', 'igung']",3,"['▁Beg', 'rad', 'igung']",3,3.333333333333333,False,3,3.5,False,4,False,7,11,2
+Schlusschoral,"['Sch', 'l', 'uss', 'chor', 'al']",5,"['Sch', 'luss', 'ch', 'oral']",4,"['▁Sch', 'lus', 'sch', 'oral']",4,4.333333333333333,False,4,4.5,False,5,False,8,13,2
+Vakuolen,"['V', 'aku', 'olen']",3,"['V', 'aku', 'olen']",3,"['▁V', 'aku', 'olen']",3,3.0,True,3,3.0,True,3,False,7,8,2
+Reichsacht,"['Re', 'ich', 's', 'acht']",4,"['Re', 'ich', 's', 'acht']",4,"['▁Reichs', 'acht']",2,3.333333333333333,False,3,4.0,True,4,False,9,10,2
+Mundwinkel,"['M', 'und', 'w', 'inkel']",4,"['M', 'und', 'winkel']",3,"['▁M', 'und', 'w', 'inkel']",4,3.6666666666666665,False,4,3.5,False,4,False,9,10,2
+Kompromiss,"['K', 'omp', 'rom', 'iss']",4,"['Kom', 'prom', 'iss']",3,"['▁Kom', 'prom', 'iss']",3,3.333333333333333,False,3,3.5,False,4,False,9,10,2
+Blutkreislauf,"['Bl', 'ut', 'kre', 'is', 'lauf']",5,"['Bl', 'ut', 'kre', 'isl', 'auf']",5,"['▁Bl', 'ut', 'kreis', 'lauf']",4,4.666666666666667,False,5,5.0,True,5,False,7,13,2
+Passagierzahl,"['Pass', 'ag', 'ier', 'zahl']",4,"['Pass', 'ag', 'ier', 'zahl']",4,"['▁Pass', 'ag', 'ierz', 'ahl']",4,4.0,True,4,4.0,True,4,False,10,13,2
+Hinzufuge,"['H', 'inz', 'uf', 'uge']",4,"['H', 'inz', 'uf', 'uge']",4,"['▁Hin', 'z', 'uf', 'uge']",4,4.0,True,4,4.0,True,4,False,10,9,2
+Unterstützungskasse,"['Unt', 'er', 'stÃ¼t', 'zung', 'sk', 'asse']",6,"['Unter', 'stüt', 'zung', 'sk', 'asse']",5,"['▁Unter', 'stüt', 'zung', 'sk', 'asse']",5,5.333333333333333,False,5,5.5,False,6,False,7,19,2
+Kriegsgegner,"['K', 'rieg', 's', 'ge', 'g', 'ner']",6,"['K', 'rieg', 's', 'geg', 'ner']",5,"['▁Kriegs', 'geg', 'ner']",3,4.666666666666667,False,5,5.5,False,6,False,7,12,2
+Landesvorsitzender,"['Land', 'es', 'v', 'ors', 'itz', 'ender']",6,"['Land', 'es', 'vors', 'itz', 'ender']",5,"['▁Landes', 'v', 'ors', 'itz', 'ender']",5,5.333333333333333,False,5,5.5,False,6,False,9,18,2
+Eishockeyspiel,"['E', 'ish', 'ock', 'e', 'ys', 'piel']",6,"['E', 'ish', 'ockeys', 'piel']",4,"['▁E', 'ish', 'ock', 'e', 'ys', 'piel']",6,5.333333333333333,False,5,5.0,False,5,False,7,14,2
+Zoologin,"['Z', 'o', 'olog', 'in']",4,"['Zo', 'olog', 'in']",3,"['▁Zo', 'olog', 'in']",3,3.333333333333333,False,3,3.5,False,4,False,7,8,2
+Aufbewahrungsort,"['Auf', 'bew', 'ahrung', 'sort']",4,"['Auf', 'bew', 'ahr', 'ungs', 'ort']",5,"['▁Auf', 'bew', 'ahr', 'ungs', 'ort']",5,4.666666666666667,False,5,4.5,False,5,False,9,16,2
+Nebenfigur,"['N', 'eb', 'en', 'fig', 'ur']",5,"['Neben', 'figur']",2,"['▁Neben', 'fig', 'ur']",3,3.333333333333333,False,3,3.5,False,4,False,18,10,3
+Paarungsruf,"['Pa', 'ar', 'ung', 'sr', 'uf']",5,"['Pa', 'ar', 'ungs', 'ruf']",4,"['▁Pa', 'ar', 'ungs', 'ruf']",4,4.333333333333333,False,4,4.5,False,5,False,14,11,3
+Verleumdung,"['Ver', 'le', 'umd', 'ung']",4,"['Ver', 'le', 'umd', 'ung']",4,"['▁Ver', 'le', 'um', 'd', 'ung']",5,4.333333333333333,False,4,4.0,True,4,False,18,11,3
+Nachtfalter,"['Nach', 'tf', 'alter']",3,"['N', 'acht', 'f', 'alter']",4,"['▁Nach', 'tf', 'alter']",3,3.333333333333333,False,3,3.5,False,4,False,19,11,3
+Mehrspieler,"['M', 'ehr', 'spi', 'eler']",4,"['Mehr', 'spieler']",2,"['▁Me', 'hr', 'spieler']",3,3.0,False,3,3.0,False,3,False,16,11,3
+Eigenkapital,"['Eigen', 'kap', 'ital']",3,"['Eigen', 'kap', 'ital']",3,"['▁E', 'igen', 'kap', 'ital']",4,3.333333333333333,False,3,3.0,True,3,False,21,12,3
+Handelsname,"['Hand', 'els', 'name']",3,"['Hand', 'els', 'name']",3,"['▁Hand', 'els', 'name']",3,3.0,True,3,3.0,True,3,False,21,11,3
+Gründungsdatum,"['Gr', 'Ã¼nd', 'ungs', 'datum']",4,"['Gr', 'ünd', 'ungs', 'datum']",4,"['▁Gründ', 'ungs', 'dat', 'um']",4,4.0,True,4,4.0,True,4,False,17,14,3
+Lichtsignal,"['L', 'icht', 'signal']",3,"['L', 'icht', 'signal']",3,"['▁L', 'icht', 'signal']",3,3.0,True,3,3.0,True,3,False,14,11,3
+Besucherzahl,"['Bes', 'ucher', 'zahl']",3,"['Bes', 'ucher', 'zahl']",3,"['▁Bes', 'uch', 'er', 'zahl']",4,3.333333333333333,False,3,3.0,True,3,False,21,12,3
+Vorblatt,"['V', 'or', 'bl', 'att']",4,"['Vor', 'blatt']",2,"['▁Vor', 'blatt']",2,2.6666666666666665,False,3,3.0,False,3,False,20,8,3
+Spieleentwickler,"['Sp', 'iele', 'ent', 'wick', 'ler']",5,"['Sp', 'iele', 'entwick', 'ler']",4,"['▁Sp', 'iele', 'ent', 'wick', 'ler']",5,4.666666666666667,False,5,4.5,False,5,False,19,16,3
+Zuschreibung,"['Z', 'usch', 'reibung']",3,"['Z', 'usch', 'reibung']",3,"['▁Z', 'usch', 'reibung']",3,3.0,True,3,3.0,True,3,False,18,12,3
+Gemeinschaftsarbeit,"['G', 'eme', 'ins', 'chaft', 's', 'arbeit']",6,"['Geme', 'inschaft', 'sar', 'beit']",4,"['▁G', 'emein', 'schaft', 's', 'arbeit']",5,5.0,False,5,5.0,False,5,False,14,19,3
+Baugrund,"['B', 'aug', 'r', 'und']",4,"['B', 'aug', 'rund']",3,"['▁B', 'aug', 'rund']",3,3.333333333333333,False,3,3.5,False,4,False,19,8,3
+Kubismus,"['K', 'ub', 'ism', 'us']",4,"['Kub', 'ismus']",2,"['▁Kub', 'ismus']",2,2.6666666666666665,False,3,3.0,False,3,False,14,8,3
+Konstrukteurswertung,"['Kon', 'struk', 'te', 'urs', 'wert', 'ung']",6,"['Kon', 'stru', 'kte', 'ur', 'sw', 'ertung']",6,"['▁Kon', 'stru', 'kte', 'ur', 'swer', 't', 'ung']",7,6.333333333333333,False,6,6.0,True,6,False,19,20,3
+Selbsthilfegruppe,"['Sel', 'bst', 'hil', 'f', 'egr', 'uppe']",6,"['Sel', 'bst', 'hil', 'f', 'eg', 'ruppe']",6,"['▁Selbst', 'h', 'il', 'f', 'eg', 'ru', 'ppe']",7,6.333333333333333,False,6,6.0,True,6,False,13,17,3
+Nachbarhaus,"['Nach', 'bar', 'haus']",3,"['Nach', 'bar', 'haus']",3,"['▁Nach', 'bar', 'haus']",3,3.0,True,3,3.0,True,3,False,18,11,3
+Rohling,"['R', 'oh', 'ling']",3,"['Roh', 'ling']",2,"['▁R', 'oh', 'ling']",3,2.6666666666666665,False,3,2.5,False,3,False,11,7,3
+Juniorennationalmannschaft,"['J', 'uni', 'ore', 'nn', 'ational', 'mann', 's', 'chaft']",8,"['Juni', 'ore', 'nn', 'ational', 'mannschaft']",5,"['▁Junior', 'enn', 'ational', 'mannschaft']",4,5.666666666666667,False,6,6.5,False,7,False,12,26,3
+Flachland,"['Fl', 'ach', 'land']",3,"['Fl', 'ach', 'land']",3,"['▁F', 'lach', 'land']",3,3.0,True,3,3.0,True,3,False,16,9,3
+Frauenbewegung,"['Fra', 'uen', 'bew', 'eg', 'ung']",5,"['Fra', 'uen', 'bewegung']",3,"['▁Frauen', 'bew', 'egung']",3,3.6666666666666665,False,4,4.0,False,4,False,14,14,3
+Museumsgebäude,"['M', 'use', 'ums', 'geb', 'Ã¤', 'ude']",6,"['Museum', 's', 'gebäude']",3,"['▁Museum', 's', 'geb', 'äude']",4,4.333333333333333,False,4,4.5,False,5,False,13,14,3
+Familienangehörige,"['F', 'amil', 'ien', 'ange', 'hÃ¶r', 'ige']",6,"['Famil', 'ien', 'ange', 'hör', 'ige']",5,"['▁Familien', 'ange', 'hör', 'ige']",4,5.0,False,5,5.5,False,6,False,21,18,3
+Ouvertüre,"['O', 'u', 'vert', 'Ã¼', 're']",5,"['Ou', 'vert', 'üre']",3,"['▁O', 'u', 'vert', 'ü', 're']",5,4.333333333333333,False,4,4.0,False,4,False,18,9,3
+Konsumgut,"['Kon', 'sum', 'g', 'ut']",4,"['Kons', 'um', 'gut']",3,"['▁K', 'ons', 'um', 'g', 'ut']",5,4.0,False,4,3.5,False,4,False,13,9,3
+Kompaniechef,"['Kom', 'pan', 'ie', 'chef']",4,"['Kom', 'pan', 'ie', 'chef']",4,"['▁Kom', 'p', 'anie', 'che', 'f']",5,4.333333333333333,False,4,4.0,True,4,False,12,12,3
+Eisenbahnverkehrsunternehmen,"['E', 'isen', 'b', 'ahn', 'ver', 'ke', 'hrs', 'unter', 'nehmen']",9,"['Eisen', 'bahn', 'verkehr', 's', 'unternehmen']",5,"['▁Eisen', 'bahn', 'verkehr', 's', 'unter', 'nehmen']",6,6.666666666666667,False,7,7.0,False,7,False,11,28,3
+Südportal,"['S', 'Ã¼', 'd', 'portal']",4,"['S', 'üd', 'portal']",3,"['▁Süd', 'portal']",2,3.0,False,3,3.5,False,4,False,13,9,3
+Demenz,"['D', 'emen', 'z']",3,"['Dem', 'enz']",2,"['▁Dem', 'enz']",2,2.333333333333333,False,2,2.5,False,3,False,17,6,3
+Korrespondentin,"['K', 'or', 'respond', 'entin']",4,"['Kor', 'respond', 'entin']",3,"['▁Kor', 'respond', 'entin']",3,3.333333333333333,False,3,3.5,False,4,False,15,15,3
+Hochzeitsnacht,"['H', 'och', 'ze', 'its', 'n', 'acht']",6,"['Hoch', 'ze', 'its', 'nacht']",4,"['▁Hoch', 'ze', 'its', 'n', 'acht']",5,5.0,False,5,5.0,False,5,False,11,14,3
+Klause,"['K', 'l', 'ause']",3,"['Kl', 'ause']",2,"['▁K', 'la', 'use']",3,2.6666666666666665,False,3,2.5,False,3,False,12,6,3
+Befriedigung,"['B', 'ef', 'ried', 'igung']",4,"['B', 'ef', 'ried', 'igung']",4,"['▁Bef', 'ried', 'igung']",3,3.6666666666666665,False,4,4.0,True,4,False,15,12,3
+Squashspielerin,"['S', 'qu', 'ash', 'spi', 'eler', 'in']",6,"['Squ', 'ash', 'spiel', 'erin']",4,"['▁S', 'qu', 'ash', 'spieler', 'in']",5,5.0,False,5,5.0,False,5,False,11,15,3
+Karolinger,"['Kar', 'ol', 'inger']",3,"['Kar', 'ol', 'inger']",3,"['▁Kar', 'ol', 'inger']",3,3.0,True,3,3.0,True,3,False,12,10,3
+Vizeminister,"['V', 'iz', 'emin', 'ister']",4,"['Viz', 'emin', 'ister']",3,"['▁V', 'iz', 'em', 'in', 'ister']",5,4.0,False,4,3.5,False,4,False,17,12,3
+Einreise,"['Ein', 're', 'ise']",3,"['Ein', 'reise']",2,"['▁Ein', 're', 'ise']",3,2.6666666666666665,False,3,2.5,False,3,False,16,8,3
+Schlauch,"['Sch', 'la', 'uch']",3,"['Sch', 'l', 'auch']",3,"['▁Sch', 'la', 'uch']",3,3.0,True,3,3.0,True,3,False,17,8,3
+Georgismus,"['Ge', 'org', 'ism', 'us']",4,"['Georg', 'ismus']",2,"['▁Georg', 'ismus']",2,2.6666666666666665,False,3,3.0,False,3,False,13,10,3
+Fühlerglied,"['F', 'Ã¼h', 'ler', 'gli', 'ed']",5,"['F', 'üh', 'ler', 'glied']",4,"['▁F', 'üh', 'ler', 'g', 'lied']",5,4.666666666666667,False,5,4.5,False,5,False,13,11,3
+Industrieanlage,"['Ind', 'ust', 'ri', 'ean', 'lage']",5,"['Indust', 'rie', 'anlage']",3,"['▁Indust', 'rie', 'an', 'lage']",4,4.0,False,4,4.0,False,4,False,15,15,3
+Rehabilitierung,"['Re', 'hab', 'ilit', 'ierung']",4,"['Re', 'habilit', 'ierung']",3,"['▁Re', 'h', 'abil', 'it', 'ierung']",5,4.0,False,4,3.5,False,4,False,14,15,3
+Sprachkurs,"['Spr', 'ach', 'k', 'urs']",4,"['Spr', 'ach', 'kurs']",3,"['▁Sp', 'rach', 'k', 'urs']",4,3.6666666666666665,False,4,3.5,False,4,False,11,10,3
+Waffenschmuggel,"['W', 'aff', 'ensch', 'm', 'ugg', 'el']",6,"['W', 'aff', 'ensch', 'mug', 'gel']",5,"['▁W', 'aff', 'ensch', 'm', 'ug', 'gel']",6,5.666666666666667,False,6,5.5,False,6,False,11,15,3
+Koreaner,"['K', 'orean', 'er']",3,"['Korean', 'er']",2,"['▁Korean', 'er']",2,2.333333333333333,False,2,2.5,False,3,False,18,8,3
+Bindungsstelle,"['Bind', 'ungs', 'st', 'elle']",4,"['Bind', 'ungs', 'stelle']",3,"['▁Bind', 'ungs', 'stelle']",3,3.333333333333333,False,3,3.5,False,4,False,12,14,3
+Dienstjahr,"['D', 'ien', 'st', 'j', 'ahr']",5,"['D', 'ienst', 'jahr']",3,"['▁Dienst', 'jahr']",2,3.333333333333333,False,3,4.0,False,4,False,12,10,3
+Patrouillenboot,"['Pat', 'rou', 'ill', 'en', 'boot']",5,"['Pat', 'rou', 'illen', 'boot']",4,"['▁Pat', 'rou', 'ill', 'en', 'boot']",5,4.666666666666667,False,5,4.5,False,5,False,21,15,3
+Hornhaut,"['H', 'orn', 'h', 'aut']",4,"['Horn', 'haut']",2,"['▁Horn', 'h', 'aut']",3,3.0,False,3,3.0,False,3,False,16,8,3
+Forschungsreisender,"['F', 'orsch', 'ungs', 're', 'is', 'ender']",6,"['F', 'orschungs', 'reis', 'ender']",4,"['▁Forsch', 'ungs', 're', 'is', 'ender']",5,5.0,False,5,5.0,False,5,False,18,19,3
+Kliff,"['K', 'l', 'iff']",3,"['Kl', 'iff']",2,"['▁Kl', 'iff']",2,2.333333333333333,False,2,2.5,False,3,False,17,5,3
+Halluzination,"['Hall', 'uz', 'ination']",3,"['Hall', 'uz', 'ination']",3,"['▁Hall', 'uz', 'ination']",3,3.0,True,3,3.0,True,3,False,13,13,3
+Lafette,"['L', 'af', 'ette']",3,"['L', 'af', 'ette']",3,"['▁La', 'f', 'ette']",3,3.0,True,3,3.0,True,3,False,16,7,3
+Weltcups,"['W', 'elt', 'c', 'ups']",4,"['Welt', 'cups']",2,"['▁Welt', 'cu', 'ps']",3,3.0,False,3,3.0,False,3,False,19,8,3
+Hexenverfolgung,"['Hex', 'en', 'ver', 'fol', 'g', 'ung']",6,"['Hex', 'en', 'ver', 'fol', 'gung']",5,"['▁H', 'ex', 'en', 'ver', 'folg', 'ung']",6,5.666666666666667,False,6,5.5,False,6,False,15,15,3
+Herrscherhaus,"['H', 'errs', 'cher', 'haus']",4,"['Herr', 's', 'cher', 'haus']",4,"['▁Herr', 'scher', 'haus']",3,3.6666666666666665,False,4,4.0,True,4,False,12,13,3
+Maschinenkanone,"['Mas', 'ch', 'inen', 'kan', 'one']",5,"['Mas', 'chinen', 'kan', 'one']",4,"['▁Mas', 'chin', 'enk', 'an', 'one']",5,4.666666666666667,False,5,4.5,False,5,False,11,15,3
+Jahresdurchschnittstemperatur,"['J', 'ah', 'res', 'd', 'urch', 's', 'chnitt', 'stem', 'per', 'atur']",10,"['J', 'ah', 'res', 'durch', 'schnitt', 'stem', 'per', 'atur']",8,"['▁Jahres', 'd', 'urch', 'schnitt', 'st', 'em', 'per', 'atur']",8,8.666666666666666,False,9,9.0,False,9,False,15,29,3
+Militärstützpunkt,"['M', 'ilit', 'Ã¤r', 'stÃ¼t', 'z', 'punkt']",6,"['M', 'ilit', 'är', 'stüt', 'z', 'punkt']",6,"['▁Militär', 'stüt', 'z', 'punkt']",4,5.333333333333333,False,5,6.0,True,6,False,12,17,3
+Titelkirche,"['Tit', 'el', 'kir', 'che']",4,"['T', 'itel', 'kirche']",3,"['▁Titel', 'kirche']",2,3.0,False,3,3.5,False,4,False,21,11,3
+Neustrukturierung,"['Ne', 'ustr', 'uktur', 'ierung']",4,"['Ne', 'ust', 'ruktur', 'ierung']",4,"['▁Ne', 'ust', 'ru', 'ktur', 'ierung']",5,4.333333333333333,False,4,4.0,True,4,False,12,17,3
+Amateurfunk,"['Am', 'ateur', 'f', 'unk']",4,"['Am', 'ateur', 'funk']",3,"['▁Am', 'ateur', 'f', 'unk']",4,3.6666666666666665,False,4,3.5,False,4,False,11,11,3
+Zeichnerin,"['Ze', 'ich', 'ner', 'in']",4,"['Ze', 'ich', 'ner', 'in']",4,"['▁Ze', 'ich', 'ner', 'in']",4,4.0,True,4,4.0,True,4,False,15,10,3
+Glockengeschoss,"['G', 'lock', 'eng', 'esch', 'oss']",5,"['G', 'lock', 'eng', 'esch', 'oss']",5,"['▁G', 'lock', 'eng', 'esch', 'oss']",5,5.0,True,5,5.0,True,5,False,15,15,3
+COPD,"['C', 'OP', 'D']",3,"['CO', 'PD']",2,"['▁C', 'OP', 'D']",3,2.6666666666666665,False,3,2.5,False,3,False,12,4,3
+Zisterne,"['Z', 'ister', 'ne']",3,"['Z', 'ister', 'ne']",3,"['▁Z', 'ister', 'ne']",3,3.0,True,3,3.0,True,3,False,13,8,3
+Familienleben,"['F', 'amil', 'ien', 'le', 'ben']",5,"['Famil', 'ien', 'leben']",3,"['▁Familien', 'leben']",2,3.333333333333333,False,3,4.0,False,4,False,15,13,3
+Schnellzug,"['S', 'chn', 'ell', 'zug']",4,"['Schn', 'ell', 'zug']",3,"['▁Sch', 'nell', 'zug']",3,3.333333333333333,False,3,3.5,False,4,False,16,10,3
+Generalintendant,"['General', 'int', 'endant']",3,"['General', 'int', 'endant']",3,"['▁General', 'int', 'endant']",3,3.0,True,3,3.0,True,3,False,14,16,3
+Bezugspunkt,"['Be', 'zug', 'sp', 'unkt']",4,"['Be', 'zug', 'spunkt']",3,"['▁Bez', 'ug', 'sp', 'unkt']",4,3.6666666666666665,False,4,3.5,False,4,False,12,11,3
+Gehör,"['G', 'eh', 'Ã¶r']",3,"['Ge', 'hör']",2,"['▁Ge', 'hör']",2,2.333333333333333,False,2,2.5,False,3,False,16,5,3
+Bankgeschäft,"['Bank', 'gesch', 'Ã¤ft']",3,"['Bank', 'gesch', 'äft']",3,"['▁Bank', 'gesch', 'äft']",3,3.0,True,3,3.0,True,3,False,20,12,3
+Hausmeister,"['H', 'aus', 'me', 'ister']",4,"['Haus', 'meister']",2,"['▁Haus', 'meister']",2,2.6666666666666665,False,3,3.0,False,3,False,16,11,3
+Weigerung,"['We', 'iger', 'ung']",3,"['We', 'iger', 'ung']",3,"['▁We', 'iger', 'ung']",3,3.0,True,3,3.0,True,3,False,15,9,3
+Opioid,"['O', 'pi', 'oid']",3,"['Op', 'ioid']",2,"['▁Op', 'io', 'id']",3,2.6666666666666665,False,3,2.5,False,3,False,16,6,3
+Eskadron,"['E', 'sk', 'ad', 'ron']",4,"['E', 'sk', 'ad', 'ron']",4,"['▁E', 'sk', 'ad', 'ron']",4,4.0,True,4,4.0,True,4,False,11,8,3
+Gewahrsam,"['G', 'ew', 'ah', 'rs', 'am']",5,"['Gew', 'ah', 'rs', 'am']",4,"['▁Gew', 'ah', 'rs', 'am']",4,4.333333333333333,False,4,4.5,False,5,False,12,9,3
+Roboterarm,"['Rob', 'oter', 'arm']",3,"['Rob', 'oter', 'arm']",3,"['▁Rob', 'oter', 'arm']",3,3.0,True,3,3.0,True,3,False,12,10,3
+Ständeversammlung,"['St', 'Ã¤nde', 'vers', 'am', 'ml', 'ung']",6,"['St', 'ände', 'versammlung']",3,"['▁St', 'ände', 'vers', 'am', 'mlung']",5,4.666666666666667,False,5,4.5,False,5,False,21,17,3
+Aufdeckung,"['Auf', 'deck', 'ung']",3,"['Auf', 'deckung']",2,"['▁Auf', 'deck', 'ung']",3,2.6666666666666665,False,3,2.5,False,3,False,21,10,3
+Schichtstufe,"['Sch', 'icht', 'st', 'ufe']",4,"['Sch', 'icht', 'stufe']",3,"['▁Sch', 'icht', 'st', 'ufe']",4,3.6666666666666665,False,4,3.5,False,4,False,12,12,3
+Erwiderung,"['Er', 'w', 'ider', 'ung']",4,"['Er', 'wider', 'ung']",3,"['▁Er', 'w', 'ider', 'ung']",4,3.6666666666666665,False,4,3.5,False,4,False,11,10,3
+Kurpark,"['K', 'ur', 'park']",3,"['Kur', 'park']",2,"['▁Kur', 'park']",2,2.333333333333333,False,2,2.5,False,3,False,11,7,3
+Bleiche,"['B', 'le', 'iche']",3,"['Ble', 'iche']",2,"['▁Ble', 'iche']",2,2.333333333333333,False,2,2.5,False,3,False,14,7,3
+Liebesfilm,"['Lie', 'bes', 'film']",3,"['Lie', 'bes', 'film']",3,"['▁Lie', 'bes', 'film']",3,3.0,True,3,3.0,True,3,False,15,10,3
+Fallhöhe,"['Fall', 'h', 'Ã¶', 'he']",4,"['Fall', 'höhe']",2,"['▁Fall', 'hö', 'he']",3,3.0,False,3,3.0,False,3,False,17,8,3
+Weltbank,"['W', 'elt', 'bank']",3,"['Welt', 'bank']",2,"['▁Welt', 'bank']",2,2.333333333333333,False,2,2.5,False,3,False,14,8,3
+Oberschenkel,"['O', 'bers', 'chen', 'kel']",4,"['O', 'bers', 'chen', 'kel']",4,"['▁O', 'bers', 'chen', 'kel']",4,4.0,True,4,4.0,True,4,False,11,12,3
+Berichterstatter,"['Ber', 'icht', 'er', 'st', 'atter']",5,"['Ber', 'ichter', 'st', 'atter']",4,"['▁Ber', 'ichter', 'st', 'atter']",4,4.333333333333333,False,4,4.5,False,5,False,12,16,3
+Wahlprogramm,"['W', 'ahl', 'program', 'm']",4,"['W', 'ahl', 'programm']",3,"['▁Wahl', 'program', 'm']",3,3.333333333333333,False,3,3.5,False,4,False,11,12,3
+Kampfsportart,"['K', 'amp', 'fs', 'port', 'art']",5,"['Kamp', 'fs', 'port', 'art']",4,"['▁K', 'amp', 'fs', 'port', 'art']",5,4.666666666666667,False,5,4.5,False,5,False,12,13,3
+Erwerbstätigkeit,"['Er', 'wer', 'bst', 'Ã¤t', 'igkeit']",5,"['Er', 'wer', 'bst', 'ät', 'igkeit']",5,"['▁Er', 'wer', 'bst', 'ät', 'igkeit']",5,5.0,True,5,5.0,True,5,False,14,16,3
+Schulstreik,"['Sch', 'ul', 'stre', 'ik']",4,"['Sch', 'ul', 'stre', 'ik']",4,"['▁Schul', 'stre', 'ik']",3,3.6666666666666665,False,4,4.0,True,4,False,11,11,3
+Großonkel,"['Gro', 'ÃŁ', 'on', 'kel']",4,"['Gro', 'ß', 'on', 'kel']",4,"['▁Groß', 'on', 'kel']",3,3.6666666666666665,False,4,4.0,True,4,False,14,9,3
+Gruppenerst,"['Gr', 'upp', 'ener', 'st']",4,"['Gru', 'pp', 'ener', 'st']",4,"['▁Gru', 'pp', 'ener', 'st']",4,4.0,True,4,4.0,True,4,False,14,11,3
+Flugpionier,"['Fl', 'ug', 'p', 'ion', 'ier']",5,"['Fl', 'ug', 'p', 'ion', 'ier']",5,"['▁Flug', 'p', 'ion', 'ier']",4,4.666666666666667,False,5,5.0,True,5,False,12,11,3
+Mietwohnung,"['M', 'iet', 'wo', 'hn', 'ung']",5,"['M', 'iet', 'wo', 'hnung']",4,"['▁M', 'iet', 'wo', 'hn', 'ung']",5,4.666666666666667,False,5,4.5,False,5,False,16,11,3
+Parteimitglied,"['Part', 'e', 'imit', 'gli', 'ed']",5,"['Parte', 'imit', 'glied']",3,"['▁Parte', 'imit', 'g', 'lied']",4,4.0,False,4,4.0,False,4,False,13,14,3
+Frankenreich,"['Frank', 'en', 'reich']",3,"['Frank', 'en', 'reich']",3,"['▁Fran', 'ken', 'reich']",3,3.0,True,3,3.0,True,3,False,15,12,3
+Steuerwagen,"['Ste', 'uer', 'w', 'agen']",4,"['Ste', 'uer', 'wagen']",3,"['▁Ste', 'uer', 'wagen']",3,3.333333333333333,False,3,3.5,False,4,False,17,11,3
+Dolomit,"['D', 'ol', 'omit']",3,"['D', 'olom', 'it']",3,"['▁Dol', 'om', 'it']",3,3.0,True,3,3.0,True,3,False,14,7,3
+Straftäter,"['Stra', 'ft', 'Ã¤ter']",3,"['St', 'raft', 'äter']",3,"['▁St', 'raft', 'äter']",3,3.0,True,3,3.0,True,3,False,16,10,3
+Vaterlandsverein,"['V', 'ater', 'lands', 'vere', 'in']",5,"['Vater', 'lands', 'verein']",3,"['▁Vater', 'lands', 'verein']",3,3.6666666666666665,False,4,4.0,False,4,False,13,16,3
+Rechtsquelle,"['Re', 'chts', 'quelle']",3,"['Re', 'chts', 'quelle']",3,"['▁Rechts', 'quelle']",2,2.6666666666666665,False,3,3.0,True,3,False,21,12,3
+Mannigfaltigkeit,"['M', 'ann', 'ig', 'f', 'alt', 'igkeit']",6,"['Mann', 'ig', 'falt', 'igkeit']",4,"['▁Mann', 'ig', 'f', 'alt', 'igkeit']",5,5.0,False,5,5.0,False,5,False,19,16,3
+Beschützer,"['Bes', 'ch', 'Ã¼t', 'zer']",4,"['Besch', 'üt', 'zer']",3,"['▁Besch', 'üt', 'zer']",3,3.333333333333333,False,3,3.5,False,4,False,15,10,3
+Medaillenrang,"['Med', 'a', 'ill', 'en', 'rang']",5,"['M', 'eda', 'illen', 'rang']",4,"['▁Med', 'a', 'ill', 'en', 'r', 'ang']",6,5.0,False,5,4.5,False,5,False,12,13,3
+Salzwiese,"['Sal', 'zw', 'iese']",3,"['Sal', 'zw', 'iese']",3,"['▁Sal', 'zw', 'iese']",3,3.0,True,3,3.0,True,3,False,12,9,3
+Barrikade,"['Bar', 'rik', 'ade']",3,"['Bar', 'rik', 'ade']",3,"['▁Bar', 'ri', 'ka', 'de']",4,3.333333333333333,False,3,3.0,True,3,False,14,9,3
+Schachprogramm,"['Sch', 'ach', 'program', 'm']",4,"['Sch', 'ach', 'programm']",3,"['▁Sch', 'ach', 'program', 'm']",4,3.6666666666666665,False,4,3.5,False,4,False,12,14,3
+Panzergrenadierdivision,"['P', 'anz', 'erg', 'ren', 'adier', 'division']",6,"['Pan', 'zer', 'gren', 'adier', 'division']",5,"['▁Pan', 'zer', 'gren', 'ad', 'ier', 'div', 'ision']",7,6.0,False,6,5.5,False,6,False,13,23,3
+Krabbe,"['K', 'rab', 'be']",3,"['K', 'rab', 'be']",3,"['▁K', 'rab', 'be']",3,3.0,True,3,3.0,True,3,False,15,6,3
+Polizeibeamter,"['Pol', 'ize', 'ib', 'eam', 'ter']",5,"['Pol', 'ize', 'ibe', 'am', 'ter']",5,"['▁Pol', 'ize', 'ibe', 'am', 'ter']",5,5.0,True,5,5.0,True,5,False,11,14,3
+Informationszentrum,"['Inform', 'ations', 'zent', 'rum']",4,"['Inform', 'ations', 'zentrum']",3,"['▁Inform', 'ations', 'zent', 'rum']",4,3.6666666666666665,False,4,3.5,False,4,False,15,19,3
+Forschungsstation,"['F', 'orsch', 'ungs', 'station']",4,"['F', 'orschungs', 'station']",3,"['▁Forsch', 'ungs', 'station']",3,3.333333333333333,False,3,3.5,False,4,False,16,17,3
+Christuskirche,"['Christ', 'usk', 'ir', 'che']",4,"['Christ', 'usk', 'ir', 'che']",4,"['▁Christ', 'us', 'kirche']",3,3.6666666666666665,False,4,4.0,True,4,False,19,14,3
+Jahresverlauf,"['J', 'ah', 'res', 'ver', 'lauf']",5,"['J', 'ah', 'res', 'ver', 'lauf']",5,"['▁Jahres', 'ver', 'lauf']",3,4.333333333333333,False,4,5.0,True,5,False,17,13,3
+Beschlag,"['Bes', 'ch', 'lag']",3,"['Besch', 'lag']",2,"['▁Besch', 'lag']",2,2.333333333333333,False,2,2.5,False,3,False,13,8,3
+Gruppenmitglied,"['Gr', 'uppen', 'mit', 'gli', 'ed']",5,"['Gru', 'ppen', 'mitglied']",3,"['▁Gru', 'ppen', 'mit', 'g', 'lied']",5,4.333333333333333,False,4,4.0,False,4,False,16,15,3
+Kuratorin,"['K', 'urator', 'in']",3,"['Kur', 'ator', 'in']",3,"['▁Kur', 'ator', 'in']",3,3.0,True,3,3.0,True,3,False,21,9,3
+Betriebsbahnhof,"['Bet', 'rie', 'bs', 'bah', 'nh', 'of']",6,"['Bet', 'rieb', 'sb', 'ah', 'nhof']",5,"['▁Bet', 'rie', 'bs', 'bahn', 'hof']",5,5.333333333333333,False,5,5.5,False,6,False,13,15,3
+Bewunderer,"['B', 'ew', 'under', 'er']",4,"['Bew', 'under', 'er']",3,"['▁Bew', 'under', 'er']",3,3.333333333333333,False,3,3.5,False,4,False,14,10,3
+Serotoninsyndrom,"['Ser', 'oton', 'ins', 'y', 'nd', 'rom']",6,"['Ser', 'oton', 'ins', 'ynd', 'rom']",5,"['▁Ser', 'ot', 'on', 'ins', 'y', 'nd', 'rom']",7,6.0,False,6,5.5,False,6,False,12,16,3
+Berühmtheit,"['Ber', 'Ã¼h', 'm', 'the', 'it']",5,"['Ber', 'ühm', 'theit']",3,"['▁Ber', 'ü', 'hm', 'the', 'it']",5,4.333333333333333,False,4,4.0,False,4,False,20,11,3
+Verglasung,"['V', 'erg', 'las', 'ung']",4,"['Ver', 'glas', 'ung']",3,"['▁Ver', 'g', 'las', 'ung']",4,3.6666666666666665,False,4,3.5,False,4,False,11,10,3
+Lichthof,"['L', 'ich', 'th', 'of']",4,"['L', 'ich', 'th', 'of']",4,"['▁L', 'ich', 'th', 'of']",4,4.0,True,4,4.0,True,4,False,14,8,3
+Grundprinzip,"['Gr', 'und', 'pr', 'in', 'zip']",5,"['Grund', 'prin', 'zip']",3,"['▁Grund', 'pr', 'in', 'zip']",4,4.0,False,4,4.0,False,4,False,18,12,3
+Wechselspannung,"['We', 'chsel', 'span', 'nung']",4,"['We', 'chsel', 'spannung']",3,"['▁We', 'chsel', 'sp', 'ann', 'ung']",5,4.0,False,4,3.5,False,4,False,11,15,3
+Kulturpflanze,"['K', 'ultur', 'p', 'fl', 'an', 'ze']",6,"['K', 'ultur', 'pfl', 'anze']",4,"['▁Kultur', 'p', 'fl', 'anze']",4,4.666666666666667,False,5,5.0,False,5,False,12,13,3
+Forschungsinteresse,"['F', 'orsch', 'ungs', 'inter', 'esse']",5,"['F', 'orschungs', 'interesse']",3,"['▁Forsch', 'ungs', 'inter', 'esse']",4,4.0,False,4,4.0,False,4,False,15,19,3
+Feldartillerieregiment,"['F', 'eld', 'art', 'iller', 'iere', 'g', 'iment']",7,"['F', 'eld', 'art', 'iller', 'iere', 'g', 'iment']",7,"['▁Feld', 'art', 'iller', 'ier', 'eg', 'iment']",6,6.666666666666667,False,7,7.0,True,7,False,11,22,3
+Kantonsrat,"['K', 'ant', 'ons', 'rat']",4,"['Kant', 'ons', 'rat']",3,"['▁Kant', 'ons', 'rat']",3,3.333333333333333,False,3,3.5,False,4,False,18,10,3
+Lecturer,"['L', 'ect', 'urer']",3,"['Lect', 'urer']",2,"['▁L', 'ect', 'urer']",3,2.6666666666666665,False,3,2.5,False,3,False,17,8,3
+Großfamilie,"['Gro', 'ÃŁ', 'f', 'amil', 'ie']",5,"['Gro', 'ß', 'famil', 'ie']",4,"['▁Groß', 'famil', 'ie']",3,4.0,False,4,4.5,False,5,False,17,11,3
+Besatzungszeit,"['Bes', 'atz', 'ungs', 'zeit']",4,"['Bes', 'atz', 'ungs', 'zeit']",4,"['▁Bes', 'atz', 'ungs', 'zeit']",4,4.0,True,4,4.0,True,4,False,15,14,3
+Eckhaus,"['E', 'ck', 'haus']",3,"['E', 'ck', 'haus']",3,"['▁E', 'ck', 'haus']",3,3.0,True,3,3.0,True,3,False,21,7,3
+Markthalle,"['Mark', 'th', 'alle']",3,"['Mark', 'th', 'alle']",3,"['▁Mark', 'th', 'alle']",3,3.0,True,3,3.0,True,3,False,20,10,3
+Bieneninspektor,"['B', 'ienen', 'ins', 'pe', 'ktor']",5,"['B', 'ienen', 'ins', 'pe', 'ktor']",5,"['▁B', 'ienen', 'ins', 'pe', 'ktor']",5,5.0,True,5,5.0,True,5,False,15,15,3
+Steinbrücke,"['Ste', 'in', 'br', 'Ã¼ck', 'e']",5,"['Stein', 'br', 'ücke']",3,"['▁Stein', 'br', 'ücke']",3,3.6666666666666665,False,4,4.0,False,4,False,15,11,3
+Feldbahn,"['F', 'eld', 'b', 'ahn']",4,"['Fel', 'db', 'ahn']",3,"['▁Feld', 'bahn']",2,3.0,False,3,3.5,False,4,False,17,8,3
+Innenrenovierung,"['In', 'nen', 'ren', 'ov', 'ierung']",5,"['Innen', 'ren', 'ov', 'ierung']",4,"['▁In', 'nen', 'ren', 'ov', 'ierung']",5,4.666666666666667,False,5,4.5,False,5,False,11,16,3
+Hotelfachschule,"['Hot', 'elf', 'ach', 'sch', 'ule']",5,"['Hot', 'elf', 'ach', 'schule']",4,"['▁Hot', 'elf', 'ach', 'schule']",4,4.333333333333333,False,4,4.5,False,5,False,16,15,3
+Endmoräne,"['End', 'mor', 'Ã¤', 'ne']",4,"['End', 'mor', 'äne']",3,"['▁End', 'mor', 'ä', 'ne']",4,3.6666666666666665,False,4,3.5,False,4,False,17,9,3
+Eisenbahner,"['E', 'isen', 'bah', 'ner']",4,"['Eisen', 'bah', 'ner']",3,"['▁Eisen', 'bah', 'ner']",3,3.333333333333333,False,3,3.5,False,4,False,19,11,3
+Fehlschlag,"['F', 'eh', 'ls', 'ch', 'lag']",5,"['Fe', 'h', 'lsch', 'lag']",4,"['▁Fe', 'hl', 'sch', 'lag']",4,4.333333333333333,False,4,4.5,False,5,False,12,10,3
+Burggraben,"['B', 'urg', 'gr', 'aben']",4,"['Burg', 'gr', 'aben']",3,"['▁Bur', 'gg', 'ra', 'ben']",4,3.6666666666666665,False,4,3.5,False,4,False,11,10,3
+Zentralfriedhof,"['Z', 'entr', 'alf', 'ried', 'hof']",5,"['Z', 'entral', 'fried', 'hof']",4,"['▁Zent', 'ral', 'fried', 'hof']",4,4.333333333333333,False,4,4.5,False,5,False,13,15,3
+Halbfinalist,"['Hal', 'b', 'final', 'ist']",4,"['Hal', 'bf', 'inal', 'ist']",4,"['▁Hal', 'bf', 'inal', 'ist']",4,4.0,True,4,4.0,True,4,False,13,12,3
+Grenzstreifen,"['G', 'ren', 'z', 'stre', 'ifen']",5,"['G', 'renz', 'stre', 'ifen']",4,"['▁Gren', 'z', 'stre', 'ifen']",4,4.333333333333333,False,4,4.5,False,5,False,14,13,3
+Bruchteil,"['Br', 'uch', 'teil']",3,"['Bru', 'chte', 'il']",3,"['▁Bru', 'ch', 'teil']",3,3.0,True,3,3.0,True,3,False,12,9,3
+Siedlungsgeschichte,"['S', 'ied', 'lung', 'sg', 'esch', 'ichte']",6,"['S', 'ied', 'lungs', 'geschichte']",4,"['▁Sied', 'l', 'ungs', 'geschichte']",4,4.666666666666667,False,5,5.0,False,5,False,15,19,3
+Obstbaum,"['Ob', 'st', 'baum']",3,"['Obst', 'baum']",2,"['▁Ob', 'st', 'baum']",3,2.6666666666666665,False,3,2.5,False,3,False,13,8,3
+Regiedebüt,"['Reg', 'ied', 'eb', 'Ã¼t']",4,"['Reg', 'ied', 'eb', 'üt']",4,"['▁Reg', 'ied', 'eb', 'üt']",4,4.0,True,4,4.0,True,4,False,20,10,3
+Außenhandel,"['Au', 'ÃŁen', 'hand', 'el']",4,"['Au', 'ßen', 'handel']",3,"['▁Auß', 'en', 'hand', 'el']",4,3.6666666666666665,False,4,3.5,False,4,False,20,11,3
+Zugvogel,"['Z', 'ug', 'v', 'og', 'el']",5,"['Zug', 'v', 'ogel']",3,"['▁Zug', 'v', 'og', 'el']",4,4.0,False,4,4.0,False,4,False,16,8,3
+Schliff,"['Sch', 'l', 'iff']",3,"['Sch', 'l', 'iff']",3,"['▁Schl', 'iff']",2,2.6666666666666665,False,3,3.0,True,3,False,11,7,3
+Wahlsystem,"['W', 'ah', 'ls', 'ystem']",4,"['Wah', 'ls', 'ystem']",3,"['▁W', 'ah', 'ls', 'ystem']",4,3.6666666666666665,False,4,3.5,False,4,False,13,10,3
+Flügelaltar,"['Fl', 'Ã¼', 'gel', 'altar']",4,"['Fl', 'ügel', 'alt', 'ar']",4,"['▁Fl', 'ügel', 'alt', 'ar']",4,4.0,True,4,4.0,True,4,False,14,11,3
+Kunstszene,"['K', 'un', 'st', 'sz', 'ene']",5,"['Kunst', 'sz', 'ene']",3,"['▁Kunst', 'sz', 'ene']",3,3.6666666666666665,False,4,4.0,False,4,False,15,10,3
+Exilregierung,"['Ex', 'il', 'reg', 'ierung']",4,"['Ex', 'il', 'regierung']",3,"['▁Ex', 'il', 'reg', 'ierung']",4,3.6666666666666665,False,4,3.5,False,4,False,15,13,3
+Romancier,"['Rom', 'anc', 'ier']",3,"['Rom', 'anc', 'ier']",3,"['▁Roman', 'cier']",2,2.6666666666666665,False,3,3.0,True,3,False,19,9,3
+Etappenrennen,"['Et', 'appen', 'ren', 'nen']",4,"['Et', 'appen', 'rennen']",3,"['▁Et', 'appen', 'ren', 'nen']",4,3.6666666666666665,False,4,3.5,False,4,False,17,13,3
+Baumwollspinnerei,"['Ba', 'um', 'w', 'oll', 'sp', 'inn', 'ere', 'i']",8,"['Ba', 'um', 'w', 'oll', 'sp', 'inn', 'erei']",7,"['▁Ba', 'um', 'w', 'oll', 'sp', 'inn', 'erei']",7,7.333333333333333,False,7,7.5,False,8,False,11,17,3
+Eintrittskarte,"['Ein', 'tr', 'itt', 'sk', 'arte']",5,"['E', 'int', 'ritt', 'sk', 'arte']",5,"['▁Ein', 'tritt', 'sk', 'arte']",4,4.666666666666667,False,5,5.0,True,5,False,11,14,3
+Schäfer,"['Sch', 'Ã¤', 'fer']",3,"['Sch', 'ä', 'fer']",3,"['▁Sch', 'ä', 'fer']",3,3.0,True,3,3.0,True,3,False,20,7,3
+Kürassier,"['K', 'Ã¼r', 'ass', 'ier']",4,"['K', 'ür', 'ass', 'ier']",4,"['▁K', 'ür', 'ass', 'ier']",4,4.0,True,4,4.0,True,4,False,14,9,3
+Kameraführung,"['K', 'amera', 'fÃ¼hrung']",3,"['K', 'amera', 'führung']",3,"['▁Kam', 'era', 'führung']",3,3.0,True,3,3.0,True,3,False,12,13,3
+Freilichtmuseum,"['Fre', 'il', 'icht', 'm', 'useum']",5,"['Fre', 'il', 'icht', 'museum']",4,"['▁Fre', 'il', 'icht', 'museum']",4,4.333333333333333,False,4,4.5,False,5,False,21,15,3
+Abstimmungsgebiet,"['Ab', 'st', 'imm', 'ungs', 'geb', 'iet']",6,"['Ab', 'st', 'imm', 'ungs', 'gebiet']",5,"['▁Ab', 'st', 'imm', 'ungs', 'gebiet']",5,5.333333333333333,False,5,5.5,False,6,False,15,17,3
+Gleisanschluß,"['G', 'le', 'isans', 'ch', 'lu', 'ÃŁ']",6,"['G', 'le', 'is', 'ansch', 'lu', 'ß']",6,"['▁G', 'le', 'is', 'ans', 'ch', 'l', 'uß']",7,6.333333333333333,False,6,6.0,True,6,False,20,13,3
+Eisenbahnmuseum,"['E', 'isen', 'bah', 'nm', 'useum']",5,"['Eisen', 'bah', 'nm', 'useum']",4,"['▁Eisen', 'bahn', 'museum']",3,4.0,False,4,4.5,False,5,False,20,15,3
+Plattencover,"['Pl', 'att', 'enc', 'over']",4,"['Pl', 'att', 'enc', 'over']",4,"['▁Pl', 'atten', 'cover']",3,3.6666666666666665,False,4,4.0,True,4,False,14,12,3
+Dilemma,"['D', 'ile', 'mma']",3,"['D', 'ile', 'mma']",3,"['▁D', 'ile', 'm', 'ma']",4,3.333333333333333,False,3,3.0,True,3,False,11,7,3
+Markgräfin,"['Mark', 'gr', 'Ã¤', 'fin']",4,"['Mark', 'gr', 'ä', 'fin']",4,"['▁Mark', 'gr', 'ä', 'fin']",4,4.0,True,4,4.0,True,4,False,12,10,3
+Symbiose,"['S', 'ymb', 'io', 'se']",4,"['Sym', 'bi', 'ose']",3,"['▁Sym', 'bio', 'se']",3,3.333333333333333,False,3,3.5,False,4,False,12,8,3
+Aufmarsch,"['Auf', 'mars', 'ch']",3,"['Auf', 'mars', 'ch']",3,"['▁Auf', 'mar', 'sch']",3,3.0,True,3,3.0,True,3,False,11,9,3
+Neubebauung,"['Ne', 'ub', 'eb', 'au', 'ung']",5,"['Ne', 'ub', 'eb', 'au', 'ung']",5,"['▁Ne', 'ub', 'eb', 'au', 'ung']",5,5.0,True,5,5.0,True,5,False,16,11,3
+Gepflogenheit,"['G', 'ep', 'f', 'logen', 'heit']",5,"['G', 'ep', 'f', 'log', 'en', 'heit']",6,"['▁G', 'ep', 'f', 'log', 'en', 'heit']",6,5.666666666666667,False,6,5.5,False,6,False,15,13,3
+Kulturkreis,"['K', 'ultur', 'kre', 'is']",4,"['K', 'ultur', 'kreis']",3,"['▁Kultur', 'kreis']",2,3.0,False,3,3.5,False,4,False,21,11,3
+Elektrik,"['Ele', 'k', 'tr', 'ik']",4,"['Elekt', 'rik']",2,"['▁Ele', 'kt', 'rik']",3,3.0,False,3,3.0,False,3,False,12,8,3
+Landmaschine,"['Land', 'mas', 'chine']",3,"['Land', 'maschine']",2,"['▁Land', 'mas', 'ch', 'ine']",4,3.0,False,3,2.5,False,3,False,17,12,3
+Cocktail,"['C', 'ock', 'tail']",3,"['Cock', 'tail']",2,"['▁C', 'ock', 'tail']",3,2.6666666666666665,False,3,2.5,False,3,False,15,8,3
+Interessenvertreter,"['Inter', 'essen', 'vert', 're', 'ter']",5,"['Inter', 'essen', 'vert', 'reter']",4,"['▁Inter', 'essen', 'vert', 're', 'ter']",5,4.666666666666667,False,5,4.5,False,5,False,11,19,3
+Würfel,"['W', 'Ã¼r', 'fel']",3,"['Wür', 'fel']",2,"['▁Wür', 'fel']",2,2.333333333333333,False,2,2.5,False,3,False,15,6,3
+Handschuh,"['Hand', 'sch', 'uh']",3,"['Hands', 'ch', 'uh']",3,"['▁Hand', 'sch', 'uh']",3,3.0,True,3,3.0,True,3,False,18,9,3
+Gymnasiast,"['G', 'ym', 'n', 'asi', 'ast']",5,"['Gym', 'n', 'asi', 'ast']",4,"['▁G', 'ymn', 'asi', 'ast']",4,4.333333333333333,False,4,4.5,False,5,False,14,10,3
+Bildungspolitik,"['B', 'ild', 'ung', 'sp', 'ol', 'it', 'ik']",7,"['Bild', 'ung', 'spolit', 'ik']",4,"['▁Bild', 'ung', 'sp', 'olit', 'ik']",5,5.333333333333333,False,5,5.5,False,6,False,15,15,3
+Schönes,"['Sch', 'Ã¶', 'nes']",3,"['Sch', 'önes']",2,"['▁Schön', 'es']",2,2.333333333333333,False,2,2.5,False,3,False,13,7,3
+Schauspielunterricht,"['S', 'cha', 'us', 'piel', 'unter', 'richt']",6,"['Scha', 'usp', 'iel', 'unter', 'richt']",5,"['▁Schaus', 'piel', 'unter', 'richt']",4,5.0,False,5,5.5,False,6,False,20,20,3
+Nachfolgestaat,"['Nach', 'fol', 'gest', 'aat']",4,"['Nach', 'fol', 'gest', 'aat']",4,"['▁Nach', 'folg', 'esta', 'at']",4,4.0,True,4,4.0,True,4,False,20,14,3
+Schwefel,"['Sch', 'w', 'ef', 'el']",4,"['Schwe', 'fel']",2,"['▁Schwe', 'fel']",2,2.6666666666666665,False,3,3.0,False,3,False,16,8,3
+Schulhof,"['Sch', 'ul', 'hof']",3,"['Sch', 'ul', 'hof']",3,"['▁Schul', 'hof']",2,2.6666666666666665,False,3,3.0,True,3,False,13,8,3
+Schiffsname,"['Sch', 'iffs', 'name']",3,"['Sch', 'iffs', 'name']",3,"['▁Schiff', 's', 'name']",3,3.0,True,3,3.0,True,3,False,12,11,3
+Wegschnecke,"['W', 'eg', 'sch', 'ne', 'cke']",5,"['W', 'eg', 'sch', 'ne', 'cke']",5,"['▁Weg', 'sch', 'ne', 'cke']",4,4.666666666666667,False,5,5.0,True,5,False,16,11,3
+Geschäftsleute,"['G', 'esch', 'Ã¤', 'fts', 'le', 'ute']",6,"['Gesch', 'ä', 'fts', 'le', 'ute']",5,"['▁Geschäft', 's', 'le', 'ute']",4,5.0,False,5,5.5,False,6,False,13,14,3
+Volleyballnationalmannschaft,"['V', 'olley', 'ball', 'national', 'mann', 's', 'chaft']",7,"['Vol', 'leyball', 'national', 'mannschaft']",4,"['▁Vol', 'ley', 'ball', 'n', 'ational', 'mannschaft']",6,5.666666666666667,False,6,5.5,False,6,False,14,28,3
+Rennverlauf,"['R', 'enn', 'ver', 'lauf']",4,"['R', 'enn', 'ver', 'lauf']",4,"['▁R', 'enn', 'ver', 'lauf']",4,4.0,True,4,4.0,True,4,False,13,11,3
+Hyperinflation,"['Hyper', 'in', 'flation']",3,"['Hyper', 'inflation']",2,"['▁Hyper', 'infl', 'ation']",3,2.6666666666666665,False,3,2.5,False,3,False,11,14,3
+Bedürfnis,"['Bed', 'Ã¼r', 'fn', 'is']",4,"['Bed', 'ür', 'f', 'nis']",4,"['▁Bed', 'ür', 'f', 'nis']",4,4.0,True,4,4.0,True,4,False,128,9,4
+Gewebe,"['G', 'ewe', 'be']",3,"['G', 'ewe', 'be']",3,"['▁Ge', 'we', 'be']",3,3.0,True,3,3.0,True,3,False,90,6,4
+Astronomie,"['A', 'str', 'onom', 'ie']",4,"['Astr', 'onomie']",2,"['▁Astronom', 'ie']",2,2.6666666666666665,False,3,3.0,False,3,False,91,10,4
+Möbel,"['M', 'Ã¶', 'bel']",3,"['M', 'ö', 'bel']",3,"['▁M', 'ö', 'bel']",3,3.0,True,3,3.0,True,3,False,69,5,4
+Nachfolger,"['Nach', 'fol', 'ger']",3,"['Nach', 'folger']",2,"['▁Nach', 'fol', 'ger']",3,2.6666666666666665,False,3,2.5,False,3,False,993,10,4
+Anstieg,"['An', 'st', 'ieg']",3,"['An', 'stieg']",2,"['▁An', 'st', 'ieg']",3,2.6666666666666665,False,3,2.5,False,3,False,114,7,4
+Habitus,"['H', 'ab', 'itus']",3,"['Hab', 'itus']",2,"['▁Hab', 'it', 'us']",3,2.6666666666666665,False,3,2.5,False,3,False,25,7,4
+Skirennläuferin,"['Sk', 'ire', 'nn', 'lÃ¤', 'u', 'fer', 'in']",7,"['Sk', 'ire', 'nn', 'lä', 'ufer', 'in']",6,"['▁Sk', 'ir', 'enn', 'läu', 'fer', 'in']",6,6.333333333333333,False,6,6.5,False,7,False,32,15,4
+Saalkirche,"['Sa', 'alk', 'ir', 'che']",4,"['Sa', 'alk', 'ir', 'che']",4,"['▁Sa', 'alk', 'irche']",3,3.6666666666666665,False,4,4.0,True,4,False,63,10,4
+Kameramann,"['K', 'amer', 'am', 'ann']",4,"['K', 'amer', 'am', 'ann']",4,"['▁K', 'amer', 'am', 'ann']",4,4.0,True,4,4.0,True,4,False,135,10,4
+Grundstein,"['Gr', 'und', 'stein']",3,"['Grund', 'stein']",2,"['▁Grund', 'stein']",2,2.333333333333333,False,2,2.5,False,3,False,106,10,4
+Verarbeitung,"['Ver', 'arbeit', 'ung']",3,"['Ver', 'arbeitung']",2,"['▁Ver', 'arbeit', 'ung']",3,2.6666666666666665,False,3,2.5,False,3,False,107,12,4
+Kläranlage,"['K', 'lÃ¤', 'ran', 'lage']",4,"['Kl', 'är', 'anlage']",3,"['▁K', 'lä', 'ran', 'lage']",4,3.6666666666666665,False,4,3.5,False,4,False,23,10,4
+Anwendungsbereich,"['An', 'wendung', 'sb', 'ere', 'ich']",5,"['An', 'wendungs', 'bereich']",3,"['▁An', 'wend', 'ungs', 'bereich']",4,4.0,False,4,4.0,False,4,False,36,17,4
+Informationssystem,"['Information', 'ss', 'ystem']",3,"['Inform', 'ations', 'system']",3,"['▁Inform', 'ations', 'system']",3,3.0,True,3,3.0,True,3,False,33,18,4
+Zusammenfluß,"['Z', 'us', 'ammen', 'flu', 'ÃŁ']",5,"['Z', 'usammen', 'flu', 'ß']",4,"['▁Zusammen', 'fl', 'uß']",3,4.0,False,4,4.5,False,5,False,61,12,4
+Landespolizei,"['Land', 'es', 'pol', 'ize', 'i']",5,"['Land', 'es', 'pol', 'izei']",4,"['▁Landes', 'pol', 'ize', 'i']",4,4.333333333333333,False,4,4.5,False,5,False,39,13,4
+Kunstdenkmal,"['K', 'un', 'std', 'enk', 'mal']",5,"['Kunst', 'den', 'k', 'mal']",4,"['▁Kunst', 'den', 'kmal']",3,4.0,False,4,4.5,False,5,False,87,12,4
+Kandidatur,"['K', 'andid', 'atur']",3,"['K', 'andid', 'atur']",3,"['▁K', 'andid', 'atur']",3,3.0,True,3,3.0,True,3,False,90,10,4
+Vorzeichen,"['V', 'or', 'ze', 'ichen']",4,"['Vor', 'zeichen']",2,"['▁Vor', 'zeich', 'en']",3,3.0,False,3,3.0,False,3,False,26,10,4
+Quellvorbruch,"['Qu', 'ell', 'vor', 'br', 'uch']",5,"['Qu', 'ell', 'vor', 'bruch']",4,"['▁Qu', 'ell', 'vor', 'bru', 'ch']",5,4.666666666666667,False,5,4.5,False,5,False,26,13,4
+Bewältigung,"['B', 'ew', 'Ã¤lt', 'igung']",4,"['Bew', 'ält', 'igung']",3,"['▁Bew', 'ält', 'igung']",3,3.333333333333333,False,3,3.5,False,4,False,23,11,4
+Ruderin,"['R', 'uder', 'in']",3,"['R', 'uder', 'in']",3,"['▁Rud', 'er', 'in']",3,3.0,True,3,3.0,True,3,False,28,7,4
+Gedichtsammlung,"['G', 'ed', 'icht', 'sam', 'ml', 'ung']",6,"['G', 'ed', 'icht', 'sam', 'mlung']",5,"['▁Ged', 'icht', 'sam', 'mlung']",4,5.0,False,5,5.5,False,6,False,28,15,4
+Literaturhistoriker,"['Liter', 'atur', 'histor', 'iker']",4,"['Literatur', 'histor', 'iker']",3,"['▁Literatur', 'histor', 'iker']",3,3.333333333333333,False,3,3.5,False,4,False,35,19,4
+Kassenbon,"['K', 'assen', 'bon']",3,"['K', 'assen', 'bon']",3,"['▁K', 'assen', 'bon']",3,3.0,True,3,3.0,True,3,False,36,9,4
+Wirtschaftswissenschaftler,"['W', 'irtschaft', 'sw', 'issenschaft', 'ler']",5,"['W', 'irtschaft', 'sw', 'issenschaft', 'ler']",5,"['▁Wirtschaft', 'sw', 'issenschaft', 'ler']",4,4.666666666666667,False,5,5.0,True,5,False,98,26,4
+Gesuch,"['G', 'es', 'uch']",3,"['Ges', 'uch']",2,"['▁Ges', 'uch']",2,2.333333333333333,False,2,2.5,False,3,False,25,6,4
+Nachkomme,"['Nach', 'kom', 'me']",3,"['Nach', 'kom', 'me']",3,"['▁Nach', 'kom', 'me']",3,3.0,True,3,3.0,True,3,False,299,9,4
+Reparatur,"['Re', 'par', 'atur']",3,"['Rep', 'ar', 'atur']",3,"['▁Re', 'par', 'atur']",3,3.0,True,3,3.0,True,3,False,89,9,4
+Verpflichtung,"['Ver', 'pf', 'licht', 'ung']",4,"['Ver', 'pflicht', 'ung']",3,"['▁Ver', 'pf', 'licht', 'ung']",4,3.6666666666666665,False,4,3.5,False,4,False,135,13,4
+Weinbaugebiet,"['We', 'in', 'b', 'auge', 'b', 'iet']",6,"['Wein', 'bau', 'gebiet']",3,"['▁Wein', 'bau', 'gebiet']",3,4.0,False,4,4.5,False,5,False,39,13,4
+Oberlauf,"['O', 'ber', 'lauf']",3,"['Ober', 'lauf']",2,"['▁Ober', 'lauf']",2,2.333333333333333,False,2,2.5,False,3,False,137,8,4
+Akademiker,"['Ak', 'adem', 'iker']",3,"['Ak', 'adem', 'iker']",3,"['▁Akadem', 'iker']",2,2.6666666666666665,False,3,3.0,True,3,False,30,10,4
+Sozialwissenschaftler,"['So', 'zial', 'w', 'issenschaft', 'ler']",5,"['So', 'zial', 'wissenschaft', 'ler']",4,"['▁Sozial', 'wissenschaft', 'ler']",3,4.0,False,4,4.5,False,5,False,26,21,4
+Berufsschule,"['Ber', 'uf', 'ss', 'ch', 'ule']",5,"['Ber', 'uf', 'ssch', 'ule']",4,"['▁Beruf', 's', 'schule']",3,4.0,False,4,4.5,False,5,False,30,12,4
+Erschließung,"['E', 'rs', 'ch', 'lieÃŁ', 'ung']",5,"['E', 'rs', 'ch', 'ließ', 'ung']",5,"['▁Er', 'schließ', 'ung']",3,4.333333333333333,False,4,5.0,True,5,False,71,12,4
+Frequenzbereich,"['F', 'requ', 'enz', 'bere', 'ich']",5,"['F', 'requenz', 'bereich']",3,"['▁Fre', 'qu', 'enz', 'bereich']",4,4.0,False,4,4.0,False,4,False,30,15,4
+Frühzeit,"['Fr', 'Ã¼h', 'zeit']",3,"['Fr', 'üh', 'zeit']",3,"['▁Fr', 'üh', 'zeit']",3,3.0,True,3,3.0,True,3,False,42,8,4
+Doktortitel,"['D', 'ok', 't', 'ort', 'itel']",5,"['Dok', 'tort', 'itel']",3,"['▁Dok', 't', 'ort', 'itel']",4,4.0,False,4,4.0,False,4,False,22,11,4
+Zeichnen,"['Ze', 'ich', 'nen']",3,"['Ze', 'ich', 'nen']",3,"['▁Ze', 'ich', 'nen']",3,3.0,True,3,3.0,True,3,False,47,8,4
+Kunstsammler,"['K', 'un', 'sts', 'am', 'ml', 'er']",6,"['Kunst', 'sam', 'mler']",3,"['▁Kunst', 'sam', 'ml', 'er']",4,4.333333333333333,False,4,4.5,False,5,False,59,12,4
+Märzrevolution,"['M', 'Ã¤r', 'z', 'revolution']",4,"['M', 'är', 'z', 'revolution']",4,"['▁März', 're', 'volution']",3,3.6666666666666665,False,4,4.0,True,4,False,24,14,4
+Reichswehr,"['Re', 'ich', 's', 'we', 'hr']",5,"['Re', 'ich', 'swe', 'hr']",4,"['▁Reichs', 'wehr']",2,3.6666666666666665,False,4,4.5,False,5,False,61,10,4
+Haftstrafe,"['Ha', 'ft', 'str', 'afe']",4,"['H', 'aft', 'stra', 'fe']",4,"['▁H', 'aft', 'stra', 'fe']",4,4.0,True,4,4.0,True,4,False,60,10,4
+Wüstung,"['W', 'Ã¼st', 'ung']",3,"['W', 'üst', 'ung']",3,"['▁W', 'üst', 'ung']",3,3.0,True,3,3.0,True,3,False,98,7,4
+Landschaftsschutzgebiet,"['L', 'ands', 'chaft', 'ss', 'ch', 'utz', 'geb', 'iet']",8,"['Lands', 'chaft', 'sschutz', 'gebiet']",4,"['▁Land', 'schaft', 's', 'schutz', 'gebiet']",5,5.666666666666667,False,6,6.0,False,6,False,155,23,4
+Zwerchhaus,"['Z', 'wer', 'ch', 'haus']",4,"['Z', 'wer', 'ch', 'haus']",4,"['▁Z', 'wer', 'ch', 'haus']",4,4.0,True,4,4.0,True,4,False,38,10,4
+Obergeschoß,"['O', 'ber', 'ges', 'cho', 'ÃŁ']",5,"['Ober', 'ges', 'cho', 'ß']",4,"['▁O', 'berg', 'es', 'cho', 'ß']",5,4.666666666666667,False,5,4.5,False,5,False,144,11,4
+Datensatz,"['Dat', 'ens', 'atz']",3,"['Dat', 'ensatz']",2,"['▁Dat', 'ens', 'atz']",3,2.6666666666666665,False,3,2.5,False,3,False,46,9,4
+Mediziner,"['Med', 'iz', 'iner']",3,"['Med', 'iz', 'iner']",3,"['▁Med', 'iz', 'iner']",3,3.0,True,3,3.0,True,3,False,395,9,4
+Achtung,"['A', 'cht', 'ung']",3,"['A', 'cht', 'ung']",3,"['▁A', 'cht', 'ung']",3,3.0,True,3,3.0,True,3,False,24,7,4
+Fähre,"['F', 'Ã¤h', 're']",3,"['F', 'äh', 're']",3,"['▁F', 'äh', 're']",3,3.0,True,3,3.0,True,3,False,127,5,4
+Kreuzigung,"['K', 're', 'uz', 'igung']",4,"['Kre', 'uz', 'igung']",3,"['▁Kreuz', 'igung']",2,3.0,False,3,3.5,False,4,False,33,10,4
+Ruralgemeinde,"['R', 'ural', 'geme', 'inde']",4,"['Rural', 'geme', 'inde']",3,"['▁R', 'ural', 'gemeinde']",3,3.333333333333333,False,3,3.5,False,4,False,43,13,4
+Oberschicht,"['O', 'bers', 'ch', 'icht']",4,"['O', 'bers', 'ch', 'icht']",4,"['▁O', 'bers', 'ch', 'icht']",4,4.0,True,4,4.0,True,4,False,42,11,4
+Siegerteam,"['S', 'ieg', 'erte', 'am']",4,"['Sie', 'ger', 'team']",3,"['▁Sie', 'ger', 'team']",3,3.333333333333333,False,3,3.5,False,4,False,23,10,4
+Vorsteher,"['V', 'or', 'ste', 'her']",4,"['Vor', 'ste', 'her']",3,"['▁Vor', 'ste', 'her']",3,3.333333333333333,False,3,3.5,False,4,False,54,9,4
+Besitzerwechsel,"['Bes', 'itzer', 'we', 'chsel']",4,"['Bes', 'itzer', 'wechsel']",3,"['▁Bes', 'itzer', 'we', 'chsel']",4,3.6666666666666665,False,4,3.5,False,4,False,26,15,4
+Abteilung,"['Ab', 'teil', 'ung']",3,"['Ab', 'teilung']",2,"['▁Ab', 'teilung']",2,2.333333333333333,False,2,2.5,False,3,False,775,9,4
+Meisterschüler,"['Me', 'isters', 'ch', 'Ã¼ler']",4,"['Me', 'isters', 'ch', 'üler']",4,"['▁Meister', 'sch', 'ü', 'ler']",4,4.0,True,4,4.0,True,4,False,26,14,4
+Ritterorden,"['R', 'itter', 'orden']",3,"['R', 'itter', 'orden']",3,"['▁Ritter', 'orden']",2,2.6666666666666665,False,3,3.0,True,3,False,36,11,4
+Kirchenfenster,"['Kir', 'chen', 'fen', 'ster']",4,"['K', 'irchen', 'fen', 'ster']",4,"['▁Kirchen', 'fen', 'ster']",3,3.6666666666666665,False,4,4.0,True,4,False,22,14,4
+Geständnis,"['G', 'est', 'Ã¤nd', 'nis']",4,"['Gest', 'änd', 'nis']",3,"['▁Gest', 'änd', 'nis']",3,3.333333333333333,False,3,3.5,False,4,False,33,10,4
+Unabhängiger,"['Un', 'abhÃ¤ng', 'iger']",3,"['Un', 'abhäng', 'iger']",3,"['▁Un', 'abhäng', 'iger']",3,3.0,True,3,3.0,True,3,False,39,12,4
+Dominikaner,"['Domin', 'ikan', 'er']",3,"['Domin', 'ikaner']",2,"['▁Domin', 'ikan', 'er']",3,2.6666666666666665,False,3,2.5,False,3,False,25,11,4
+Gerechtigkeit,"['G', 'ere', 'cht', 'igkeit']",4,"['G', 'erecht', 'igkeit']",3,"['▁G', 'ere', 'cht', 'igkeit']",4,3.6666666666666665,False,4,3.5,False,4,False,62,13,4
+Gruppenausstellung,"['Gr', 'uppen', 'aus', 'stellung']",4,"['Gru', 'pp', 'ena', 'us', 'stellung']",5,"['▁Gru', 'ppen', 'aus', 'stellung']",4,4.333333333333333,False,4,4.5,False,5,False,47,18,4
+Wächter,"['W', 'Ã¤ch', 'ter']",3,"['W', 'äch', 'ter']",3,"['▁W', 'äch', 'ter']",3,3.0,True,3,3.0,True,3,False,26,7,4
+Vizepräsidentin,"['V', 'ize', 'pr', 'Ã¤s', 'ident', 'in']",6,"['Viz', 'ep', 'rä', 's', 'ident', 'in']",6,"['▁V', 'ize', 'präsident', 'in']",4,5.333333333333333,False,5,6.0,True,6,False,48,15,4
+Landtagsfraktion,"['Land', 'tags', 'fr', 'aktion']",4,"['Land', 'tags', 'fra', 'ktion']",4,"['▁Land', 'tags', 'fra', 'ktion']",4,4.0,True,4,4.0,True,4,False,24,16,4
+Olympiateilnehmer,"['O', 'lymp', 'iate', 'il', 'nehmer']",5,"['O', 'lympi', 'ate', 'il', 'nehmer']",5,"['▁Olymp', 'iate', 'il', 'nehmer']",4,4.666666666666667,False,5,5.0,True,5,False,402,17,4
+Wendung,"['W', 'end', 'ung']",3,"['W', 'endung']",2,"['▁Wend', 'ung']",2,2.333333333333333,False,2,2.5,False,3,False,42,7,4
+Hochwasser,"['H', 'och', 'w', 'asser']",4,"['Hoch', 'wasser']",2,"['▁Hoch', 'w', 'asser']",3,3.0,False,3,3.0,False,3,False,113,10,4
+Mosaik,"['M', 'osa', 'ik']",3,"['M', 'osa', 'ik']",3,"['▁M', 'osa', 'ik']",3,3.0,True,3,3.0,True,3,False,55,6,4
+Verehrer,"['V', 'ere', 'hr', 'er']",4,"['Vere', 'hrer']",2,"['▁Vere', 'hrer']",2,2.6666666666666665,False,3,3.0,False,3,False,30,8,4
+Ausgrabung,"['Aus', 'grab', 'ung']",3,"['Aus', 'grab', 'ung']",3,"['▁Aus', 'gra', 'b', 'ung']",4,3.333333333333333,False,3,3.0,True,3,False,176,10,4
+Gruppensieger,"['Gr', 'upp', 'ens', 'ie', 'ger']",5,"['Gru', 'pp', 'ens', 'ieger']",4,"['▁Gru', 'pp', 'ens', 'ie', 'ger']",5,4.666666666666667,False,5,4.5,False,5,False,55,13,4
+Altersklasse,"['Al', 'ters', 'kl', 'asse']",4,"['Al', 'ters', 'klasse']",3,"['▁Alter', 'sk', 'lasse']",3,3.333333333333333,False,3,3.5,False,4,False,61,12,4
+Rundfunkanstalt,"['R', 'und', 'f', 'unk', 'anst', 'alt']",6,"['R', 'und', 'fun', 'kan', 'st', 'alt']",6,"['▁Rund', 'f', 'unk', 'anstalt']",4,5.333333333333333,False,5,6.0,True,6,False,29,15,4
+Nachbargemeinde,"['Nach', 'b', 'arg', 'eme', 'inde']",5,"['Nach', 'barg', 'eme', 'inde']",4,"['▁Nach', 'b', 'arg', 'emeinde']",4,4.333333333333333,False,4,4.5,False,5,False,417,15,4
+Vereinheitlichung,"['V', 'ere', 'in', 'heit', 'lich', 'ung']",6,"['Vere', 'in', 'heit', 'lich', 'ung']",5,"['▁Verein', 'heit', 'lich', 'ung']",4,5.0,False,5,5.5,False,6,False,23,17,4
+Bewohner,"['B', 'ew', 'oh', 'ner']",4,"['Bew', 'ohner']",2,"['▁Bew', 'oh', 'ner']",3,3.0,False,3,3.0,False,3,False,581,8,4
+Kommandomodul,"['Kom', 'mand', 'om', 'od', 'ul']",5,"['K', 'omm', 'andom', 'od', 'ul']",5,"['▁Komm', 'andom', 'od', 'ul']",4,4.666666666666667,False,5,5.0,True,5,False,22,13,4
+Schulunterricht,"['Sch', 'ul', 'unter', 'richt']",4,"['Sch', 'ul', 'unter', 'richt']",4,"['▁Schul', 'unter', 'richt']",3,3.6666666666666665,False,4,4.0,True,4,False,28,15,4
+Scheune,"['S', 'che', 'une']",3,"['Sche', 'une']",2,"['▁Sche', 'une']",2,2.333333333333333,False,2,2.5,False,3,False,70,7,4
+Objektiv,"['Obj', 'ekt', 'iv']",3,"['Obj', 'ektiv']",2,"['▁Ob', 'jekt', 'iv']",3,2.6666666666666665,False,3,2.5,False,3,False,66,8,4
+Liberalismus,"['Lib', 'eral', 'ism', 'us']",4,"['Liberal', 'ismus']",2,"['▁Liberal', 'ismus']",2,2.6666666666666665,False,3,3.0,False,3,False,32,12,4
+Förderpreis,"['F', 'Ã¶r', 'der', 'pre', 'is']",5,"['För', 'der', 'preis']",3,"['▁För', 'der', 'preis']",3,3.6666666666666665,False,4,4.0,False,4,False,23,11,4
+Gynäkologe,"['G', 'yn', 'Ã¤', 'k', 'olog', 'e']",6,"['G', 'yn', 'äk', 'ologe']",4,"['▁G', 'yn', 'ä', 'k', 'ologe']",5,5.0,False,5,5.0,False,5,False,31,10,4
+Reichtum,"['Re', 'icht', 'um']",3,"['Re', 'icht', 'um']",3,"['▁Re', 'icht', 'um']",3,3.0,True,3,3.0,True,3,False,73,8,4
+Viertelfinale,"['V', 'iert', 'elf', 'in', 'ale']",5,"['V', 'iert', 'elf', 'inale']",4,"['▁V', 'iert', 'elf', 'inale']",4,4.333333333333333,False,4,4.5,False,5,False,372,13,4
+Filmreihe,"['Film', 'rei', 'he']",3,"['Film', 'reihe']",2,"['▁Film', 'rei', 'he']",3,2.6666666666666665,False,3,2.5,False,3,False,34,9,4
+Politikwissenschaftler,"['Polit', 'ik', 'w', 'issenschaft', 'ler']",5,"['Polit', 'ik', 'wissenschaft', 'ler']",4,"['▁Politik', 'wissenschaft', 'ler']",3,4.0,False,4,4.5,False,5,False,88,22,4
+Salzgehalt,"['Sal', 'z', 'ge', 'halt']",4,"['Sal', 'z', 'ge', 'halt']",4,"['▁Sal', 'z', 'ge', 'halt']",4,4.0,True,4,4.0,True,4,False,29,10,4
+Kurzform,"['K', 'ur', 'z', 'form']",4,"['Kur', 'z', 'form']",3,"['▁Kurz', 'form']",2,3.0,False,3,3.5,False,4,False,38,8,4
+Absicherung,"['Abs', 'icher', 'ung']",3,"['Abs', 'icherung']",2,"['▁Abs', 'icher', 'ung']",3,2.6666666666666665,False,3,2.5,False,3,False,31,11,4
+Baubeschreibung,"['B', 'aub', 'esch', 'reibung']",4,"['Ba', 'ub', 'esch', 'reibung']",4,"['▁Ba', 'ub', 'esch', 'reibung']",4,4.0,True,4,4.0,True,4,False,44,15,4
+Differenzierung,"['D', 'iffer', 'enz', 'ierung']",4,"['Differ', 'enz', 'ierung']",3,"['▁D', 'iffer', 'enz', 'ierung']",4,3.6666666666666665,False,4,3.5,False,4,False,24,15,4
+Mundharmonika,"['M', 'und', 'har', 'mon', 'ika']",5,"['M', 'und', 'harmon', 'ika']",4,"['▁M', 'und', 'harm', 'on', 'ika']",5,4.666666666666667,False,5,4.5,False,5,False,25,13,4
+Selbstmord,"['Sel', 'bst', 'm', 'ord']",4,"['Sel', 'bst', 'm', 'ord']",4,"['▁Selbst', 'm', 'ord']",3,3.6666666666666665,False,4,4.0,True,4,False,71,10,4
+Eisenzeit,"['E', 'isen', 'zeit']",3,"['Eisen', 'zeit']",2,"['▁Eisen', 'zeit']",2,2.333333333333333,False,2,2.5,False,3,False,38,9,4
+Bebauungsplan,"['B', 'eb', 'au', 'ungs', 'plan']",5,"['B', 'eb', 'au', 'ungs', 'plan']",5,"['▁B', 'eb', 'au', 'ungs', 'plan']",5,5.0,True,5,5.0,True,5,False,37,13,4
+Fazit,"['F', 'az', 'it']",3,"['Faz', 'it']",2,"['▁F', 'az', 'it']",3,2.6666666666666665,False,3,2.5,False,3,False,34,5,4
+Internetpräsenz,"['Internet', 'pr', 'Ã¤', 'sen', 'z']",5,"['Internet', 'prä', 'senz']",3,"['▁Internet', 'pr', 'äs', 'enz']",4,4.0,False,4,4.0,False,4,False,87,15,4
+Hintergrundgesang,"['H', 'inter', 'grund', 'ges', 'ang']",5,"['H', 'inter', 'grund', 'ges', 'ang']",5,"['▁Hinter', 'grund', 'ges', 'ang']",4,4.666666666666667,False,5,5.0,True,5,False,24,17,4
+Löwe,"['L', 'Ã¶', 'we']",3,"['L', 'ö', 'we']",3,"['▁Lö', 'we']",2,2.6666666666666665,False,3,3.0,True,3,False,121,4,4
+Fachbereich,"['F', 'ach', 'bere', 'ich']",4,"['Fach', 'bereich']",2,"['▁Fach', 'bereich']",2,2.6666666666666665,False,3,3.0,False,3,False,149,11,4
+Gedenktafel,"['G', 'eden', 'k', 'ta', 'fel']",5,"['G', 'eden', 'kta', 'fel']",4,"['▁Ged', 'enk', 'ta', 'fel']",4,4.333333333333333,False,4,4.5,False,5,False,117,11,4
+Rückrunde,"['R', 'Ã¼ck', 'r', 'unde']",4,"['R', 'ück', 'runde']",3,"['▁Rück', 'ru', 'nde']",3,3.333333333333333,False,3,3.5,False,4,False,85,9,4
+Privatschule,"['Priv', 'ats', 'ch', 'ule']",4,"['Priv', 'atsch', 'ule']",3,"['▁Priv', 'at', 'schule']",3,3.333333333333333,False,3,3.5,False,4,False,31,12,4
+Filmschauspielerin,"['Fil', 'ms', 'cha', 'us', 'pi', 'eler', 'in']",7,"['Films', 'cha', 'usp', 'iel', 'erin']",5,"['▁Film', 'sch', 'aus', 'pieler', 'in']",5,5.666666666666667,False,6,6.0,False,6,False,49,18,4
+Zigeuner,"['Z', 'ige', 'uner']",3,"['Z', 'ige', 'uner']",3,"['▁Z', 'ige', 'un', 'er']",4,3.333333333333333,False,3,3.0,True,3,False,23,8,4
+Manöver,"['Man', 'Ã¶', 'ver']",3,"['Man', 'över']",2,"['▁Man', 'ö', 'ver']",3,2.6666666666666665,False,3,2.5,False,3,False,47,7,4
+Absprache,"['Abs', 'pr', 'ache']",3,"['Abs', 'prache']",2,"['▁Ab', 'sp', 'rache']",3,2.6666666666666665,False,3,2.5,False,3,False,33,9,4
+Leitbild,"['Le', 'it', 'bild']",3,"['Le', 'it', 'bild']",3,"['▁Le', 'it', 'bild']",3,3.0,True,3,3.0,True,3,False,28,8,4
+Tochterunternehmen,"['To', 'chter', 'unter', 'nehmen']",4,"['To', 'chter', 'unternehmen']",3,"['▁Tochter', 'unter', 'nehmen']",3,3.333333333333333,False,3,3.5,False,4,False,68,18,4
+Konservatorium,"['K', 'ons', 'erv', 'atorium']",4,"['Kons', 'erv', 'atorium']",3,"['▁Kon', 'serv', 'ator', 'ium']",4,3.6666666666666665,False,4,3.5,False,4,False,63,14,4
+Gegenleistung,"['G', 'egen', 'le', 'istung']",4,"['G', 'egen', 'leistung']",3,"['▁Gegen', 'le', 'ist', 'ung']",4,3.6666666666666665,False,4,3.5,False,4,False,27,13,4
+Ablagerung,"['A', 'bl', 'ager', 'ung']",4,"['A', 'bl', 'ager', 'ung']",4,"['▁Ab', 'l', 'ager', 'ung']",4,4.0,True,4,4.0,True,4,False,56,10,4
+Substrat,"['Sub', 'str', 'at']",3,"['Sub', 'strat']",2,"['▁Sub', 'str', 'at']",3,2.6666666666666665,False,3,2.5,False,3,False,60,8,4
+Gehalt,"['G', 'eh', 'alt']",3,"['Ge', 'halt']",2,"['▁Ge', 'halt']",2,2.333333333333333,False,2,2.5,False,3,False,111,6,4
+Profikarriere,"['Prof', 'ik', 'ar', 'riere']",4,"['Prof', 'ikar', 'riere']",3,"['▁Prof', 'ik', 'ar', 'riere']",4,3.6666666666666665,False,4,3.5,False,4,False,57,13,4
+Rajongemeinde,"['R', 'aj', 'ong', 'eme', 'inde']",5,"['Raj', 'ong', 'eme', 'inde']",4,"['▁Raj', 'ong', 'emeinde']",3,4.0,False,4,4.5,False,5,False,40,13,4
+Haplogruppe,"['H', 'ap', 'log', 'rup', 'pe']",5,"['H', 'ap', 'log', 'ruppe']",4,"['▁H', 'ap', 'log', 'ru', 'ppe']",5,4.666666666666667,False,5,4.5,False,5,False,24,11,4
+Buchhändler,"['B', 'uch', 'h', 'Ã¤nd', 'ler']",5,"['Buch', 'h', 'ändler']",3,"['▁Buch', 'h', 'änd', 'ler']",4,4.0,False,4,4.0,False,4,False,53,11,4
+Mausoleum,"['M', 'aus', 'ole', 'um']",4,"['M', 'aus', 'oleum']",3,"['▁M', 'aus', 'ole', 'um']",4,3.6666666666666665,False,4,3.5,False,4,False,49,9,4
+Erörterung,"['Er', 'Ã¶r', 'ter', 'ung']",4,"['Er', 'örter', 'ung']",3,"['▁Er', 'ör', 'ter', 'ung']",4,3.6666666666666665,False,4,3.5,False,4,False,22,10,4
+Kapitulation,"['K', 'ap', 'it', 'ulation']",4,"['Kap', 'it', 'ulation']",3,"['▁Kap', 'it', 'ulation']",3,3.333333333333333,False,3,3.5,False,4,False,71,12,4
+Rückgrat,"['R', 'Ã¼ck', 'gr', 'at']",4,"['R', 'ück', 'grat']",3,"['▁Rück', 'gr', 'at']",3,3.333333333333333,False,3,3.5,False,4,False,22,8,4
+Verwandter,"['Ver', 'wand', 'ter']",3,"['Ver', 'wand', 'ter']",3,"['▁Ver', 'wand', 'ter']",3,3.0,True,3,3.0,True,3,False,26,10,4
+Hauptgruppe,"['H', 'aupt', 'gr', 'uppe']",4,"['Haupt', 'gruppe']",2,"['▁Haupt', 'gruppe']",2,2.6666666666666665,False,3,3.0,False,3,False,23,11,4
+Sozialisation,"['So', 'zial', 'isation']",3,"['So', 'zial', 'isation']",3,"['▁Sozial', 'isation']",2,2.6666666666666665,False,3,3.0,True,3,False,56,13,4
+Wiederholung,"['W', 'ieder', 'hol', 'ung']",4,"['W', 'ieder', 'holung']",3,"['▁Wieder', 'hol', 'ung']",3,3.333333333333333,False,3,3.5,False,4,False,64,12,4
+Zaun,"['Z', 'a', 'un']",3,"['Za', 'un']",2,"['▁Za', 'un']",2,2.333333333333333,False,2,2.5,False,3,False,32,4,4
+Abhängigkeit,"['Ab', 'h', 'Ã¤ng', 'igkeit']",4,"['Ab', 'häng', 'igkeit']",3,"['▁Ab', 'häng', 'igkeit']",3,3.333333333333333,False,3,3.5,False,4,False,119,12,4
+Schallplatte,"['Sch', 'all', 'plat', 'te']",4,"['Sch', 'all', 'platte']",3,"['▁Sch', 'all', 'pl', 'atte']",4,3.6666666666666665,False,4,3.5,False,4,False,111,12,4
+Konsens,"['K', 'ons', 'ens']",3,"['Kons', 'ens']",2,"['▁K', 'ons', 'ens']",3,2.6666666666666665,False,3,2.5,False,3,False,24,7,4
+Zweitklassigkeit,"['Z', 'weit', 'klass', 'igkeit']",4,"['Z', 'weit', 'klass', 'igkeit']",4,"['▁Zwe', 'it', 'k', 'lass', 'igkeit']",5,4.333333333333333,False,4,4.0,True,4,False,22,16,4
+Wehrmacht,"['We', 'hr', 'm', 'acht']",4,"['We', 'hrmacht']",2,"['▁We', 'hr', 'macht']",3,3.0,False,3,3.0,False,3,False,301,9,4
+Bestätigung,"['Best', 'Ã¤t', 'igung']",3,"['Best', 'ät', 'igung']",3,"['▁Best', 'ät', 'igung']",3,3.0,True,3,3.0,True,3,False,61,11,4
+Wahrscheinlichkeit,"['W', 'ah', 'rschein', 'lichkeit']",4,"['Wah', 'rschein', 'lichkeit']",3,"['▁W', 'ahr', 'schein', 'lichkeit']",4,3.6666666666666665,False,4,3.5,False,4,False,117,18,4
+Vorland,"['V', 'or', 'land']",3,"['Vor', 'land']",2,"['▁Vor', 'land']",2,2.333333333333333,False,2,2.5,False,3,False,27,7,4
+Hauptinsel,"['H', 'aupt', 'ins', 'el']",4,"['Haupt', 'insel']",2,"['▁Haupt', 'ins', 'el']",3,3.0,False,3,3.0,False,3,False,25,10,4
+Dreisprung,"['D', 're', 'is', 'prung']",4,"['Dre', 'is', 'prung']",3,"['▁Dre', 'is', 'pr', 'ung']",4,3.6666666666666665,False,4,3.5,False,4,False,36,10,4
+Kreisgebiet,"['K', 're', 'is', 'geb', 'iet']",5,"['Kre', 'is', 'gebiet']",3,"['▁Kreis', 'gebiet']",2,3.333333333333333,False,3,4.0,False,4,False,32,11,4
+Neffe,"['N', 'eff', 'e']",3,"['N', 'eff', 'e']",3,"['▁Ne', 'ffe']",2,2.6666666666666665,False,3,3.0,True,3,False,178,5,4
+Stadtbezirk,"['St', 'adt', 'bez', 'irk']",4,"['Stadt', 'bez', 'irk']",3,"['▁Stadt', 'bez', 'irk']",3,3.333333333333333,False,3,3.5,False,4,False,231,11,4
+Verbandsliga,"['Ver', 'bands', 'liga']",3,"['Ver', 'band', 'sl', 'iga']",4,"['▁Ver', 'band', 'sl', 'iga']",4,3.6666666666666665,False,4,3.5,False,4,False,82,12,4
+Buchgesellschaft,"['B', 'uch', 'ges', 'ellschaft']",4,"['Buch', 'gesellschaft']",2,"['▁Buch', 'gesellschaft']",2,2.6666666666666665,False,3,3.0,False,3,False,33,16,4
+Rechtfertigung,"['Re', 'ch', 'tf', 'ert', 'igung']",5,"['Re', 'cht', 'fert', 'igung']",4,"['▁Recht', 'fert', 'igung']",3,4.0,False,4,4.5,False,5,False,23,14,4
+Differentialgleichung,"['D', 'ifferential', 'gle', 'ich', 'ung']",5,"['Differential', 'gleich', 'ung']",3,"['▁D', 'iffer', 'ential', 'gleich', 'ung']",5,4.333333333333333,False,4,4.0,False,4,False,25,21,4
+Hemmung,"['H', 'emm', 'ung']",3,"['Hem', 'm', 'ung']",3,"['▁Hem', 'm', 'ung']",3,3.0,True,3,3.0,True,3,False,36,7,4
+Quadratkilometer,"['Qu', 'adr', 'atk', 'il', 'ometer']",5,"['Quad', 'rat', 'kilometer']",3,"['▁Qu', 'adratkilometer']",2,3.333333333333333,False,3,4.0,False,4,False,204,16,4
+Konföderation,"['Kon', 'f', 'Ã¶', 'der', 'ation']",5,"['Kon', 'fö', 'der', 'ation']",4,"['▁Kon', 'f', 'öder', 'ation']",4,4.333333333333333,False,4,4.5,False,5,False,42,13,4
+Schnittstelle,"['S', 'chnitt', 'st', 'elle']",4,"['S', 'chnitt', 'stelle']",3,"['▁Sch', 'nitt', 'stelle']",3,3.333333333333333,False,3,3.5,False,4,False,97,13,4
+Organismus,"['Organ', 'ism', 'us']",3,"['Organ', 'ismus']",2,"['▁Organ', 'ismus']",2,2.333333333333333,False,2,2.5,False,3,False,103,10,4
+Popmusik,"['Pop', 'mus', 'ik']",3,"['Pop', 'musik']",2,"['▁Pop', 'mus', 'ik']",3,2.6666666666666665,False,3,2.5,False,3,False,34,8,4
+Seitenverhältnis,"['Se', 'iten', 'ver', 'h', 'Ã¤l', 'tn', 'is']",7,"['Se', 'iten', 'ver', 'hältnis']",4,"['▁Seiten', 'ver', 'hält', 'nis']",4,5.0,False,5,5.5,False,6,False,22,16,4
+Abkürzung,"['Ab', 'kÃ¼r', 'zung']",3,"['Ab', 'k', 'ür', 'zung']",4,"['▁Ab', 'k', 'ür', 'zung']",4,3.6666666666666665,False,4,3.5,False,4,False,293,9,4
+Mannschaftswettbewerb,"['M', 'ann', 's', 'chaft', 'sw', 'ett', 'bew', 'erb']",8,"['Mannschaft', 'sw', 'ett', 'bewer', 'b']",5,"['▁Mannschaft', 'sw', 'ettbe', 'werb']",4,5.666666666666667,False,6,6.5,False,7,False,43,21,4
+Lebensform,"['Le', 'bens', 'form']",3,"['Leb', 'ens', 'form']",3,"['▁Lebens', 'form']",2,2.6666666666666665,False,3,3.0,True,3,False,28,10,4
+Blattspreite,"['Bl', 'atts', 'pre', 'ite']",4,"['Bl', 'att', 'spre', 'ite']",4,"['▁Bl', 'att', 'spre', 'ite']",4,4.0,True,4,4.0,True,4,False,59,12,4
+Tischler,"['T', 'isch', 'ler']",3,"['T', 'isch', 'ler']",3,"['▁T', 'isch', 'ler']",3,3.0,True,3,3.0,True,3,False,31,8,4
+Anliegen,"['An', 'lie', 'gen']",3,"['An', 'liegen']",2,"['▁An', 'lie', 'gen']",3,2.6666666666666665,False,3,2.5,False,3,False,96,8,4
+Oberrealschule,"['O', 'ber', 're', 'als', 'ch', 'ule']",6,"['Ober', 're', 'als', 'ch', 'ule']",5,"['▁Ober', 'real', 'schule']",3,4.666666666666667,False,5,5.5,False,6,False,24,14,4
+Dorfbewohner,"['D', 'or', 'fb', 'ew', 'oh', 'ner']",6,"['D', 'orf', 'bew', 'ohner']",4,"['▁Dorf', 'bew', 'oh', 'ner']",4,4.666666666666667,False,5,5.0,False,5,False,45,12,4
+Spitze,"['Sp', 'it', 'ze']",3,"['Sp', 'itze']",2,"['▁Sp', 'it', 'ze']",3,2.6666666666666665,False,3,2.5,False,3,False,442,6,4
+Wohnort,"['W', 'ohn', 'ort']",3,"['W', 'ohn', 'ort']",3,"['▁Wohn', 'ort']",2,2.6666666666666665,False,3,3.0,True,3,False,72,7,4
+Kaufmann,"['K', 'auf', 'mann']",3,"['K', 'auf', 'mann']",3,"['▁Kauf', 'mann']",2,2.6666666666666665,False,3,3.0,True,3,False,343,8,4
+Streicher,"['St', 're', 'icher']",3,"['Stre', 'icher']",2,"['▁St', 'reich', 'er']",3,2.6666666666666665,False,3,2.5,False,3,False,46,9,4
+Gulden,"['G', 'ul', 'den']",3,"['Gul', 'den']",2,"['▁Gul', 'den']",2,2.333333333333333,False,2,2.5,False,3,False,119,6,4
+Verkäufer,"['Ver', 'k', 'Ã¤u', 'fer']",4,"['Ver', 'kä', 'ufer']",3,"['▁Ver', 'k', 'äu', 'fer']",4,3.6666666666666665,False,4,3.5,False,4,False,33,9,4
+Unterlage,"['Unt', 'er', 'lage']",3,"['Unter', 'lage']",2,"['▁Unter', 'lage']",2,2.333333333333333,False,2,2.5,False,3,False,125,9,4
+Biographie,"['Bi', 'ograph', 'ie']",3,['Biographie'],1,['▁Biographie'],1,1.6666666666666667,False,2,2.0,False,2,True,285,10,4
+Scherbe,"['S', 'cher', 'be']",3,"['S', 'cher', 'be']",3,"['▁Sch', 'er', 'be']",3,3.0,True,3,3.0,True,3,False,25,7,4
+Konsul,"['K', 'ons', 'ul']",3,"['Kons', 'ul']",2,"['▁K', 'ons', 'ul']",3,2.6666666666666665,False,3,2.5,False,3,False,140,6,4
+Betätigung,"['Bet', 'Ã¤t', 'igung']",3,"['Bet', 'ät', 'igung']",3,"['▁Bet', 'ät', 'igung']",3,3.0,True,3,3.0,True,3,False,36,10,4
+Erweiterung,"['Er', 'we', 'iter', 'ung']",4,"['Er', 'weiter', 'ung']",3,"['▁Er', 'we', 'iter', 'ung']",4,3.6666666666666665,False,4,3.5,False,4,False,339,11,4
+Handwerker,"['Hand', 'wer', 'ker']",3,"['Hand', 'wer', 'ker']",3,"['▁Hand', 'wer', 'ker']",3,3.0,True,3,3.0,True,3,False,111,10,4
+Katalysator,"['K', 'atal', 'ys', 'ator']",4,"['K', 'atal', 'ys', 'ator']",4,"['▁K', 'atal', 'ys', 'ator']",4,4.0,True,4,4.0,True,4,False,28,11,4
+Staatsangehörigkeit,"['St', 'a', 'ats', 'ange', 'hÃ¶r', 'igkeit']",6,"['Sta', 'ats', 'ange', 'hör', 'igkeit']",5,"['▁Staats', 'ange', 'hör', 'igkeit']",4,5.0,False,5,5.5,False,6,False,92,19,4
+Franziskanerkloster,"['Fran', 'z', 'isk', 'an', 'erk', 'lo', 'ster']",7,"['Franz', 'is', 'kan', 'er', 'kl', 'oster']",6,"['▁Franz', 'isk', 'an', 'erk', 'loster']",5,6.0,False,6,6.5,False,7,False,28,19,4
+Hypothese,"['H', 'yp', 'oth', 'ese']",4,"['Hyp', 'othe', 'se']",3,"['▁Hyp', 'oth', 'ese']",3,3.333333333333333,False,3,3.5,False,4,False,100,9,4
+Betrachtungsweise,"['B', 'etr', 'acht', 'ungs', 'weise']",5,"['Bet', 'racht', 'ungs', 'weise']",4,"['▁Bet', 'racht', 'ungs', 'weise']",4,4.333333333333333,False,4,4.5,False,5,False,24,17,4
+Emeritierung,"['Emer', 'it', 'ierung']",3,"['Emer', 'it', 'ierung']",3,"['▁Emer', 'it', 'ierung']",3,3.0,True,3,3.0,True,3,False,80,12,4
+Damendoppel,"['Dam', 'end', 'oppel']",3,"['Dam', 'endo', 'ppel']",3,"['▁Dam', 'endo', 'ppel']",3,3.0,True,3,3.0,True,3,False,40,11,4
+Sehnsucht,"['Se', 'h', 'ns', 'ucht']",4,"['Se', 'h', 'ns', 'ucht']",4,"['▁Se', 'h', 'ns', 'ucht']",4,4.0,True,4,4.0,True,4,False,52,9,4
+Wehrpflicht,"['We', 'hr', 'pf', 'licht']",4,"['We', 'hr', 'pflicht']",3,"['▁We', 'hr', 'pf', 'licht']",4,3.6666666666666665,False,4,3.5,False,4,False,27,11,4
+Gewinnung,"['G', 'ew', 'inn', 'ung']",4,"['Gew', 'inn', 'ung']",3,"['▁Gew', 'inn', 'ung']",3,3.333333333333333,False,3,3.5,False,4,False,92,9,4
+Beibehaltung,"['Be', 'ib', 'eh', 'altung']",4,"['Be', 'ib', 'eh', 'altung']",4,"['▁Be', 'ibe', 'halt', 'ung']",4,4.0,True,4,4.0,True,4,False,47,12,4
+Vorwort,"['V', 'or', 'wort']",3,"['Vor', 'wort']",2,"['▁Vor', 'wort']",2,2.333333333333333,False,2,2.5,False,3,False,152,7,4
+Zweifel,"['Z', 'we', 'if', 'el']",4,"['Z', 'we', 'ifel']",3,"['▁Zwe', 'if', 'el']",3,3.333333333333333,False,3,3.5,False,4,False,121,7,4
+Zigarre,"['Z', 'igar', 're']",3,"['Z', 'igar', 're']",3,"['▁Z', 'ig', 'ar', 're']",4,3.333333333333333,False,3,3.0,True,3,False,129,7,4
+Krankenhaus,"['K', 'rank', 'en', 'haus']",4,"['K', 'rank', 'en', 'haus']",4,"['▁K', 'ran', 'ken', 'haus']",4,4.0,True,4,4.0,True,4,False,392,11,4
+Bekämpfung,"['B', 'ek', 'Ã¤mp', 'fung']",4,"['Bek', 'ämp', 'fung']",3,"['▁Bek', 'ämp', 'f', 'ung']",4,3.6666666666666665,False,4,3.5,False,4,False,94,10,4
+Anteilseigner,"['Ant', 'eil', 'se', 'igner']",4,"['An', 'teil', 'se', 'igner']",4,"['▁An', 'teil', 'se', 'igner']",4,4.0,True,4,4.0,True,4,False,22,13,4
+Stadtzentrum,"['St', 'adt', 'zent', 'rum']",4,"['Stadt', 'zentrum']",2,"['▁Stadt', 'zent', 'rum']",3,3.0,False,3,3.0,False,3,False,153,12,4
+Seitenschiff,"['Se', 'it', 'ensch', 'iff']",4,"['Seit', 'ensch', 'iff']",3,"['▁Seit', 'ensch', 'iff']",3,3.333333333333333,False,3,3.5,False,4,False,76,12,4
+Studienreise,"['St', 'ud', 'ien', 're', 'ise']",5,"['Stud', 'ien', 'reise']",3,"['▁Studien', 're', 'ise']",3,3.6666666666666665,False,4,4.0,False,4,False,62,12,4

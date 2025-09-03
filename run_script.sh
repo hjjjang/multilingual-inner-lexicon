@@ -14,4 +14,5 @@ source /work/hyujang/miniconda3/etc/profile.d/conda.sh  # Change this path to wh
 conda activate thesis  # Replace 'your_conda_env' with your environment name
 
 # Run your Python script
-python /home/hyujang/multilingual-inner-lexicon/RQ1/WordIdentity/patchscope_test.py
+python /home/hyujang/multilingual-inner-lexicon/RQ1/ComponentAnalysis/attention_weights.py
+# bash run_gsm8k_evals.sh

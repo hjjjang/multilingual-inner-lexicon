@@ -1,0 +1,701 @@
+word,typo_tokens,splitted_typo_tokens,typo_type,same_token_num,same_token_num2,freq,freq_quantile,word_len,typo_word_len
+utc,ut,"['u', 't']",deletion,False,True,4,0,3,2
+remove,removt,"['remo', 'v', 't']",substitution,True,True,6,0,6,6
+naval,nayval,"['nay', 'val']",insertion,False,False,10,0,5,6
+before,beforhe,"['b', 'e', 'for', 'he']",insertion,True,True,4,0,6,7
+switcher,swetcher,"['sw', 'e', 't', 'cher']",substitution,False,False,7,0,8,8
+multiplier,multipxier,"['multip', 'x', 'ier']",substitution,False,False,6,0,10,10
+ret,re,"['r', 'e']",deletion,True,True,5,0,3,2
+octopus,ocopus,"['o', 'cop', 'us']",deletion,False,False,4,0,7,6
+weekly,wekly,"['wek', 'ly']",deletion,False,True,8,0,6,5
+ellipsis,ellipss,"['el', 'lips', 's']",deletion,False,True,4,0,8,7
+slime,slisme,"['sli', 'sm', 'e']",insertion,False,False,4,0,5,6
+sett,sept,"['se', 'pt']",substitution,True,True,4,0,4,4
+flask,flnsk,"['fl', 'nsk']",substitution,False,False,10,0,5,5
+irradiation,irradiazion,"['irr', 'ad', 'i', 'azion']",substitution,False,False,10,0,11,11
+indexing,idexing,"['ide', 'xi', 'ng']",deletion,False,False,5,0,8,7
+mike,mikwe,"['mik', 'we']",insertion,False,False,4,0,4,5
+liv,lfv,"['l', 'fv']",substitution,True,True,5,0,3,3
+aaa,aaza,"['a', 'aza']",insertion,False,True,4,0,3,4
+minus,mjinus,"['mj', 'i', 'nus']",insertion,True,True,10,0,5,6
+yak,ya,"['y', 'a']",deletion,False,False,4,0,3,2
+hum,hue,"['hu', 'e']",substitution,True,True,9,0,3,3
+responds,rfsponds,"['r', 'fs', 'pon', 'ds']",substitution,False,False,4,0,8,8
+provide,provida,"['p', 'rov', 'i', 'da']",substitution,True,True,6,0,7,7
+entre,ente,"['ent', 'e']",deletion,True,True,6,0,5,4
+sanity,sanoity,"['san', 'oi', 'ty']",insertion,False,False,9,0,6,7
+lad,lyad,"['ly', 'ad']",insertion,True,True,9,0,3,4
+sometimes,sqmetimes,"['sq', 'met', 'imes']",substitution,True,True,6,0,9,9
+geek,gee,"['g', 'ee']",deletion,False,False,5,0,4,3
+stab,stah,"['st', 'ah']",substitution,False,True,8,0,4,4
+sham,shm,"['s', 'hm']",deletion,False,False,6,0,4,3
+sting,stisng,"['s', 'tis', 'ng']",insertion,False,False,10,0,5,6
+cope,ciope,"['cio', 'pe']",insertion,False,True,4,0,4,5
+pasta,patta,"['p', 'atta']",substitution,False,False,9,0,5,5
+incomplete,inclomplete,"['i', 'nc', 'lom', 'plete']",insertion,False,False,4,0,10,11
+mise,mirse,"['m', 'irse']",insertion,True,True,4,0,4,5
+spam,spm,"['s', 'pm']",deletion,False,True,4,0,4,3
+receive,receve,"['re', 'ce', 've']",deletion,True,True,4,0,7,6
+separate,separbte,"['s', 'ep', 'arb', 'te']",substitution,False,False,9,0,8,8
+modern,modexrn,"['mod', 'e', 'xr', 'n']",insertion,True,True,6,0,6,7
+write,writz,"['wr', 'itz']",substitution,True,True,7,0,5,5
+metallic,mtallic,"['mt', 'alli', 'c']",deletion,False,False,4,0,8,7
+sending,senving,"['s', 'env', 'in', 'g']",substitution,True,True,7,0,7,7
+mai,mdi,"['m', 'di']",substitution,True,True,5,0,3,3
+max,mai,"['m', 'ai']",substitution,True,True,8,0,3,3
+indigo,indiogo,"['i', 'ndi', 'ogo']",insertion,False,False,6,0,6,7
+brew,brei,"['bre', 'i']",substitution,False,True,8,0,4,4
+mandatory,mandtory,"['ma', 'n', 'd', 't', 'ory']",deletion,False,True,6,0,9,8
+alkyl,alkyll,"['al', 'ky', 'll']",insertion,False,False,6,0,5,6
+parte,pyrte,"['py', 'rte']",substitution,False,False,7,0,5,5
+accumulator,accumulxtor,"['ac', 'cum', 'ul', 'x', 'tor']",substitution,False,True,4,0,11,11
+confident,confldent,"['c', 'on', 'f', 'lden', 't']",substitution,False,False,5,0,9,9
+ute,ut,"['u', 't']",deletion,False,True,4,0,3,2
+met,mt,"['m', 't']",deletion,True,True,9,0,3,2
+tick,tfck,"['tf', 'ck']",substitution,True,True,7,0,4,4
+numerator,numeraltor,"['nu', 'me', 'ra', 'lt', 'or']",insertion,False,False,5,0,9,10
+ante,anve,"['an', 've']",substitution,True,True,6,0,4,4
+karma,karmua,"['kar', 'm', 'ua']",insertion,False,False,5,0,5,6
+subplot,subpkot,"['su', 'bp', 'kot']",substitution,False,True,10,0,7,7
+bella,bela,"['be', 'la']",deletion,False,False,7,0,5,4
+commits,commitc,"['comm', 'i', 'tc']",substitution,False,False,5,0,7,7
+infinite,infinte,"['inf', 'inte']",deletion,False,False,4,0,8,7
+torrent,torrevnt,"['to', 'r', 're', 'v', 'nt']",insertion,False,True,7,0,7,8
+raf,rff,"['r', 'ff']",substitution,False,True,4,0,3,3
+primitive,primiive,"['pr', 'imi', 'i', 've']",deletion,True,True,7,0,9,8
+snippet,snippev,"['sn', 'i', 'ppe', 'v']",substitution,True,True,10,0,7,7
+coming,comong,"['co', 'm', 'ong']",substitution,True,True,8,0,6,6
+wiring,wirinj,"['w', 'iri', 'nj']",substitution,False,False,4,0,6,6
+prompt,prompa,"['prom', 'pa']",substitution,True,True,4,0,6,6
+enumeration,enuferation,"['en', 'ufe', 'rati', 'on']",substitution,False,False,4,0,11,11
+adhesive,adheszve,"['a', 'dh', 'e', 'sz', 've']",substitution,False,False,8,0,8,8
+vole,volme,"['vol', 'me']",insertion,False,False,5,0,4,5
+affect,affec,"['affe', 'c']",deletion,False,False,9,0,6,5
+aging,aing,"['ai', 'ng']",deletion,False,True,7,0,5,4
+watering,waterinw,"['wa', 'te', 'r', 'i', 'nw']",substitution,False,False,4,0,8,8
+renown,rednown,"['red', 'n', 'own']",insertion,False,False,6,0,6,7
+orch,och,"['o', 'ch']",deletion,True,True,6,0,4,3
+checkout,cheyckout,"['c', 'hey', 'c', 'k', 'out']",insertion,True,True,5,0,8,9
+miller,mkller,"['m', 'kl', 'ler']",substitution,False,False,8,0,6,6
+laughter,laugter,"['lau', 'g', 'ter']",deletion,False,True,6,0,8,7
+non,nn,"['n', 'n']",deletion,True,True,10,0,3,2
+commit,commixt,"['c', 'omm', 'i', 'xt']",insertion,True,True,9,0,6,7
+lowercase,lowdrcase,"['low', 'dr', 'case']",substitution,False,False,5,0,9,9
+neutral,neutrl,"['neu', 'trl']",deletion,True,True,5,0,7,6
+mitt,mitrt,"['mi', 'trt']",insertion,True,True,4,0,4,5
+circular,circuar,"['ci', 'rc', 'u', 'ar']",deletion,False,False,10,0,8,7
+carrying,carryiong,"['carry', 'ion', 'g']",insertion,False,False,6,0,8,9
+posterior,posterpior,"['post', 'e', 'r', 'p', 'ior']",insertion,False,False,6,0,9,10
+died,die,"['di', 'e']",deletion,False,False,4,0,4,3
+macht,macyt,"['mac', 'yt']",substitution,False,False,5,0,5,5
+paid,pahd,"['pah', 'd']",substitution,True,True,10,0,4,4
+porn,pon,"['po', 'n']",deletion,False,True,6,0,4,3
+cutoff,cutof,"['cut', 'of']",deletion,False,False,8,0,6,5
+across,acwoss,"['ac', 'w', 'oss']",substitution,False,False,8,0,6,6
+alum,aum,"['a', 'um']",deletion,False,False,9,0,4,3
+select,sellect,"['sel', 'lec', 't']",insertion,True,True,5,0,6,7
+latin,latvn,"['lat', 'vn']",substitution,True,True,5,0,5,5
+inform,inforj,"['inf', 'o', 'rj']",substitution,True,True,5,0,6,6
+mies,mxes,"['m', 'xes']",substitution,False,False,10,0,4,4
+owne,one,"['o', 'ne']",deletion,False,False,7,0,4,3
+histoire,histfoire,"['h', 'i', 's', 'tf', 'oire']",insertion,False,True,4,0,8,9
+belly,bely,"['be', 'ly']",deletion,False,False,6,0,5,4
+raspberry,raspbery,"['ra', 's', 'pb', 'er', 'y']",deletion,False,False,10,0,9,8
+phantom,phantam,"['ph', 'a', 'nt', 'am']",substitution,False,False,4,0,7,7
+defining,dekining,"['dek', 'ining']",substitution,False,False,5,0,8,8
+historical,historial,"['hi', 'st', 'orial']",deletion,False,False,4,0,10,9
+improv,imkrov,"['im', 'k', 'rov']",substitution,False,False,5,0,6,6
+china,chna,"['ch', 'na']",deletion,False,True,7,0,5,4
+upcoming,upcominl,"['u', 'pc', 'omi', 'nl']",substitution,False,False,5,0,8,8
+sim,shm,"['s', 'hm']",substitution,True,True,7,0,3,3
+kin,kikn,"['ki', 'kn']",insertion,True,True,9,0,3,4
+spanish,spajish,"['sp', 'aj', 'ish']",substitution,False,False,4,0,7,7
+bulldozer,bulldmzer,"['bull', 'dm', 'zer']",substitution,False,False,4,0,9,9
+reactive,reactivbe,"['react', 'iv', 'be']",insertion,False,False,4,0,8,9
+small,smal,"['s', 'mal']",deletion,True,True,5,0,5,4
+fisher,fishebr,"['f', 'is', 'he', 'br']",insertion,False,False,8,0,6,7
+atop,atrop,"['at', 'rop']",insertion,False,False,5,0,4,5
+decorator,decoratuor,"['d', 'ec', 'or', 'atu', 'or']",insertion,False,False,9,0,9,10
+compare,compre,"['com', 'pre']",deletion,True,True,5,0,7,6
+nel,nsel,"['nse', 'l']",insertion,True,True,6,0,3,4
+cere,ceee,"['cee', 'e']",substitution,False,False,6,0,4,4
+avait,avayt,"['ava', 'yt']",substitution,False,False,4,0,5,5
+jammer,jyammer,"['jy', 'amm', 'er']",insertion,False,False,4,0,6,7
+describe,descrixbe,"['de', 'scri', 'xb', 'e']",insertion,True,True,5,0,8,9
+italian,italisan,"['ita', 'l', 'isa', 'n']",insertion,False,False,4,0,7,8
+plaintext,playntext,"['pla', 'y', 'nt', 'ext']",substitution,False,True,5,0,9,9
+washing,washinqg,"['wa', 's', 'hin', 'q', 'g']",insertion,False,True,7,0,7,8
+err,erwr,"['er', 'wr']",insertion,True,True,4,0,3,4
+chandelier,chandeplier,"['chan', 'dep', 'l', 'i', 'er']",insertion,False,False,8,0,10,11
+llama,llamba,"['ll', 'amba']",insertion,False,False,8,0,5,6
+giraffe,girakffe,"['gi', 'rak', 'f', 'fe']",insertion,False,False,4,0,7,8
+suggest,suggevst,"['s', 'ug', 'g', 'ev', 'st']",insertion,True,True,4,0,7,8
+scoreboard,scoreboari,"['sc', 'ore', 'boa', 'ri']",substitution,False,False,6,0,10,10
+typical,tyical,"['ty', 'ical']",deletion,False,False,7,0,7,6
+opacity,opacioy,"['o', 'pa', 'ci', 'oy']",substitution,True,True,5,0,7,7
+jay,ja,"['j', 'a']",deletion,False,True,8,0,3,2
+bunny,bumnny,"['bum', 'nn', 'y']",insertion,False,False,5,0,5,6
+ark,aqrk,"['aq', 'rk']",insertion,False,True,5,0,3,4
+vie,vis,"['v', 'is']",substitution,True,True,5,0,3,3
+valor,valopr,"['va', 'lo', 'pr']",insertion,True,True,10,0,5,6
+pal,pnl,"['pn', 'l']",substitution,True,True,7,0,3,3
+pie,ppe,"['pp', 'e']",substitution,True,True,21,1,3,3
+evident,eviden,"['e', 'vid', 'en']",deletion,False,False,12,1,7,6
+smooth,smoth,"['sm', 'oth']",deletion,True,True,14,1,6,5
+robe,rbobe,"['rb', 'obe']",insertion,False,True,24,1,4,5
+gum,gusm,"['gus', 'm']",insertion,False,False,26,1,3,4
+lust,lus,"['l', 'us']",deletion,False,True,12,1,4,3
+sens,seds,"['s', 'eds']",substitution,False,False,30,1,4,4
+dba,dbga,"['db', 'ga']",insertion,False,True,11,1,3,4
+hosting,hostng,"['ho', 'st', 'ng']",deletion,False,False,16,1,7,6
+transparent,transpaent,"['tr', 'ans', 'pa', 'ent']",deletion,True,True,16,1,11,10
+heath,hekth,"['hek', 'th']",substitution,False,False,17,1,5,5
+helper,herlper,"['he', 'r', 'lp', 'er']",insertion,True,True,17,1,6,7
+folder,foltder,"['fol', 't', 'de', 'r']",insertion,True,True,15,1,6,7
+ignition,igition,"['ig', 'itio', 'n']",deletion,False,False,24,1,8,7
+insulin,insulfin,"['in', 'su', 'l', 'fi', 'n']",insertion,False,False,20,1,7,8
+chevron,chtvron,"['cht', 'vr', 'on']",substitution,False,False,13,1,7,7
+aria,ardia,"['ar', 'dia']",insertion,True,True,25,1,4,5
+bloc,baloc,"['bal', 'oc']",insertion,False,False,29,1,4,5
+thumb,thuvmb,"['thu', 'v', 'mb']",insertion,True,True,23,1,5,6
+mist,misu,"['mis', 'u']",substitution,True,True,21,1,4,4
+laugh,lauh,"['la', 'uh']",deletion,False,False,26,1,5,4
+camouflage,camocflage,"['cam', 'o', 'cf', 'l', 'age']",substitution,False,False,24,1,10,10
+rue,rie,"['ri', 'e']",substitution,False,False,16,1,3,3
+sandwich,sndwich,"['sn', 'd', 'wi', 'ch']",deletion,False,False,24,1,8,7
+grading,gradifg,"['grad', 'i', 'f', 'g']",substitution,False,True,17,1,7,7
+argent,aigent,"['ai', 'gent']",substitution,True,True,11,1,6,6
+imam,iam,"['ia', 'm']",deletion,False,False,14,1,4,3
+simple,simpe,"['sim', 'pe']",deletion,True,True,28,1,6,5
+capable,capablje,"['ca', 'p', 'a', 'b', 'lje']",insertion,False,False,14,1,7,8
+spa,sph,"['s', 'ph']",substitution,False,True,25,1,3,3
+holy,hxly,"['hx', 'ly']",substitution,False,False,30,1,4,4
+sunrise,sunrisde,"['sun', 'ri', 's', 'de']",insertion,False,False,11,1,7,8
+ninja,ncinja,"['nc', 'inja']",insertion,False,False,17,1,5,6
+accord,accor,"['acco', 'r']",deletion,False,False,23,1,6,5
+coil,coic,"['co', 'ic']",substitution,False,True,23,1,4,4
+lightning,lighfning,"['li', 'gh', 'fn', 'i', 'ng']",substitution,False,False,21,1,9,9
+sufficient,sufficent,"['s', 'uf', 'f', 'icent']",deletion,False,False,11,1,10,9
+torch,torrch,"['to', 'rr', 'ch']",insertion,False,True,26,1,5,6
+cape,cae,"['c', 'ae']",deletion,False,True,27,1,4,3
+fond,fon,"['fo', 'n']",deletion,False,False,28,1,4,3
+flop,flnop,"['fl', 'nop']",insertion,False,False,21,1,4,5
+quasar,queasar,"['qu', 'e', 'asar']",insertion,False,False,17,1,6,7
+increment,increent,"['incr', 'e', 'ent']",deletion,True,True,26,1,9,8
+breaking,breabing,"['bre', 'abi', 'ng']",substitution,True,True,20,1,8,8
+marque,marqu,"['m', 'arqu']",deletion,False,False,23,1,6,5
+wallet,wallt,"['wal', 'lt']",deletion,False,True,12,1,6,5
+inverse,invese,"['i', 'nv', 'ese']",deletion,True,True,22,1,7,6
+subsection,subsecton,"['sub', 'se', 'c', 'to', 'n']",deletion,False,True,16,1,10,9
+weaving,wfeaving,"['wf', 'ea', 'ving']",insertion,False,False,21,1,7,8
+miss,mciss,"['mc', 'iss']",insertion,True,True,11,1,4,5
+throttle,thrlottle,"['th', 'r', 'l', 'ot', 'tle']",insertion,False,False,14,1,8,9
+intro,into,"['i', 'nto']",deletion,True,True,24,1,5,4
+biome,biowe,"['bio', 'we']",substitution,False,False,11,1,5,5
+salmon,sslmon,"['ssl', 'mon']",substitution,False,False,28,1,6,6
+decor,dcor,"['dc', 'or']",deletion,True,True,12,1,5,4
+main,maivn,"['mai', 'vn']",insertion,True,True,18,1,4,5
+refer,refe,"['ref', 'e']",deletion,True,True,25,1,5,4
+yen,ymen,"['yme', 'n']",insertion,False,True,18,1,3,4
+lighter,lhghter,"['lh', 'g', 'hte', 'r']",substitution,False,False,12,1,7,7
+intern,ixntern,"['i', 'xn', 'te', 'rn']",insertion,True,True,18,1,6,7
+alpha,alphia,"['a', 'lp', 'hia']",insertion,True,True,22,1,5,6
+emir,emio,"['em', 'io']",substitution,False,False,15,1,4,4
+chromium,chromiam,"['ch', 'r', 'o', 'mia', 'm']",substitution,False,False,11,1,8,8
+quake,quaqe,"['qua', 'qe']",substitution,False,True,17,1,5,5
+oven,ovxn,"['ov', 'xn']",substitution,False,True,13,1,4,4
+apart,aparft,"['a', 'par', 'ft']",insertion,False,False,15,1,5,6
+marketplace,maketplace,"['ma', 'ke', 'tpl', 'a', 'ce']",deletion,False,False,29,1,11,10
+effector,effeuctor,"['eff', 'e', 'u', 'ct', 'or']",insertion,False,False,13,1,8,9
+pri,prgi,"['pr', 'gi']",insertion,True,True,17,1,3,4
+bandit,badit,"['ba', 'dit']",deletion,False,False,22,1,6,5
+conservative,conservautive,"['conserv', 'a', 'ut', 'ive']",insertion,False,False,25,1,12,13
+joining,joijning,"['j', 'o', 'ij', 'nin', 'g']",insertion,True,True,15,1,7,8
+burner,burnoer,"['b', 'ur', 'no', 'er']",insertion,False,False,13,1,6,7
+entering,entyering,"['enty', 'er', 'i', 'ng']",insertion,False,False,11,1,8,9
+can,cnn,"['cn', 'n']",substitution,True,True,24,1,3,3
+pdf,pdff,"['pdf', 'f']",insertion,True,True,14,1,3,4
+como,csomo,"['cs', 'omo']",insertion,True,True,11,1,4,5
+beard,berd,"['ber', 'd']",deletion,False,False,27,1,5,4
+spinning,speinning,"['sp', 'ei', 'n', 'ni', 'ng']",insertion,False,False,12,1,8,9
+aux,avx,"['a', 'vx']",substitution,True,True,18,1,3,3
+pan,pn,"['p', 'n']",deletion,True,True,22,1,3,2
+ranger,raunger,"['r', 'aun', 'ger']",insertion,False,False,22,1,6,7
+bore,born,"['b', 'orn']",substitution,False,False,28,1,4,4
+listening,ljstening,"['lj', 'ste', 'nin', 'g']",substitution,True,True,21,1,9,9
+emitter,emitteo,"['em', 'itt', 'e', 'o']",substitution,False,False,30,1,7,7
+speak,spek,"['spe', 'k']",deletion,False,False,19,1,5,4
+fulfillment,fulfilment,"['fu', 'l', 'film', 'en', 't']",deletion,False,False,17,1,11,10
+convex,conveex,"['c', 'on', 've', 'ex']",insertion,False,False,28,1,6,7
+telegram,telegrtm,"['tel', 'eg', 'r', 'tm']",substitution,False,True,28,1,8,8
+gable,gpable,"['gp', 'able']",insertion,False,True,30,1,5,6
+cypress,cypruess,"['cy', 'prue', 's', 's']",insertion,False,False,11,1,7,8
+cough,couoh,"['cou', 'oh']",substitution,False,False,14,1,5,5
+coding,coaing,"['coa', 'ing']",substitution,True,True,22,1,6,6
+reducer,reduce,"['red', 'u', 'ce']",deletion,False,False,15,1,7,6
+auf,aui,"['au', 'i']",substitution,True,True,16,1,3,3
+universal,unversal,"['un', 'versal']",deletion,True,True,20,1,9,8
+mounting,mounzing,"['m', 'ou', 'n', 'zin', 'g']",substitution,False,False,17,1,8,8
+jug,juy,"['j', 'uy']",substitution,True,True,17,1,3,3
+harmonic,harionic,"['hari', 'onic']",substitution,False,False,12,1,8,8
+cura,curva,"['cur', 'va']",insertion,True,True,11,1,4,5
+composite,composie,"['compos', 'ie']",deletion,True,True,12,1,9,8
+charger,charge,"['ch', 'arge']",deletion,False,True,16,1,7,6
+spare,skare,"['ska', 're']",substitution,False,False,12,1,5,5
+scheduling,schhduling,"['s', 'chh', 'dul', 'ing']",substitution,False,False,15,1,10,10
+steak,stak,"['sta', 'k']",deletion,False,False,13,1,5,4
+col,cjl,"['c', 'jl']",substitution,True,True,13,1,3,3
+thorax,thforax,"['t', 'hf', 'or', 'ax']",insertion,False,False,13,1,6,7
+counting,couknting,"['c', 'ouk', 'n', 'tin', 'g']",insertion,False,False,12,1,8,9
+localization,localizatin,"['l', 'oc', 'al', 'izat', 'in']",deletion,False,False,20,1,12,11
+first,firtst,"['fi', 'rt', 'st']",insertion,True,True,19,1,5,6
+pro,po,"['p', 'o']",deletion,True,True,14,1,3,2
+planting,panting,"['pan', 'ting']",deletion,False,False,30,1,8,7
+promo,promc,"['prom', 'c']",substitution,False,True,22,1,5,5
+tot,twt,"['tw', 't']",substitution,True,True,12,1,3,3
+inertia,inerta,"['in', 'erta']",deletion,False,False,13,1,7,6
+red,re,"['r', 'e']",deletion,True,True,15,1,3,2
+cathode,cathde,"['cath', 'de']",deletion,False,False,12,1,7,6
+singular,singula,"['sing', 'u', 'l', 'a']",deletion,True,True,21,1,8,7
+jean,jan,"['ja', 'n']",deletion,False,False,17,1,4,3
+additive,addtive,"['add', 't', 'ive']",deletion,False,False,15,1,8,7
+amor,amo,"['am', 'o']",deletion,False,False,23,1,4,3
+baseline,baselyne,"['ba', 'se', 'l', 'yn', 'e']",substitution,False,True,16,1,8,8
+emerald,emserald,"['ems', 'era', 'l', 'd']",insertion,False,False,23,1,7,8
+implies,imqplies,"['im', 'qp', 'lie', 's']",insertion,False,False,21,1,7,8
+validation,valfdation,"['v', 'al', 'f', 'dat', 'ion']",substitution,True,True,16,1,10,10
+coherent,coheresnt,"['co', 'heres', 'n', 't']",insertion,False,False,15,1,8,9
+pairing,piairing,"['pia', 'irin', 'g']",insertion,False,False,29,1,7,8
+treme,trevme,"['tre', 'vm', 'e']",insertion,False,False,12,1,5,6
+purse,purso,"['purs', 'o']",substitution,False,False,25,1,5,5
+tomorrow,tokorrow,"['to', 'ko', 'rr', 'ow']",substitution,False,False,15,1,8,8
+tuning,twuning,"['t', 'w', 'uning']",insertion,False,False,13,1,6,7
+backpack,bdackpack,"['bd', 'ac', 'kp', 'ac', 'k']",insertion,False,False,13,1,8,9
+wrong,wroneg,"['wr', 'o', 'neg']",insertion,True,True,12,1,5,6
+intelligent,intelliigent,"['int', 'ell', 'i', 'ig', 'ent']",insertion,False,False,12,1,11,12
+isotope,isoope,"['i', 'soo', 'pe']",deletion,False,False,26,1,7,6
+mole,molee,"['mole', 'e']",insertion,False,False,19,1,4,5
+legate,legae,"['le', 'gae']",deletion,False,True,15,1,6,5
+pointer,ponter,"['p', 'onte', 'r']",deletion,True,True,11,1,7,6
+relaxation,relaxaion,"['rela', 'x', 'ai', 'o', 'n']",deletion,False,False,27,1,10,9
+starch,stparch,"['st', 'pa', 'r', 'ch']",insertion,False,False,12,1,6,7
+summary,sumary,"['sum', 'ar', 'y']",deletion,True,True,76,2,7,6
+immunity,immnity,"['im', 'm', 'nit', 'y']",deletion,False,False,69,2,8,7
+bite,bie,"['bi', 'e']",deletion,False,True,56,2,4,3
+hobby,hoby,"['ho', 'by']",deletion,False,False,32,2,5,4
+evil,eil,"['e', 'il']",deletion,True,True,42,2,4,3
+leave,lesave,"['l', 'esa', 've']",insertion,True,True,48,2,5,6
+knife,kife,"['ki', 'fe']",deletion,False,True,82,2,5,4
+below,blow,"['blo', 'w']",deletion,True,True,42,2,5,4
+thirty,tirty,"['tir', 'ty']",deletion,False,False,70,2,6,5
+repository,repositorg,"['rep', 'osit', 'org']",substitution,True,True,50,2,10,10
+essence,eksence,"['e', 'ksen', 'ce']",substitution,False,False,67,2,7,7
+zoo,zo,"['z', 'o']",deletion,False,False,66,2,3,2
+fusion,fjusion,"['fj', 'us', 'i', 'on']",insertion,True,True,84,2,6,7
+accordion,acpordion,"['ac', 'po', 'r', 'di', 'on']",substitution,False,True,34,2,9,9
+visibility,visiqbility,"['v', 'isi', 'q', 'b', 'ility']",insertion,True,True,43,2,10,11
+independent,inependent,"['i', 'nep', 'en', 'dent']",deletion,False,False,36,2,11,10
+diver,dijver,"['d', 'ij', 'ver']",insertion,False,False,78,2,5,6
+sharing,sharirg,"['sh', 'ari', 'r', 'g']",substitution,True,True,49,2,7,7
+mater,matevr,"['mate', 'vr']",insertion,False,False,36,2,5,6
+bio,biqo,"['bi', 'qo']",insertion,True,True,72,2,3,4
+starting,startihg,"['s', 'ta', 'rt', 'ih', 'g']",substitution,True,True,33,2,8,8
+compression,comression,"['com', 'ress', 'i', 'on']",deletion,True,True,58,2,11,10
+axis,axhis,"['ax', 'his']",insertion,True,True,77,2,4,5
+ingredient,ingredieht,"['i', 'ngr', 'edi', 'e', 'ht']",substitution,False,True,84,2,10,10
+noble,noblxe,"['nob', 'l', 'xe']",insertion,False,False,57,2,5,6
+slide,slid,"['sl', 'id']",deletion,True,True,82,2,5,4
+taxi,taqi,"['ta', 'qi']",substitution,False,False,68,2,4,4
+described,descibed,"['de', 'sc', 'i', 'b', 'ed']",deletion,False,False,49,2,9,8
+cold,cgold,"['cg', 'old']",insertion,True,True,41,2,4,5
+diabetes,diabtes,"['di', 'abt', 'e', 's']",deletion,False,False,68,2,8,7
+four,fur,"['f', 'ur']",deletion,True,True,36,2,4,3
+caution,cahtion,"['c', 'a', 'ht', 'ion']",substitution,False,False,63,2,7,7
+cement,cemet,"['ce', 'met']",deletion,False,False,68,2,6,5
+drone,dron,"['dro', 'n']",deletion,False,False,44,2,5,4
+poison,poisoo,"['pois', 'oo']",substitution,False,False,33,2,6,6
+password,passworz,"['p', 'ass', 'w', 'o', 'rz']",substitution,True,True,61,2,8,8
+reliance,relipnce,"['re', 'l', 'ip', 'nc', 'e']",substitution,False,False,35,2,8,8
+wavelength,wdavelength,"['wd', 'avel', 'e', 'ng', 'th']",insertion,False,False,40,2,10,11
+divide,diwvide,"['di', 'w', 'v', 'ide']",insertion,True,True,34,2,6,7
+pin,pibn,"['pi', 'bn']",insertion,True,True,52,2,3,4
+hash,hah,"['ha', 'h']",deletion,True,True,45,2,4,3
+squirrel,suquirrel,"['s', 'u', 'quir', 'rel']",insertion,False,False,34,2,8,9
+pig,plg,"['pl', 'g']",substitution,False,True,74,2,3,3
+grove,grovx,"['gro', 'vx']",substitution,False,False,43,2,5,5
+solid,sosid,"['so', 'sid']",substitution,True,True,36,2,5,5
+contraction,contaaction,"['con', 't', 'aa', 'ction']",substitution,False,False,60,2,11,11
+blow,bflow,"['b', 'flow']",insertion,False,False,57,2,4,5
+vapor,vaopor,"['vao', 'por']",insertion,False,False,37,2,5,6
+alpine,alpifne,"['alp', 'if', 'ne']",insertion,False,False,71,2,6,7
+console,cfonsole,"['cf', 'on', 'sol', 'e']",insertion,True,True,81,2,7,8
+cry,cr,"['c', 'r']",deletion,True,True,51,2,3,2
+ape,ap,"['a', 'p']",deletion,False,True,31,2,3,2
+preview,pireview,"['p', 'ir', 'evi', 'ew']",insertion,True,True,55,2,7,8
+oxidation,oxdation,"['o', 'x', 'd', 'ati', 'on']",deletion,False,False,43,2,9,8
+rotor,roto,"['ro', 'to']",deletion,False,False,40,2,5,4
+maturity,matority,"['mato', 'r', 'it', 'y']",substitution,False,False,43,2,8,8
+ionization,ionizatioin,"['ion', 'i', 'za', 'ti', 'oin']",insertion,False,False,39,2,10,11
+extract,extraoct,"['ext', 'rao', 'ct']",insertion,True,True,47,2,7,8
+contains,contyins,"['c', 'on', 'ty', 'in', 's']",substitution,True,True,79,2,8,8
+exhaust,exhxaust,"['e', 'xh', 'x', 'au', 'st']",insertion,False,False,34,2,7,8
+punt,puvt,"['pu', 'vt']",substitution,False,False,69,2,4,4
+heating,hfating,"['hf', 'a', 'tin', 'g']",substitution,False,False,63,2,7,7
+rendering,rnendering,"['r', 'nen', 'de', 'ri', 'ng']",insertion,False,False,34,2,9,10
+skyscraper,skyscrfaper,"['sky', 'scr', 'f', 'a', 'per']",insertion,False,False,48,2,10,11
+short,shot,"['s', 'hot']",deletion,True,True,59,2,5,4
+flash,flah,"['fla', 'h']",deletion,True,True,53,2,5,4
+inflation,inflatpion,"['in', 'f', 'lat', 'pi', 'on']",insertion,False,False,77,2,9,10
+connector,conknector,"['c', 'onk', 'n', 'ector']",insertion,False,True,32,2,9,10
+inn,ine,"['i', 'ne']",substitution,True,True,42,2,3,3
+visualization,vasualization,"['vas', 'uali', 'z', 'atio', 'n']",substitution,False,True,34,2,13,13
+def,detf,"['det', 'f']",insertion,True,True,41,2,3,4
+valve,vave,"['v', 'ave']",deletion,False,False,71,2,5,4
+liability,liabilify,"['li', 'ab', 'il', 'if', 'y']",substitution,False,False,57,2,9,9
+checkpoint,chlckpoint,"['chl', 'ck', 'poi', 'n', 't']",substitution,False,True,40,2,10,10
+quad,qxad,"['qx', 'ad']",substitution,True,True,70,2,4,4
+brush,bcush,"['bc', 'ush']",substitution,False,True,32,2,5,5
+special,speciil,"['s', 'pe', 'cii', 'l']",substitution,True,True,71,2,7,7
+rig,riwg,"['ri', 'wg']",insertion,True,True,40,2,3,4
+stanza,stanqza,"['st', 'an', 'qz', 'a']",insertion,False,False,34,2,6,7
+diffusion,difusion,"['di', 'fus', 'io', 'n']",deletion,False,False,47,2,9,8
+efficacy,efficacky,"['effic', 'acky']",insertion,False,False,40,2,8,9
+dos,ds,"['d', 's']",deletion,True,True,71,2,3,2
+interpreter,intzerpreter,"['i', 'ntz', 'er', 'p', 'reter']",insertion,True,True,68,2,11,12
+abdomen,abdooen,"['abd', 'oo', 'en']",substitution,False,False,47,2,7,7
+parrot,palrrot,"['pal', 'r', 'r', 'ot']",insertion,False,False,38,2,6,7
+twist,twbst,"['tw', 'bst']",substitution,False,False,81,2,5,5
+yellow,yelloaw,"['y', 'ell', 'oa', 'w']",insertion,True,True,54,2,6,7
+lining,liing,"['li', 'ing']",deletion,False,True,35,2,6,5
+hut,hum,"['hu', 'm']",substitution,False,False,61,2,3,3
+comfort,comort,"['c', 'omor', 't']",deletion,True,True,62,2,7,6
+goat,goyat,"['go', 'yat']",insertion,False,False,61,2,4,5
+prescription,prscription,"['pr', 's', 'c', 'ri', 'ption']",deletion,False,False,67,2,12,11
+selector,slector,"['s', 'l', 'ec', 'tor']",deletion,True,True,50,2,8,7
+financing,financng,"['fin', 'a', 'nc', 'ng']",deletion,False,False,53,2,9,8
+bundle,bundld,"['bund', 'ld']",substitution,True,True,33,2,6,6
+urn,ur,"['u', 'r']",deletion,False,True,34,2,3,2
+wet,wt,"['w', 't']",deletion,False,False,53,2,3,2
+candy,cavdy,"['cav', 'dy']",substitution,False,False,37,2,5,5
+blind,bliynd,"['b', 'li', 'ynd']",insertion,True,True,70,2,5,6
+accessory,accessolry,"['accesso', 'l', 'ry']",insertion,False,False,63,2,9,10
+nose,nosg,"['nos', 'g']",substitution,False,False,53,2,4,4
+dating,datdng,"['dat', 'dn', 'g']",substitution,False,True,42,2,6,6
+mapping,mpapping,"['m', 'p', 'app', 'in', 'g']",insertion,True,True,43,2,7,8
+sheep,shee,"['she', 'e']",deletion,False,False,69,2,5,4
+latitude,latitudhe,"['lat', 'itu', 'd', 'h', 'e']",insertion,True,True,50,2,8,9
+sterling,sterlincg,"['st', 'er', 'l', 'inc', 'g']",insertion,False,False,43,2,8,9
+neutron,neoutron,"['n', 'e', 'o', 'ut', 'ron']",insertion,False,False,32,2,7,8
+arc,artc,"['art', 'c']",insertion,True,True,82,2,3,4
+optimization,optimiztion,"['opt', 'imiz', 'ti', 'on']",deletion,False,False,58,2,12,11
+para,plara,"['pl', 'ara']",insertion,True,True,31,2,4,5
+fit,ft,"['f', 't']",deletion,True,True,60,2,3,2
+dot,dowt,"['do', 'wt']",insertion,True,True,79,2,3,4
+tile,tilze,"['til', 'ze']",insertion,True,True,78,2,4,5
+military,misitary,"['m', 'isi', 't', 'a', 'ry']",substitution,False,False,84,2,8,8
+abstraction,abtraction,"['abt', 'ra', 'ction']",deletion,False,False,48,2,11,10
+quit,qui,"['qu', 'i']",deletion,True,True,33,2,4,3
+pet,pwt,"['p', 'wt']",substitution,True,True,47,2,3,3
+ending,endcing,"['en', 'd', 'cing']",insertion,True,True,53,2,6,7
+plc,plr,"['p', 'lr']",substitution,False,False,39,2,3,3
+treat,treit,"['tr', 'eit']",substitution,False,False,33,2,5,5
+ill,isl,"['is', 'l']",substitution,True,True,37,2,3,3
+navy,nav,"['n', 'av']",deletion,False,False,83,2,4,3
+adjacent,adjaent,"['ad', 'ja', 'e', 'nt']",deletion,False,False,49,2,8,7
+kill,kil,"['ki', 'l']",deletion,True,True,45,2,4,3
+wit,wet,"['w', 'et']",substitution,True,True,49,2,3,3
+buffalo,bufalo,"['buf', 'alo']",deletion,False,False,45,2,7,6
+lily,lly,"['l', 'ly']",deletion,False,False,50,2,4,3
+smartphone,smbartphone,"['sm', 'bar', 't', 'p', 'hone']",insertion,False,False,51,2,10,11
+electrode,electrodse,"['e', 'le', 'ctr', 'ods', 'e']",insertion,False,False,49,2,9,10
+classic,clssic,"['cls', 'si', 'c']",deletion,True,True,62,2,7,6
+gill,goll,"['go', 'll']",substitution,False,False,32,2,4,4
+take,tsake,"['ts', 'ake']",insertion,True,True,55,2,4,5
+serve,sertve,"['se', 'rt', 've']",insertion,True,True,32,2,5,6
+coaster,coster,"['co', 'ster']",deletion,False,False,41,2,7,6
+von,vnon,"['vn', 'on']",insertion,True,True,42,2,3,4
+subunit,susbunit,"['su', 's', 'b', 'unit']",insertion,False,False,53,2,7,8
+trombone,tombone,"['t', 'ombo', 'n', 'e']",deletion,False,False,58,2,8,7
+tear,teavr,"['te', 'avr']",insertion,False,False,56,2,4,5
+dna,dn,"['d', 'n']",deletion,False,True,71,2,3,2
+dairy,dainry,"['dain', 'r', 'y']",insertion,False,False,59,2,5,6
+makeup,makesup,"['mak', 'e', 's', 'up']",insertion,False,False,248,3,6,7
+split,splirt,"['spl', 'irt']",insertion,True,True,236,3,5,6
+emission,emissdion,"['e', 'mis', 'sd', 'i', 'on']",insertion,False,False,221,3,8,9
+perception,percaption,"['pe', 'r', 'ca', 'pt', 'ion']",substitution,False,False,129,3,10,10
+wound,wouind,"['w', 'ouin', 'd']",insertion,False,False,161,3,5,6
+sentiment,sentimenm,"['sent', 'im', 'en', 'm']",substitution,False,False,93,3,9,9
+cap,ccp,"['cc', 'p']",substitution,True,True,272,3,3,3
+jet,jez,"['je', 'z']",substitution,True,True,153,3,3,3
+pick,pisck,"['pis', 'ck']",insertion,True,True,217,3,4,5
+breeding,breedicng,"['br', 'e', 'edic', 'n', 'g']",insertion,False,False,120,3,8,9
+clay,cloay,"['clo', 'ay']",insertion,False,False,149,3,4,5
+assumption,assumptioln,"['ass', 'ump', 'tio', 'ln']",insertion,False,False,94,3,10,11
+gay,gar,"['ga', 'r']",substitution,True,True,284,3,3,3
+learning,lqearning,"['l', 'qe', 'a', 'rn', 'ing']",insertion,True,True,228,3,8,9
+cycling,cyclinjg,"['cy', 'c', 'lin', 'jg']",insertion,False,False,95,3,7,8
+riding,ridifng,"['r', 'id', 'if', 'ng']",insertion,False,True,94,3,6,7
+destination,desftination,"['des', 'f', 't', 'ina', 'tion']",insertion,True,True,256,3,11,12
+explanation,ehplanation,"['eh', 'plan', 'ation']",substitution,False,False,164,3,11,11
+danger,dangeq,"['d', 'ang', 'eq']",substitution,True,True,178,3,6,6
+employment,emzloyment,"['em', 'zl', 'o', 'ymen', 't']",substitution,False,True,235,3,10,10
+rotation,rotatijon,"['ro', 'ta', 't', 'ij', 'on']",insertion,True,True,121,3,8,9
+defendant,deefendant,"['dee', 'fe', 'nda', 'nt']",insertion,False,False,89,3,9,10
+circle,cijrcle,"['cij', 'rc', 'l', 'e']",insertion,True,True,251,3,6,7
+borough,boroujgh,"['bo', 'ro', 'uj', 'gh']",insertion,False,True,280,3,7,8
+monster,mfnster,"['m', 'f', 'n', 'ster']",substitution,False,True,111,3,7,7
+talent,tazent,"['t', 'azen', 't']",substitution,False,False,273,3,6,6
+grain,grrain,"['g', 'rr', 'ain']",insertion,False,False,135,3,5,6
+venture,vfnture,"['vf', 'n', 'ture']",substitution,False,True,218,3,7,7
+passion,pasion,"['p', 'asio', 'n']",deletion,False,False,142,3,7,6
+delay,delaey,"['d', 'ela', 'ey']",insertion,True,True,181,3,5,6
+trend,trenkd,"['tre', 'nk', 'd']",insertion,False,False,210,3,5,6
+warehouse,warehousz,"['war', 'eh', 'ou', 'sz']",substitution,False,True,105,3,9,9
+banner,bahnner,"['ba', 'h', 'n', 'ner']",insertion,False,True,108,3,6,7
+streak,stweak,"['stw', 'ea', 'k']",substitution,False,False,160,3,6,6
+butterfly,bntterfly,"['bn', 't', 'te', 'r', 'fly']",substitution,False,False,139,3,9,9
+soul,sul,"['s', 'ul']",deletion,False,False,223,3,4,3
+monitoring,mocitoring,"['mo', 'c', 'itori', 'ng']",substitution,False,False,86,3,10,10
+spy,sps,"['s', 'ps']",substitution,False,True,104,3,3,3
+brake,bhake,"['bh', 'ake']",substitution,False,False,87,3,5,5
+mixture,mixturre,"['mix', 'tu', 'r', 're']",insertion,False,False,116,3,7,8
+ion,iou,"['i', 'ou']",substitution,True,True,148,3,3,3
+constraint,contraint,"['contra', 'i', 'n', 't']",deletion,True,True,100,3,10,9
+tail,tarl,"['tar', 'l']",substitution,True,True,244,3,4,4
+virus,viruf,"['vir', 'uf']",substitution,False,False,128,3,5,5
+awareness,awarenesh,"['aw', 'are', 'n', 'esh']",substitution,False,False,181,3,9,9
+stand,stund,"['stun', 'd']",substitution,True,True,185,3,5,5
+graph,grbaph,"['gr', 'ba', 'ph']",insertion,True,True,149,3,5,6
+transformation,transformtion,"['tran', 's', 'for', 'mt', 'ion']",deletion,False,False,102,3,14,13
+artwork,artwort,"['ar', 'two', 'rt']",substitution,False,False,215,3,7,7
+formula,formpla,"['fo', 'rm', 'pla']",substitution,True,True,269,3,7,7
+sort,sdort,"['sd', 'ort']",insertion,True,True,169,3,4,5
+cuisine,cuisimne,"['cu', 'i', 'si', 'm', 'ne']",insertion,False,False,131,3,7,8
+doubt,dyoubt,"['dy', 'ou', 'bt']",insertion,False,False,116,3,5,6
+navigation,naigation,"['na', 'iga', 'ti', 'o', 'n']",deletion,True,True,129,3,10,9
+strip,srip,"['s', 'rip']",deletion,True,True,195,3,5,4
+cave,ccve,"['cc', 've']",substitution,False,False,135,3,4,4
+thesis,tesis,"['tes', 'is']",deletion,False,True,199,3,6,5
+obstacle,obstace,"['o', 'bst', 'ac', 'e']",deletion,False,False,105,3,8,7
+ranking,raning,"['r', 'an', 'ing']",deletion,True,True,260,3,7,6
+integration,integratior,"['i', 'nte', 'gra', 'tio', 'r']",substitution,True,True,156,3,11,11
+electron,elettron,"['ele', 't', 'tro', 'n']",substitution,True,True,219,3,8,8
+gear,gecar,"['ge', 'car']",insertion,False,True,142,3,4,5
+printer,pvinter,"['pv', 'i', 'nte', 'r']",substitution,True,True,96,3,7,7
+bath,basth,"['bas', 'th']",insertion,False,False,87,3,4,5
+finale,finle,"['fin', 'le']",deletion,False,False,126,3,6,5
+shoulder,shoulmder,"['sho', 'ul', 'm', 'de', 'r']",insertion,False,False,234,3,8,9
+perspective,pelrspective,"['pel', 'r', 'sp', 'ective']",insertion,False,False,252,3,11,12
+faction,facction,"['fac', 'c', 't', 'ion']",insertion,False,True,193,3,7,8
+consciousness,cqnsciousness,"['cq', 'n', 's', 'c', 'iousness']",substitution,False,False,86,3,13,13
+dialect,diaect,"['di', 'a', 'ect']",deletion,False,False,143,3,7,6
+bench,benh,"['be', 'nh']",deletion,False,True,159,3,5,4
+encounter,encouner,"['en', 'c', 'o', 'u', 'ner']",deletion,False,False,146,3,9,8
+finding,fining,"['f', 'ini', 'ng']",deletion,True,True,176,3,7,6
+coat,cat,"['c', 'at']",deletion,True,True,187,3,4,3
+shift,shft,"['sh', 'ft']",deletion,True,True,228,3,5,4
+luxury,luxfry,"['lu', 'x', 'fry']",substitution,False,False,92,3,6,6
+kid,ki,"['k', 'i']",deletion,True,True,126,3,3,2
+mood,moo,"['mo', 'o']",deletion,False,False,106,3,4,3
+liner,liler,"['lil', 'er']",substitution,False,True,98,3,5,5
+trust,trusb,"['tru', 'sb']",substitution,True,True,194,3,5,5
+shock,shocr,"['sh', 'ocr']",substitution,False,False,137,3,5,5
+shore,shor,"['sho', 'r']",deletion,True,True,234,3,5,4
+kilometer,kilomeer,"['kil', 'o', 'm', 'eer']",deletion,False,False,184,3,9,8
+clause,clauise,"['cla', 'ui', 'se']",insertion,True,True,97,3,6,7
+cruise,ccuise,"['c', 'cu', 'ise']",substitution,False,False,139,3,6,6
+tale,tae,"['ta', 'e']",deletion,False,False,269,3,4,3
+parking,parkig,"['par', 'k', 'ig']",deletion,False,False,128,3,7,6
+operating,operatig,"['oper', 'a', 't', 'ig']",deletion,False,False,190,3,9,8
+depression,deprgssion,"['dep', 'rg', 'ss', 'io', 'n']",substitution,False,False,152,3,10,10
+grass,gras,"['gr', 'as']",deletion,True,True,130,3,5,4
+rifle,rifie,"['ri', 'fie']",substitution,False,False,190,3,5,5
+nickname,nichkname,"['ni', 'chk', 'nam', 'e']",insertion,False,True,144,3,8,9
+ocean,oean,"['oea', 'n']",deletion,False,False,152,3,5,4
+audio,anudio,"['an', 'u', 'dio']",insertion,True,True,140,3,5,6
+biology,biolgy,"['bi', 'ol', 'gy']",deletion,False,True,163,3,7,6
+universe,unibverse,"['un', 'ib', 'vers', 'e']",insertion,False,False,177,3,8,9
+walk,wlk,"['w', 'lk']",deletion,True,True,173,3,4,3
+mutation,muutation,"['mu', 'u', 'tat', 'io', 'n']",insertion,False,True,101,3,8,9
+moon,mown,"['mo', 'wn']",substitution,True,True,119,3,4,4
+native,natve,"['nat', 've']",deletion,True,True,198,3,6,5
+memorial,moemorial,"['mo', 'emo', 'rial']",insertion,False,False,213,3,8,9
+hunter,hunte,"['hunt', 'e']",deletion,False,True,104,3,6,5
+commerce,cnommerce,"['cn', 'omm', 'erce']",insertion,True,True,93,3,8,9
+suite,suibe,"['su', 'ibe']",substitution,True,True,90,3,5,5
+beam,besm,"['bes', 'm']",substitution,True,True,207,3,4,4
+poster,postey,"['post', 'ey']",substitution,True,True,119,3,6,6
+shopping,shoppuing,"['shop', 'pu', 'i', 'n', 'g']",insertion,False,True,177,3,8,9
+uncle,uwcle,"['uw', 'cle']",substitution,False,False,276,3,5,5
+commitment,commiment,"['c', 'o', 'mm', 'imen', 't']",deletion,False,False,178,3,10,9
+priority,prioriy,"['p', 'rior', 'iy']",deletion,True,True,177,3,8,7
+cash,cas,"['ca', 's']",deletion,False,True,224,3,4,3
+poll,pol,"['p', 'ol']",deletion,True,True,261,3,4,3
+planet,plapet,"['p', 'l', 'apet']",substitution,True,True,254,3,6,6
+dream,drdam,"['dr', 'dam']",substitution,True,True,285,3,5,5
+spectrum,sectrum,"['se', 'ctr', 'um']",deletion,False,False,110,3,8,7
+lung,lug,"['lu', 'g']",deletion,True,True,134,3,4,3
+craft,crat,"['c', 'rat']",deletion,True,True,164,3,5,4
+lab,laub,"['l', 'aub']",insertion,True,True,162,3,3,4
+jersey,jxersey,"['jx', 'er', 'sey']",insertion,False,False,100,3,6,7
+insight,insiyht,"['insi', 'yh', 't']",substitution,False,False,92,3,7,7
+insect,insec,"['in', 'sec']",deletion,False,False,160,3,6,5
+transmission,transmissiodn,"['trans', 'mis', 's', 'io', 'dn']",insertion,False,False,276,3,12,13
+prototype,prototyee,"['pro', 'tot', 'y', 'e', 'e']",substitution,True,True,229,3,9,9
+sword,swor,"['sw', 'or']",deletion,True,True,161,3,5,4
+potential,poteential,"['po', 't', 'e', 'ent', 'ial']",insertion,True,True,212,3,9,10
+snake,snakfe,"['sna', 'kf', 'e']",insertion,False,True,133,3,5,6
+adoption,adopttion,"['ad', 'o', 'pt', 't', 'ion']",insertion,False,False,109,3,8,9
+lord,lrd,"['lr', 'd']",deletion,True,True,154,3,4,3
+fraud,frafd,"['fr', 'afd']",substitution,False,False,100,3,5,5
+passport,pajssport,"['p', 'aj', 'ss', 'po', 'rt']",insertion,False,True,172,3,8,9
+truth,trutsh,"['tr', 'ut', 'sh']",insertion,True,True,234,3,5,6
+radar,rada,"['r', 'ada']",deletion,False,False,148,3,5,4
+guy,guj,"['gu', 'j']",substitution,False,False,101,3,3,3
+calculation,calculoation,"['calcul', 'o', 'ation']",insertion,False,False,120,3,11,12
+reach,rach,"['rac', 'h']",deletion,True,True,112,3,5,4
+innovation,innovaqion,"['inn', 'ova', 'q', 'i', 'on']",substitution,False,False,161,3,10,10
+width,widh,"['w', 'idh']",deletion,True,True,144,3,5,4
+joint,join,"['j', 'oin']",deletion,True,True,91,3,5,4
+cotton,cottmn,"['cott', 'm', 'n']",substitution,False,False,147,3,6,6
+autumn,autuyn,"['a', 'utu', 'yn']",substitution,False,False,148,3,6,6
+adult,adul,"['adu', 'l']",deletion,True,True,602,4,5,4
+combination,comibination,"['co', 'm', 'ib', 'ina', 'tion']",insertion,True,True,477,4,11,12
+writing,writrng,"['w', 'ri', 'trn', 'g']",substitution,True,True,526,4,7,7
+century,cegtury,"['c', 'eg', 't', 'ury']",substitution,False,False,3827,4,7,7
+transfer,transftr,"['tr', 'ans', 'ft', 'r']",substitution,True,True,451,4,8,8
+husband,husbanq,"['hu', 'sb', 'a', 'nq']",substitution,False,False,920,4,7,7
+plant,plsant,"['pls', 'an', 't']",insertion,True,True,1729,4,5,6
+concept,concgpt,"['conc', 'g', 'pt']",substitution,True,True,862,4,7,7
+identity,idencity,"['ide', 'nc', 'i', 't', 'y']",substitution,True,True,554,4,8,8
+passenger,passeuger,"['pass', 'e', 'u', 'ger']",substitution,False,False,735,4,9,9
+doctor,dotor,"['do', 'tor']",deletion,True,True,550,4,6,5
+artist,aartist,"['a', 'arti', 's', 't']",insertion,True,True,2706,4,6,7
+size,sze,"['s', 'ze']",deletion,True,True,1097,4,4,3
+draft,draf,"['d', 'raf']",deletion,True,True,424,4,5,4
+back,bac,"['ba', 'c']",deletion,True,True,359,4,4,3
+challenge,challenhe,"['c', 'h', 'all', 'enh', 'e']",substitution,True,True,518,4,9,9
+speaker,speker,"['spe', 'k', 'er']",deletion,True,True,317,4,7,6
+sister,sster,"['sst', 'er']",deletion,False,False,980,4,6,5
+sound,saound,"['s', 'ao', 'und']",insertion,True,True,673,4,5,6
+variation,vaiation,"['vai', 'ation']",deletion,True,True,356,4,9,8
+ownership,ownershix,"['own', 'e', 'rs', 'h', 'ix']",substitution,True,True,421,4,9,9
+tax,tas,"['t', 'as']",substitution,True,True,724,4,3,3
+chair,chaeir,"['chae', 'i', 'r']",insertion,True,True,341,4,5,6
+trial,terial,"['ter', 'i', 'al']",insertion,True,True,997,4,5,6
+radio,radi,"['r', 'adi']",deletion,True,True,1337,4,5,4
+producer,produxer,"['produ', 'x', 'er']",substitution,True,True,1558,4,8,8
+winter,winer,"['wine', 'r']",deletion,True,True,503,4,6,5
+scheme,scheae,"['sch', 'eae']",substitution,True,True,486,4,6,6
+practice,practiuce,"['pra', 'ct', 'i', 'u', 'ce']",insertion,True,True,1473,4,8,9
+building,buildng,"['b', 'uild', 'ng']",deletion,True,True,4191,4,8,7
+network,networek,"['net', 'wo', 're', 'k']",insertion,True,True,1249,4,7,8
+businessman,businestsman,"['bu', 's', 'ines', 't', 'sman']",insertion,False,False,301,4,11,12
+team,tzam,"['t', 'zam']",substitution,True,True,8376,4,4,4
+love,lode,"['lod', 'e']",substitution,True,True,726,4,4,4
+degree,dlgree,"['d', 'lg', 'ree']",substitution,True,True,1685,4,6,6
+battle,battue,"['b', 'att', 'ue']",substitution,True,True,929,4,6,6
+management,managjment,"['ma', 'nag', 'j', 'me', 'nt']",substitution,True,True,855,4,10,10
+control,contrl,"['c', 'ont', 'rl']",deletion,True,True,1451,4,7,6
+shape,shae,"['s', 'hae']",deletion,True,True,415,4,5,4
+coverage,cqverage,"['cq', 've', 'rage']",substitution,True,True,311,4,8,8
+football,fooball,"['f', 'oo', 'ball']",deletion,True,True,4590,4,8,7
+merchant,mterchant,"['m', 'ter', 'ch', 'a', 'nt']",insertion,True,True,366,4,8,9
+garden,gaden,"['g', 'aden']",deletion,False,False,392,4,6,5
+majority,majorkity,"['major', 'k', 'ity']",insertion,False,False,879,4,8,9
+family,famil,"['fa', 'mil']",deletion,True,True,6289,4,6,5
+drug,dug,"['du', 'g']",deletion,True,True,840,4,4,3
+plane,pane,"['pan', 'e']",deletion,True,True,372,4,5,4
+ring,rixg,"['rix', 'g']",substitution,True,True,338,4,4,4
+item,itm,"['i', 'tm']",deletion,True,True,394,4,4,3
+professor,promessor,"['pr', 'om', 'ess', 'o', 'r']",substitution,False,False,1082,4,9,9
+council,cyouncil,"['cy', 'oun', 'c', 'i', 'l']",insertion,False,False,920,4,7,8
+attention,atention,"['at', 'en', 'tio', 'n']",deletion,True,True,684,4,9,8
+concert,conaert,"['c', 'on', 'aer', 't']",substitution,True,True,640,4,7,7
+task,tvask,"['tv', 'ask']",insertion,True,True,370,4,4,5
+occasion,occdsion,"['o', 'ccd', 's', 'i', 'on']",substitution,True,True,444,4,8,8
+number,numbe,"['num', 'be']",deletion,True,True,5338,4,6,5
+effect,effert,"['e', 'f', 'fert']",substitution,True,True,1667,4,6,6
+step,steop,"['ste', 'op']",insertion,True,True,462,4,4,5
+actor,acgtor,"['ac', 'gt', 'or']",insertion,True,True,2000,4,5,6
+agency,aency,"['a', 'ency']",deletion,False,True,600,4,6,5
+health,healsh,"['heal', 'sh']",substitution,True,True,1322,4,6,6
+credit,cedit,"['ced', 'it']",deletion,True,True,519,4,6,5
+individual,intividual,"['inti', 'vid', 'ual']",substitution,True,True,1056,4,10,10
+episode,episodse,"['ep', 'is', 'od', 'se']",insertion,True,True,2415,4,7,8
+entertainment,etertainment,"['eter', 'tainment']",deletion,False,False,297,4,13,12
+data,dcta,"['dc', 'ta']",substitution,True,True,1150,4,4,4
+flower,flowejr,"['flo', 'w', 'e', 'jr']",insertion,True,True,539,4,6,7
+bone,bont,"['bon', 't']",substitution,False,True,374,4,4,4
+recording,recordhing,"['rec', 'o', 'rd', 'hing']",insertion,False,False,793,4,9,10
+investment,innvestment,"['i', 'nn', 'vest', 'me', 'nt']",insertion,False,True,374,4,10,11
+factory,factofy,"['fact', 'ofy']",substitution,True,True,441,4,7,7
+personality,personalvty,"['pers', 'ona', 'l', 'vt', 'y']",substitution,False,False,393,4,11,11
+card,car,"['c', 'ar']",deletion,True,True,682,4,4,3
+flight,fjlight,"['f', 'j', 'lig', 'ht']",insertion,True,True,798,4,6,7
+island,islann,"['isl', 'ann']",substitution,False,False,1327,4,6,6
+pop,poep,"['po', 'ep']",insertion,True,True,382,4,3,4
+photography,photograpehy,"['pho', 'to', 'gr', 'ape', 'hy']",insertion,False,False,306,4,11,12
+safety,sabfety,"['sab', 'f', 'ety']",insertion,False,False,505,4,6,7
+way,wzy,"['w', 'zy']",substitution,True,True,2371,4,3,3
+gallery,galtery,"['g', 'alter', 'y']",substitution,True,True,349,4,7,7
+extension,extnsion,"['ex', 't', 'ns', 'io', 'n']",deletion,True,True,442,4,9,8
+move,mtve,"['mt', 've']",substitution,True,True,498,4,4,4
+one,oxe,"['o', 'xe']",substitution,True,True,888,4,3,3
+peak,peatk,"['pea', 'tk']",insertion,True,True,330,4,4,5
+asset,asseut,"['a', 'sse', 'ut']",insertion,True,True,350,4,5,6
+clan,clafn,"['cla', 'fn']",insertion,False,False,295,4,4,5
+wood,wod,"['w', 'od']",deletion,True,True,427,4,4,3
+seed,sed,"['se', 'd']",deletion,True,True,381,4,4,3
+agent,agenht,"['a', 'gen', 'ht']",insertion,True,True,658,4,5,6
+response,respoose,"['r', 'es', 'po', 'os', 'e']",substitution,True,True,929,4,8,8
+solo,sols,"['s', 'ols']",substitution,False,False,438,4,4,4
+chart,cnart,"['cn', 'art']",substitution,True,True,934,4,5,5
+critic,criutic,"['cri', 'uti', 'c']",insertion,False,False,799,4,6,7
+speed,spteed,"['sp', 'te', 'ed']",insertion,True,True,1577,4,5,6
+towards,towrds,"['to', 'wr', 'ds']",deletion,False,False,503,4,7,6
+beginning,begnning,"['beg', 'n', 'ning']",deletion,False,False,700,4,9,8
+provision,prowvision,"['pr', 'ow', 'v', 'ision']",insertion,False,False,306,4,9,10
+domain,domapn,"['d', 'oma', 'pn']",substitution,True,True,409,4,6,6
+poem,pem,"['p', 'em']",deletion,False,False,538,4,4,3
+race,rac,"['r', 'ac']",deletion,True,True,2510,4,4,3
+war,wacr,"['wa', 'cr']",insertion,True,True,2342,4,3,4
+seat,set,"['se', 't']",deletion,True,True,1402,4,4,3
+property,propecrty,"['pr', 'op', 'e', 'crt', 'y']",insertion,True,True,1437,4,8,9
+inning,inging,"['ingi', 'n', 'g']",substitution,False,True,393,4,6,6
+lady,laiy,"['lai', 'y']",substitution,False,False,316,4,4,4
+organisation,orgabisation,"['or', 'gab', 'isa', 'tion']",substitution,True,True,523,4,12,12
+office,offce,"['off', 'ce']",deletion,True,True,2198,4,6,5
+protection,prtection,"['pr', 'te', 'ction']",deletion,False,False,421,4,10,9
+decade,decadj,"['dec', 'adj']",substitution,False,False,691,4,6,6
+interaction,interactin,"['inter', 'a', 'c', 't', 'in']",deletion,True,True,359,4,11,10
+version,versio,"['vers', 'io']",deletion,True,True,2472,4,7,6
+photo,phowo,"['ph', 'owo']",substitution,True,True,334,4,5,5
+stock,sntock,"['sn', 'toc', 'k']",insertion,True,True,410,4,5,6
+sign,soign,"['so', 'ign']",insertion,True,True,565,4,4,5
+theory,teory,"['teo', 'ry']",deletion,True,True,941,4,6,5
+secretary,secretaury,"['sec', 'r', 'eta', 'ur', 'y']",insertion,False,False,406,4,9,10
+architecture,aqchitecture,"['aq', 'ch', 'i', 'tect', 'ure']",substitution,True,True,679,4,12,12
+bond,bon,"['b', 'on']",deletion,True,True,377,4,4,3
+arrival,arival,"['a', 'ri', 'val']",deletion,True,True,313,4,7,6
+aid,aib,"['ai', 'b']",substitution,True,True,352,4,3,3
+boat,beat,"['bea', 't']",substitution,True,True,563,4,4,4
+nature,napture,"['nap', 't', 'ur', 'e']",insertion,True,True,818,4,6,7
+college,cxollege,"['cx', 'olle', 'ge']",insertion,True,True,1594,4,7,8
+profile,profle,"['p', 'rof', 'le']",deletion,True,True,430,4,7,6
+website,webszite,"['web', 'sz', 'it', 'e']",insertion,True,True,1046,4,7,8
+line,ltne,"['lt', 'ne']",substitution,True,True,3737,4,4,4
+travel,travbl,"['tr', 'av', 'bl']",substitution,True,True,391,4,6,6
+manager,manzger,"['m', 'anz', 'g', 'er']",substitution,True,True,1480,4,7,7
+dance,dsance,"['ds', 'a', 'nce']",insertion,True,True,662,4,5,6
+energy,enegy,"['en', 'egy']",deletion,True,True,992,4,6,5
+roof,rocf,"['roc', 'f']",substitution,True,True,384,4,4,4
+people,peple,"['p', 'eple']",deletion,True,True,12856,4,6,5
+representation,rcepresentation,"['rc', 'epr', 'ese', 'nt', 'ation']",insertion,True,True,441,4,14,15
+farmer,farmnr,"['fa', 'rm', 'nr']",substitution,False,False,357,4,6,6
+volume,vlume,"['vl', 'ume']",deletion,True,True,1039,4,6,5
+captain,catain,"['cata', 'in']",deletion,False,False,522,4,7,6
+growth,growtwh,"['grow', 't', 'wh']",insertion,True,True,651,4,6,7
+flag,fag,"['f', 'ag']",deletion,True,True,439,4,4,3
+mission,misqion,"['m', 'is', 'qi', 'on']",substitution,True,True,933,4,7,7
+nation,naoion,"['na', 'oi', 'on']",substitution,True,True,865,4,6,6

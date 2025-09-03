@@ -10,6 +10,19 @@ from tqdm import tqdm
 # Base directory for the project
 BASE_DIR = "/home/hyujang/multilingual-inner-lexicon"
 
+model_colors = {
+    "Babel-9B-Chat": "#66c2a5",
+    "gemma-3-12b-it": "#fc8d62",
+    "Llama-2-7b-chat-hf": "#e78ac3"
+}
+
+# Define colors for each language
+language_colors = {
+    "English": "#1f77b4",
+    "Korean": "#ff7f0e",
+    "German": "#2ca02c"
+}
+
 def load_config(config_path: str = None) -> Dict[str, Any]:
     """Load main configuration file."""
     if config_path is None:
